@@ -1,2 +1,2 @@
-Contact: mailto:admin@yourdomain.com
+Contact: mailto:admin@mindinventory.work
 Preferred-Languages: ru, en
