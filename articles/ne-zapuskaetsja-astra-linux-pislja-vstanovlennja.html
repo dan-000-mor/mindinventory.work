@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Не запускається astra linux після встановлення | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Astra Linux. Не запускається після встановлення чорний екран. 14 груд. 2018 р. — Є: astra linux 1.5 з ядром 4.2.0, залізо - intel xeon e3-1200 v2/3rd ......" />
+ <meta name="keywords" content="запускається, Astra, Linux, після, встановлення, Astra Linux" />
+ <meta name="news_keywords" content="запускається, Astra, Linux, після, встановлення, Astra Linux" />
+ 
+ 
+ <meta property="og:title" content="Не запускається astra linux після встановлення" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Astra Linux. Не запускається після встановлення чорний екран. 14 груд. 2018 р. — Є: astra linux 1.5 з ядром 4.2.0, залізо - intel xeon e3-1200 v2/3rd ......" />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="20:20:13" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Не запускається astra linux після встановлення" />
+ <meta name="twitter:description" content="Astra Linux. Не запускається після встановлення чорний екран. 14 груд. 2018 р. — Є: astra linux 1.5 з ядром 4.2.0, залізо - intel xeon e3-1200 v2/3rd ......" />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Не запускається astra linux після встановлення</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Astra Linux. Не запускається після встановлення чорний екран.</h2></div></a><div class="pagetext"><p>14 груд. 2018 р. — Є: astra linux 1.5 з ядром 4.2.0, залізо - intel xeon e3-1200 v2/3rd... Проблема: після успішної установки айстри при першому старті на...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">система не завантажується після встановлення на новий пк</h2></div></a><div class="pagetext"><p>після чорний екран і каретка курсору видно тільки. Деталі установки: ставив останню версію айстра лінукса, процесор - Intel Core i3 10...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Не завантажується Linux. Що робити?</h2></div></a><div class="pagetext"><p>Найчастіше використовується Ubuntu, але можна використовувати інші дистрибутиви Debian, Centos, Астра Linux... Для цього потрібно відвідати офіційний портал...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Виправляємо чорний екран Ubuntu - Losst</h2></div></a><div class="pagetext"><p>4 вересня. 2020 р. — Перше: апаратна проблема - якщо ви не бачили привітання BIOS, або... Чорний екран Ubuntu після встановлення може бути викликаний, знову ж таки,...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Налаштування Astra Linux після встановлення - Losst</h2></div></a><div class="pagetext"><p>15 лист. 2021 р. — Його підбір – не пояснимо! Наприклад, було дві утиліти для веб-камер. Одна з них взагалі не включається, друга - працює аби як! Зрозуміло, що...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Не запускається графік після встановлення. - Російськомовне.</h2></div></a><div class="pagetext"><p>Намагаюся встановити Debian 10 (на сусідній розділ) поряд із Windows 10. Диск GPT із UEFI. Після встановлення не запускається графічна оболонка,...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Astra Linux - Коментарі та відгуки - Comss</h2></div></a><div class="pagetext"><p>Astra Linux - коментарі та відгуки користувачів на сайті Comss.ru.... На ноутбуку HP не запускається grub після встановлення системи! Security Boot вимкнено.</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Astr Linux та UEFI Astra Linux ВКонтакте</h2></div></a><div class="pagetext"><p>26 берез. 2021 р. - Є інший комп'ютер з Legacy, DP і VGA. Але на свіжому чіпсеті 410. При установці Astra Linux 1.6 SE у UEFI у них з'являється ідентична помилка.</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">КОМПАС-3D та Linux → Частина 2 (Astra Linux та Альт)</h2></div></a><div class="pagetext"><p>12 лист. 2021 р. — Вже після встановлення КОМПАС-3D за допомогою POL/wine з'ясувалося, що у цій версії POL/wine не працює клавіатура. У жодному додатку, навіть...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">МІС Квазар - МедСофт</h2></div></a><div class="pagetext"><p>Завантаження актуального пакета установки.... Операційна система Astra Linux....Після їх виконання ярлики запуску Квазар з'являться на робітнику.</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Керівництво адміністратора - СДЗ Dallas Lock</h2></div></a><div class="pagetext"><p>Astra Linux Сommon Edition (Орел) 2.12 x64 (версія ядра СЗІ НСД... Увага! Після встановлення СЗІ НСД «Dallas Lock Linux» на ОС.</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">ПАК "Соболь". Версія 3.0 - Код Безпеки</h2></div></a><div class="pagetext"><p>Альт Лінукс 7 та Astra Linux Special Edition "Смоленськ". Залежно від ви-... вати, створюються після встановлення ПЗ комплексу "Соболь". Коригування.</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Операційна система Astra Linux - ІнфоКуб</h2></div></a><div class="pagetext"><p>Для встановлення прав доступу існує система профілів - файли з готовими наборами прав доступу для запуску будь-яких програм. Також є засоби створення...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Імпортозаміщення з Astra Linux - Уральський центр.</h2></div></a><div class="pagetext"><p>Використання Linux-аналогів. Переробка програмного забезпечення для забезпечення функціонування в середовищі Linux. ПРОБЛЕМИ МІГРАЦІЇ. ПРИКЛАДНОГО ПО. ВАРІАНТИ.</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Чорний екран після завантаження Linux - mdex-nn.ru</h2></div></a><div class="pagetext"><p>13 вер. 2019 р. — І у фіналі, після завершення установки, ми не очікуємо побачити чорний екран. Втім, проблема із запуском Linux вирішується додаванням всього...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Після оновлення Ubuntu не завантажується робочий стіл</h2></div></a><div class="pagetext"><p>Після оновлення Ubuntu не завантажується робочий стіл: варіанти рішення. Ubuntu є одним із найпопулярніших дистрибутивів Linux. Його популярність...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Встановлення та налаштування Apache2 на Astra Linux - Форсайт</h2></div></a><div class="pagetext"><p>Встановлення та налаштування Apache2 на Astra Linux. У цій статті наведено приклад встановлення та налаштуванняApache HTTP Server (Apache2) на OC Astra Linux SE.</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Не запускається м'якийклієнт на astra linux Смоленськ.</h2></div></a><div class="pagetext"><p>Добридень. Завантажив програму. Розпакував. У "mychat client.desktop" прописав шлях до файлу, що запускає.</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Посібник користувача - FTP Directory Listing - Dr.Web</h2></div></a><div class="pagetext"><p>У деяких ОС (наприклад, Astra Linux SE 1.3) може знадобитися вказати додатково залежність запуску компонента від підсистеми PARSEC. В цьому випадку.</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" ><div class="title"><h2 class="txt">Astra linux не запускається графічної оболонки - Games...</h2></div></a><div class="pagetext"><p>В іншому процес установки нічим не відрізняється від Debian і жодних труднощів не викликає. Вікно входу в систему виконано досить акуратно,...</p><a rel="nofollow" href="/go.html?/articles/ne-zapuskaetsja-astra-linux-pislja-vstanovlennja.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-uvimknuti-polar-vantage-v.html">Як увімкнути polar vantage v</a></li>
+<li><a href="/articles/remont-ofisiv-ta-torgovih-primishhen.html">Ремонт офісів та торгових приміщень</a></li>
+<li><a href="/articles/sortuvalnij-centr-u-stovpchiku-telefon.html">Сортувальний центр у стовпчику телефон</a></li>
+<li><a href="/articles/najkrashhi-pisni-na-muz-tv.html">Найкращі пісні на муз тв</a></li>
+<li><a href="/articles/za-shho-mozhna-pokarati-vodija.html">За що можна покарати водія</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-pravilno-zasipati-keramzit-na-stelju.html">Як правильно засипати керамзит на стелю</a></li>
+<li><a href="/articles/domashni-doilni-aparati-jak.html">Домашні доїльні апарати як</a></li>
+<li><a href="/articles/fifa-16-koli-bude-u-merezhi.html">Fifa 16 коли буде у мережі</a></li>
+<li><a href="/articles/u-strahovij-stazh-dlja-likarnjanogo-rahue.html">У страховий стаж для лікарняного рахує</a></li>
+<li><a href="/articles/napisannja-korotkih-sliv.html">Написання коротких слів</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/mashini-na-dvoh-u-visokij-jakosti.html">Машини на двох у високій якості</a></li>
+<li><a href="/articles/jaku-temperaturu-zbivae-gorilka.html">Яку температуру збиває горілка</a></li>
+<li><a href="/articles/avarskoju-ti-meni-potriben.html">Аварською ти мені потрібен</a></li>
+<li><a href="/articles/pri-ustanovci-windows-pomilka-internetu.html">При установці windows помилка інтернету</a></li>
+<li><a href="/articles/pravosvidomist-vkljuchae-taki-elementi.html">Правосвідомість включає такі елементи</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/pristup-pidshlunkovoi-shho-mozhna-isti.html">Приступ підшлункової що можна їсти</a></li>
+<li><a href="/articles/vkljuchaju-kompjuter-sirij-ekran.html">Включаю комп’ютер сірий екран</a></li>
+<li><a href="/articles/kogo-ja-shukaju-pro-divchinu.html">Кого я шукаю про дівчину</a></li>
+<li><a href="/articles/ja-hochu-vojuvati-za-donbas.html">Я хочу воювати за Донбас</a></li>
+<li><a href="/articles/centri-transplantacii-volossja.html">Центри трансплантації волосся</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як увімкнути завантаження по мережі | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="[How To]Як увімкнути Onboard LAN Boot ROM - завантаження ... Опція може мати інші назви: Boot ROM Function; Boot From LAN First; Boot to Network; Intel..." />
+ <meta name="keywords" content="увімкнути, завантаження, мережі, BIOS" />
+ <meta name="news_keywords" content="увімкнути, завантаження, мережі, BIOS" />
+ 
+ 
+ <meta property="og:title" content="Як увімкнути завантаження по мережі" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="[How To]Як увімкнути Onboard LAN Boot ROM - завантаження ... Опція може мати інші назви: Boot ROM Function; Boot From LAN First; Boot to Network; Intel..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="13:25:02" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як увімкнути завантаження по мережі" />
+ <meta name="twitter:description" content="[How To]Як увімкнути Onboard LAN Boot ROM - завантаження ... Опція може мати інші назви: Boot ROM Function; Boot From LAN First; Boot to Network; Intel..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як увімкнути завантаження по мережі</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">[How To]Як увімкнути Onboard LAN Boot ROM - завантаження...</h2></div></a><div class="pagetext"><p>Опція може мати інші назви: Boot ROM Function; Boot From LAN First; Boot to Network; Intel 82573E Boot ROM; LAN Boot ROM; LAN Option ROM; MAC LAN...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Опція BIOS Onboard LAN Boot ROM</h2></div></a><div class="pagetext"><p>Enabled (або Yes) – дозволити завантаження комп'ютера з віддаленого комп'ютера. Опція може мати інші назви: Boot ROM Function; Boot From LAN First; Boot...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Введення в завантаження по мережі та Etherboot - OpenNET</h2></div></a><div class="pagetext"><p>Linux містить необхідні настройки. Мережеве завантаження практично. Мережевий завантажувач - невелика програма, що запускається як розширення BIOS,...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Onboard LAN Boot ROM - Ваш гід за налаштуваннями BIOS</h2></div></a><div class="pagetext"><p>Після включення опції під час завантаження комп'ютера BIOS материнської плати... Після того, як керування передано, мережна карта підключається до мережі,...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Налаштування параметрів мережі PXE на робочій станції... - Dell</h2></div></a><div class="pagetext"><p>Кінцеві користувачі, які бажають активувати PXE завантаження на Precision T7610, повинні дотримуватися наведених нижче рекомендацій. Причина. ПРИМІТКА. PXEая...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Завантаження комп'ютерів по локальній мережі з... - Altarena.ru</h2></div></a><div class="pagetext"><p>9 липня. 2020 — Ну а тепер, як і було анонсовано вище, розглянемо питання завантаження по мережі за допомогою AOMEI PXE Boot клієнтських комп'ютерів із BIOS UEFI.</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Використання PXE для OSD через мережу - Configuration Manager</h2></div></a><div class="pagetext"><p>1 груд. 2021 — Щоб увімкнути PXE на зображенні завантаження, виберіть Розгортання зображення завантаження з точки розповсюдження за допомогою PXE на...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">BIOS: налаштування мережевого контролера - Супер-гаджет</h2></div></a><div class="pagetext"><p>Для того, щоб завантажитись з мережі onboard lan boot rom повинен стояти в положенні Enabled (активований), а в списку порядку завантаження пристроїв (boot)network...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Як включити середовище попереднього завантаження (PXE boot)...</h2></div></a><div class="pagetext"><p>12 лип. 2021 — Завантаження PXE, також відоме як Network Boot, підтримується всіма версіями мікропрограмного забезпечення BIOS для продукції Intel NUC. Для...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Як активувати завантаження PXE-LAN ​​на материнській платі?</h2></div></a><div class="pagetext"><p>У режимі UEFI завантаження PXE-LAN ​​можна увімкнути за допомогою Network Stack при виборі PXE-LAN ​​Boot Agency як перший завантажувальний пристрій.</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Завантаження по мережі: Встановлення та налаштування DHCP, TFTP...</h2></div></a><div class="pagetext"><p>27 вер. 2017 р. — У BIOS материнської плати активується функція OnBoard LAN Boot ROM (дана функція якраз і включає виконання коду PXE прошивки) і як...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Завантаження по мережі: UEFI PXE - BootDev</h2></div></a><div class="pagetext"><p>2 січ. 2020 - Все вищесказане характерно як для Legacy BIOS, так і для UEFI BIOS. Єдина відмінність для UEFI PXE, це вказівка ​​виконуваного файлу в...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Що таке Network boot в BIOS - Технічка</h2></div></a><div class="pagetext"><p>Як на мене, таке використання завантаження - це відмінний спосіб настроїти програми діагностики або завантажувальний дистрибутив Linux для антивірусного сканування...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Завантаження ERD Commander по мережі</h2></div></a><div class="pagetext"><p>У середовищі Windows можна скористатися також безкоштовним продуктом з відкритим кодом (Open Source) TFTPD32 , що дозволяє реалізувати обидва сервери (DHCP і TFTP) як...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Налаштування BIOS :: Опція LAN Boot ROM - Про БІОС</h2></div></a><div class="pagetext"><p>12 вер. 2008 р. — Ця опція дозволяє дозволити (значення Enabled) або заборонити (Disabled) мережне завантаження комп'ютера за допомогою інтегрованого мережного...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Як на материнській платі ASUS Z87-PRO зробити завантаження...</h2></div></a><div class="pagetext"><p>Все досить просто: у біосі Advanced Settings --&gt; Advanced --&gt; South Bridge включити Network boot або типу того, зазвичай наступний пункт...</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">GA-Z77-D3H, не працює завантаження по мережі - Форум</h2></div></a><div class="pagetext"><p>Вітаю. Є материнська плата GA-Z77-D3H, прошитий bios F14. Не можу настроїти завантаження по мережі на інтегрованій карті :(</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">Налаштування BIOS для спільної роботи з ПАК «Соболь</h2></div></a><div class="pagetext"><p>Для можливості ввімкнення підтримки USB-ідентифікаторів у ПАК «Соболь», параметр повинен приймати значення Enabled.... Включає завантаження комп'ютера через мережу.</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">ПК HP - Налаштування порядку завантаження в системі BIOS</h2></div></a><div class="pagetext"><p>Комп'ютер може завантажувати операційну систему з жорсткого диска, оптичного дисководу, пристрою зберігання даних USB або мережі.</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" ><div class="title"><h2 class="txt">«‎Очікування мережі Wi-Fi» в Play Market - Androidhelp.com.ua...</h2></div></a><div class="pagetext"><p>Як позбутися повідомлення: «Чекання мережі Wi-Fi» у Play Market. Спосіб 1: увімкнення функції «Завантаження без обмежень».</p><a rel="nofollow" href="/go.html?/articles/jak-uvimknuti-zavantazhennja-po-merezhi.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-uvimknuti-melodiju-na-samsungu.html">Як увімкнути мелодію на самсунгу</a></li>
+<li><a href="/articles/jakimi-slovami-vitajut-na-verbnu-nedilju.html">Якими словами вітають на вербну неділю</a></li>
+<li><a href="/articles/chomu-ja-zakohalasja-zamizhnja.html">Чому я закохалася заміжня</a></li>
+<li><a href="/articles/neochevidnij-dlja-mene.html">Неочевидний для мене</a></li>
+<li><a href="/articles/bludliva-kalifornija-z-garnim-ozvuchennjam.html">Блудлива каліфорнія з гарним озвученням</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/budivnictvo-kvartir-u-turechchini.html">Будівництво квартир у Туреччині</a></li>
+<li><a href="/articles/znajti-energiju-gibbsa-dlja-reakcii.html">Знайти енергію гіббса для реакції</a></li>
+<li><a href="/articles/a-mi-z-jalincja-napisav.html">А ми з ялинця написав</a></li>
+<li><a href="/articles/jak-zareestruvatis-emejl.html">Як зареєструватись емейл</a></li>
+<li><a href="/articles/zvjazati-kepku-z-kozirkom.html">Зв’язати кепку з козирком</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/tahograf-jak-nim-koristuvatisja.html">Тахограф як ним користуватися</a></li>
+<li><a href="/articles/jak-vstanoviti-saljut-v-oshhadbanku.html">Як встановити салют в ощадбанку</a></li>
+<li><a href="/articles/mirrolla-folieva-kislota-dlja-volossja.html">Mirrolla фолієва кислота для волосся</a></li>
+<li><a href="/articles/raj-shukaemo-telefon.html">Рай шукаємо телефон</a></li>
+<li><a href="/articles/reestrator-poznachennja-na-shemi.html">Реєстратор позначення на схемі</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/nomer-telefonu-shkoli-nomer-9.html">Номер телефону школи номер 9</a></li>
+<li><a href="/articles/jakoju-vlastivistju-volodie-bisektrisa-v.html">Якою властивістю володіє бісектриса в трикутнику</a></li>
+<li><a href="/articles/jak-zrobiti-rington-na-budilnik-u-ajfoni.html">Як зробити рінгтон на будильник у айфоні</a></li>
+<li><a href="/articles/shho-zrobiti-z-mebliv-ikeja.html">Що зробити з меблів икея</a></li>
+<li><a href="/articles/na-telefon-odnoklasniki.html">На телефон однокласники</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

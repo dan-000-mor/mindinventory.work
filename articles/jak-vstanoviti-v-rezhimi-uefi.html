@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як встановити в режимі uefi | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="UEFI BIOS: як встановити Windows 10 з флешки в режимі ... За допомогою класичного BIOS, MBR · Зайдіть до Boot Menu. · Перемістіть завантажувальний..." />
+ <meta name="keywords" content="встановити, режимі, UEFI, windows" />
+ <meta name="news_keywords" content="встановити, режимі, UEFI, windows" />
+ 
+ 
+ <meta property="og:title" content="Як встановити в режимі uefi" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="UEFI BIOS: як встановити Windows 10 з флешки в режимі ... За допомогою класичного BIOS, MBR · Зайдіть до Boot Menu. · Перемістіть завантажувальний..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="10:11:33" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як встановити в режимі uefi" />
+ <meta name="twitter:description" content="UEFI BIOS: як встановити Windows 10 з флешки в режимі ... За допомогою класичного BIOS, MBR · Зайдіть до Boot Menu. · Перемістіть завантажувальний..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як встановити в режимі uefi</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">UEFI BIOS: як встановити Windows 10 з флешки в режимі...</h2></div></a><div class="pagetext"><p>За допомогою класичного BIOS, MBR · Зайдіть до Boot Menu. · Перемістіть завантажувальний DVD-R/флешку на перше місце. Boot BIOS · Або виберіть у 1st Boot Device яке...‎Визначення параметрів... · ‎Установка Windows 10</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Установка Windows на UEFI - Nastroyvse.ru</h2></div></a><div class="pagetext"><p>Як перейти в UEFI з Windows 10 · Відкриваємо оснащення "Параметри" (Win+I або через меню "Пуск"). · Ідемо в «Оновлення та безпека». · Переходимо в меню зліва на...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Завантаження в режим UEFI або застарілий режим BIOS</h2></div></a><div class="pagetext"><p>під час завантаження у Windows PE (WinPE) або програма інсталяції Windows виберіть режими BIOS UEFI або legacy. якщо після інсталяції Windows...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Встановлення за допомогою стилю розділів MBR або GPT</h2></div></a><div class="pagetext"><p>Selected disk is not of the GPT partition style це пов'язано з тим, що комп'ютер завантажується в режимі UEFI, але ваш жорсткий диск не...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Що таке UEFI, як встановити Windows 10 на UEFI</h2></div></a><div class="pagetext"><p>Як перейти в режим BIOS для встановлення непідтримуваної ОС — Користувачеві доводиться вручну перемикати UEFI в режим емуляції BIOS, іноді...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Як встановити Windows 10 на UEFI BIOS - Soft-Ok</h2></div></a><div class="pagetext"><p>змінюємо тип – convert mbr чи gpt. Управління дисками. Другий підхід простіший. Він також застосовується при встановленні Windows 10 у режимі UEFI. Робимо таке.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Як поставити uefi замість bios - HD01.ru</h2></div></a><div class="pagetext"><p>Як встановити Windows у режимі Legacy? — З опису вже можна зробити певні висновки. Завантаження Windows у режимі Legacy. Запускається...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Переходимо на UEFI замість BIOS ichip.ru</h2></div></a><div class="pagetext"><p>Якщо ОС не підтримує UEFI, активується режим емуляції BIOS.... Встановлення Windows на ПК з UEFI та функцією Secure Boot На ПК з Windows 8...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Встановлення Windows у режимі UEFI (на дискGPT) AdminPE</h2></div></a><div class="pagetext"><p>У цьому відео показано, як встановити Windows 7* на новий жорсткий диск у схемі розділів GPT для завантаження у режимі UEFI**.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Як встановити Windows 10 за допомогою USB-пристрою з...</h2></div></a><div class="pagetext"><p>Існує кілька способів створення завантажувального USB-пристрою флеш-пам'яті для встановлення Windows 10 на ПК з UEFI.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Як встановити Windows 7 або 8 у режимі UEFI? Інструкція</h2></div></a><div class="pagetext"><p>UEFI установка, в основному, необхідна для двох речей: робота TRIM в режимі RAID... -Windows UEFI, при якому включено режим Secure Boot</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Встановлення Windows 10 на комп'ютер із UEFI за допомогою...</h2></div></a><div class="pagetext"><p>Виставте значення UEFI у вкладці BIOS Setup та вкладці BIOS Feature. · У вкладці Peripherals зробіть перемикання режиму SATA з IDE до AHCI.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Як налаштувати BIOS для завантаження з диска або флешки</h2></div></a><div class="pagetext"><p>У розділі Boot у BIOS змініть режим завантаження з EFI (UEFI) на Legacy (якщо є). Встановіть у BIOS опцію Secure Boot у стан Disable/...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">UEFI BIOS як встановити Windows 10 - Інформаційний...</h2></div></a><div class="pagetext"><p>Як перейти в режим BIOS для встановлення непідтримуваної ОС — У старих моделях гаджетів встановлено режим вводу/виводу BIOS. Але на сучасних ПК...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">UEFI – помилка встановлення Windows Dell Росія</h2></div></a><div class="pagetext"><p>На вказаному диску не використовується стиль розділу GPT», пов'язане з тим, що ваш ПК завантажений у режимі UEFI, але жорсткий диск не налаштований для режиму UEFI.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Як встановити Windows: режими Legacy та UEFI.</h2></div></a><div class="pagetext"><p>Як правильно встановити Windows, вибравши з двох режимів інсталяції та наступного завантаження? Що вибрати: UEFI чи Legacy, і яка між ними...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Встановлення Windows 7 на UEFI: інструкція - Твій Комп'ютер</h2></div></a><div class="pagetext"><p>Створення завантажувальної флешки · Підключаємо диск або інший накопичувач із ISO-файлом ОС. · Монтуємо образ черезDaemon Tools або іншу програму. · Відкриваємо...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" ><div class="title"><h2 class="txt">Покрокова установка Windows 7 у режимі EFI (UEFI)</h2></div></a><div class="pagetext"><p>Відкрийте додаткові опції та в пункті «Параметри завантажувальних пристроїв» виберіть «only uefi». Цей пункт дозволить фільтрувати флешки та HDD, які не вмію...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-v-rezhimi-uefi.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/skilki-rokiv-ta-dniv-mizh-datami.html">Скільки років та днів між датами</a></li>
+<li><a href="/articles/karta-far-kraj-tri.html">Карта фар край три</a></li>
+<li><a href="/articles/maljuemo-kub-urok.html">Малюємо куб урок</a></li>
+<li><a href="/articles/getdesktop-telegram-org-pereklad.html">Getdesktop telegram org переклад</a></li>
+<li><a href="/articles/slovo-try-v-present-continuous.html">Слово try в present continuous</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/dlja-jakih-znachen-virna-nerivnist.html">Для яких значень вірна нерівність</a></li>
+<li><a href="/articles/krisanova-13-nadija-telefon.html">Крисанова 13 надія телефон</a></li>
+<li><a href="/articles/st-znak-zodiaku.html">St знак зодіаку</a></li>
+<li><a href="/articles/chi-mozhna-piti-kefir-vid-pechii.html">Чи можна пити кефір від печії</a></li>
+<li><a href="/articles/po-dahu-jakas-chastina-movi.html">По даху якась частина мови</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/biznes-kurs-nimeckoi-movi-borisko-reshibnik.html">Бізнес курс німецької мови бориско решібник</a></li>
+<li><a href="/articles/jak-vigljadae-diktofon-u-samsungu.html">Як виглядає диктофон у самсунгу</a></li>
+<li><a href="/articles/vk-pracjue-na-php.html">Vk працює на php</a></li>
+<li><a href="/articles/shho-robiti-jakshho-kviti-zasohli-kalanhoe.html">Що робити якщо квіти засохли каланхое</a></li>
+<li><a href="/articles/jak-vidaliti-moju-spilnotu-v-vk.html">Як видалити мою спільноту в вк</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/matematika-5-klas-upr-397-1.html">Математика 5 клас упр 397 1</a></li>
+<li><a href="/articles/pravilno-perefarbuvatisja-z-blondu-v.html">Правильно перефарбуватися з блонду в</a></li>
+<li><a href="/articles/otrimanij-vidpochinok-v-ispanii-6-bukv.html">Отриманий відпочинок в Іспанії 6 букв</a></li>
+<li><a href="/articles/jakshho-ne-zbivaetsja-majonez.html">Якщо не збивається майонез</a></li>
+<li><a href="/articles/magichni-kola-z-matematiki-3-klas.html">Магічні кола з математики 3 клас</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

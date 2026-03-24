@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Схема підключення 3s 25a bms pcm | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Модуль захисту BMS 3S 25A з переробкою та встановленням 21 січ. 2019 р. - опір плати захисту - шунт + MOSFET + проводи підключення - 10мОм ... Оффлайн...." />
+ <meta name="keywords" content="схема, підключення, захисту, 18650, заряду, Контролер" />
+ <meta name="news_keywords" content="схема, підключення, захисту, 18650, заряду, Контролер" />
+ 
+ 
+ <meta property="og:title" content="Схема підключення 3s 25a bms pcm" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Модуль захисту BMS 3S 25A з переробкою та встановленням 21 січ. 2019 р. - опір плати захисту - шунт + MOSFET + проводи підключення - 10мОм ... Оффлайн...." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="17:14:18" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Схема підключення 3s 25a bms pcm" />
+ <meta name="twitter:description" content="Модуль захисту BMS 3S 25A з переробкою та встановленням 21 січ. 2019 р. - опір плати захисту - шунт + MOSFET + проводи підключення - 10мОм ... Оффлайн...." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Схема підключення 3s 25a bms pcm</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Модуль захисту BMS 3S 25A з переробкою та встановленням</h2></div></a><div class="pagetext"><p>21 січ. 2019 р. - опір плати захисту - шунт + MOSFET + проводи підключення - 10мОм... Оффлайн. PCM-BMS 3S 25A 12,6V схема BMS http://ali.pub/3uovp7...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Модуль захисту BMS 3S 25A з переробкою та встановленням.</h2></div></a><div class="pagetext"><p>3 січ. 2018 - Підключення захисного термовимикача. До цієї плати можна підключити як NO, так і NC термовимикач. Схеми наводжу нижче. Я використав NO...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Як самостійно підключити BMS плату - інструкція</h2></div></a><div class="pagetext"><p>Зазвичай БМС плата має 3 товсті дроти – В, Р та С. Схема BMS фото. Простіше підключити BMS (PCM) плату, до якої вже припаяні товсті дроти. В...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">BMS – огляд контролерів захисту акумуляторів - Вольтік</h2></div></a><div class="pagetext"><p>15 серп. 2018 р. — У статті ми розглядаємо найновіші технології BMS плат, які покликані... LED індикатор TM1637 та Arduino – схема підключення...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Контролер заряду BMS 3S 25A 11.1(12.6) В - Яндекс.Маркет</h2></div></a><div class="pagetext"><p>Контролер заряду-розряду для Li-Ion батареї (PCM) 11,1В 4А XZD-3S-1550 0292 арт. Тип: контролер заряду. 844 ₽. Доставка продавця завтра. В кошик.</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">BMS 3S Контролер заряду-розряду з термодатчиком Li...</h2></div></a><div class="pagetext"><p>але ми знайшли для вас схожі. мініатюра 3S BMS 25A контролер заряду розряду з балансуванням250 руб.... Схема підключення 18650 на фото.</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">3S 25A Li-Ion 18650 BMS PCM плата захисту... - Quiddi</h2></div></a><div class="pagetext"><p>10% покупців скаржаться: Плата не для шуруповерта. Замовлення не прийшло. Посилку не отримав. Ішло дуже довго. Схема підключення не вірна. Наші накосячили.</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Плата захисту 3S 30A BMS PCM li-ion або...</h2></div></a><div class="pagetext"><p>Загальна схема підключення: Тест відсікання по струму. На другій швидкості швидко спрацьовує. На першій утримати мені не вийшло, провертає.</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Балансувальна схемаBW - 6S BMS за 239 ₽ з...</h2></div></a><div class="pagetext"><p>Струм захисту від перевантаження струмом: 30 ± 3A. Напруга зарядки: 25,5 В. Розміри: 50*30*2 мм. Миттєвий струм розряду: 25A. Максимальний струм розряду...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Маленька плата захисту для збирання 2S літієвих - Kirich</h2></div></a><div class="pagetext"><p>26 січ. 2017 — hx 1s 3576 схема підключення опис, hy2120 datasheet російською, hx 2sx jh20 v1.0 підключенням, плата bms\pcm 1s li ion 259 fdc 3540 4,25...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Плата захисту BMS 3S 25A 11,1V (12,6V) для Li-Ion.</h2></div></a><div class="pagetext"><p>Плата захисту BMS 3S 25A для Li-Ion акумуляторів 18650 11,1В (12,6В) з... Виводи для підключення живлення; Трирівнева схема контролю навантаження струмом;...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Контролер BMS 3S 40А для Li-ion акумуляторів 12,6 вольт</h2></div></a><div class="pagetext"><p>Плата захисту BMS 3S 40А для Li-ion складання з трьох акумуляторів.... контролер bms 3s. bms 3s схема підключення для шуруповерта...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">BMS 3s 40a на виході близько 6 вольт - Форум з...</h2></div></a><div class="pagetext"><p>27 жовт. 2018 р. — є ось така бмс pcm-bms-3s-40a-with-balancing.jpg... А, схему включення, як електричну, - принципову, так і фото "живою"...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Універсальна Плата Захисту PCM/BMS 6-13S 25A.</h2></div></a><div class="pagetext"><p>Купити Універсальна плата захисту PCM/BMS 6-13S 25A (Контролер заряду/розряду) Li-Ion 18650... Для активації схеми потрібно підключити зарядний пристрій.</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Придбати BMS для 18650 за низькою ціною - Joom</h2></div></a><div class="pagetext"><p>BMS 1S 2S 10A 3S 4S 5S 25A BMS 18650 Li-ion Lipo Lithium Battery Protection Circuit Board Module PCB PCM 18650 Lipo BMS Charger.</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Відео Як підключити BMS (PCM) - imperiya.by</h2></div></a><div class="pagetext"><p>FreeEcoEnergy Limited 5 рік. Контролер заряду PCM 08:35. Контролер заряду PCM HX-3S-01. ▻. rafo electronics...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Переробка акумулятора шуруповерта на Li-Ion.</h2></div></a><div class="pagetext"><p>16 квіт. 2017 р. — Підкажи, якщо Акб на 12v до цієї схеми bms можнаприпаяти 4-е... https://ua.aliexpress.com/item/3S-25A-Li-ion-18650-BMS-PCM-Battery-...</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" ><div class="title"><h2 class="txt">Контролер заряду розряду 3-х Li-Ion 18650 11.1V-12.6V.</h2></div></a><div class="pagetext"><p>Модель: HX-3S-FL10-A для 3S LI-ION елементів типу 18650, 14500 та інших... що розрядка не відбуватиметься при підключенні акумулятора.</p><a rel="nofollow" href="/go.html?/articles/shema-pidkljuchennja-3s-25a-bms-pcm.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/znajti-te-shho-potribno-same-vam.html">Знайти те що потрібно саме вам</a></li>
+<li><a href="/articles/jak-pracjuvati-u-dostavista-na-avto.html">Як працювати у достависта на авто</a></li>
+<li><a href="/articles/upravlinnja-budivnictva-ta-zhkh-altajskij-kraj.html">Управління будівництва та ЖКХ алтайський край</a></li>
+<li><a href="/articles/jak-robiti-maket-sajtu-fotoshop.html">Як робити макет сайту фотошоп</a></li>
+<li><a href="/articles/diznatis-jak-davno-zareestrovana-poshta.html">Дізнатись як давно зареєстрована пошта</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-viznachiti-sverdlovinu.html">Як визначити свердловину</a></li>
+<li><a href="/articles/futbolka-stala-smerditi.html">Футболка стала смердіти</a></li>
+<li><a href="/articles/robiti-jakshho-zastudiv-jajce.html">Робити якщо застудив яйце</a></li>
+<li><a href="/articles/shho-prijmati-dlja-profilaktiki-artritu.html">Що приймати для профілактики артриту</a></li>
+<li><a href="/articles/jak-u-kievi-znajti-kimnatu-v.html">Як у Києві знайти кімнату в</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/akvarel-telefon-eldorado.html">Акварель телефон Ельдорадо</a></li>
+<li><a href="/articles/pozikovi-koshti-takozh-mozhna-zaluchati.html">Позикові кошти також можна залучати</a></li>
+<li><a href="/articles/zobrazhennja-stalker-telefon-bezkoshtovno.html">Зображення сталкер телефон безкоштовно</a></li>
+<li><a href="/articles/jak-vstanoviti-program-files.html">Як встановити program files</a></li>
+<li><a href="/articles/adresi-ta-telefoni-platnih-stojanok.html">Адреси та телефони платних стоянок</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/shho-mozhna-brati-na-peremogu.html">Що можна брати на перемогу</a></li>
+<li><a href="/articles/chomu-ne-mozhu-dodati-kontakt-v-ajfoni.html">Чому не можу додати контакт в айфоні</a></li>
+<li><a href="/articles/shema-vjazannja-kofti.html">Схема в’язання кофти</a></li>
+<li><a href="/articles/koli-pochinae-vipadati-volossja-na-tili.html">Коли починає випадати волосся на тілі</a></li>
+<li><a href="/articles/jak-vstanoviti-poslugu-osobistij-kabinet.html">Як встановити послугу особистий кабінет</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

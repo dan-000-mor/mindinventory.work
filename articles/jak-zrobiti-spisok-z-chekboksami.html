@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як зробити список з чекбоксами | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Як створити список за допомогою checkbox? - Хабр Q A 6 лют. 2020 - Потрібно з таблицю MySQL внести рядок зі стовпцями name і list. list - список, який..." />
+ <meta name="keywords" content="зробити, список, чекбоксами" />
+ <meta name="news_keywords" content="зробити, список, чекбоксами" />
+ 
+ 
+ <meta property="og:title" content="Як зробити список з чекбоксами" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Як створити список за допомогою checkbox? - Хабр Q A 6 лют. 2020 - Потрібно з таблицю MySQL внести рядок зі стовпцями name і list. list - список, який..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="12:26:08" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як зробити список з чекбоксами" />
+ <meta name="twitter:description" content="Як створити список за допомогою checkbox? - Хабр Q A 6 лют. 2020 - Потрібно з таблицю MySQL внести рядок зі стовпцями name і list. list - список, який..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як зробити список з чекбоксами</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Як створити список за допомогою checkbox? - Хабр Q&amp;A</h2></div></a><div class="pagetext"><p>6 лют. 2020 - Потрібно з таблицю MySQL внести рядок зі стовпцями name і list. list - список, який потрібно отримати, вказавши потрібні пункти у form-&gt;input checkbox...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Використовуйте checkbox для list-style-type у... - CodeRoad</h2></div></a><div class="pagetext"><p>але це виглядає занадто потворно, так як checkbox не присутній на іншій лінії, ніж rest з html всередині. html css.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">додавання checkbox до списку - CodeRoad</h2></div></a><div class="pagetext"><p>Ви не можете мати елемент керування введенням всередині select. Вам доведеться створити список, що розкривається, використовуючи JavaScript, без використання...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Створення випадаючого списку checkbox для текстового...</h2></div></a><div class="pagetext"><p>Коментарі всередині коду. Вводити значення необхідно через кому з пробілом (як у первісному прикладі). Як зробити випадаючий список елементи якого...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Селект із чекбоксами - Snipp.ru</h2></div></a><div class="pagetext"><p>Верстка списку, стилі та JS</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Створення контрольного списку у Word</h2></div></a><div class="pagetext"><p>Елемент управління Checkbox у групі Елементи управління на стрічці розробника. Про те, як змінити X за замовчуванням, див. у підменю "Зміна поштових скриньок...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Як створити список, що розкривається, з декількома...</h2></div></a><div class="pagetext"><p>Багато користувачів Excel, як правило, створюють список, що розкривається, з декількома прапорцями, щоб вибирати кілька елементів зі списку за раз. Насправді...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Аркуш із чекбоксами / HTML, JavaScript, VBScript, CSS / Sql.ru</h2></div></a><div class="pagetext"><p>30 вер. 2008 р. - Аркуш із чекбоксами / HTML, JavaScript, VBScript, CSS / Як зробити аркуш із чекбоксами... елемент прибрав зі списку і поставив перед ним checkbox -.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Як зробити список Checkbox'ів, що випадає - Планета...</h2></div></a><div class="pagetext"><p>28 лют. 2017 р. — Поставив галочки на 1 та 4 Checkbox'і та восередку з'явилося 1,4. Чи це можна реалізувати?... Як зробити список Checkbox'ів...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Прапорці htmlbook.ru</h2></div></a><div class="pagetext"><p>9 черв. 2011 р. - чекбокси) використовують, коли необхідно вибрати будь-яку кількість варіантів із запропонованого списку. Якщо потрібен вибір лише одного варіанта, то...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">[Допоможіть] - Список, що випадає з чекбоксами - Форум для...</h2></div></a><div class="pagetext"><p>4 Грудня. 2014 - Стандартними ніяк, можна зробити звичайний список чекбоксів, але не випадає. Або пошукайте плагіни для JQuery, які роблять необхідне.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Як додавати та використовувати прапорці - Комп'ютер - Довідка</h2></div></a><div class="pagetext"><p>Відкрийте файл у таблиці Google на комп'ютері. Виберіть комірки, до яких потрібно додати прапорці. У меню зверху натисніть Дані &gt; Перевірка даних. У списку поряд...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Чекбокси для зв'язків «Багато багатьох» у Yii - Дмитро...</h2></div></a><div class="pagetext"><p>Як вивести цей список на сторінці редагування статті чи товару? Повинне вийти щось подібне до цього: Категорії: Зима Весна Літо Осінь. При...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Як зробити Відображати текст при встановленому прапорці</h2></div></a><div class="pagetext"><p>Checkbox:Checkbox is CHECKED!</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section>...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">CSS стилізація checkbox та radio - 2 варіанти - ІТ Шеф</h2></div></a><div class="pagetext"><p>11 вер. 2021 - Завданням елементу input атрибута id , а label - for з таким же значенням як у id .<section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">2 простих способу створити список, що розкривається в...</h2></div></a><div class="pagetext"><p>14 бер. 2020 р. — Можливо, багато хто з вас ще не стикався з використанням списків, що випадають, і чекбоксів у Google таблицях.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Прапорець (інтерфейс) - Вікіпедія</h2></div></a><div class="pagetext"><p>Прапорець, прапорова кнопка, чекбокс (від англ. check box), галочка — елемент графічного... При цьому натискання на прапорець переведе всі елементи списку в одне з двох...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Зробити неактивним список доки значення CheckBox = false</h2></div></a><div class="pagetext"><p>Зробитинеактивним список поки значення CheckBox = false C# Рішення та відповідь на питання 2784096.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">Створення контрольних списків у додатку «Нотатки</h2></div></a><div class="pagetext"><p>6 жовтня. 2021 р. — Екран iPhone у процесі створення списку справ... Щоб створити список у існуючій нотатці, помістіть курсор у потрібному місці.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" ><div class="title"><h2 class="txt">поради не лише для дизайнерів. Частина 2. Чекбокси та...</h2></div></a><div class="pagetext"><p>29 жовт. 2016 р. — Уявіть, що вам потрібно вибрати хоча б 10 пунктів із 12 наявних у списку. Це набагато простіше зробити, вибравши все та знявши непотрібні опції.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section></p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-spisok-z-chekboksami.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/makijazh-briv-voloskami.html">Макіяж брів волосками</a></li>
+<li><a href="/articles/ustanovka-nulovika-na-vaz-2107-inzhektor.html">Установка нульовика на ваз 2107 інжектор</a></li>
+<li><a href="/articles/prikoli-znakiv-avto.html">Приколи знаків авто</a></li>
+<li><a href="/articles/akvarelni-floksi-riolis-vishivka.html">Акварельні флокси ріоліс вишивка</a></li>
+<li><a href="/articles/remont-jazichka-na-zamku.html">Ремонт язичка на замку</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/arija-ja-pamjataju.html">Арія я пам’ятаю</a></li>
+<li><a href="/articles/jak-mozhna-bagato-zarobljati.html">Як можна багато заробляти</a></li>
+<li><a href="/articles/chi-mozhna-njuhati-baklosan.html">Чи можна нюхати баклосан</a></li>
+<li><a href="/articles/najkrashhi-10-igor-na-vantazhivkah.html">Найкращі 10 ігор на вантажівках</a></li>
+<li><a href="/articles/jak-zrobiti-bagatostorinkovij-pdf.html">Як зробити багатосторінковий пдф</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/shema-pidkljuchennja-generatora-na-vaz-06.html">Схема підключення генератора на ваз 06</a></li>
+<li><a href="/articles/ja-znachimij-ne-samim-soboju-noti.html">Я значимий не самим собою ноти</a></li>
+<li><a href="/articles/sanvuzol-remont-vannih-kimnat-ta-tualetiv.html">Санвузол ремонт ванних кімнат та туалетів</a></li>
+<li><a href="/articles/chi-mozhna-v-soljarij-pislja-zali.html">Чи можна в солярій після зали</a></li>
+<li><a href="/articles/jak-zrobiti-litak-iz-diskiv.html">Як зробити літак із дисків</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/v-aktobi-bude-terakt.html">В актобі буде теракт</a></li>
+<li><a href="/articles/o-dari-bukv-i-dari-prozorosti.html">О дари букв і дари прозорості</a></li>
+<li><a href="/articles/jak-zminiti-emodzhi-na-oppo.html">Як змінити емоджі на оппо</a></li>
+<li><a href="/articles/prezentacija-na-vipusknij-9-klasu-bezkoshtovno.html">Презентація на випускний 9 класу безкоштовно</a></li>
+<li><a href="/articles/probil-stavitsja-pislja-komi-dvokrapka.html">Пробіл ставиться після коми двокрапка</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як встановити hasp драйвер до 1с | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Встановлення драйвера електронних ключів Sentinel HASP Найчастіше драйвер HASP вже входить до складу дистрибутива встановлюваного ПЗ (прикладом може бути..." />
+ <meta name="keywords" content="встановити, hasp, драйвер" />
+ <meta name="news_keywords" content="встановити, hasp, драйвер" />
+ 
+ 
+ <meta property="og:title" content="Як встановити hasp драйвер до 1с" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Встановлення драйвера електронних ключів Sentinel HASP Найчастіше драйвер HASP вже входить до складу дистрибутива встановлюваного ПЗ (прикладом може бути..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="10:07:44" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як встановити hasp драйвер до 1с" />
+ <meta name="twitter:description" content="Встановлення драйвера електронних ключів Sentinel HASP Найчастіше драйвер HASP вже входить до складу дистрибутива встановлюваного ПЗ (прикладом може бути..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як встановити hasp драйвер до 1с</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Встановлення драйвера електронних ключів Sentinel HASP</h2></div></a><div class="pagetext"><p>Найчастіше драйвер HASP вже входить до складу дистрибутива встановлюваного ПЗ (прикладом може бути 1С: Бухгалтерія 8) і ставиться автоматично при...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Заходи підвищення безпеки встановленого драйвера.</h2></div></a><div class="pagetext"><p>21 лист. 2017 р. - Видалення драйвера захисту. До складу дистрибутива платформи "1С:Підприємство" версії 8.3 входить драйвер апаратного захисту HASP Device Driver. Цей...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">3.8. Установка драйвера для HASP - 1С:ІТС</h2></div></a><div class="pagetext"><p>3.8. Встановлення драйвера HASP · Якщо сервер 1cfreshl. · Для встановлення драйвера потрібно виконати такі дії (відповідно до інструкції Sentinel LDK v...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Менеджер ліцензій HASP License Manager у 1С 8.2 та 8.3</h2></div></a><div class="pagetext"><p>Встановлення драйвера захисту</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Установка/видалення драйвера - Корисна інформація 1С</h2></div></a><div class="pagetext"><p>10 Грудня. 2014 — Встановлення/видалення драйвера «Апаратного ключа захисту USB» Якщо за будь-яким.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Інсталяція драйвера HASP на Windows 8.1 - Форум...</h2></div></a><div class="pagetext"><p>9 вересня. 2013 - Форум 1С програмування, форум: загальні питання програмування (Dev), тема: Встановлення драйвера HASP на Windows 8.1.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Інструкція з встановлення ключів захисту та менеджерів...</h2></div></a><div class="pagetext"><p>Інструкція з встановлення ключів захисту та менеджерів ліцензій для 1с 8.x-01.10.2012... д) видалити драйвери HASP у «Диспетчері пристроїв»:</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Встановлення та налаштування 1С 8.2 емулятор HASP-драйвера.</h2></div></a><div class="pagetext"><p>Встановлення та налаштування 1С 8.2 емулятор HASP-драйвера для Windows x64. Працездатність гарантується при повністю чистій ліцензійній системі Windows (Windows...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Інструкція з експлуатації 1C та ключів захисту HASP</h2></div></a><div class="pagetext"><p>Якщо Ви плануєте працювати під керуванням Windows 7(x86/x64) і вище, рекомендується використовувати актуальну версію драйвера. (УВАГА!) Так якHASP4 не...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Драйвер hasp 1с -: . : - Toto-school.ru</h2></div></a><div class="pagetext"><p>Драйвер hasp 1с – :...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Установка 1С: Підприємства v8.0</h2></div></a><div class="pagetext"><p>Наприкінці установки буде запропоновано встановити HASP Device Driver. Ця установка потрібна, якщо безпосередньо на цьому комп'ютері використовується апаратний...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">1С. Не працює HASP після оновлення Windows 10</h2></div></a><div class="pagetext"><p>14 серп. 2017 р. — Перевстановлення драйвера з постачання 1С:Підприємство не допомогло.... Після встановлення ключ визначився як Sentinel HASP Key, Sentinel HL Key та...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">1С не встановлюється драйвер захисту.</h2></div></a><div class="pagetext"><p>Встановлення драйвера захисту</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Менеджер ліцензій 1С - HASP LM</h2></div></a><div class="pagetext"><p>Що таке драйвер захисту 1С HASP LM 32 біта і 64. Завантажити HASP License Manager... Згідно з документацією, на одну машину не можна встановити два hasp ключі.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Драйвери HASP та компоненти захисту для Windows 8 x64?</h2></div></a><div class="pagetext"><p>Перенесли 1С на ноут з 8й, не вдається встановити компонент захисту Камін 3.5, видає...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">1С:Підприємство» 8 Tavalik.ru</h2></div></a><div class="pagetext"><p>8 травня 2014 р. — Призначення, встановлення та адміністрування ключів захисту HASP для... HASP Device Driver; HASP HL ​​License Manager; Aladdin HASP Monitor.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Як встановити та оновити платформу 1С Підприємство 8...</h2></div></a><div class="pagetext"><p>Наприкінці процесу установки, майстер запропонує встановити драйвер захисту – HASP Device Driver. Встановлювати драйвер захисту потрібно лише в тому випадку,...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">HASP драйвери для Windows 64-bit - IT24</h2></div></a><div class="pagetext"><p>1 травня 2020 р. — Потрібно перенести ліцензійну 1С зі старого ПК (Windows XP) на новий... Під XP, якщо не помиляюся запускалася установка драйвера,...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" ><div class="title"><h2 class="txt">Драйвери, інструкції, відповіді на технічні запитання.</h2></div></a><div class="pagetext"><p>встановлення захисту конфігурації «Моя Бухгалтерія 8» для 1С, скачати драйвер ключа... Перенесення HASP SL ключа(програмного ключа захисту конфігурації «Моя...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-hasp-drajver-do-1s.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/telefon-gibdd-dalekorechensk.html">Телефон гібдд далекореченськ</a></li>
+<li><a href="/articles/i-vsi-atki-ja-ljublju-vse.html">І всі атки я люблю все</a></li>
+<li><a href="/articles/jarmarok-majstriv-z-vjazannja-v-bilorusi.html">Ярмарок майстрів з в’язання в Білорусі</a></li>
+<li><a href="/articles/u-reptilij-dobre-rozvinene.html">У рептилій добре розвинене</a></li>
+<li><a href="/articles/proteinovi-poroshki-krashhe.html">Протеїнові порошки краще</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/labrador-jak-goduvati-i-jak-dogljadati.html">Лабрадор як годувати і як доглядати</a></li>
+<li><a href="/articles/viznachiti-tochnu-datu-vipusku-avtomobilja.html">Визначити точну дату випуску автомобіля</a></li>
+<li><a href="/articles/bloki-dlja-budivnictva-budinku.html">Блоки для будівництва будинку</a></li>
+<li><a href="/articles/jak-zibrati-stelazh-z-lerua.html">Як зібрати стелаж з леруа</a></li>
+<li><a href="/articles/zhurnal-zahistu-windows-10-ne-pracjue.html">Журнал захисту windows 10 не працює</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/podija-shho-javljae-soboju-realizaciju.html">Подія що являє собою реалізацію</a></li>
+<li><a href="/articles/ja-duzhe-vdjachnij-za-pidtrimku.html">Я дуже вдячний за підтримку</a></li>
+<li><a href="/articles/jaka-korist-uzi.html">Яка користь узі</a></li>
+<li><a href="/articles/dodo-pica-nedaleko-vid-mene.html">Додо піца недалеко від мене</a></li>
+<li><a href="/articles/virazka-shema-metronidazol-amoksicilin.html">Виразка схема метронідазол амоксицилін</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/datchik-sinhronizacii-bmv.html">Датчик синхронізації БМВ</a></li>
+<li><a href="/articles/budivnictvo-budinkiv-u-cholobitevomu.html">Будівництво будинків у чолобитьєвому</a></li>
+<li><a href="/articles/jak-pribrati-brud-z-kart.html">Як прибрати бруд з карт</a></li>
+<li><a href="/articles/bagatochlen-iz-cilimi-koeficientami-nazivaetsja.html">Багаточлен із цілими коефіцієнтами називається</a></li>
+<li><a href="/articles/komu-ne-narahovuetsja-nakopichuvalna.html">Кому не нараховується накопичувальна частинапенсії</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

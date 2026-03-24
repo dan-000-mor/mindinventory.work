@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Сервер quake 3 установка | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Установка Quake 3 сервера на Linux - pc.ru 13 жовт. 2015 р. — Встановлення та налаштування сервера. Створюємо папку під сервер - наприклад на шляху..." />
+ <meta name="keywords" content="сервер, quake, установка, Arena, Quake Arena" />
+ <meta name="news_keywords" content="сервер, quake, установка, Arena, Quake Arena" />
+ 
+ 
+ <meta property="og:title" content="Сервер quake 3 установка" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Установка Quake 3 сервера на Linux - pc.ru 13 жовт. 2015 р. — Встановлення та налаштування сервера. Створюємо папку під сервер - наприклад на шляху..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="16:38:05" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Сервер quake 3 установка" />
+ <meta name="twitter:description" content="Установка Quake 3 сервера на Linux - pc.ru 13 жовт. 2015 р. — Встановлення та налаштування сервера. Створюємо папку під сервер - наприклад на шляху..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Сервер quake 3 установка</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка Quake 3 сервера на Linux - pc.ru</h2></div></a><div class="pagetext"><p>13 жовт. 2015 р. — Встановлення та налаштування сервера. Створюємо папку під сервер - наприклад на шляху /usr/local/games/quake3. Далі: Копіюємо папку baseq3, де повинні...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка quake3-server в Ubuntu/Linux Mint/Debian</h2></div></a><div class="pagetext"><p>18 черв. 2018 р. — Встановлення: Для встановлення quake3-server в Ubuntu/Linux Mint/Debian, введіть у Термінал: sudo apt update. sudo apt install quake3-server.</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка Quake 3 Arena з Docker Compose</h2></div></a><div class="pagetext"><p>23 черв. 2021 р. — Ця стаття призначена для тих, хто шукав докладний і зрозумілий посібник про те, як встановити Quake 3 Arena Server з Docker Compose.</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка Quake III Arena сервера на FreeBSD 6.2</h2></div></a><div class="pagetext"><p>27 травня 2009 р. - "Dedicated server". У кого двоголовий відс. то прошу SMP. Встановлення linux-quake3. Він сказав, поїхали... 1) Ставимо з портів...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Встановлення сервера Quake 3 на Linux Lisander</h2></div></a><div class="pagetext"><p>25 жовт. 2021 — Це посібник з налаштування виділеного сервера Quake 3 Arena в Linux... apt-get install ioquake3-server # встановити сервер Quake 3 Arena.</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка Quake 3 сервера на Ubuntu Server</h2></div></a><div class="pagetext"><p>і так. встановлюючи quake 3, переконайтеся, що виділено опцію "Dedicated server". за замовчуванням гра встановлюється /usr/local/games/quake3. в...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Як створити сервер Quake 3 або Quake 3 сервер на Ubuntu</h2></div></a><div class="pagetext"><p>Установка Quake сервера</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Quake 3 Arena сервер на Linux - RAmer</h2></div></a><div class="pagetext"><p>30 жовт. 2010 р. - Встановлення дистрибутива quake3. Завантажити дистрибутив можна із різних серверів. Він включає тільки оновлення та виконувані файли для...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Налаштування сервера Quake Live — покроковий посібник</h2></div></a><div class="pagetext"><p>21 груд. 2016 р. — Quake 3, як багато в цьому звуку… За останні 16 років, з моменту виходу… Черга за встановленням власнесервера Quake Live через Стім</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Raspberry Pi 3 - Встановлення гри Quake 3</h2></div></a><div class="pagetext"><p>Схожі запити: Quake3 на RaspberryPI; Quake 3 Arena на 60 FPS; Building Quake 3 в Raspbian; Піднімаємо Quake III сервер на Raspberry.</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Quake III Arena [2009] - Встановлення та налаштування</h2></div></a><div class="pagetext"><p>На прохання трудящих тут буде описано два види сервера Q3 linux-quake3 і *BSD quake3 принципово відмінностей щодо встановлення їх на *BSD немає, але в останньому...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Налаштування гри Quake3 для гри за модемом</h2></div></a><div class="pagetext"><p>Установки швидкості COM портів також мають бути ідентичними. З'єднання вже встановлено, і тепер комп'ютер хост повинен створити Game Server, а клієнт до нього...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Встановлення гри Quake III Arena на Raspberry Pi</h2></div></a><div class="pagetext"><p>Установка виконувалась мною на операційну систему Raspbian "wheezy". Для того, щоб встановити гру Quake 3 гру заходимо в термінал і набираємо:</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка Quake в Linux</h2></div></a><div class="pagetext"><p>Для початку сходимо на FTP-сервер id Software і заберемо звідти останній апдейт Linux-версії Quake 3 Arena. wget ftp://ftp.idsoftware.com/idstuff/quake3/linux/...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Quake 3 Arena server - OSP v1.03 FFA - Допомога по...</h2></div></a><div class="pagetext"><p>Для встановлення вмісту архіву необхідно скопіювати до папки гри. 3) Крім цього слід... Вміст усіх архівів потрібно розпакувати в Quake3/baseq3.</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Налаштування ігрового сервера під UNIX-системою (3D-Action).</h2></div></a><div class="pagetext"><p>Установка сервера Return to Castle Wolfenstein 3.... Отже: Створюємо директорію для Quake3: &gt; mkdir /games/quake3 Переходимо туди &gt; cd /games/quake3 &gt; mkdir...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Quake 3 Arena по мережі, скачати гру v1.32 Українська - FreeTP...</h2></div></a><div class="pagetext"><p>21 жовт. 2021 р. - Quake III Arena - найзнаменитіша частина серії ігор Quake, де в основі лежить... Вибираємо Сервера: Internet =&gt; Входимо на відповідний сервер.</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Встановлення сервера Quake 3 на Linux</h2></div></a><div class="pagetext"><p>30 січ. 2011 р. - Встановлення дистрибутива quake3. Завантажити дистрибутив можна із різних серверів. Він включає тільки оновлення та виконувані файли для...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" ><div class="title"><h2 class="txt">Детальна інформація про пакет quake3-server у sid</h2></div></a><div class="pagetext"><p>Quake III Arena dedicated server launcher scripts.... Для того, щоб зробити цей пакет useful, ви будете потрібні для створення і налагодження недоступних quake3-data...</p><a rel="nofollow" href="/go.html?/articles/server-quake-3-ustanovka.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/dodati-pleer-na-golovnu.html">Додати плеєр на головну</a></li>
+<li><a href="/articles/jak-nepomitno-pribrati-zauvazhennja-u-shhodenniku.html">Як непомітно прибрати зауваження у щоденнику</a></li>
+<li><a href="/articles/hto-ne-robit-domivku-toj.html">Хто не робить домівку той</a></li>
+<li><a href="/articles/repetitor-rosijskoi-dlja-inozemciv-znajti-robotu.html">Репетитор російської для іноземців знайти роботу</a></li>
+<li><a href="/articles/vidaliti-cherez-strok-davnosti.html">Видалити через строк давності</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-pracjue-pdu-3.html">Як працює пду 3</a></li>
+<li><a href="/articles/jak-pracjujut-fleshki-na-128-gb.html">Як працюють флешки на 128 гб</a></li>
+<li><a href="/articles/movna-karta-bezrukova-5-6-rokiv.html">Мовна карта безрукова 5 6 років</a></li>
+<li><a href="/articles/rezidencija-na-karti.html">Резиденція на карті</a></li>
+<li><a href="/articles/perevirkoju-zasobiv-vimirjuvan-nazivaetsja.html">Перевіркою засобів вимірювань називається</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/makijazh-sinnij.html">Макіяж сінний</a></li>
+<li><a href="/articles/novinki-telefoniv-top-10.html">Новинки телефонів топ 10</a></li>
+<li><a href="/articles/gusak-virostae-za.html">Гусак виростає за</a></li>
+<li><a href="/articles/vovkodav-kino-na-telefon.html">Вовкодав кіно на телефон</a></li>
+<li><a href="/articles/remont-prikurjuvacha-almera.html">Ремонт прикурювача альмера</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jakogo-chisla-zaklik-u-lipni.html">Якого числа заклик у липні</a></li>
+<li><a href="/articles/lampa-svitlodiodna-220v-remont.html">Лампа світлодіодна 220v ремонт</a></li>
+<li><a href="/articles/kamedi-batl-najkrashhe-9-serija.html">Камеді батл найкраще 9 серія</a></li>
+<li><a href="/articles/prilipae-givno-do-volossja-v-dupi.html">Прилипає гівно до волосся в дупі</a></li>
+<li><a href="/articles/jaki-poizdi-na-krim.html">Які поїзди на крим</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

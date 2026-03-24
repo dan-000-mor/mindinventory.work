@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Установка ejabberd centos 7 | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Установка ejabberd на RedHat/CentOS/Fedora - linux-notes ... 14 серп. 2014 р. — Хотілося б розповісти у своїй новій статті "Установка ejabberd на..." />
+ <meta name="keywords" content="установка, ejabberd, centos" />
+ <meta name="news_keywords" content="установка, ejabberd, centos" />
+ 
+ 
+ <meta property="og:title" content="Установка ejabberd centos 7" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Установка ejabberd на RedHat/CentOS/Fedora - linux-notes ... 14 серп. 2014 р. — Хотілося б розповісти у своїй новій статті "Установка ejabberd на..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="20:28:19" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Установка ejabberd centos 7" />
+ <meta name="twitter:description" content="Установка ejabberd на RedHat/CentOS/Fedora - linux-notes ... 14 серп. 2014 р. — Хотілося б розповісти у своїй новій статті "Установка ejabberd на..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Установка ejabberd centos 7</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Установка ejabberd на RedHat/CentOS/Fedora - linux-notes...</h2></div></a><div class="pagetext"><p>14 серп. 2014 р. — Хотілося б розповісти у своїй новій статті "Установка ejabberd на RedHat/CentOS/Fedora" як я встановлював сервер XMPP на прикладі ejabberd2...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Centos + ejabberd (свій jabber server) - Замітки сісадміна</h2></div></a><div class="pagetext"><p>Установка ejabberd centos7 Jabber сервер на базі ejabberd hostname Змінити hostname в Centos MySQL error 2006: mysql server</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Ставимо корпоративний Jabber-сервер - Litl-Admin.ru</h2></div></a><div class="pagetext"><p>2 лип. 2018 р. - 1 Підготовка; 2 Налаштування файрволла; 3 Створюємо базу під EJabberd... Установку вироблятимемо на операційну систему CentOS 7,...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Установка ejabberd на CentOS 6.X - Asterisk IP-телефонія</h2></div></a><div class="pagetext"><p>У цій статті розглянемо установку ejabberd на CentOS 6.6 Цілком нормально, коли організація або... Тим не менш, якщо у вас при установці на 7.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Установка ejabberd 15 на CentOS 7 Kurgan-Telecom Ru</h2></div></a><div class="pagetext"><p>18 бер. 2018 — Отже, мені потрібно встановити XMPP сервер ejabberd 15. Для встановлення jabber сервера виберемо свіжовстановлений CentOS 7.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">CentOS: установка jabber-сервера ejabberd - RTFM: Linux...</h2></div></a><div class="pagetext"><p>27 лист. 2014 - CentOS: установка jabber-сервера ejabberd · 1, # yum install ejabberd. Редагуємо файл налаштувань /etc/ejabberd/ejabberd.cfg і встановлюємо ім'я...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">ejabberd в Linux ІТ-блог Олександра Галкова</h2></div></a><div class="pagetext"><p>31 бер. 2019 р. — Встановлюємо ejabberd Community Server 19.02 в операційних системах Ubuntu 16 та CentOS 7.... виконуємо встановлення ejabberd. CentOS.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Ejabberd (Форум) - Linux.org.ru</h2></div></a><div class="pagetext"><p>19 лист. 2020 - Дистрибутив debian 8.11 ставлю командою aptitude install ejabberd.... Намагаюся встановити ejabberd версії 19.08 у CentOS 7.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Встановлення Ejabberd на сервери CentOS 5 та CentOS 6</h2></div></a><div class="pagetext"><p>25 груд. 2014 р. - Встановлення Ejabberd. Спочатку потрібно додати репозиторій EPEL (Extra Packages for Enterprise Linux). Для цього запустіть: Сервер CentOS 5.x.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Встановлення та налаштування Jabber-сервера</h2></div></a><div class="pagetext"><p>2 травня 2019 р. – Комп'ютер · Ejabberd – найбільш універсальний варіант, рекомендується. Сервер підтримує кластеризацію. · Jabberd - старі комп'ютери з низькою...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Jabber-сервер - Блог Web-Wost</h2></div></a><div class="pagetext"><p>11 лист. 2017 р. - Установка Jabber-сервера на Centos 7. Установка ejabberd.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">5 сторінка - Блог Web-Wost</h2></div></a><div class="pagetext"><p>Налаштування Jabber-сервера на Centos 7. Налаштування ejabberd.... Установка та побіжний огляд зручного веб-інтерфейсу для роботи з БД.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Встановлення та налаштування сервера ejabberd на Centos 6.5</h2></div></a><div class="pagetext"><p>19 серпня. 2015 р. - Встановлення та налаштування ejabberd сервера на Centos 6.5... #chmod +x ejabberd-15.07-linux-x86_64-installer.run...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">ejabberd oioki.ru</h2></div></a><div class="pagetext"><p>ICQ-транспорт для ejabberd в CentOS 5.2... Ця стаття є продовженням статті про встановлення Jabber-сервера ejabberd. Тут ми прикручуватимемо до нашого...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Установка XMPP (ejabberd 2x) - RedHat, Fedora Linux</h2></div></a><div class="pagetext"><p>Добридень! Вирішив розгорнути свій сервер ХМРР але не виходить, є сервер на ОС Centos 7 І є виділений IP (так само є домено на...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Встановлення та налаштування Openfire на CentOS - Комп'ютерна...</h2></div></a><div class="pagetext"><p>15 лист. 2019 р. — Інструкція з встановлення та використання XMPP-сервера Openfire. Підготовка до встановлення та... Інструкція протестована на CentOS 7.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Карта сайту Готуємо смачний сервер із сайтом SoftNastroy...</h2></div></a><div class="pagetext"><p>Встановлення web клієнта JWChat для підключення до Ejabberd · Встановлення на сервер CentOS 7 c докладними скріншотами · Встановлення на сервер CentOS 6.5 c...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Встановлення сервера XMPP (Jabber)Ejabberd на FreeBSD</h2></div></a><div class="pagetext"><p>2 лип. 2015 - Встановлення XMPP (Jabber) сервера Ejabberd на FreeBSD.... 7. Генеруємо самодописаний сертифікат (якщо немає нормального)</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Матеріали за тегом xmpp - OpenNET</h2></div></a><div class="pagetext"><p>2, [17.05.2020] Вийшов XMPP-клієнт UWPX 0.25.0 для Windows 10X. 3, [10.05.2020] Вийшов XMPP-клієнт... 7, Установка Jabber сервера в Linux, jabber icq linux.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" ><div class="title"><h2 class="txt">Найкращі питання ejabberd - для системних та мережевих...</h2></div></a><div class="pagetext"><p>Потрібна допомога в установці ejabberd на Centos / RHEL7 з SELinux та зворотним проксі-... (5281) через зворотний проксі (HAProxy) на Centos7 з включеним SELinux.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-ejabberd-centos-7.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/magazin-svit-vishivki-internet-magazin-prjazha.html">Магазин світ вишивки інтернет магазин пряжа</a></li>
+<li><a href="/articles/naskilki-maksimalno-mozhna-zatrimuvati-dihannja.html">Наскільки максимально можна затримувати дихання</a></li>
+<li><a href="/articles/u-telefoni-tw.html">У телефоні tw</a></li>
+<li><a href="/articles/telefon-reu-plehanova-brjansk.html">Телефон реу плеханова брянськ</a></li>
+<li><a href="/articles/zverev-jak-ja-bez-tebe.html">Звєрєв як я без тебе</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-pribrati-zajvu-storinku-v-kontakti.html">Як прибрати зайву сторінку в контакті</a></li>
+<li><a href="/articles/ochishhuvalna-maska-dlja-oblichchja-jabluka.html">Очищувальна маска для обличчя яблука</a></li>
+<li><a href="/articles/de-znajti-servera-gta-5.html">Де знайти сервера ГТА 5</a></li>
+<li><a href="/articles/jak-znajti-centr-ekranu.html">Як знайти центр екрану</a></li>
+<li><a href="/articles/kim-pracjuvati-shhob-zarobiti-groshej.html">Ким працювати щоб заробити грошей</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/kamera-v-kadri-nomernogo-znaka-jx9488.html">Камера в кадрі номерного знака jx9488</a></li>
+<li><a href="/articles/baki-barns-foto-u-visokij-jakosti.html">Баки барнс фото у високій якості</a></li>
+<li><a href="/articles/12-ja-planeta-zaharija-sitchin.html">12 Я планета захарія ситчин</a></li>
+<li><a href="/articles/vidroshhuemo-svij-ridnij-kolir-volossja.html">Відрощуємо свій рідний колір волосся</a></li>
+<li><a href="/articles/vinen-ja-vinen-h.html">Винен я винен h</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/pobuduvati-nedorogu-dvopoverhovu-laznju.html">Побудувати недорогу двоповерхову лазню</a></li>
+<li><a href="/articles/jakim-slovom-zaminiti-slovo-poserednikiv.html">Яким словом замінити слово посередників</a></li>
+<li><a href="/articles/cukrovij-chi-take-slovo.html">Цукровий чи таке слово</a></li>
+<li><a href="/articles/domashnja-ekspertiza-na-kanali-sadiba.html">Домашня експертиза на каналі садиба</a></li>
+<li><a href="/articles/shho-take-bironivshhina-prostimi-slovami.html">Що таке біронівщина простими словами</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

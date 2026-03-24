@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Яка дія перша кон’юнкція чи диз’юнкція | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Основи логіки. Логічні операції та таблиці істинності Основні логічні операції (кон’юнкція, диз’юнкція, інверсія, імплікація, ... Логічні операції -..." />
+ <meta name="keywords" content="перша, юнкція" />
+ <meta name="news_keywords" content="перша, юнкція" />
+ 
+ 
+ <meta property="og:title" content="Яка дія перша кон’юнкція чи диз’юнкція" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Основи логіки. Логічні операції та таблиці істинності Основні логічні операції (кон’юнкція, диз’юнкція, інверсія, імплікація, ... Логічні операції -..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:28:39" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Яка дія перша кон’юнкція чи диз’юнкція" />
+ <meta name="twitter:description" content="Основи логіки. Логічні операції та таблиці істинності Основні логічні операції (кон’юнкція, диз’юнкція, інверсія, імплікація, ... Логічні операції -..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Яка дія перша кон’юнкція чи диз’юнкція</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Основи логіки. Логічні операції та таблиці істинності</h2></div></a><div class="pagetext"><p>Основні логічні операції (кон'юнкція, диз'юнкція, інверсія, імплікація,... Логічні операції - розумові дії, результатом яких є...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Яка дія перша: кон'юнкція або імплікація -?</h2></div></a><div class="pagetext"><p>Яка дія перша?... Перетворення (Кон'юнкція, імплікація, диз'юнкція)... Зазвичай, на мою думку, кон'юнкція.</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Кон'юнкція - Вікіпедія</h2></div></a><div class="pagetext"><p>Символ ⋀ (перевернутий знак диз'юнкції) як позначення кон'юнкції було запропоновано Арендом Гейтінгом (1930). Позначення ⋀ для кон'юнкції було...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Що виконується першим кон'юнкція чи диз'юнкція</h2></div></a><div class="pagetext"><p>Тобто дана логічна операція пов'язує два простих логічних вирази, з яких перше є умовою (А), а друге (В) є наслідком. Таблиця...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Основи логіки. Логічні операції та таблиці істинності</h2></div></a><div class="pagetext"><p>На даній сторінці будуть розглянуті 6 логічних операцій: кон'юнкція, диз'юнкція, інверсія, імплікація, еквівалентність та виключні або...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Логічні операції та їх властивості.</h2></div></a><div class="pagetext"><p>24 березня. 2016 р. — З цієї статті ви дізнаєтеся про кон'юнкцію, диз'юнкцію, заперечення, імплікацію, еквівалентність, сувору диз'юнкцію, стрілку Пірса.</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Логіка - Інформатика - Освітній ресурс</h2></div></a><div class="pagetext"><p>b) кон'юнкція (логічне множення, логічне І) позначається /\ (наприклад, А /\) або &amp; (наприклад, А &amp; В);. c) диз'юнкція (логічне додавання,...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Інформатика - 10 клас - Урок 11. алгебра логіки.</h2></div></a><div class="pagetext"><p>заперечення;; кон'юнкція; диз'юнкція, строга диз'юнкція; імплікація, еквівалентність.... якщо K = 1 і L = 0, то друга рівність виконується за будь-яких М і N;...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Диз'юнкція це множення чи додавання</h2></div></a><div class="pagetext"><p>На цій сторінці будутьрозглянуто 5 логічних операцій: кон'юнкція,... Логічні операції — розумові дії, результатом яких є...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">7.2. Логічні операції (заперечення, кон'юнкція...</h2></div></a><div class="pagetext"><p>17 квіт. 2019 р. — Логічні операції (заперечення, кон'юнкція, диз'юнкція… з яких перше є умовою (А), а друге (В) є наслідком).</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Логічні операції</h2></div></a><div class="pagetext"><p>кон'юнкція (логічне та),; диз'юнкція (логічне або); імплікація (слідування); еквівалентність (тотожність). Розглянемо кожну їх докладно. Для опису...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Логіка: короткий теоретичний курс: Навчальний посібник для...</h2></div></a><div class="pagetext"><p>У разі простої диз'юнкції альтернативи в принципі можуть не виключати одна одну («В обід я зможу з'їсти або першу страву, або другу, або десерт»),...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">міністерство науки та вищої освіти російської</h2></div></a><div class="pagetext"><p>9 лют. 2001 р. - логічні вирази, з яких перше є умовою (А), а друге... послідовності операцій заперечення, диз'юнкції та кон'юнкції.</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Основи логіки. Логічні операції та таблиці істинності</h2></div></a><div class="pagetext"><p>29 лип. 2020 р. - Заперечення; Кон'юнкція; диз'юнкція; Імплікація та еквівалентність... Логічна операція НЕ є унарною, тобто. дію виконуються над...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Лекції з математичної логіки та теорії алгоритмів</h2></div></a><div class="pagetext"><p>перший вислів позначимо через А, другий — через В. Використовуючи зв'язку... що заперечення має найменшу область дії, диз'юнкція та кон'юнкція...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Основні операції алгебри логіки</h2></div></a><div class="pagetext"><p>Заперечення, кон'юнкція, диз'юнкція, імплікація та еквівалентність – логічні операції, необхідні опису логічних висловлювань.</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Схемотехніка ЕОМ - Сторінка 11 - Результат Google Книги</h2></div></a><div class="pagetext"><p>часто називаються логічними або Булевими. Перше пов'язано з...визначено три основні операції чи дії: кон'юнкція, диз'юнкція та інверсія.</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Цифрові пристрої та мікропроцесори 2-ге вид., Пров. та дод....</h2></div></a><div class="pagetext"><p>є кон'юнкція заперечень і навпаки: заперечення кон'юнкції є диз'юнкція... Перше співвідношення очевидне, а друге доведемо шляхом розкриття дужок:...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" ><div class="title"><h2 class="txt">Мікропроцесорні системи: цифрові пристрої та...</h2></div></a><div class="pagetext"><p>є кон'юнкція заперечень і навпаки: заперечення кон'юнкції є диз'юнкція... Перше співвідношення очевидне, а друге доведемо шляхом розкриття дужок:...</p><a rel="nofollow" href="/go.html?/articles/jaka-dija-persha-konjunkcija-chi-dizjunkcija.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/rozpovisti-kazku-jake-vidminjuvannja.html">Розповісти казку яке відмінювання</a></li>
+<li><a href="/articles/korejska-zimova-guma-jaka-krashhe.html">Корейська зимова гума яка краще</a></li>
+<li><a href="/articles/tzov-metaloplast-telefon.html">ТзОВ металопласт телефон</a></li>
+<li><a href="/articles/nasinnja-ne-utvorjuetsja-u-jakih-roslin.html">Насіння не утворюється у яких рослин</a></li>
+<li><a href="/articles/kupivlja-prodazh-emisijnih-cinnih-paperiv.html">Купівля продаж емісійних цінних паперів</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-ne-bojatisja-koli-vedesh-mashinu.html">Як не боятися коли ведеш машину</a></li>
+<li><a href="/articles/karta-pamjati-profi.html">Карта пам’яті профі</a></li>
+<li><a href="/articles/perevirochne-slovo-do-opovidannja.html">Перевірочне слово до оповідання</a></li>
+<li><a href="/articles/zagotovka-dlja-sake-3-literi.html">Заготовка для саке 3 літери</a></li>
+<li><a href="/articles/usi-pravila-dlja-bisektrisi.html">Усі правила для бісектриси</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/remont-kvartir-v-zhk-kviti.html">Ремонт квартир в ЖК квіти</a></li>
+<li><a href="/articles/zshiti-pljazhnu-sumku-svoimi-rukami-vikrijki.html">Зшити пляжну сумку своїми руками викрійки</a></li>
+<li><a href="/articles/palivo-jake-chislo.html">Паливо яке число</a></li>
+<li><a href="/articles/remont-benzoinstrumentu-u-volodimiri.html">Ремонт бензоінструменту у Володимирі</a></li>
+<li><a href="/articles/krashhe-za-ljudej-aktori-foto.html">Краще за людей актори фото</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/dopomozhit-u-mene-dusha-hvora.html">Допоможіть у мене душа хвора</a></li>
+<li><a href="/articles/ruchna-poklazha-izhavia-shho-mozhna-brati.html">Ручна поклажа іжавіа що можна брати</a></li>
+<li><a href="/articles/na-noutbukah-u-igrah-chornij-ekran.html">На ноутбуках у іграх чорний екран</a></li>
+<li><a href="/articles/buklet-sluzhba-telefon-doviri.html">Буклет служба телефон довіри</a></li>
+<li><a href="/articles/1102-svoimi-rukami.html">1102 Своїми руками</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як динамічну сторінку зробити статичною | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Статичні та динамічні сайти сьогодні: які краще та ... 14 серп. 2019 р. — Спочатку ми розглянемо відмінності статичних та динамічних сторінок, які ......" />
+ <meta name="keywords" content="динамічну, сторінку, зробити, статичною" />
+ <meta name="news_keywords" content="динамічну, сторінку, зробити, статичною" />
+ 
+ 
+ <meta property="og:title" content="Як динамічну сторінку зробити статичною" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Статичні та динамічні сайти сьогодні: які краще та ... 14 серп. 2019 р. — Спочатку ми розглянемо відмінності статичних та динамічних сторінок, які ......" />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="12:21:47" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як динамічну сторінку зробити статичною" />
+ <meta name="twitter:description" content="Статичні та динамічні сайти сьогодні: які краще та ... 14 серп. 2019 р. — Спочатку ми розглянемо відмінності статичних та динамічних сторінок, які ......" />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як динамічну сторінку зробити статичною</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Статичні та динамічні сайти сьогодні: які краще та...</h2></div></a><div class="pagetext"><p>14 серп. 2019 р. — Спочатку ми розглянемо відмінності статичних та динамічних сторінок, які... програють динамічним, які можна легко створити з готових...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Генерація HTML статичних сторінок із динамічних...</h2></div></a><div class="pagetext"><p>Якщо ви хочете зробити це вручну, ви можете використати буферизацію виводу. Наприклад: Файл static.php : Hello,<section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Як зробити статичну динамічну сторінку?</h2></div></a><div class="pagetext"><p>Як зробити статичну динамічну сторінку? На форумах MyBB ви, мабуть, бачили, що всі ці теми stoed як forum.com/Thread-Name-of-the-thread Так...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Статична та динамічна інформація - 1С-Бітрікс</h2></div></a><div class="pagetext"><p>Змінити сторінку в редакторі – редагування тексту безпосередньо на сторінці – статична інформація. Створити/Змінити товар - створення/редагування...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Створення статичної сторінки</h2></div></a><div class="pagetext"><p>на статичній сторінці такі структури порталу, як Активний текст (Live Text), необхідно зробити статичну сторінку частиною динамічної сторінки...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Налаштування динамічних сторінок Центр підтримки</h2></div></a><div class="pagetext"><p>Wix.com – це не просто конструктор сайтів, а провідна хмарна платформа з мільйонами користувачів по всьому світу. З нами ви зможете легко створити красивий сайт...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Поняття статичної та динамічної веб-сторінки</h2></div></a><div class="pagetext"><p>Книга: Веб-Самоделкін. Як самому створити сайт швидко і професійно... Принципова відмінність динамічної веб-сторінки від статичної полягає в тому, що...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Статичні та динамічні веб сторінки - galleo.ru</h2></div></a><div class="pagetext"><p>Статичними називають сторінки, якщо вони лежать на сервері у html вигляді. А динамічними називають ті, які генеруються "на льоту" на запит браузера. Як...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Статичні та динамічні веб сторінки...MacCase.ru</h2></div></a><div class="pagetext"><p>19 лист. 2020 р. — Перше, що хочуть власники сайтів-візиток - зробити статичну головну сторінку,... При запиті динамічних сторінок web-сервер запускає...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Статичний Інтернет: повернення до витоків?</h2></div></a><div class="pagetext"><p>27 травня 2019 р. — Водночас статичний сайт легко перемагає роздутого динамічного конкурента у SEO-грі: настав час пограти! Для свого блогу ми...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Що таке статичний веб-сайт, структура та як його створити?</h2></div></a><div class="pagetext"><p>Зазвичай статичні сайти створюються за допомогою мови гіпертекстової розмітки (HTML), але не обов'язково, щоб усі HTML-сторінки були статичними. Наприклад, код...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Наведіть приклад статичної та динамічної веб...</h2></div></a><div class="pagetext"><p>Ось сторінка статична: http://micro-tech.ru. На ній нічого не змінюється. А ось - динамічна: http://biotext.ru/o_ntk_biotekst.</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">статичний чи динамічний сайт краще - WebCorp.ru</h2></div></a><div class="pagetext"><p>Розглянемо процес генерації динамічної сторінки докладніше.... а навіщо взагалі це потрібно робити сторінку динамічною, розбивати її на частини,...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Статичні сторінки - програмний модуль - Flexcore CMS</h2></div></a><div class="pagetext"><p>Одна із статичних сторінок, як правило, є головною сторінкою сайту. Вона призначається за допомогою прапорця "зробити головною" у вкладці "Параметри сторінки".</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Що означає статичне та динамічне... - Російські Блоги</h2></div></a><div class="pagetext"><p>Більшість веб-сторінок використовують HTML (мова гіпертекстової розмітки) Мова, Веб-сторінка вчителя як правило Статична HTML-сторінка, а також Веб-сторінка...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">PHP. Динамічний створення сторінок - it-black.ru</h2></div></a><div class="pagetext"><p>14 серп. 2017 р. - Статичні сайти складаються із статичних web-сторінок.... Найкраще робити сайт за допомогою динамічних сторінок, т.к. це найкращий і зручний...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Поняття статичної та динамічної веб-сторінки</h2></div></a><div class="pagetext"><p>Назва статичної сторінки говорить сама за себе: на такій сторінці... РішенняУ директорії, де ви хочете створити статичну бібліотеку, створіть файл...</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Як налаштувати статичні URL на сайті - Serpstat</h2></div></a><div class="pagetext"><p>які призводять до втрати позицій сайту. У такому разі потрібні статичні адреси сторінок.... Що робити, щоб динамічні адреси не створювали дублі:.</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Чому статичні сайти зручніші за динамічні?</h2></div></a><div class="pagetext"><p>11 лют. 2016 р. — Крім того, сайти зі статичних сторінок без проблем витримують... продуктам та технічним пристроям зручніше робити статичними.</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" ><div class="title"><h2 class="txt">Групи Creatio Academy</h2></div></a><div class="pagetext"><p>В результаті на сторінці груп розділу буде додано нову статичну групу.... Щоб створити статичну групу з динамічної:.</p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section></p><a rel="nofollow" href="/go.html?/articles/jak-dinamichnu-storinku-zrobiti-statichnoju.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/shho-za-znak-u-buzovoi.html">Що за знак у бузової</a></li>
+<li><a href="/articles/krashhi-plagini-dlja-obs.html">Кращі плагіни для обс</a></li>
+<li><a href="/articles/zshiti-koftu-hudi.html">Зшити кофту худи</a></li>
+<li><a href="/articles/na-telefoni-ne-zapamjatovue-vaj-faj.html">На телефоні не запам’ятовує вай фай</a></li>
+<li><a href="/articles/jak-zrobiti-visokij-hvist-z-chubchikom.html">Як зробити високий хвіст з чубчиком</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/tl3845p-jak-pracjue-shema-vkljuchennja.html">Tl3845p як працює схема включення</a></li>
+<li><a href="/articles/jak-povernuti-groshi-za-defektnij-tovar.html">Як повернути гроші за дефектний товар</a></li>
+<li><a href="/articles/projti-te-simferopol.html">Пройти те сімферополь</a></li>
+<li><a href="/articles/stali-boliti-nogi-gomilkovostop.html">Стали боліти ноги гомілковостоп</a></li>
+<li><a href="/articles/diznajsja-mene-30-serija.html">Дізнайся мене 30 серія</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/pidnizhzhja-ejfelevoi-vezhi-jakas-richka.html">Підніжжя ейфелевої вежі якась річка</a></li>
+<li><a href="/articles/nomer-telefonu.html">Номер телефону</a></li>
+<li><a href="/articles/jaka-persha-izha-u-sviti.html">Яка перша їжа у світі</a></li>
+<li><a href="/articles/shema-provedennja-bmw-x5-e53.html">Схема проведення bmw x5 e53</a></li>
+<li><a href="/articles/vibir-telefonu-jak-iphone.html">Вибір телефону як iphone</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jalta-bereg-jakogo-morja.html">Ялта берег якого моря</a></li>
+<li><a href="/articles/reduktor-spidometra-remont.html">Редуктор спідометра ремонт</a></li>
+<li><a href="/articles/jakij-sobaka-pershij-za-intelektom.html">Який собака перший за інтелектом</a></li>
+<li><a href="/articles/jaki-modeli-dzhinsiv-pidhodjat-dlja-tovstih.html">Які моделі джинсів підходять для товстих</a></li>
+<li><a href="/articles/diablo-za-kogo-krashhe-grati.html">Діабло за кого краще грати</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

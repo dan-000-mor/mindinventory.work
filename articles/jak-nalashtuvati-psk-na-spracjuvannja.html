@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як налаштувати пск на спрацювання | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Межі спрацьовування ПЗК та ПБК Rudic.ru - Блог звичайного ... - точність спрацьовування повинна становити, як правило, +-5% заданих величин..." />
+ <meta name="keywords" content="налаштувати, спрацювання, спрацьовування, тиску" />
+ <meta name="news_keywords" content="налаштувати, спрацювання, спрацьовування, тиску" />
+ 
+ 
+ <meta property="og:title" content="Як налаштувати пск на спрацювання" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Межі спрацьовування ПЗК та ПБК Rudic.ru - Блог звичайного ... - точність спрацьовування повинна становити, як правило, +-5% заданих величин..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="10:29:28" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як налаштувати пск на спрацювання" />
+ <meta name="twitter:description" content="Межі спрацьовування ПЗК та ПБК Rudic.ru - Блог звичайного ... - точність спрацьовування повинна становити, як правило, +-5% заданих величин..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як налаштувати пск на спрацювання</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Межі спрацьовування ПЗК та ПБК Rudic.ru - Блог звичайного...</h2></div></a><div class="pagetext"><p>- точність спрацьовування повинна становити, як правило, +-5% заданих величин контрольованого тиску для ПЗК, що встановлюються у ГРП та +-10%...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">ПРИСТРІЙ ДЛЯ НАЛАШТУВАННЯ І ПЕРЕВІРКИ ЗРОБИТАННЯ...</h2></div></a><div class="pagetext"><p>для налаштування та перевірки параметрів спрацьовування та тиску відкриття запобіжного скидного клапана; для визначення щільності та чутливості...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Типова виробнича інструкція «Перевірка...</h2></div></a><div class="pagetext"><p>1.5 Налаштування та перевірка параметрів спрацьовування ПЗК та ПСК допускаються за допомогою регулятора тиску, якщо верхня межа їх спрацьовування не перевищує 0,003...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">ПЗК та ПСК призначення пристрій параметри спрацьовування – Все про...</h2></div></a><div class="pagetext"><p>постійно стежити за вихідним тиском, підтримуючи його за допомогою другої засувки байпасу (встановити чергування); • закрити засувки на вході та виході основної...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">ПЗК та ПСК - призначення пристрій параметри спрацьовування купити...</h2></div></a><div class="pagetext"><p>Витрата газу через неї припиняється, як тільки в контрольованій точці газопроводу тиск досягає нижньої або верхньої межі налаштування ПЗК. До ПЗК...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Діалог спеціалістів АВОК &gt; Межі спрацьовування ПЗК та ПСК</h2></div></a><div class="pagetext"><p>Там у пунктах 8.1.5-8.1.11 наведено вимоги до параметрів налаштування захисної та запобіжної арматури. Обидва нормативи добровільного...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Газорегуляторні пункти (ГРП) та газорегуляторні установки (ГРУ).</h2></div></a><div class="pagetext"><p>Вимоги правил щодо налаштування межі спрацьовування ПСК -15% та верхньої межі спрацьовування ПЗК — 25% визначають порядок (послідовність) спрацьовування...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Межі спрацьовування ПЗК та ПСК. Запобіжна арматура.</h2></div></a><div class="pagetext"><p>Герметичність запірного органу ПЗК повинна відповідати класу "А" за ГОСТ 9544; Точністьспрацьовування має становити, як правило, +-5% заданих величин...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">ПЗК та ПСК - призначення пристрій параметри спрацьовування...</h2></div></a><div class="pagetext"><p>Витрата газу через неї припиняється, як тільки в контрольованій точці газопроводу тиск досягає нижньої або верхньої межі налаштування ПЗК.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Налаштування ПЗК на заданий режим - СтудІзба</h2></div></a><div class="pagetext"><p>Параметри налаштування ПЗК визначаються проектом та уточнюються при пуско-налагоджувальних роботах (п.3.4.4. ПБ у ГХ). На початку ПЗК налаштовується на спрацювання за...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Студопедія - Обладнання ГРП. ПЗК, ПСК, продувальні свічки</h2></div></a><div class="pagetext"><p>Відповідно до вимог правил верхня межа спрацьовування ПЗК не повинна...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Переналаштування ПЗК,ПСК - Проектування газопостачання</h2></div></a><div class="pagetext"><p>Перевірка параметрів спрацьовування ПЗК, ПСК -1 раз на квартал.... Параметри налаштування регуляторів у ГРП міст та населених пунктів для...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">ДЕПАРТАМЕНТ ВНУТРІШНЬОЇ ТА КАДРОВОЇ ПОЛІТИКИ...</h2></div></a><div class="pagetext"><p>-Розглянути принцип роботи та налаштування ПЗК та ПСК;... Налаштування ПЗК дублюють кілька разів (тобто проганяють на спрацьовування). [СЛАЙД21] Несправності:.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Запобіжні скидні клапани (ПСК) - Познайка.Орг</h2></div></a><div class="pagetext"><p>Налаштування гідрозатвора на спрацьовування здійснюється зміною рівня води у корпусі. При збільшенні рівня тиск спрацьовування зростає,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">ПСК FRSBV - ТОВ "ІНТЕГРА"</h2></div></a><div class="pagetext"><p>перевищує тиск спрацьовування ПСК, клапан FRSBV знаходиться в закритому стані. Якщо тиск газу після регулятора виходить за межі налаштування ПСК,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Запобіжно-скидні клапани, запобіжно-...</h2></div></a><div class="pagetext"><p>Запобіжно-скидні клапани (ПСК) призначені для зниження... Діапазон налаштування спрацьовування клапана (нижня межа - верхня межа) - по...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Налаштування - запобіжно-запірний клапан.</h2></div></a><div class="pagetext"><p>Для налаштування запобіжно-запірного клапана на спрацьовування при... Запобіжний скидний клапан, вбудований в регулятор тиску,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">Запобіжна арматура. Межі спрацьовування пзк та пск.</h2></div></a><div class="pagetext"><p>Налаштування клапана запобіжно-запірного КПЗ. 1. Налаштувати верхню межу спрацьовування клапана, змінюючи натяг пружини 11, шляхом обертання втулки 14.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" ><div class="title"><h2 class="txt">РС регулятори-стабілізатори тиску з ПЗК та вбудованим...</h2></div></a><div class="pagetext"><p>Основні технічні характеристики регуляторів-стабілізаторів тиску РС з ПЗК та вбудованим ПСК. Діапазон тисків на виході, налаштування спрацьовування ПЗК та ПСК...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-psk-na-spracjuvannja.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/zrobiti-budku-na-kolesah.html">Зробити будку на колесах</a></li>
+<li><a href="/articles/pisnja-mi-najkrashhi-minus.html">Пісня ми найкращі мінус</a></li>
+<li><a href="/articles/zolotij-samoklejuchij-papir-u-rulonah.html">Золотий самоклеючий папір у рулонах</a></li>
+<li><a href="/articles/jaki-viplati-nalezhat-pomerlomu-spivrobitniku.html">Які виплати належать померлому співробітнику</a></li>
+<li><a href="/articles/najkrashhi-bjudzhetni-karti.html">Найкращі бюджетні карти</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/tipi-budivel-majnkraft.html">Типи будівель майнкрафт</a></li>
+<li><a href="/articles/zlidni-ljudina-5-bukv.html">Злидні людина 5 букв</a></li>
+<li><a href="/articles/zrobiti-distiljator-svoimi.html">Зробити дистилятор своїми</a></li>
+<li><a href="/articles/pdv-vvazhaetsja.html">Пдв вважається</a></li>
+<li><a href="/articles/chomu-ne-dijut-pronosni-pri-zapori.html">Чому не діють проносні при запорі</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/ditjachi-knizhki-svoimi-rukami-kolobok.html">Дитячі книжки своїми руками колобок</a></li>
+<li><a href="/articles/plastikova-farba-svoimi-rukami.html">Пластикова фарба своїми руками</a></li>
+<li><a href="/articles/plantronics-voyager-legend-onoviti.html">Plantronics voyager legend оновити</a></li>
+<li><a href="/articles/dovidka-na-prava-chitae-de-zrobiti.html">Довідка на права читає де зробити</a></li>
+<li><a href="/articles/l800-papir.html">L800 папір</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/zachiski-v-stili-90h.html">Зачіски в стилі 90х</a></li>
+<li><a href="/articles/klip-plache-genshin.html">Кліп плаче геншин</a></li>
+<li><a href="/articles/pisnja-ja-bez-zai-zamerzaju.html">Пісня я без заї замерзаю</a></li>
+<li><a href="/articles/u-jakih-vodorostej-vidsutnja-dzhgutikova-stadija.html">У яких водоростей відсутня джгутикова стадія</a></li>
+<li><a href="/articles/vjazhemo-pogoni-gachkom.html">В’яжемо погони гачком</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

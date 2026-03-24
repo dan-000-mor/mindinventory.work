@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як зробити образ із сервера | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Чим і як створити образ працюючого Windows Server. 2 черв. 2017 р. — Сервер 2003 року працює, зупиняти не можна. FDD немає, штатна архівація без дискети..." />
+ <meta name="keywords" content="зробити, образ, сервера, Windows, server" />
+ <meta name="news_keywords" content="зробити, образ, сервера, Windows, server" />
+ 
+ 
+ <meta property="og:title" content="Як зробити образ із сервера" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Чим і як створити образ працюючого Windows Server. 2 черв. 2017 р. — Сервер 2003 року працює, зупиняти не можна. FDD немає, штатна архівація без дискети..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="12:42:29" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як зробити образ із сервера" />
+ <meta name="twitter:description" content="Чим і як створити образ працюючого Windows Server. 2 черв. 2017 р. — Сервер 2003 року працює, зупиняти не можна. FDD немає, штатна архівація без дискети..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як зробити образ із сервера</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Чим і як створити образ працюючого Windows Server.</h2></div></a><div class="pagetext"><p>2 черв. 2017 р. — Сервер 2003 року працює, зупиняти не можна. FDD немає, штатна архівація без дискети марна. Можна підключити USB-HDD, USB-FDD у наявності...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Windows Server Backup: як створити резервну копію та...</h2></div></a><div class="pagetext"><p>3 лип. 2018 р. — Стаття Windows Server Backup: як створити резервну копію та відновити дані з неї? Економний бекап» від компанії Xelent.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Створення резервної копії за допомогою Windows Server.</h2></div></a><div class="pagetext"><p>28 лип. 2021 — Щоб налаштувати розклад, натисніть кнопку Backup Schedule. У вас є можливість створити резервні копії цілої системи, окремих дисків або...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Як зробити ISO образ із налаштованого VPS сервера?</h2></div></a><div class="pagetext"><p>Вітаю. Я орендую сервер VPS. Налаштував на ньому все, як мені потрібно, і додав пару сайтів. Як мені зробити його образ ISO, щоб я зміг його завантажити...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Яким софтом порекомендуєте зробити образ системи.</h2></div></a><div class="pagetext"><p>Потрібно перенести систему Windows server 2012 R2 на інший комп'ютер через образ (або RAW або ISO).</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Якою програмою створити образ сервера? - Windows Server</h2></div></a><div class="pagetext"><p>Потрібно створити образ сервера windows server 2012 foundation. не можу знайти потрібної програми! Жодна версія акронісу, яку пробував не...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Створення образу База знань Selectel</h2></div></a><div class="pagetext"><p>Образ можна створити лише в регіоні, в якому знаходиться диск.... Щоб створити образ завантаженням за посиланням, введіть:... Відключіть диск від сервера:</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Найкращий спосіб «клонувати» мій Windows Server 2008 R2?</h2></div></a><div class="pagetext"><p>Це взагалі можливе? Якщо це так, що було б найпростішим способом зробити це? windows-server-2008-r2 disk-image.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Резервне копіювання та відновлення Server 2008 R2</h2></div></a><div class="pagetext"><p>Backup. Для того, щоб можна було створити образ нашого сервераспочатку потрібно встановити компонент системи Система архівації даних Windows Server,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Як створити резервну копію сервера Windows за допомогою...</h2></div></a><div class="pagetext"><p>5 серп. 2021 — Як створити резервну копію сервера Windows за допомогою Veeam Backup Agent. Виберіть місце, де ви хочете зберегти цей образ, ви можете...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Резервне копіювання всього сервера - Plesk Obsidian</h2></div></a><div class="pagetext"><p>image 78011. Примітка: Відмінний режим налаштування (що випливає як простий план) є включеним до server-level backups. However, the restoration of...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Резервне копіювання Windows Server</h2></div></a><div class="pagetext"><p>Система архівації даних Windows Server підтримує резервне копіювання як образу системи всього сервера для відновлення останнього стану всієї...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Створення резервної копії та відновлення...</h2></div></a><div class="pagetext"><p>Якщо ви хочете зберегти повідомлення, записані сайтом, необхідно вручну зробити резервне копіювання директорії журналів на кожному комп'ютері з ArcGIS Server...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Створення образу ISO для платформ UEFI - Windows Server</h2></div></a><div class="pagetext"><p>24 вер. 2021 — CD-ROM містить два записи каталогу завантаження. Один запис iD платформи відповідає BIOS, а один відповідає UEFI. Щоб створити образ ISO...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Резервне копіювання та перенесення даних на комп'ютері...</h2></div></a><div class="pagetext"><p>У цій статті описано ручне резервне копіювання особистих файлів і параметрів у Windows 7, Windows Vista, Windows XP та Windows Server 2003.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">як зробити образ 2003 server повний з усім завантаженим.</h2></div></a><div class="pagetext"><p>якийсь нитка Acronis True image або будь-який засіб, що робить образ дисків, робиш образ системного диска і відкладаєш убік...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Встановлення Windows XP/7/8/10 на VPS сервер із ISO образу</h2></div></a><div class="pagetext"><p>При замовленні VPS сервера можна підключити власний образ системиза допомогою установки його як ISO образ. Для завантаження свого образу,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Бекапи та снепшоти на Хмарних серверах - REG.RU</h2></div></a><div class="pagetext"><p>16 лист. 2021 р. - Навіщо робити резервне копіювання... preview-image... Снепшот - знімок сервера, який можна зробити вручну або API в будь-який момент.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" ><div class="title"><h2 class="txt">Вам потрібне резервне копіювання Windows Server...</h2></div></a><div class="pagetext"><p>Люди повсюдно переходять на дистанційну роботу, і Veeam пропонує такі можливості для ноутбуків, як резервне копіювання на рівні образу, вбудований...Від 0,00 $ до 1 200,00 $</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-obraz-iz-servera.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/zapamorochennja-pri-koronavirusi.html">Запаморочення при коронавірусі</a></li>
+<li><a href="/articles/jak-viznachiti-richku-iz-zolotom.html">Як визначити річку із золотом</a></li>
+<li><a href="/articles/jak-vidaliti-fajl-u-macbook.html">Як видалити файл у macbook</a></li>
+<li><a href="/articles/harakteristika-stali-09g2z-kategorii.html">Характеристика сталі 09г2з категорії</a></li>
+<li><a href="/articles/z-toboju-legko-spilkuvatisja-kartinki.html">З тобою легко спілкуватися картинки</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/vintar-stalker-tin-chornobilja-de-znajti.html">Вінтар сталкер тінь чорнобиля де знайти</a></li>
+<li><a href="/articles/appercepcija-nazivaetsja.html">Апперцепція називається</a></li>
+<li><a href="/articles/jak-znajti-posilannja-v-instagrami.html">Як знайти посилання в інстаграмі</a></li>
+<li><a href="/articles/psil-ne-mozhe-popisati-shho-robiti.html">Псіль не може пописати що робити</a></li>
+<li><a href="/articles/mozhna-robiti-eko-pri-adenomiozi.html">Можна робити еко при аденоміозі</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jake-dihannja-u-ditej-zhinok-cholovikiv.html">Яке дихання у дітей жінок чоловіків</a></li>
+<li><a href="/articles/ja-ljublju-italiju-napis.html">Я люблю італію напис</a></li>
+<li><a href="/articles/drugij-ekran-do-noutbuka.html">Другий екран до ноутбука</a></li>
+<li><a href="/articles/kudi-mozhna-poihati-v-aktau.html">Куди можна поїхати в актау</a></li>
+<li><a href="/articles/jaki-bitvi-buli-u-bilgorodi.html">Які битви були у білгороді</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-rozrahovuvati-var.html">Як розраховувати var</a></li>
+<li><a href="/articles/golubi-na-pidvikonni-shho-robiti.html">Голуби на підвіконні що робити</a></li>
+<li><a href="/articles/shho-robiti-lagae-css.html">Що робити лагає css</a></li>
+<li><a href="/articles/jak-pozbutisja-bolju-pid-koronkoju.html">Як позбутися болю під коронкою</a></li>
+<li><a href="/articles/jak-vidaliti-vse-zi-shovishha.html">Як видалити все зі сховища</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

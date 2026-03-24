@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Зберегти зміни в hosts | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Не можна змінити файл Hosts або Lmhosts - Windows ... Як зберегти зміни у файлі hosts у Windows 10 Як зберегти зміни у файлі hosts у Windows 10 ·..." />
+ <meta name="keywords" content="зберегти, зміни, hosts" />
+ <meta name="news_keywords" content="зберегти, зміни, hosts" />
+ 
+ 
+ <meta property="og:title" content="Зберегти зміни в hosts" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Не можна змінити файл Hosts або Lmhosts - Windows ... Як зберегти зміни у файлі hosts у Windows 10 Як зберегти зміни у файлі hosts у Windows 10 ·..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="12:45:22" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Зберегти зміни в hosts" />
+ <meta name="twitter:description" content="Не можна змінити файл Hosts або Lmhosts - Windows ... Як зберегти зміни у файлі hosts у Windows 10 Як зберегти зміни у файлі hosts у Windows 10 ·..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Зберегти зміни в hosts</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Не можна змінити файл Hosts або Lmhosts - Windows...</h2></div></a><div class="pagetext"><p><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Як зберегти зміни у файлі hosts у Windows 10</h2></div></a><div class="pagetext"><p>Як зберегти зміни у файлі hosts у Windows 10 · Запускаємо пошуковий рядок (значок лупи). Вводимо запит "Блокнот". · У Блокноті, що відкрилося, вибираємо меню «...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Неможливо зберегти файл hosts в Windows 10 - FructCode</h2></div></a><div class="pagetext"><p>Допустиме кодування файлу hosts – ANSI або UTF-8. Змінити шлях до файлу hosts. Браузер звертається до файлу заздалегідь прописаним шляхом – C:\Windows\System32\...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Чому файл hosts не зберігається</h2></div></a><div class="pagetext"><p>Якщо він відзначений галочкою, зберегти зміни не вийде. Windows пропонує зберегти hosts як текстовий файл. Навіть якщо ви вкажете вірний варіант...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Файл hosts Windows 10 remontka.pro</h2></div></a><div class="pagetext"><p>За замовчуванням зміна файлу hosts у Windows 10 доступна тільки... просто виберіть файл - зберегти (якщо hosts не зберігається,...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Як змінити файл hosts remontka.pro</h2></div></a><div class="pagetext"><p>Інструкція про те, як змінити файл hosts у Windows 10, 8.1 та Windows 7.... Користувачеві залишається лише внести зміни та зберегти файл.</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Не можу зберегти файл hosts у windows 7 - htfi.ru</h2></div></a><div class="pagetext"><p>Чому файл hosts такий примхливий. Його вважають за те, що зробивши у ньому зміни, його не можна зберегти. А насправді він добрий. Просто цей...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Як змінити файл hosts? - Internet-Technologies.Ru</h2></div></a><div class="pagetext"><p>Як змінити файл hosts — Після внесення змін зайдіть у меню «Файл», а потім виберіть «Зберегти». Робота з Windows Defender при...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Файл hosts для Windows 10 - Допомога REG.RU</h2></div></a><div class="pagetext"><p>Як внести зміни до hosts у Windows 10 4. 6. Збережіть зміни у файлі. Для цього перейдіть у вкладку «Файл» та натисніть Зберегти:.</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Де знаходиться файл hosts та як йогозмінити - Допомога...</h2></div></a><div class="pagetext"><p>Як змінити файл hosts — Редагувати файл etc hosts потрібно від імені адміністратора, інакше ви не зможете зберегти внесені зміни.</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Як зберегти зміни у файлі hosts? - Комп'ютери.</h2></div></a><div class="pagetext"><p>## Цей файл HOSTS файл використовує Microsoft TCP/IP для Windows. Each# entry should be kept...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Як зберегти файл hosts після зміни у Windows 10</h2></div></a><div class="pagetext"><p>Чому Windows 10 не дає зберегти файл hosts після зміни та що робити у цьому випадку? Вам допоможе наша інструкція і ви без проблем...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Налаштування файлу /etc/hosts - Загальні питання - Timeweb</h2></div></a><div class="pagetext"><p>Введіть необхідний IP-домен, наприклад, 92.53.96.120 mydomain.com: Збережіть зміни. Для цього виберіть "Файл" - "Зберегти". У вікні виберіть "...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Файл Hosts. Значення, редагування та відновлення</h2></div></a><div class="pagetext"><p>Як знайти та відредагувати файл hosts для швидкого вирішення актуальних задач?...Але система лається і не дає зберегти бажані зміни.</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Як змінити файл hosts у Windows 10 - MyWindows10.ua</h2></div></a><div class="pagetext"><p>Внесення змін до hosts — Після внесення всіх необхідних змін знову переходимо до меню «Файл» та натискаємо «Зберегти». Якщо раптом зміни не...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Як внести зміни до файлу hosts (на прикладі OS...</h2></div></a><div class="pagetext"><p>Для внесення змін до файлу hosts в операційній системі Windows 10... копію файлу C:\Windows\System32\drivers\etc\hosts, зберегти його в будь-якому місці.</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Як змінити файл hosts у Windows 10 і де він знаходиться</h2></div></a><div class="pagetext"><p>Як внести зміни та зберегти файл hosts · Відкрийте Блокнот (від імені адміністратора), а потім натисніть "файл" і "відкрити" · Перейдіть до папки з потрібним нам...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Файл hosts. Налаштування — VPS.ua Wiki</h2></div></a><div class="pagetext"><p>Якзберегти файл hosts? - Як зберегти файл hosts? Іноді виникає ситуація, що файл hosts не зберігається і всі зміни не працюють.</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" ><div class="title"><h2 class="txt">Як зберегти файл hosts після зміни у Windows 10</h2></div></a><div class="pagetext"><p>Якщо він відзначений галочкою, зберегти зміни не вийде. Windows пропонує зберегти hosts як текстовий файл. Навіть якщо ви вкажете правильний варіант...</p><a rel="nofollow" href="/go.html?/articles/zberegti-zmini-v-hosts.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/u-jakih-produktah-mistit-mid-zalizo.html">У яких продуктах містить мідь залізо</a></li>
+<li><a href="/articles/pugala-dlja-gorodu-svoimi-rukami-video.html">Пугала для городу своїми руками відео</a></li>
+<li><a href="/articles/racionalni-chisla-znaki-u-prikladah.html">Раціональні числа знаки у прикладах</a></li>
+<li><a href="/articles/koncert-brjanciv-ta-kasjanova-ja.html">Концерт брянців та касьянова я</a></li>
+<li><a href="/articles/lerua-vidnoviti-kartu.html">Леруа відновити карту</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-vidnoviti-strilki-jarlikiv.html">Як відновити стрілки ярликів</a></li>
+<li><a href="/articles/t-ja-v-egipti.html">T я в єгипті</a></li>
+<li><a href="/articles/jak-mozhna-vigrati-u-zhitlovij-loterei.html">Як можна виграти у житловій лотереї</a></li>
+<li><a href="/articles/jak-vstanoviti-dopovnennja-do-sims3pack.html">Як встановити доповнення до sims3pack</a></li>
+<li><a href="/articles/zastavka-na-telefon-z-elzoju.html">Заставка на телефон з ельзою</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/koli-mozhna-ribaliti-na-abo.html">Коли можна рибалити на або</a></li>
+<li><a href="/articles/najkrashhij-flesh-pleer-dlja-vindovs-8.html">Найкращий флеш плеєр для віндовс 8</a></li>
+<li><a href="/articles/ja-doslidnik-obninsk.html">Я дослідник обнінськ</a></li>
+<li><a href="/articles/pirogova-3-petrozavodsk-nomer-telefonu.html">Пирогова 3 петрозаводськ номер телефону</a></li>
+<li><a href="/articles/cmd-zvenigorod-pronina-5-telefon.html">Cmd звенигород проніна 5 телефон</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/robotodavec-zmushue-robiti-kartku-svit.html">Роботодавець змушує робити картку світ</a></li>
+<li><a href="/articles/jak-nazivajutsja-chastini-detalej.html">Як називаються частини деталей</a></li>
+<li><a href="/articles/chomu-koronavirusnazvali-kovid-19.html">Чому коронавірусназвали ковід 19</a></li>
+<li><a href="/articles/p-budivelnik-u-tambovi.html">П будівельник у тамбові</a></li>
+<li><a href="/articles/pracjuvati-jagoda.html">Працювати ягода</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

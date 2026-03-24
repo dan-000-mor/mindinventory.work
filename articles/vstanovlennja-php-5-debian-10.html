@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Встановлення php 5 debian 10 | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="РІШЕННЯ - php5.6 на debian 10 WorldJB.Ru IT WEB 1 січ. 2020 р. — sudo apt install php5.6 php5.6-cli php5.6-common php5.6-curl php5.6-gd php5.6-json..." />
+ <meta name="keywords" content="встановлення, Debian, php5, install, apt-get" />
+ <meta name="news_keywords" content="встановлення, Debian, php5, install, apt-get" />
+ 
+ 
+ <meta property="og:title" content="Встановлення php 5 debian 10" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="РІШЕННЯ - php5.6 на debian 10 WorldJB.Ru IT WEB 1 січ. 2020 р. — sudo apt install php5.6 php5.6-cli php5.6-common php5.6-curl php5.6-gd php5.6-json..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:10:58" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Встановлення php 5 debian 10" />
+ <meta name="twitter:description" content="РІШЕННЯ - php5.6 на debian 10 WorldJB.Ru IT WEB 1 січ. 2020 р. — sudo apt install php5.6 php5.6-cli php5.6-common php5.6-curl php5.6-gd php5.6-json..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Встановлення php 5 debian 10</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">РІШЕННЯ - php5.6 на debian 10 WorldJB.Ru IT &amp; WEB</h2></div></a><div class="pagetext"><p>1 січ. 2020 р. — sudo apt install php5.6 php5.6-cli php5.6-common php5.6-curl php5.6-gd php5.6-json php5.6-mbstring php5.6-mysql php5.6-xml .</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">debian 10 php 5.6 / Debian / Блог для нотаток</h2></div></a><div class="pagetext"><p>ось потрібно було для nfsen 1.3.8 встановити php5.6 поїхали. apt-get install apt-transport-https lsb-release ca-certificates wget -O...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Як змінити версію PHP на сервері з Debian 10</h2></div></a><div class="pagetext"><p>23 серп. 2019 р. — На сервері з Debian 10 встановимо PHP 5.6 замість PHP 7.3.... apt-get update apt-get install php5.6. Майже готово. Ось як змінити версію...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Інструкції з встановлення на Debian GNU/Linux - Manual - PHP</h2></div></a><div class="pagetext"><p>Приклад #1 Приклад встановлення Apache 2 на Debian. # apt install php-common libapache2-mod-php php-... STEP 5: Copy the PHP.ini file to the install directory</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Як встановити PHP на Debian 10 Linux - Статті...</h2></div></a><div class="pagetext"><p>27 лист. 2019 р. — У цьому посібнику ми обговоримо, як встановити PHP на Debian 10, Buster. Ми також покажемо вам, як інтегрувати PHP з Nginx та Apache.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Встановлення PHP 5.6 та PHP 7.1 на Debian 8 + nginx - Антон...</h2></div></a><div class="pagetext"><p>Встановлення нових версій PHP. Виконуємо наступні команди установки: # Установка PHP 5.6 apt-get install php5.6-cli php5.6-curl php5...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Встановлення PHP 5.6, 7.0, 7.1, 7.2 одночасно в Debian 9...</h2></div></a><div class="pagetext"><p>28 лют. 2018 р. - sudo apt install php5.6 php7.0 php7.1 php7.2. Якщо якась із версій вам не потрібна, ви можете просто не встановлювати відповідний пакет.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Установка PHP 5.3 на Debian Stretch (9) - QA Stack</h2></div></a><div class="pagetext"><p>0 у Debian Jessie, але я не можу знайти простий спосіб, як з 5.6 (apt-get install php7.0-fpm php5-fpm). - Рагуті. 5,6 точно. Це більше зламати,...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Веб-сервер на Debian — php 5/7/8, nginx+php-fpm, Let's...</h2></div></a><div class="pagetext"><p>9 жовтня. 2018 р. — Встановлення PHP5, PHP7, PHP8, Nginx+php-fpm, MySQL,... Стаття періодично оновлюється, все сказане перевірено в Debian 10 buster.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Не встановлюється php 5.6 на debian. - Jeka.by</h2></div></a><div class="pagetext"><p>Як встановити php 5.6 на debian, якщо apt-get install ставить версію php 5.4.... 5. 6. deb http://cloudfront .debian.net /debian wheezy main.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Встановлення PHP та модулів на Ubuntu/Debian - Perfect...</h2></div></a><div class="pagetext"><p>Встановлення PHP 5 як модуля Apache: apt-get update apt-get install libapache2-mod-php5 php5-cli php5-memcache php5-memcached</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Як встановити PHP 7.4 на Debian 10 / Debian 9 Obu4alka</h2></div></a><div class="pagetext"><p>Встановлення PHP на Debian 9/Debian 10 · 1. Оновлення системи · 2. Додавання нового репозиторію · 3. Встановимо PHP7.4 у Debian.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">PHP 5.3.10 на Debian Jessie - PowerUser</h2></div></a><div class="pagetext"><p>За промовчанням у Debian Jessie я встановив PHP 5.6 за допомогою apt-get install php5. Проблема в тому, що в проекті, над яким я працюю, функції застаріли,...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Nginx + php7.0-fpm + php5.6-fpm + MySQL + phpmyadmin на...</h2></div></a><div class="pagetext"><p>13 травня 2019 р. — У цьому топі розглянемо як на Debian 9 одночасно запускати сайти на версіях php7.0 та php5.6 1. Встановлення Nginx+.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Як вибрати PHP версії 5 і 7 на virtualhost в Apache 2.4...</h2></div></a><div class="pagetext"><p>Встановити PHP 7: sudo apt-get install php7.0 php7.0-fpm. Потім перейдіть з prefork і увімкніть необхідні модулі: Для Debian 8: a2dismod php5...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Встановлення php 5.3 на Debian 7</h2></div></a><div class="pagetext"><p>Також із іншими пакетами. Допустимо, потрібен модуль mysql. 1. apt-get install php5-mysql=$VERSION. Якщо php як модуль apache: 1. apt-get install...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Як встановити PHP 8.0 на Debian 10 Debian 9 - INFOIT...</h2></div></a><div class="pagetext"><p>13 травня 2021 — Перед тим, як розпочати встановлення PHP 8 на Debian 10 Debian 9оновіть... Hit:5 http://mirror.hetzner.de/debian/security buster/updates...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Встановлення PHP-FPM на Debian із пакетів</h2></div></a><div class="pagetext"><p>15 груд. 2009 р. - Встановлення та конфігурування. Встановлюємо PHP5 та nginx: apt-get install php5-cgi nginx. Редагуємо /etc/nginx/sites-enabled/...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" ><div class="title"><h2 class="txt">Встановлення комплекту Linux, Apache, MariaDB, PHP (LAMP...</h2></div></a><div class="pagetext"><p>21 січ. 2020 р. - Tutorial. Встановлення комплекту Linux, Apache, MariaDB, PHP (LAMP) в Debian 9... 5.0.3-1 all transitional package for kdevelop-php-l10n … :.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-php-5-debian-10.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-uvimknuti-vkladku-spilnota-na-youtube.html">Як увімкнути вкладку спільнота на youtube</a></li>
+<li><a href="/articles/za-tizhden-viroslo-volossja-na-golovi.html">За тиждень виросло волосся на голові</a></li>
+<li><a href="/articles/den-himika-koli-bude-jakogos-chisla.html">День хіміка коли буде якогось числа</a></li>
+<li><a href="/articles/tvorchi-profesii-jaki.html">Творчі професії які</a></li>
+<li><a href="/articles/pidrivnjati-volossja-mashinkoju-zhinci.html">Підрівняти волосся машинкою жінці</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/najkrashhi-venotonizujuchi-tabletki.html">Найкращі венотонізуючі таблетки</a></li>
+<li><a href="/articles/dodati-telefon-do-viber.html">Додати телефон до viber</a></li>
+<li><a href="/articles/3-d-svoimi-rukami-chitati.html">3 Д своїми руками читати</a></li>
+<li><a href="/articles/chi-mozhna-na-sts-vzjati-kredit.html">Чи можна на стс взяти кредит</a></li>
+<li><a href="/articles/zrobiti-sajt-u-html.html">Зробити сайт у html</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/nihto-ih-ne-obrazhae.html">Ніхто їх не ображає</a></li>
+<li><a href="/articles/formatuvati-kartu-v-android.html">Форматувати карту в андроїд</a></li>
+<li><a href="/articles/kino-pisnja-bez-sliv-vstup-tabi.html">Кіно пісня без слів вступ таби</a></li>
+<li><a href="/articles/telegram-bot-oshhadbank-pereklad.html">Телеграм бот ощадбанк переклад</a></li>
+<li><a href="/articles/budinok-2-zimivlja-den.html">Будинок 2 зимівля день</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jaka-tema-viznachae-v-lirici-tjutcheva.html">Яка тема визначає в ліриці тютчева</a></li>
+<li><a href="/articles/telefon-sudovih-pristaviv-zastupnika-nachalnika.html">Телефон судових приставів заступника начальника</a></li>
+<li><a href="/articles/solpuga-shema.html">Сольпуга схема</a></li>
+<li><a href="/articles/najkrashhij-vog-tancjujut-vsi.html">Найкращий вог танцюють всі</a></li>
+<li><a href="/articles/najkrashha-bronja-vstalker-anomalija.html">Найкраща броня всталкер аномалія</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

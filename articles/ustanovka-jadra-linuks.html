@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Установка ядра лінукс | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Складання ядра Linux - Losst 14 серп. 2021 — У цій статті ми розглянемо як зібрати ядро ​​Linux на прикладі дистрибутива Ubuntu. Збір статті: Складання..." />
+ <meta name="keywords" content="установка, ядра, лінукс, Linux" />
+ <meta name="news_keywords" content="установка, ядра, лінукс, Linux" />
+ 
+ 
+ <meta property="og:title" content="Установка ядра лінукс" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Складання ядра Linux - Losst 14 серп. 2021 — У цій статті ми розглянемо як зібрати ядро ​​Linux на прикладі дистрибутива Ubuntu. Збір статті: Складання..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="17:02:27" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Установка ядра лінукс" />
+ <meta name="twitter:description" content="Складання ядра Linux - Losst 14 серп. 2021 — У цій статті ми розглянемо як зібрати ядро ​​Linux на прикладі дистрибутива Ubuntu. Збір статті: Складання..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Установка ядра лінукс</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Складання ядра Linux - Losst</h2></div></a><div class="pagetext"><p>14 серп. 2021 — У цій статті ми розглянемо як зібрати ядро ​​Linux на прикладі дистрибутива Ubuntu. Збір статті: Складання ядра Linux з вихідних джерел. 1.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Оновлення ядра Linux до нової версії - Losst</h2></div></a><div class="pagetext"><p>14 вер. 2020 — Якщо ви бажаєте налаштувати автоматичне оновлення ядра в Ubuntu, використовуйте утиліту UKKU. Якщо під час встановлення відбулися якісь помилки...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Як зібрати ядро ​​Linux з нуля - Ravesli</h2></div></a><div class="pagetext"><p>Крок №3: Встановлення необхідних пакетів</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">HOW-TO: Складання ядра Linux</h2></div></a><div class="pagetext"><p>Тому для їх встановлення на ядро, нестандартне для даної версії Ubuntu (наприклад, Ubuntu 16.04 йде з ядром 4.4.0), може знадобитися їх окрема...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Покрокове керівництво як зібрати ядро ​​Linux з нуля</h2></div></a><div class="pagetext"><p>22 лист. 2020 р. - Ядро Linux є основою Unix-подібних операційних систем.... sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Складання ядра в Ubuntu. Покрокова інструкція. - Linux</h2></div></a><div class="pagetext"><p>Складання ядра в Ubuntu. Покрокова інструкція. · /usr/src/linux-source-2-6-20. Архівний файл видаляємо (потрібні будуть права рута). · kernel-package, · libncurses5-dev,...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Встановлення ядра linux-2.6.1 (замість 2.4.x) (kernel install...</h2></div></a><div class="pagetext"><p>x) Встановлення ядра linux-2.6.1 (на Slackware 9.1, встановлене ядро ​​- 2.4.20) (Нагадую, що користуючись даним посібником ви берете на себе ризик за можливі...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">8.10. Компіляція Ядра - The Debian Administrator's Handbook</h2></div></a><div class="pagetext"><p>Більше того, що може бути використана на Debian system, Linux kernel sources є available in a package. To retrieve them, just install the linux-source-...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">8.6. Складання нового ядра - Debian</h2></div></a><div class="pagetext"><p>Щоб зібрати ядро ​​за технологією Debian, вам знадобляться деякі пакети: fakeroot , kernel-package ,linux-source-2.6 та деякі інші, які, ймовірно,...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Конфігурування та компіляція ядра Linux - ІТ Проффі</h2></div></a><div class="pagetext"><p>За час розвитку Linux поступово склалися чотири основні способи для конфігурування її ядра: модифікація параметрів ядра, що настроюються;; збирання ядра з...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Kali Linux: складання ядра / Хабр</h2></div></a><div class="pagetext"><p>2 лист. 2017 — Офіційний вихідний код Linux містить все, що потрібно для збирання пакета ядра Debian, але спочатку потрібно встановити пакет build-essential для...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Складання ядра Linux з вихідного коду</h2></div></a><div class="pagetext"><p>Складання ядра Linux з вихідного коду. Як я збираю свої ядра версій 2.6. Майже повністю застосовується до ядрів 3.х у Slackware 14 та наступних.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Компіляція та встановлення ядра Linux</h2></div></a><div class="pagetext"><p>Всім привіт! Ця стаття є детальним, покроковим посібником з компіляції, конфігурації та встановлення ядра на системі Red Hat Linux. Як усі ми...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Чи можна встановити ядро ​​Linux поодинці? - QA Stack</h2></div></a><div class="pagetext"><p>Під «смаками» я маю на увазі різні дистрибутиви linux, такі як ubuntu, redhat, debian і mandriva. Я майже не розумію, про що говорю. Я уявляв, що...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Як встановити останні версії ядра Linux у Debian та...</h2></div></a><div class="pagetext"><p>22 вер. 2021 р. - Kali Linux; Linux Mint Debian Edition (LMDE); MX Linux; та інші. Перевіримо поточну версію ядра: 1.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Пам'ятка зі складання ядра Linux з вихідного коду - Записки...</h2></div></a><div class="pagetext"><p>10 серп. 2016 — Збирається ядро ​​досить довго. На моєму ноутбуці збірка зайняла 1 годину 15 хвилин. Однак із цього часу більша частина витрачається на складання...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Оновлення ядра - update-kernel - ALT Linux</h2></div></a><div class="pagetext"><p>1 update-kernel; 2 Оновлення модулів ядра; 3 Доустановка модулів ядра; 4 Встановлення старого ядра; 5 Видалення старих версій ядра; 6 Посилання...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">17.5.7. Встановлення ядра.Linux для користувача - Розділ...</h2></div></a><div class="pagetext"><p>map і vmlinux, що з'явилися в каталозі…linux, та файл…/linux/arch/i386/boot/bzImage. Я при копіюванні додав до їх імен номер версії ядра, перетворивши їх,...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" ><div class="title"><h2 class="txt">Конфігурування, складання та встановлення ядра Linux - Блог...</h2></div></a><div class="pagetext"><p>8 Грудня. 2010 р. — З минулого поста ми вже знаємо, що ядро ​​Linux має... Debian kernel images Print-server:~# apt-get install linux-source-2.6.26 Читання</p><a rel="nofollow" href="/go.html?/articles/ustanovka-jadra-linuks.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/fibo-retracement-jak-koristuvatisja.html">Fibo retracement як користуватися</a></li>
+<li><a href="/articles/masshtabuvannja-ekranu-hyper-v.html">Масштабування екрану hyper v</a></li>
+<li><a href="/articles/adresa-ta-telefon-u-simferopoli.html">Адреса та телефон у Сімферополі</a></li>
+<li><a href="/articles/posilannja-na-nomer-u-vord.html">Посилання на номер у ворд</a></li>
+<li><a href="/articles/shemi-termoreguljatora-z-gisterezisom.html">Схеми терморегулятора з гістерезисом</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/bonja-bez-makijazhu-foto.html">Боня без макіяжу фото</a></li>
+<li><a href="/articles/test-jaka-anime-zovnishnist-tobi-pidhodit.html">Тест яка аніме зовнішність тобі підходить</a></li>
+<li><a href="/articles/jak-zshiti-chohol-dlja-pjalec-majster.html">Як зшити чохол для пялець майстер</a></li>
+<li><a href="/articles/shho-javljae-soboju-robota-buhgaltera.html">Що являє собою робота бухгалтера</a></li>
+<li><a href="/articles/papir-dlja-filtruvannja-povitrja.html">Папір для фільтрування повітря</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/pidkljuchiti-internet-mitishhi.html">Підключити інтернет митищі</a></li>
+<li><a href="/articles/vidkriti-magazin-dlja-poljuvannja.html">Відкрити магазин для полювання</a></li>
+<li><a href="/articles/krapelnicja-dlja-ochishhennja-kishechnika.html">Крапельниця для очищення кишечника</a></li>
+<li><a href="/articles/jak-vibrati-rozmir-brasleta.html">Як вибрати розмір браслета</a></li>
+<li><a href="/articles/jak-vigljadae-datchik-kolodok-na-paneli.html">Як виглядає датчик колодок на панелі</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jake-najkrashhe-pokrittja-pidlogi-kuhni.html">Яке найкраще покриття підлоги кухні</a></li>
+<li><a href="/articles/zavdannja-u-znishh-mene-idei.html">Завдання у знищ мене ідеї</a></li>
+<li><a href="/articles/jaki-svichki-zapaljuvannja-dlja-nivi-inzhektor.html">Які свічки запалювання для ниви інжектор</a></li>
+<li><a href="/articles/slozi-kotjatsja-ja-onovlju-vacap.html">Сльози котяться я оновлю вацап</a></li>
+<li><a href="/articles/ditina-plache-vranci-u-sadochku.html">Дитина плаче вранці у садочку</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

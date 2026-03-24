@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Atmega32 схеми | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Схеми, пристрої та проекти на мікроконтролерах AVR Схеми, пристрої та проекти на мікроконтролерах AVR Atmega та ATtiny. ... Цифровий вольтметр 0-25В на..." />
+ <meta name="keywords" content="Atmega32, схеми, мікроконтролері" />
+ <meta name="news_keywords" content="Atmega32, схеми, мікроконтролері" />
+ 
+ 
+ <meta property="og:title" content="Atmega32 схеми" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Схеми, пристрої та проекти на мікроконтролерах AVR Схеми, пристрої та проекти на мікроконтролерах AVR Atmega та ATtiny. ... Цифровий вольтметр 0-25В на..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="10:16:39" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Atmega32 схеми" />
+ <meta name="twitter:description" content="Схеми, пристрої та проекти на мікроконтролерах AVR Схеми, пристрої та проекти на мікроконтролерах AVR Atmega та ATtiny. ... Цифровий вольтметр 0-25В на..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Atmega32 схеми</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Схеми, пристрої та проекти на мікроконтролерах AVR</h2></div></a><div class="pagetext"><p>Схеми, пристрої та проекти на мікроконтролерах AVR Atmega та ATtiny.... Цифровий вольтметр 0-25В на мікроконтролері AVR ATmega32.</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Схеми: ATMEGA32 - РадіоЛоцман</h2></div></a><div class="pagetext"><p>. Pontoppidan Цей матеріал є про Tetris game I created with AtMega32 controlling beam of oscilloscope, which I very creatively named Scopetris.</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Тестер з 11 функціями на мікроконтролері Atmega32</h2></div></a><div class="pagetext"><p>Схема приладу: Відкрити схему більшої роздільної здатності. Управління приладу програмне, тому особливо описувати нема чого. Процесор опитує клавіатуру, отримує...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Опис роботи принципової схеми - techspirit.ru</h2></div></a><div class="pagetext"><p>Atmega32/L є КМОП 8-бітним мікроконтролером, побудованим на розширеній AVR RISC архітектурі. Використовуючи команди, що виконуються за один машинний такт,...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Atmega32 схеми - All-Audio.pro</h2></div></a><div class="pagetext"><p>Мікроконтролери AVR для початківців – 1; ATmega32, ATmega32L; cxema21.ru; Розпинування та опис процесорів ATmega встановлених на ардуїно і не тільки (+схеми...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Проекти на мікроконтролерах AVR</h2></div></a><div class="pagetext"><p>У цій статті наводиться схема термометра на термопарі, здатному вимірювати температури до... складається з РК-дисплея 16x2 та мікроконтролера ATmega32.</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">ATmega32 - Сайт Паяльник</h2></div></a><div class="pagetext"><p>ATmega32. Розділ: Зарубіжні мікросхеми Мікроконтролери 8-біт AVR. Найменування: ATmega32; Тактова частота: 16...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Проекти на мікроконтролері ATmega32: ATmega32.</h2></div></a><div class="pagetext"><p>Мікроконтролер ATmega8 прошитий для цього програматора можна придбати окремо за 120 рублів + схема та і малюнок плати.</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">ATmega32, ATmega32L - 8-бітні AVR мікроконтролери.</h2></div></a><div class="pagetext"><p>8-бітні AVR мікроконтролери з 32К Байт внутрішньосистемно програмованої FLASH пам'яті.... Блок-схема: Розташуваннявисновків: Опис: Atmega32/L є КМОП 8-...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Мікросхеми, AVR-контролери ATmega32-16AU TQFP-44</h2></div></a><div class="pagetext"><p>Контролер ATmega32-16AU TQFP-44 – виконаний у корпусі прямокутної форми та має чотири ряди висновків, у кількості сорок чотирьох штук, по одинадцять штук...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Самогонний апарат – повний автомат. Частина 3...</h2></div></a><div class="pagetext"><p>26 серп. 2021 р. - Далі - електрична схема «мозків» на основі мікроконтролера Atmel ATmega32. Не вдавався у подробиці всілякої обв'язки внутрішніх схем...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Пристрої на AVR - Мікроконтролери та технології</h2></div></a><div class="pagetext"><p>Схема та плата даних годинників спеціально розроблялися під Радянські індикатори АЛС314. Щоб створити плату з мінімальними розмірами (діаметр 32мм) було обрано...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Новий та оригінальний ATMEGA32A-AU... - ShopUrbano.ru</h2></div></a><div class="pagetext"><p>Опис та відгуки. Залишити відгук. Характеристики. ATMEGA32A-AU ATMEGA32A ATMEGA32 мікроконтролер IC інтегральної схеми TQFP-44 є одним з наших...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Інтегральні схеми АліЕкспрес - AliExpress</h2></div></a><div class="pagetext"><p>ATMEGA32A-AU ATMEGA32A ATMEGA32 8-бітний мікроконтролер із 32K байтами. Купони та знижки. Знижка 74,75 руб. за промокодом A24UFKHOTJ4L. -747,54 руб.</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Ідеї ​​на тему «Atmega32 board» (20) - Pinterest</h2></div></a><div class="pagetext"><p>04.04.2019 - Перегляньте дошку «atmega32 board» користувача Валерій Валерій у Pinterest. Подивіться більше ідей на теми «Ардуїно, електронна схема,...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">заміна GC7137AD (ICL7137) на ATmega32 та OP291 avr</h2></div></a><div class="pagetext"><p>[Блок індикації на ATmega32 та OP291]. Нижче наведено нову схему блоку індикації та її принципову схему. Блок індикації було зібрано на макетній платі...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Електронна читалка своїми руками на мікроконтролері.</h2></div></a><div class="pagetext"><p>Мозком пристрою служить мікроконтролер Atmega32, що працює на частоті 8МГц. · На схемі розпинування вірна лише для SD картиабо SD адаптера, для...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Годограф для IB металодетектора. - md4u.ru</h2></div></a><div class="pagetext"><p>Виготовити програматор зовсім не складно, в інтернеті багато простих схем. На цьому сайті представлені три схеми: Годограф на ATMega32 з дисплеєм 128x64 (KS0108)...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" ><div class="title"><h2 class="txt">Atmega32 - Меандр - цікава електроніка</h2></div></a><div class="pagetext"><p>11 груд. 2015 р. — Основні компоненти: Мікроконтролер – Atmega32 АЦП – AD7799 Джерело опорної напруги – ADR423 Джерело живлення – L78M05 Дисплей...</p><a rel="nofollow" href="/go.html?/articles/atmega32-shemi.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/shho-mozhna-pobachiti-u-kosmosi.html">Що можна побачити у космосі</a></li>
+<li><a href="/articles/nabir-dlja-dekoru-svoimi-rukami.html">Набір для декору своїми руками</a></li>
+<li><a href="/articles/shho-take-zvarjuvannja-linoleumu.html">Що таке зварювання лінолеуму</a></li>
+<li><a href="/articles/suhodinnja-v-pist-shho-mozhna-isti.html">Суходіння в піст що можна їсти</a></li>
+<li><a href="/articles/telefon-u-polikliniku-za-miscem-prozhivannja.html">Телефон у поліклініку за місцем проживання</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/koli-mozhna-zrobiti-uzd-shhitovidnoi-zalozi.html">Коли можна зробити узд щитовидної залози</a></li>
+<li><a href="/articles/znaki-pozhezhnoi-bezpeki-dlja-zvukovogo.html">Знаки пожежної безпеки для звукового сповіщення</a></li>
+<li><a href="/articles/telefoni-mvs-po-g-ulan-ude.html">Телефони МВС по г улан уде</a></li>
+<li><a href="/articles/perfekt-vorld-na-ajfon.html">Перфект ворлд на айфон</a></li>
+<li><a href="/articles/shema-pidkljuchennja-gsm-kontrolera-ta-kontaktora.html">Схема підключення gsm контролера та контактора</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/znajdit-korin-rivnjannja-2h-11-3.html">Знайдіть корінь рівняння 2х 11 3</a></li>
+<li><a href="/articles/st-chepecka-na-karti.html">Ст чепецька на карті</a></li>
+<li><a href="/articles/jaki-juvelirni-magazini-prijmajut-zoloto.html">Які ювелірні магазини приймають золото</a></li>
+<li><a href="/articles/shho-robiti-jakshho-mij-hlopec-smerdit.html">Що робити якщо мій хлопець смердить</a></li>
+<li><a href="/articles/kinoposhuk-ne-vhodit-za-qr-kodom.html">Кінопошук не входить за qr кодом</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/hram-u-savvinomu-telefoni.html">Храм у саввиному телефоні</a></li>
+<li><a href="/articles/peretvorennja-zminnoi-pid-znakom-diferenciala.html">Перетворення змінної під знаком диференціала</a></li>
+<li><a href="/articles/remont-budinkiv-pivnichne-izmajlove.html">Ремонт будинків північне ізмайлове</a></li>
+<li><a href="/articles/jaku-cinu-zastosuvati-dlja-konektora.html">Яку ціну застосувати для конектора</a></li>
+<li><a href="/articles/soda-vid-volossja-forum.html">Сода від волосся форум</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

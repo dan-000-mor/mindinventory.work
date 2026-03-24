@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Схеми з pic16c711 | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="PIC16C711 - цікава електроніка - meandr.org 25 травня 2012 р. — Наразі з’явилося багато принципових схем із використанням різних мікроконтролерів, у тому..." />
+ <meta name="keywords" content="схеми, pic16c711, PIC16C711-04, Microchip, MCRCH" />
+ <meta name="news_keywords" content="схеми, pic16c711, PIC16C711-04, Microchip, MCRCH" />
+ 
+ 
+ <meta property="og:title" content="Схеми з pic16c711" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="PIC16C711 - цікава електроніка - meandr.org 25 травня 2012 р. — Наразі з’явилося багато принципових схем із використанням різних мікроконтролерів, у тому..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="15:56:33" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Схеми з pic16c711" />
+ <meta name="twitter:description" content="PIC16C711 - цікава електроніка - meandr.org 25 травня 2012 р. — Наразі з’явилося багато принципових схем із використанням різних мікроконтролерів, у тому..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Схеми з pic16c711</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">PIC16C711 - цікава електроніка - meandr.org</h2></div></a><div class="pagetext"><p>25 травня 2012 р. — Наразі з'явилося багато принципових схем із використанням різних мікроконтролерів, у тому числі й мікроконтролерів PIC...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">Pic16c711 04p - All-Audio.pro</h2></div></a><div class="pagetext"><p>М/схема PIC16C711-04/P; PIC16C711-04/P, Мікроконтролер 8-біт, PIC, 4МГц, 1.75КБ (1Кx14) OTP, 13 I/O [DIP-18]; Microchip PIC16C711-04/P Мікроконтролер...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">PIC16C711-04/P - Microchip - 8 Bit MCU, програмований.</h2></div></a><div class="pagetext"><p>Придбайте PIC16C711-04/P - Microchip - 8 Bit MCU, що програмується один раз,... Контрольна схема перевірки парності пам'яті ПЗ зі скиданням помилки парності...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">PIC16C711-04/P, мікросхема від Лайтком</h2></div></a><div class="pagetext"><p>де не остання роль відведена розділу PIC16C711-04/P, мікросхема,... Інтегральні схеми · Мікросхеми Microchip / Atmel; PIC16C711-04/P, мікросхема...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">PIC16C711-04I/P даташит Microchip Technology...</h2></div></a><div class="pagetext"><p>Даташит PIC16C711-04I/P datasheet Microchip Technology;8-Bit CMOS Microcontrollers with A/D Converter.... RadioRadar - Радіоелектроніка, датішити, схеми.</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">Datasheet для PIC16C711-04/P (MCRCH), PIC16C711-04...</h2></div></a><div class="pagetext"><p>Даташит PIC16C711-04/P (MCRCH), PIC16C711-04/SO (MCRCH), PIC16C710-04/P (MCRCH), PIC16C715-20I/SO (MCRCH), PIC16C711-04/P (MCRCH) /P (MCRCH)...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">Pic16c711-04i За Індивідуальним Замовленням Так Pic16c711-20i За...</h2></div></a><div class="pagetext"><p>Pic16c711-04i За Індивідуальним Замовленням Так Pic16c711-20i За Індивідуальним Замовленням Так Pic16c71-20 За Індивідуальним Замовленням Так Sop Ic Інтегральної Схеми...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">Microchip Technology - PIC16C711/JW Інтернет-дистриб'ютор...</h2></div></a><div class="pagetext"><p>PIC16C711/JW Ціна, PIC16C711/JW інвентар, PIC16C711/JW Datasheet, продайте великий... Пам'ять, спалах, ІВ, інтегральні схеми, дистриб'ютор електронних...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">Microchip Technology - PIC16C711-20I/SO Інтернет...</h2></div></a><div class="pagetext"><p>PIC16C711-20I/SO Ціна, PIC16C711-20I/SO інвентар, PIC16C711-20I/SO Datasheet,... схеми (ІВ) &gt; Вбудовані мікроконтролери &gt; PIC16C711-20I/SO.</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">2.4 Обґрунтування обраного варіанта</h2></div></a><div class="pagetext"><p>7 черв. 2015 р. -... рішення використовувати мікропроцесор компанії Microchip PIC16C711.... Перерахуємо основні елементи схеми: АЛУ (ALU), де виконуються...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">PIC16C711-04/SS datasheet - Kazus.ru</h2></div></a><div class="pagetext"><p>PIC16C711-04/SS, datasheet for PIC16C711-04/SS - 8-біт CMOS Microcontrollers with A/D Converter... Принципові схеми, Datasheets, Форум з електроніки...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">PIC16C711-04/P datasheet - Kazus.ru</h2></div></a><div class="pagetext"><p>PIC16C711-04/P, datasheet for PIC16C711-04/P - 8-біт CMOS Microcontrollers with A/D Converter... Принципові схеми, Datasheets, Форум з електроніки...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">Схема програматора PIC контролерів EXTRA-PIC</h2></div></a><div class="pagetext"><p>Принципова схема – Схема програматора PIC контролерів EXTRA-PIC. Зроби сам своїми руками. Схема з розділу – PIC та AVR.</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">PIC16C711-20I/P Microchip Technology</h2></div></a><div class="pagetext"><p>PIC16C711-20I/P. DIP18 MCU 8bit CMOS 20MHz,. Напівпровідники - СК - інтегральних - Пам'ять та процесори - Пам'ять та процесори ·<section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">PIC16C711-04/P - Microchip - Datasheet та Придбати - FindIC.ru</h2></div></a><div class="pagetext"><p>2 груд. 2021 р.... даташит pdf і ціна для PIC16C711-04/P доступні. Аркуш даних:29;Ціна:₽201.786;на складі:1568 PCS. PIC16C711-04/P схема включення,...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">PIC16C711-20/P Наявність на складі - ExceStore</h2></div></a><div class="pagetext"><p>PIC16C711-20/P – це нові оригінальні акції на ExceStore.... ГоловнаПродуктиІнтегральні схеми (ICs)Вбудований - мікроконтролериPIC16C711-20/P.</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">Source PIC16C711-04I на індивідуальне замовлення так...</h2></div></a><div class="pagetext"><p>PIC16C711-04I на індивідуальне замовлення так PIC16C711-20I на індивідуальне замовленнятак PIC16C71-20 на індивідуальне замовлення так SOP IC інтегральної схеми,...</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">Купити мікросхему PIC16C711-04/P, радіодеталі оптом</h2></div></a><div class="pagetext"><p>Купити мікросхему PIC16C711-04/P недорого з доставкою по Україні. Великий... Мікросхема PIC16C711-04/P Ескор... Конструктор Знавець 180 схем.</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" ><div class="title"><h2 class="txt">Купити мікроконтролер pic PIC16C711-20/SO - Комплект-А</h2></div></a><div class="pagetext"><p>PIC16C711-20/SO - Мікроконтролер PIC, SRAM: 68Б, 20МГц, SO18, 2,5÷-5,5В - Купити можна в Комплект-А.</p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section></p><a rel="nofollow" href="/go.html?/articles/shemi-z-pic16c711.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-diznatisja-auth-key-vid-tjurmi.html">Як дізнатися auth key від тюрми</a></li>
+<li><a href="/articles/navishho-znimati-rodjuchij-shar-pid-chas.html">Навіщо знімати родючий шар під час будівництва</a></li>
+<li><a href="/articles/jak-pozbavitisja-vid-visolu-na-plitci.html">Як позбавитися від висолу на плитці</a></li>
+<li><a href="/articles/komu-ne-potribni-dopuski-u-budivnictvi.html">Кому не потрібні допуски у будівництві</a></li>
+<li><a href="/articles/jakshho-prijmati-gljukofazh-i-e-solodke.html">Якщо приймати глюкофаж і є солодке</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/timati-jogor-krid-guchchi-slova-pisni.html">Тіматі йогор крид гуччі слова пісні</a></li>
+<li><a href="/articles/dlja-chogo-na-hreshhennja-maljujut-hrestiki-na.html">Для чого на хрещення малюють хрестики на</a></li>
+<li><a href="/articles/tekst-pro-snidanok-anglijskoju-movoju.html">Текст про сніданок англійською мовою</a></li>
+<li><a href="/articles/gdz-robochij-zoshit-biboletova-babush-klark.html">Гдз робочий зошит біболетова бабуш кларк</a></li>
+<li><a href="/articles/krosvord-solfedzhio-2-klas.html">Кросворд сольфеджіо 2 клас</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/chomu-pokladena-komisija-bula-rozpushhena.html">Чому покладена комісія була розпущена</a></li>
+<li><a href="/articles/zasivani-navesni-zlaki-6-bukv-skanvord.html">Засівані навесні злаки 6 букв сканворд</a></li>
+<li><a href="/articles/shho-e-shljub-u-hristijanstvi.html">Що є шлюб у християнстві</a></li>
+<li><a href="/articles/trenazher-1-klas-zhirenka-lukina.html">Тренажер 1 клас жиренка лукіна</a></li>
+<li><a href="/articles/klimanova-1-klas-umk.html">Кліманова 1 клас умк</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/mod-na-vidobrazhennja-broni-v-majnkraft.html">Мод на відображення броні в Майнкрафт</a></li>
+<li><a href="/articles/film-ja-nalezhatimu-vam.html">Фільм я належатиму вам</a></li>
+<li><a href="/articles/ne-mozhu-dzvoniti-z-plansheta.html">Не можу дзвонити з планшета</a></li>
+<li><a href="/articles/potribno-kachati-nogi-den.html">Потрібно качати ноги день</a></li>
+<li><a href="/articles/jak-pereviriti-v-areshti-diljanku.html">Як перевірити в арешті ділянку</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

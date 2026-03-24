@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Зробити скрипт php | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Перша сторінка на PHP - Manual - PHP Після цього можна вводити ім’я файлу без лапок. Тепер, коли ви успішно створили працюючий PHP-скрипт, саме час..." />
+ <meta name="keywords" content="зробити, скрипт" />
+ <meta name="news_keywords" content="зробити, скрипт" />
+ 
+ 
+ <meta property="og:title" content="Зробити скрипт php" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Перша сторінка на PHP - Manual - PHP Після цього можна вводити ім’я файлу без лапок. Тепер, коли ви успішно створили працюючий PHP-скрипт, саме час..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="17:00:26" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Зробити скрипт php" />
+ <meta name="twitter:description" content="Перша сторінка на PHP - Manual - PHP Після цього можна вводити ім’я файлу без лапок. Тепер, коли ви успішно створили працюючий PHP-скрипт, саме час..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Зробити скрипт php</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Перша сторінка на PHP - Manual - PHP</h2></div></a><div class="pagetext"><p>Після цього можна вводити ім'я файлу без лапок. Тепер, коли ви успішно створили працюючий PHP-скрипт, саме час створити найзнаменитіший PHP-скрипт!</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Пакетний файл для запуску PHP-скрипту з командного рядка</h2></div></a><div class="pagetext"><p>Для запуску наведеного прикладу в Unix-системі потрібно зробити його виконуваним і просто виконати в консолі script.php echothis або script.php -h.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Як написати PHP скрипт (з ілюстраціями) - wikiHow</h2></div></a><div class="pagetext"><p>PHP - це серверна мова написання скриптів, призначена для створення інтерактивних... Використовуйте теги HTML, щоб зробити шрифт тексту жирним.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Створення PHP скриптів та навички програмного чарівництва</h2></div></a><div class="pagetext"><p>Локальний сервер. Безкоштовний курс з PHP програмування. Освойте курс і дізнайтеся, як створити динамічний сайт на PHP і MySQL з повного нуля,...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Як запустити скрипт PHP – особливості повітроплавання</h2></div></a><div class="pagetext"><p>Як уже не раз згадувалося, PHP – це серверна мова програмування, тому зробити так, щоб результат роботи його коду відобразився в...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">PHP в HTML-документах Основи PHP - PHP.SU</h2></div></a><div class="pagetext"><p>Тепер ви можете зберегти наведений PHP скрипт на сервері у вигляді файлу .php,... Це можна зробити, використовуючи функцію short_tags() (тільки в PHP 3),...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Як виконати скрипт php у скрипті php? - CodeRoad</h2></div></a><div class="pagetext"><p>Я намагаюся запустити скрипт php всередині php скрипта. Ось код:<section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Як зробити скрипт PHP, який може циклічно працювати і...</h2></div></a><div class="pagetext"><p>Як зробити PHP скрипт, який може циклічно працювати і запускатися один раз на тиждень за допомогою CRON? Мені потрібна деяка допомога в цьому,...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Виконати скрипт PHP з іншого скрипта PHP – 10 Відповідей</h2></div></a><div class="pagetext"><p>Ви можете викликати PHP script вручну з командного рядка hello.php.... Або просто зробити phpfile.php? Rocket Hazmat 09 груд. 2011 року, о 19:31.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Виконання PHP-файлів Посібник з PHP PHP.RU</h2></div></a><div class="pagetext"><p>Немає обмежень, який файл запускати, і PHP-скрипти не повинні мати... також "shebang") на початок файлу і зробити їх виконуваними, щоб вказати,...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Як запустити PHP скрипт без веб-сервера - HackWare.ru</h2></div></a><div class="pagetext"><p>Як запустити PHP скрипт у командному рядку Windows Якщо ви знайомі із запуском консольних програм у Windows або хоча б у Linux, то для вас...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Перша програма (скрипт) на PHP</h2></div></a><div class="pagetext"><p>Поки нам цілком вистачить програми Denwer, вона включає php, mysql, і веб сервер apache, вже налаштовані і готові до роботи. Завантажити denwer можна тут, або з...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Looping скриптів - Highload.today</h2></div></a><div class="pagetext"><p>Для повторного виконання важливих скриптів або процесів підійдуть системні інструменти та прості скрипти, у тому числі на PHP. Cron loop...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Як підключити PHP до HTML - шпаргалка для початківців</h2></div></a><div class="pagetext"><p>Можна створити скрипт, який міститиме лише HTML (без тегів), і він нормально працюватиме. Більш просунуті методи: ...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Як працювати з PHP скриптами з консолі Блог Coding Hamster</h2></div></a><div class="pagetext"><p>Як запустити php-скрипт із командного рядка? Незалежно від операційної системи, для запуску скрипта необхідно набрати в консолі наступну...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Використання PHP з Командної Рядки - PHPClub</h2></div></a><div class="pagetext"><p>php або створити batch-файл (.bat) для запуску скрипта через PHP. Рядок, доданий на початок скрипту для роботи під Unix, не завадить під Windows, тому ви...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Перетворення PHP-скрипту в автономний файл, що виконується.</h2></div></a><div class="pagetext"><p>Чи є спосіб створити .exe версію PHP скрипта. Я справді не дуже стурбований декомпіляцією; Я більше турбуюся про те, щоб попросити людей...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Готовий phpскрипт для відправки SMS - Sms-prosto.ru</h2></div></a><div class="pagetext"><p>Крок 3 – Створити PHP-скрипт відправки СМС на своєму сайті. Створіть свій PHP-скрипт надсилання SMS-повідомлень (приклад нижче). Створений скрипт повинен розташовуватися в...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" ><div class="title"><h2 class="txt">Як зробити редирект після виконання PHP скрипта? - Stack...</h2></div></a><div class="pagetext"><p>Потрібно системи реєстрації. Тобто. користувач натискає кнопку "Вхід", виконується...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section></p><a rel="nofollow" href="/go.html?/articles/zrobiti-skript-php.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/dodati-do-path-mac.html">Додати до path mac</a></li>
+<li><a href="/articles/vidalili-zub-cherez-skilki-mozhna-poloskati.html">Видалили зуб через скільки можна полоскати</a></li>
+<li><a href="/articles/jak-robiti-kljar-na-kefiri.html">Як робити кляр на кефірі</a></li>
+<li><a href="/articles/mechetna-prospekti-svitu-budivnictvo.html">Мечетьна проспекті світу будівництво</a></li>
+<li><a href="/articles/jak-stvoriti-poradu-v-mkd.html">Як створити пораду в мкд</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/prichini-movnoi-patologii-shhodo-benilovoi.html">Причини мовної патології щодо бенілової</a></li>
+<li><a href="/articles/avensis-pidkljuchiti-fleshku.html">Авенсіс підключити флешку</a></li>
+<li><a href="/articles/malopoverhove-budivnictvo-u-saransku-na.html">Малоповерхове будівництво у саранську на</a></li>
+<li><a href="/articles/virsh-uroki-zi-mnoju-vchit.html">Вірш уроки зі мною вчить</a></li>
+<li><a href="/articles/jak-diznatisja-vsi-svoi-akaunti-samp.html">Як дізнатися всі свої акаунти самп</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/honor-dati-vihodu-telefoniv.html">Honor дати виходу телефонів</a></li>
+<li><a href="/articles/vikonavcha-shema-poverhni.html">Виконавча схема поверхні</a></li>
+<li><a href="/articles/jak-zberegti-muziku-z-keshu.html">Як зберегти музику з кешу</a></li>
+<li><a href="/articles/bilgorod-ostrivskogo-22-nomer-telefonu.html">Білгород Острівського 22 номер телефону</a></li>
+<li><a href="/articles/dirka-vseredini-mikrohvilovoi-pechi-mozhna.html">Дірка всередині мікрохвильової печі можна користуватися</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-nastroiti-openbox-na-televizori.html">Як настроїти openbox на телевізорі</a></li>
+<li><a href="/articles/shpaleri-z-nahilom-telefonu.html">Шпалери з нахилом телефону</a></li>
+<li><a href="/articles/fotoshop-7-makijazh.html">Фотошоп 7 макіяж</a></li>
+<li><a href="/articles/jak-mozhna-perekinuti-ajfon-video-na-kompjuter.html">Як можна перекинути айфон відео на комп’ютер</a></li>
+<li><a href="/articles/ja-rekomenduju-golovnu-storinku.html">Я рекомендую головну сторінку</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

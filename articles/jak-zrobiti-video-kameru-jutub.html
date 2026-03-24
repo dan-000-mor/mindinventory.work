@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як зробити відео камеру ютуб | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Як зробити трансляцію з IP камери на Youtube. OBS має велику спільноту, а ця ж стаття про те, як камера Polyvision може транслювати відео безпосередньо в..." />
+ <meta name="keywords" content="зробити, відео, камеру, ютуб" />
+ <meta name="news_keywords" content="зробити, відео, камеру, ютуб" />
+ 
+ 
+ <meta property="og:title" content="Як зробити відео камеру ютуб" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Як зробити трансляцію з IP камери на Youtube. OBS має велику спільноту, а ця ж стаття про те, як камера Polyvision може транслювати відео безпосередньо в..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:40:13" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як зробити відео камеру ютуб" />
+ <meta name="twitter:description" content="Як зробити трансляцію з IP камери на Youtube. OBS має велику спільноту, а ця ж стаття про те, як камера Polyvision може транслювати відео безпосередньо в..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як зробити відео камеру ютуб</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як зробити трансляцію з IP камери на Youtube.</h2></div></a><div class="pagetext"><p>OBS має велику спільноту, а ця ж стаття про те, як камера Polyvision може транслювати відео безпосередньо в різні соцмережі без участі ПК. Берете...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як провести трансляцію з веб-камери - Довідка - YouTube</h2></div></a><div class="pagetext"><p>За бажання вихід в ефір можна запланувати на певну дату. Користувачі 13-17 років за замовчуванням завантажують відео з обмеженим доступом, а користувачі...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як проводити прямі трансляції за допомогою відеокодера</h2></div></a><div class="pagetext"><p>Провести трансляцію на YouTube можна трьома способами: за допомогою веб-камери, відеокодера та мобільного пристрою. Використання відеокодера підходить у наступних...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як стримати IP камери на YouTube або VK? CCTV+</h2></div></a><div class="pagetext"><p>15 черв. 2021 - Для передачі відео потоку підійде майже будь-яка камера з підтримкою протоколу RTMP (не плутати з RTSP). Чому майже? Бо для трансляції на...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як зробити відео для YouTube - wikiHow</h2></div></a><div class="pagetext"><p>Використовуйте веб-камеру для зручності. Як і у випадку зі смартфонами, сучасні ноутбуки оснащують вбудованою веб-камерою (зазвичай вона розташована над екраном).</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як зробити цікаве відео, як зняти відео для youtube</h2></div></a><div class="pagetext"><p>Використовуйте аксесуари та бокси для камери</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як зняти відео з реакцією для YouTube: повна інструкція</h2></div></a><div class="pagetext"><p>При цьому зняти відео реакцію зовсім не складно в технічному плані. Все що вам потрібно – це пристрій з камерою та комп'ютер, на якому ви будете...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як зробити трансляцію на YouTube з IP-камери TVT?</h2></div></a><div class="pagetext"><p>Трансляцію на Youtube можна організувати за допомогою спеціальних програм для кодування відео (відеокодер), таких як OBS Studio, Wirecast або vMix.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Яку камеру вибрати для відеоблогу на YouTube?</h2></div></a><div class="pagetext"><p>15 бер. 2017 р. — Як із самого відео, так і зкоментарів. Припустимо, ви вирішили спробувати себе як блогер, що для цього потрібно в технічному плані?</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Camera MX – фото та відео камера - Google Play</h2></div></a><div class="pagetext"><p>Cаmеrа MX пропонує кожному користувачеві Android зручну, але повноцінну програму для камери, незалежно від виробника смартфона.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Управління доступом до камери на Mac - Apple Support</h2></div></a><div class="pagetext"><p>Деякі програми, які ви встановлюєте, можуть використовувати камеру на Mac для зйомки фото та відео. Ви можете вибрати ті програми, якими буде...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як зробити відео реакції, яке полюбить YouTube</h2></div></a><div class="pagetext"><p>21 серп. 2018 — Використовуйте гідну відеокамеру та мікрофон. Неважливо, чи ви використовуєте смартфон, встановлену на комп'ютері веб-камеру або зовнішню цифрову...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як вести пряму трансляцію на YouTube</h2></div></a><div class="pagetext"><p>Підключіть карту захоплення до комп'ютера, а камеру до карти захоплення, і ваша програма повинна розпізнати камеру як пристрій класу USB video (UVC). Хоча точний...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як правильно викласти відео на Ютуб?</h2></div></a><div class="pagetext"><p>Створення свого YouTube каналу. Друге, що Ютуб попросить вас зробити - це створити новий канал, без нього ви ніяк не зможете залити відео.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як зробити багатокамерну трансляцію на YouTube?</h2></div></a><div class="pagetext"><p>14 лист. 2017 р. - мультикамерна трансляція на YouTube з вибором камери самим глядачем. Глядач просто натискає на валізу зі стрілками і перемикається на іншу...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" ><div class="title"><h2 class="txt">Як автору-початківцю створити відео для YouTube</h2></div></a><div class="pagetext"><p>На YouTube автори можуть розміщувати відео будь-якого типу, якості та довжини практично на... Яке обладнання та люди потрібні для налаштування кожної камери?</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-video-kameru-jutub.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/fonetichnij-rozbir-slova-bazikati.html">Фонетичний розбір слова базікати</a></li>
+<li><a href="/articles/diznatisja-chas-po-kievu.html">Дізнатися час по Києву</a></li>
+<li><a href="/articles/znajti-vse-dlja-iphone-4.html">Знайти все для iPhone 4</a></li>
+<li><a href="/articles/fizzy-jak-vidkljuchiti-paket-u-lajf.html">Fizzy як відключити пакет у лайф</a></li>
+<li><a href="/articles/dark-souls-3-de-znajti-bronju.html">Дарк соулс 3 де знайти броню</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/nomer-telefonu-dlja-dzvinkiv-za-kordon.html">Номер телефону для дзвінків за кордон</a></li>
+<li><a href="/articles/jak-uvimknuti-lihtarik-na-motoroli.html">Як увімкнути ліхтарик на моторолі</a></li>
+<li><a href="/articles/misto-v-iraku-centr-viroshhuvannja-apelsiniv.html">Місто в іраку центр вирощування апельсинів</a></li>
+<li><a href="/articles/dk50-ja.html">Dk50 я</a></li>
+<li><a href="/articles/zrobiti-chverti-na-korobci.html">Зробити чверті на коробці</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/koshtovnosti-vid-jakogo-slova-utvoreno.html">Коштовності від якого слова утворено</a></li>
+<li><a href="/articles/znaju-parol-ale-ne-mozhu-pidkljuchitisja-do-wifi.html">Знаю пароль але не можу підключитися до wifi на айфоні</a></li>
+<li><a href="/articles/krashhe-buti-bidnim-ta-shhaslivim.html">Краще бути бідним та щасливим</a></li>
+<li><a href="/articles/ja-ljublju-tebe-prosto-tak-vikonavec.html">Я люблю тебе просто так виконавець</a></li>
+<li><a href="/articles/dopomoga-v-ustanovci-window.html">Допомога в установці window</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/nepracjue-displej-ajfonu.html">Непрацює дисплей айфону</a></li>
+<li><a href="/articles/jak-maljuvati-leon-znachok.html">Як малювати леон значок</a></li>
+<li><a href="/articles/pristrij-ta-princip-dii-sinhronizatoriv.html">Пристрій та принцип дії синхронізаторів</a></li>
+<li><a href="/articles/pribrati-moh-iz-cegli.html">Прибрати мох із цегли</a></li>
+<li><a href="/articles/vchitel-tanciv-shho-dlja-cogo-potribno.html">Вчитель танців що для цього потрібно</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

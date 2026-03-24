@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Встановлення системи Windows 7 з диска | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Як інсталювати Windows 7 на комп’ютер? - Teryra.com Як встановити Windows 7 - Покроковий посібник У цій статті я розповім, як самостійно встановити..." />
+ <meta name="keywords" content="встановлення, системи, windows" />
+ <meta name="news_keywords" content="встановлення, системи, windows" />
+ 
+ 
+ <meta property="og:title" content="Встановлення системи Windows 7 з диска" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Як інсталювати Windows 7 на комп’ютер? - Teryra.com Як встановити Windows 7 - Покроковий посібник У цій статті я розповім, як самостійно встановити..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="11:55:36" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Встановлення системи Windows 7 з диска" />
+ <meta name="twitter:description" content="Як інсталювати Windows 7 на комп’ютер? - Teryra.com Як встановити Windows 7 - Покроковий посібник У цій статті я розповім, як самостійно встановити..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Встановлення системи Windows 7 з диска</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Як інсталювати Windows 7 на комп'ютер? - Teryra.com</h2></div></a><div class="pagetext"><p><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Як встановити Windows 7 - Покроковий посібник</h2></div></a><div class="pagetext"><p>У цій статті я розповім, як самостійно встановити операційну систему Windows 7 з диска до себе на комп'ютер або ноутбук.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Як встановити Windows 7 з диска або флешки.</h2></div></a><div class="pagetext"><p>1. Завантаження з інсталяційного диска чи флешки. Використовуємо найпростіший спосіб завантаження – за допомогою Boot Menu (Меню Завантаження)...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Встановлення Windows 7 - як встановити з флешки чи диска</h2></div></a><div class="pagetext"><p>Розділи жорсткого диска для встановлення системи</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Інсталяція Windows 7 з диска на комп'ютер (ноутбук)</h2></div></a><div class="pagetext"><p>Налаштування параметрів системи</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Посібник зі встановлення операційної системи Windows 7</h2></div></a><div class="pagetext"><p>Для того, щоб розпочати процес встановлення, потрібно виставити в BIOS пріоритет завантаження з DVD-диска або USB флешки. Перезавантажуємо комп'ютер або ноутбук і при...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Інструкція: інсталяція Windows 7 з флешки на комп'ютер</h2></div></a><div class="pagetext"><p>25 лип. 2015 р. — Зважаючи на те, що інсталяція Windows 7 з диска та флешки мало чим відрізняється... версії програм вимагають лише операційної системи Windows x64.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Установка Віндовс 7 з диска для чайників - CompSch.com</h2></div></a><div class="pagetext"><p>Перед встановленням; Відео: встановлення Windows 7; створення диска; Встановлення Windows 7 з диска... виберіть бажану версію операційної системи;</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Як встановити Windows 7 на комп'ютер з флешки або диска</h2></div></a><div class="pagetext"><p>Детально про інсталяцію Windows 7 з диска або флешки. Як записати образ системи на диск чи флешку. Покрокова установка Windows 7 із зображеннями.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Переустановка Windows 7 з диска: працююча ОС у 3 кроки</h2></div></a><div class="pagetext"><p>За часом установка в середньому займає 10-15 хвилин і залежить від характеристик вашого комп'ютера. Після перезавантаження потрібно зайти в меню BIOS і вибрати...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Перенесення встановленої системи Windows 7 на новий...</h2></div></a><div class="pagetext"><p>Sysprep видалить контролери обладнання та певну інформацію, пов'язану з інсталяцією Windows, а також точки відновлення та реєстр подій. Т. е.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Як встановити Windows 7 на новий жорсткий диск</h2></div></a><div class="pagetext"><p>Дуже часто нові комп'ютери продають без попередньої операційної системи. І якщо ви щасливий власник такого комп'ютера, то перед вами...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Установка Windows 7 - покроковий посібник - FAQHard.RU</h2></div></a><div class="pagetext"><p>Установка Windows 7 - покроковий посібник · 1. Якщо на жорсткому диску встановлена ​​колишня система, то на екрані з'явиться фраза «Натиснути будь-яку...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Виконує чисту установку Windows 7 Professional на...</h2></div></a><div class="pagetext"><p>Якщо у вас немає диска відновлення операційної системи, для вашого комп'ютера підійде будь-який диск відновлення операційної системи Windows 7 Dell.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Самостійне встановлення Windows 7 - Remont-noutbuka.by</h2></div></a><div class="pagetext"><p>Пам'ятайте, що для того, щоб операційна система Віндовс коректно працювала надалі, системний диск завжди повинен залишатися вільним не менш ніж на...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Як завантажити комп'ютер із інсталяційного диска Windows</h2></div></a><div class="pagetext"><p>11 травня 2021 — Як запустити систему Windows через BIOS з інсталяційного диска. Росія+7 (910)... Додаткові відомості про інсталяцію Windows 7 див.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Посібник зі встановлення Windows 7 на кроки - Зведені...</h2></div></a><div class="pagetext"><p>Отже, почнемо встановлення операційної системи Windows 7. Я розгляну процес установки з нуля, тобто всі дані на логічному диску, на який буде...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" ><div class="title"><h2 class="txt">Переустановка Windows 7 без диска, флешки та BIOS</h2></div></a><div class="pagetext"><p>Встановлення Windows 7 без диска, флешки та BIOS</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-sistemi-windows-7-z-diska.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/slovo-z-7-bukv-na-v.html">Слово з 7 букв на в</a></li>
+<li><a href="/articles/kontroler-ne-bachit-merezhevogo-otochennja.html">Контролер не бачить мережевого оточення</a></li>
+<li><a href="/articles/alternativa-krapka-kipinnja-chitati.html">Альтернатива крапка кипіння читати</a></li>
+<li><a href="/articles/ne-vmikaetsja-gaz-gazel-evotek.html">Не вмикається газ газель евотек</a></li>
+<li><a href="/articles/kondicioner-ne-pokazue-temperaturi.html">Кондиціонер не показує температури</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/emi-dlja-telefonu.html">Єми для телефону</a></li>
+<li><a href="/articles/jaki-buli-knjazivstva-na-biloruskih-zemljah.html">Які були князівства на білоруських землях</a></li>
+<li><a href="/articles/astrologija-ta-znaki.html">Астрологія та знаки</a></li>
+<li><a href="/articles/jak-dodati-rozkladku-na-ajfon.html">Як додати розкладку на айфон</a></li>
+<li><a href="/articles/chi-mozhna-ditini-pri-rotovirusi-biolakt.html">Чи можна дитині при ротовірусі біолакт</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jaki-dovidki-mozhe-vidavati-likarnja.html">Які довідки може видавати лікарня</a></li>
+<li><a href="/articles/shema-elektropostachannja-primorskogo-kraju.html">Схема електропостачання приморського краю</a></li>
+<li><a href="/articles/e-u-nimeckij-movi-mjakij-znak.html">Є у німецькій мові м’який знак</a></li>
+<li><a href="/articles/pro-smert-dobroi-ljudini.html">Про смерть доброї людини</a></li>
+<li><a href="/articles/znaki-z-prannja-ta-chishhennja.html">Знаки з прання та чищення</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-pochistiti-papku-windows-10.html">Як почистити папку windows 10</a></li>
+<li><a href="/articles/chi-skladno-zbirati-pk.html">Чи складно збирати пк</a></li>
+<li><a href="/articles/navchitisja-katatisja-na-gir.html">Навчитися кататися на гір</a></li>
+<li><a href="/articles/jak-vigljadae-kv-6.html">Як виглядає кв 6</a></li>
+<li><a href="/articles/prezentacija-na-temu-vchitel-inozemnoi-movi.html">Презентація на тему вчитель іноземної мови</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

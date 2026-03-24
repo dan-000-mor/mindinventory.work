@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Встановлення 1с на linux інструкція | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Проста установка 1С на Linux (Ubuntu) - WiseAdvice-IT Щоб встановити 1С на Linux, необхідно відкрити термінал («Програми» і «Стандартні») і перейти в..." />
+ <meta name="keywords" content="встановлення, Linux, інструкція" />
+ <meta name="news_keywords" content="встановлення, Linux, інструкція" />
+ 
+ 
+ <meta property="og:title" content="Встановлення 1с на linux інструкція" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Проста установка 1С на Linux (Ubuntu) - WiseAdvice-IT Щоб встановити 1С на Linux, необхідно відкрити термінал («Програми» і «Стандартні») і перейти в..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="12:30:50" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Встановлення 1с на linux інструкція" />
+ <meta name="twitter:description" content="Проста установка 1С на Linux (Ubuntu) - WiseAdvice-IT Щоб встановити 1С на Linux, необхідно відкрити термінал («Програми» і «Стандартні») і перейти в..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Встановлення 1с на linux інструкція</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Проста установка 1С на Linux (Ubuntu) - WiseAdvice-IT</h2></div></a><div class="pagetext"><p>Щоб встановити 1С на Linux, необхідно відкрити термінал («Програми» і «Стандартні») і перейти в папку, де складені всі файли. У цьому нам допоможе команда "cd" (приклад використання - "cd /etc/apt"). Після цього необхідно запустити встановлення скачуваних пакетів у визначеному порядку.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Встановлення Платформи "1С:Підприємство" в ОС Linux</h2></div></a><div class="pagetext"><p>Якщо надалі робота з сервером «1С:Підприємство» на Linux та управління буде... Установка платформи в Debian-системах на прикладі Ubuntu Server 16.04.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">встановлення сервера 1С на Linux, покрокове керівництво</h2></div></a><div class="pagetext"><p>Однією з основних аргументів вважається істотна економія проти аналогічним сервером, встановленим у системі Windows Server. Підрахунки говорять про...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Посібник із встановлення сервера 1С на Linux (грудень...</h2></div></a><div class="pagetext"><p>10 Грудня. 2019 р. – Керівництво розраховане під конкретні версії. Ubuntu-16.04.3-server-amd64. PostgreSQL Pro 9.6.3.3. Apache 2.2. Сервер 1С 8.3.13.1513...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Установка серверної частини 1С в середовищі Linux</h2></div></a><div class="pagetext"><p>27 вер. 2021 р. - Даний посібник зі встановлення 1С в Linux розрахований під версії: Ubuntu-18.04.-server-amd64. PostgreSQL 1C 12.8.1 від компанії PostgresPro.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Установка 1С на Ubuntu Linux</h2></div></a><div class="pagetext"><p>Встановлення клієнта та сервера 1С на Ubuntu Linux. Встановлення Ubuntu Linux. Завантажуємося з диска Ubuntu Linux, відкривається вітальне вікно. Ліворуч вибір мови...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Установка сервера 1С + PostgreSQL на Linux Ubuntu</h2></div></a><div class="pagetext"><p>4 лют. 2020 — У даній інструкції ми розглянемо процес налаштування сервера 1C 8.3 на Ubuntu 18.04 або 20.04 із сервером баз даних (не файловий варіант). В...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Установка сервера 1С на Ubuntu 20.04 - Losst</h2></div></a><div class="pagetext"><p>Отримання інструкції щодо встановлення Postgresql Pro</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Процес інсталяції 1С на Linux - Перший БІТ</h2></div></a><div class="pagetext"><p>Встановлення програм для 1С; Налаштування програм для 1С та ліцензійних ключів; Процес створення баз даних для 1С. Підготовка документів для 1С. Перед тим як...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Установка клієнта 1С:Підприємство 8.3.</h2></div></a><div class="pagetext"><p>10 жовт. 2018 р. - Як бачимо, нічого складного в установці клієнтської платформи 1С: Підприємство на Linux немає. Достатньо дотримуватись інструкції та встановити...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Єдиний дистрибутив 1С: Підприємство для Linux.</h2></div></a><div class="pagetext"><p>18 жовт. 2021 р. — У минулій статті ми розглянули встановлення клієнтських додатків,... на Ubuntu 20.04 LTS і Debian 10, але ця інструкція однакова...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Як встановити 1С на ubuntu + postgresql - EFSOL</h2></div></a><div class="pagetext"><p>Інструкція зі встановлення сервера 1С: Підприємство на Ubuntu + PostgreSQL.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Як встановити сервер 1С у зв'язці з CentOS 7 та PostgreSQL</h2></div></a><div class="pagetext"><p>Інструкції: Як опублікувати бази 1С на веб-сервері Windows та Linux · Встановлення сервера 1С та MS SQL з налаштуванням для оптимізації 1С...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Встановлення та налаштування 1С на Debian з PostgreSQL - Server...</h2></div></a><div class="pagetext"><p>8 серп. 2021 - Покроковий посібник з налаштування Сервера 1С на Debian + PostgreSQL з прикладами експлуатації: моніторинг, бекапи і т.д.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Інструкція з встановлення сервера 1С та PostgreSQL на...</h2></div></a><div class="pagetext"><p>8 жовтня. 2016 р. — У цій статті буде розглянуто покрокове встановлення СУБД PostgreSQL та сервера 1С:Підприємства (64-bit) на операційну систему CentOS Linux...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">1С:Підприємство 8.3 на Linux - Мій комп - Гаджети та...</h2></div></a><div class="pagetext"><p>Від експертів «1С-Рарус»: Посібник із встановлення сервера 1С на Linux. Опис Керівництво розраховане на технічних фахівців з досвідом встановлення...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">Установка 1С Підприємства 8.3.12 (x64) на Linux Ubuntu...</h2></div></a><div class="pagetext"><p>19 серпня. 2018 р. — Цього разу ми встановимо нашу 1С наlinux Ubuntu 18.04 LTS Desktop... тому публікую покроковий "мануал" по установці 1С на Linux.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">1C - ALT Linux Wiki</h2></div></a><div class="pagetext"><p>Коротку інструкцію для встановлення клієнта 1С:Підприємство 8.3 винесено на... 2 Встановлення сервера 1С Підприємство 8.2 або 8.3 на ALT Linux для документообігу.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">1С. Установка 1С:Підприємство 8.3 на Linux - Guesto.ru</h2></div></a><div class="pagetext"><p>16 травня 2020 р. - Необхідна установка 1С: Підприємство 8.3 на linux. Розбираємося з процесом встановлення технологічної платформи та драйвера HASP на DEB-based...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" ><div class="title"><h2 class="txt">https://www.koderline.ru/expert/instruktsii/articl...</h2></div></a><div class="pagetext"><p>Інформація про цю сторінку недоступна.Детальніше…</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-1s-na-linux-instrukcija.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/vstanovlennja-knopki-bagazhnika.html">Встановлення кнопки багажника</a></li>
+<li><a href="/articles/foto-rozbitogo-ekranu-na-telefoni.html">Фото розбитого екрану на телефоні</a></li>
+<li><a href="/articles/dogljad-za-volossjam-f.html">Догляд за волоссям f</a></li>
+<li><a href="/articles/chi-mozhna-strigti-papiljona-korotko.html">Чи можна стригти папільйона коротко</a></li>
+<li><a href="/articles/zachiska-z-3-kis-iz-rozpushhenimi.html">Зачіска з 3 кіс із розпущеними</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/vchitelska-105.html">Вчительська 105</a></li>
+<li><a href="/articles/chomu-pomer-rozkladaetsja.html">Чому помер розкладається</a></li>
+<li><a href="/articles/assassins-creed-brotherhood-jak-robiti-kombo.html">Assassins creed brotherhood як робити комбо</a></li>
+<li><a href="/articles/masazh-prostati-u-urologa-hto-robiv.html">Масаж простати у уролога хто робив</a></li>
+<li><a href="/articles/viznachiti-motocikl-po-rami-rik-vipusku.html">Визначити мотоцикл по рами рік випуску</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/aloe-zrobiti-kosmetiku.html">Алое зробити косметику</a></li>
+<li><a href="/articles/pandora-jakes-sriblo.html">Пандора якесь срібло</a></li>
+<li><a href="/articles/jaki-znaki-zodiaku-pidhodjat-dlja-posadki.html">Які знаки зодіаку підходять для посадки</a></li>
+<li><a href="/articles/obrobka-permanentnogo-makijazhu-gub.html">Обробка перманентного макіяжу губ</a></li>
+<li><a href="/articles/zrobiti-remont-u-kimnati-sina.html">Зробити ремонт у кімнаті сина</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/klas-pokrittja-350.html">Клас покриття 350</a></li>
+<li><a href="/articles/zavdannja-na-teoretichnij-vihid-9-klas.html">Завдання на теоретичний вихід 9 клас</a></li>
+<li><a href="/articles/nozhi-samorobni-domashnih-umovah.html">Ножі саморобні домашніх умовах</a></li>
+<li><a href="/articles/otrimannja-energii-v-majnkraft.html">Отримання енергії в майнкрафт</a></li>
+<li><a href="/articles/standard-room-land-view-pereklad.html">Standard room land view переклад</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

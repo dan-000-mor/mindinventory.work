@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Python date format я | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Python UTC datetime формат об’єкта ISO не включає Z ... Варіант: isoformat() Python у datetime не підтримує військові суфікси timezone, такі як суфікс..." />
+ <meta name="keywords" content="python, date, format" />
+ <meta name="news_keywords" content="python, date, format" />
+ 
+ 
+ <meta property="og:title" content="Python date format я" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Python UTC datetime формат об’єкта ISO не включає Z ... Варіант: isoformat() Python у datetime не підтримує військові суфікси timezone, такі як суфікс..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="14:51:33" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Python date format я" />
+ <meta name="twitter:description" content="Python UTC datetime формат об’єкта ISO не включає Z ... Варіант: isoformat() Python у datetime не підтримує військові суфікси timezone, такі як суфікс..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Python date format я</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Python UTC datetime формат об'єкта ISO не включає Z...</h2></div></a><div class="pagetext"><p>Варіант: isoformat() Python у datetime не підтримує військові суфікси timezone, такі як суфікс 'Z' для UTC. Наступна проста заміна рядка робить...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Формат дати та часу об'єкта Python UTC не включає в себе...</h2></div></a><div class="pagetext"><p>Чому Python 2.7 не включає символ Z (Zulu або зміщення нуля) в кінці рядка... Об'єкти Python datetime за замовчуванням не мають інформації про часовий пояс,...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Формат ISO об'єкта Python UTC datetime не включає Z...</h2></div></a><div class="pagetext"><p>Чому python 2.7 не включає символ Z (Zulu або нульове зміщення) в кінці рядка isoformat об'єкта datetime UTC, на відміну від JavaScript?</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Формат ISO-коду Python UTC datetime не включає Z...</h2></div></a><div class="pagetext"><p>Чому python 2.7 не містить Z-символ (Zulu або нульове зміщення) в кінці рядка isoformat об'єкта UTC datetime, на відміну від JavaScript?</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Python Language - Дата та час</h2></div></a><div class="pagetext"><p>Python 3.2+ підтримує формат %z під час аналізу рядка в об'єкт datetime . UTC у формі +HHMM або -HHMM (порожній рядок, якщо об'єкт наївний). Python 3.x 3.2.</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Подивившись на модулі дати Python Date та DateTime у...</h2></div></a><div class="pagetext"><p>18 лип. 2021 р. — Подивившись на Python Дата і datetime Модулі в попередніх статтях, ми подивимося на час... print(z[2]) # Calling content by index</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Робота з датою та часом у Python Кодкамп</h2></div></a><div class="pagetext"><p>19 серпня. 2020 - Як спарснити рядок в datetime з часовим поясом. Python 3.2+ підтримує формат %z під час аналізу рядка в об'єкті datetime . UTC у формі +HHMM...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Як розібрати дату ISO 8601? #3 - classmethod...</h2></div></a><div class="pagetext"><p>#3. python isoformat with z / python / datetime / datetime-parsing / rfc3339... Оскільки ISO 8601 допускає CCYY-MM-DDThh:mm:ss[Z(+-)hh:mm] множини...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">DateTime Yandex.Cloud -Документація</h2></div></a><div class="pagetext"><p>У модулі DateTime основним внутрішнім форматом представлення є Resource,... $tm = DateTime::Split(Timestamp("2019-01-01T01:02:03.456789Z"));...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Як Перетворити Рядок Дати І Часу Iso 8601 В...</h2></div></a><div class="pagetext"><p>Примітка %z може не працювати у вашій системі у версіях python &lt; 3, оскільки це... output_datetime = datetime.datetime.strptime(main_timestamp +"Z",...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Рядки стандартних форматів дати та часу - Microsoft...</h2></div></a><div class="pagetext"><p>13 травня 2021 р. — Utc) --&gt; 2009-06-15T13:45:30.0000000Z... Display using current (en-us) kultura's short date format DateTime thisDate = новий DateTime(2008,...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Як мені розібрати дату ISO 8601? - python</h2></div></a><div class="pagetext"><p>Мені потрібно проаналізувати RFC 3339 рядки типу "2008-09-03T20:56:35.450686Z" у тип Python datetime.Я знайшов strptime у стандартній бібліотеці Python,...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">strftime - Manual - PHP</h2></div></a><div class="pagetext"><p>strftime — Форматує поточну дату/час з урахуванням поточних налаштувань локалі... Модифікатори %z і %Z повертають назву часового поясу замість зміщення або...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Опції формату дати та часу в Python</h2></div></a><div class="pagetext"><p>23 січ. 2020 р. — Коди ISO 8601 при використанні strftime() можуть бути... %z, Зміщення від UTC у форматі ±HHMM[SS[.ffffff]], , +0000, -0400, +1030,...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Python: правильно перевести рядок з UTC часом на...</h2></div></a><div class="pagetext"><p>14 січ. 2018 р. — test2 = pytz.utc.localize( test ) &gt;&gt;&gt; test2 datetime.datetime(2018, 1, 14, 12, 43, 6, tzinfo=) &gt;&gt;&gt; test2.strftime( '%s' ) '1515922986'...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Правила форматування strftime() та strptime() модуля...</h2></div></a><div class="pagetext"><p>Повідомити про помилку. Коди форматування для функцій .strftime() та .strptime(). модуля datetime. Стандартна бібліотека Python3. Модуль datetime в Python, робота...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Як розібрати дату ISO 8601?- melkia.dev</h2></div></a><div class="pagetext"><p>python datetime from date - Як розібрати дату у форматі ISO 8601?... Мені потрібно проаналізувати рядки RFC 3339, такі як "2008-09-03T20:56:35.450686Z" у типі...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Str to datetime враховуючи часовий пояс - Stack Overflow</h2></div></a><div class="pagetext"><p>s = '2017-07-12T20:08:35.083Z' з datetime import datetime datetime.strptime(s, "%Y-%m-%dT%H:%M:%S.%fz").replace(tzinfo =timezone.utc).</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">Python datetime iso format with z - Xfinder.ru - Потужна...</h2></div></a><div class="pagetext"><p>Python UTC datetime формат об'єкта ISO не включає Z... img https://coderoad.ru/19654578/Python... Варіант: isoformat() Python в datetime не підтримує...</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" ><div class="title"><h2 class="txt">як перетворити мітку часу UTC на місцевий час?</h2></div></a><div class="pagetext"><p>SSS'Z'"); utcFormat.setTimeZone(TimeZone.getTimeZone("UTC"));</p><a rel="nofollow" href="/go.html?/articles/python-date-format-ja.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/prodazh-garazha-jaki-dokumenti.html">Продаж гаража які документи</a></li>
+<li><a href="/articles/zapchastini-dlja-remontu-pralnoi-mashini-bosch.html">Запчастини для ремонту пральної машини bosch</a></li>
+<li><a href="/articles/chi-mozhna-poshtoju-nadislati-skljani-banki.html">Чи можна поштою надіслати скляні банки</a></li>
+<li><a href="/articles/visockij-more-sliz-analiz.html">Висоцький море сліз аналіз</a></li>
+<li><a href="/articles/sebe-v-orendu-opovidannja.html">Себе в оренду оповідання</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jaki-likarni-pidmoskovja-prijmajut-hvorih-na.html">Які лікарні підмосков’я приймають хворих на коронавірус</a></li>
+<li><a href="/articles/jak-nazivaetsja-sosok.html">Як називається сосок</a></li>
+<li><a href="/articles/gitler-pomer-23.html">Гітлер помер 23</a></li>
+<li><a href="/articles/vidaliti-pljamu-vid-vognju.html">Видалити пляму від вогню</a></li>
+<li><a href="/articles/zvjazati-shapochku-dlja-divchinki-10-rokiv.html">Зв’язати шапочку для дівчинки 10 років</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/mozhna-pri-cukrovomu-diabeti-morkvjanij-sik.html">Можна при цукровому діабеті морквяний сік</a></li>
+<li><a href="/articles/kod-na-perevirku-telefonu-samsung.html">Код на перевірку телефону Samsung</a></li>
+<li><a href="/articles/jaki-krapli-krashhe-pri-alergii-ditini.html">Які краплі краще при алергії дитині</a></li>
+<li><a href="/articles/stattja-potochnij-remont-dlja-tszh.html">Стаття поточний ремонт для ТСЖ</a></li>
+<li><a href="/articles/zrobiti-dizajn-kvartiri-vartist.html">Зробити дизайн квартири вартість</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-minulo-jogo-v-2016-roci.html">Як минуло його в 2016 році</a></li>
+<li><a href="/articles/obraza-vchitelja-inshim-vchitelem.html">Образа вчителя іншим вчителем</a></li>
+<li><a href="/articles/vivodjat-podrugu-shho-robiti.html">Виводять подругу що робити</a></li>
+<li><a href="/articles/jak-dodati-magnit-u-valet.html">Як додати магніт у валет</a></li>
+<li><a href="/articles/vidi-samokontrolju-vchitelja.html">Види самоконтролю вчителя</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

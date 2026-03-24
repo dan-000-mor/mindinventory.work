@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як налаштувати тайлінг матеріалу в ue4 | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Гайд: створення майстер-матеріалу в Unreal Engine - XYZ. Після того як закінчили з Base Color, нам потрібні UV-координати, щоб можна було змінювати..." />
+ <meta name="keywords" content="налаштувати, тайлінг, матеріалу, Unreal, Engine, Unreal Engine" />
+ <meta name="news_keywords" content="налаштувати, тайлінг, матеріалу, Unreal, Engine, Unreal Engine" />
+ 
+ 
+ <meta property="og:title" content="Як налаштувати тайлінг матеріалу в ue4" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Гайд: створення майстер-матеріалу в Unreal Engine - XYZ. Після того як закінчили з Base Color, нам потрібні UV-координати, щоб можна було змінювати..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="15:51:14" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як налаштувати тайлінг матеріалу в ue4" />
+ <meta name="twitter:description" content="Гайд: створення майстер-матеріалу в Unreal Engine - XYZ. Після того як закінчили з Base Color, нам потрібні UV-координати, щоб можна було змінювати..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як налаштувати тайлінг матеріалу в ue4</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Гайд: створення майстер-матеріалу в Unreal Engine - XYZ.</h2></div></a><div class="pagetext"><p>Після того як закінчили з Base Color, нам потрібні UV-координати, щоб можна було змінювати тайлінг або зрушувати тайлову текстуру.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">7 корисних прийомів роботи з матеріалами в Unreal.</h2></div></a><div class="pagetext"><p>Вгору. Назад. UNREALSKILLS Онлайн-курси Unreal Engine 4. 8 чер 2018. 6429 переглядів.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Текстурування, або що потрібно знати, щоб стати...</h2></div></a><div class="pagetext"><p>Усю інформацію про те, як можна створювати матеріали та налаштовувати їх у Unreal Engine 4 можна знайти у туторах Flakky та багатьох інших.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Туторіал по Unreal Engine. Частина 3: матеріали</h2></div></a><div class="pagetext"><p>Як і в реальному світі, в іграх є безліч об'єктів, кожен із своїм зовнішнім виглядом. У Unreal Engine цей зовнішній вигляд залежить від...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Unreal Engine 4 • Перегляд теми - Розтягування матеріалу</h2></div></a><div class="pagetext"><p>Де А це початкова текстура, Б це тайлінг із крайніх пікселів цієї текстури... Воно зрозуміло, що можна налаштувати що б усе було приблизно...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Unreal Engine 4 • » Ландшафт - UEngine.Ru</h2></div></a><div class="pagetext"><p>Шар — частина матеріалу, який ви наносите на свій ландшафт для зміни його зовнішнього вигляду. Шар ландшафтра визначає, як текстура буде...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">створення матеріалу льоду на Unreal Engine 4 - DTF</h2></div></a><div class="pagetext"><p>Спочатку ми створюємо скалярний параметр Master Tiling - від нього буде залежати тайлінг всього матеріалу. Далі створюємо базовий набір налаштувань...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Вісім порад для швидшої роботи в Unreal Engine 4</h2></div></a><div class="pagetext"><p>Unreal Engine - відмінний інструмент для візуалізації.... майстер-матеріал, який дозволяє змінювати тайлінг, відтінок,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">тремтіння текстури в Unreal Engine 4 - 3DDD</h2></div></a><div class="pagetext"><p>Роблю матеріал тканини в Unreal Engine 4.... але пробував її вирішити методом тайлінгу співвідношення сторін текстури в самомудвижку (сподіваюсь...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Створити ігрове середовище в Unreal Engine 4 - TheFastCode</h2></div></a><div class="pagetext"><p>я використовую 3ds max 2014. і основні 3D примітиви, такі як коробки та циліндри для моделей заповнювача. Оскільки примітиви легко зробити, це гарна ідея...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Unreal Engine 4 - Burning shader - Medium</h2></div></a><div class="pagetext"><p>Як і з більшістю моїх шейдерів, я обернув його на функцію матеріалу, щоб його можна було використовувати з будь-якими існуючими матеріалами.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Матеріал із динамічним змішуванням 2х шарів (частина 1)</h2></div></a><div class="pagetext"><p>У цьому прикладі я покажу як створити матеріал, що складається з двох шарів з... можливість вказати тайлінг (найпростіший варіант з однієї...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Quixel Mixer. Створення дороги - Статті</h2></div></a><div class="pagetext"><p>Налаштування Tiling за допомогою Repetitions.... 2:01 - 4:15 - Налаштування Instance та Master матеріалів у Unreal Engine 4.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Вітаю вашу спільноту! - Official Unreal Engine 4...</h2></div></a><div class="pagetext"><p>Налаштування в World creator 2: А) Без туману Б) Без тіней В) Без налаштування... В) Також вбудовувала свою функцію тайлінга в основний матеріал,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Створення печери Мерліна в UE4</h2></div></a><div class="pagetext"><p>Далі я хотіла налаштувати освітлення, що зайняло чимало часу і... У мене пішло багато часу на створення базових матеріалів (base...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">World Creator 2. Експорт в Unreal Engine + Brushify. Частина 1</h2></div></a><div class="pagetext"><p>Імпортувати цей ландшафт у Unreal Engine та Brushify. → Призначити автоматеріал. → Налаштувати Distance Tilling та увімкнути Triplanar.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">15+ найкращих онлайн-курсів Unreal Engine 4: навчання...</h2></div></a><div class="pagetext"><p>Навчання Unreal Engine дистанційно: у Москві, СПб, Мінську, СНД та РФ.... редакторами UE4, створювати реалістичні рівні, налаштовувати освітлення та матеріали,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" ><div class="title"><h2 class="txt">Unreal Engine 4 - Налаштування Decals - 3D</h2></div></a><div class="pagetext"><p>Найпростіший спосіб додати декаль на сцену - вибративідповідний матеріал декалі в Content Browser, а потім клацнути правою кнопкою миші...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-tajling-materialu-v-ue4.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/chi-robljat-u-perukarni-brovi.html">Чи роблять у перукарні брови</a></li>
+<li><a href="/articles/psoriaz-shho-ne-mozhna-robiti.html">Псоріаз що не можна робити</a></li>
+<li><a href="/articles/playkey-ne-pracjue-klaviatura.html">Playkey не працює клавіатура</a></li>
+<li><a href="/articles/vidkriti-zobrazhennja-v-firefox.html">Відкрити зображення в firefox</a></li>
+<li><a href="/articles/stav-velicheznij-shrift.html">Став величезний шрифт</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/de-pominjati-kolodki-na-ford.html">Де поміняти колодки на форд</a></li>
+<li><a href="/articles/vibachennja-ce-slovnikove-slovo-chi-ni.html">Вибачення це словникове слово чи ні</a></li>
+<li><a href="/articles/kemerovskij-rajon-pravila-zemlekoristuvannja-ta.html">Кемеровський район правила землекористування та забудови</a></li>
+<li><a href="/articles/jak-rahuvati-sumu-pokrittja.html">Як рахувати суму покриття</a></li>
+<li><a href="/articles/tekst-pro-dinku-ege.html">Текст про дінку еге</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/konsulstvo-ispanii-pereklad.html">Консульство іспанії переклад</a></li>
+<li><a href="/articles/zrobiti-vazhil-u-majnkrafti-video.html">Зробити важіль у майнкрафті відео</a></li>
+<li><a href="/articles/zavdannja-z-bukvoju-ff.html">Завдання з буквою фф</a></li>
+<li><a href="/articles/kandinskij-tochka-ta-linija.html">Кандинський точка та лінія</a></li>
+<li><a href="/articles/bulo-cilkom-dostatno.html">Було цілком достатньо</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/mehanika-remont-dviguniv.html">Механіка ремонт двигунів</a></li>
+<li><a href="/articles/2-ja-frunzenska-vul-d-7a.html">2 Я фрунзенська вул д 7а</a></li>
+<li><a href="/articles/fotoshou-bez-vodjanogo-znaku.html">Фотошоу без водяного знаку</a></li>
+<li><a href="/articles/krashhi-invertorni-kondicioneri-u-kvartiru.html">Кращі інверторні кондиціонери у квартиру</a></li>
+<li><a href="/articles/chi-mozhna-zrobiti-radio.html">Чи можна зробити радіо</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

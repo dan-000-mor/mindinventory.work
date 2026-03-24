@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Компас креслення електричних схем | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Креслення схем у програмі КОМПАС-3D - Сайт Паяльник У цій статті ми навчимося малювати електричні схеми у цій програмі. Насамперед, Вам потрібно..." />
+ <meta name="keywords" content="компас, креслення, електричних" />
+ <meta name="news_keywords" content="компас, креслення, електричних" />
+ 
+ 
+ <meta property="og:title" content="Компас креслення електричних схем" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Креслення схем у програмі КОМПАС-3D - Сайт Паяльник У цій статті ми навчимося малювати електричні схеми у цій програмі. Насамперед, Вам потрібно..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:51:56" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Компас креслення електричних схем" />
+ <meta name="twitter:description" content="Креслення схем у програмі КОМПАС-3D - Сайт Паяльник У цій статті ми навчимося малювати електричні схеми у цій програмі. Насамперед, Вам потрібно..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Компас креслення електричних схем</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Креслення схем у програмі КОМПАС-3D - Сайт Паяльник</h2></div></a><div class="pagetext"><p>У цій статті ми навчимося малювати електричні схеми у цій програмі. Насамперед, Вам потрібно завантажити саму програму та бібліотеки до неї.</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">КОМПАС-електрик. Приладобудівний додаток.</h2></div></a><div class="pagetext"><p>для автоматизації проектування та випуску комплекту документів (схем та звітів до... у яких для виконання електричних зв'язків використовується дротовий...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">КОМПАС для ефективного проектування.</h2></div></a><div class="pagetext"><p>На жаль, практично жодна сучасна САПР не забезпечує повного циклу розробки — від принципових електричних схем, розміщення елементів на...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">створення схеми електричної принципової компас</h2></div></a><div class="pagetext"><p>Мета роботи: навчитися створювати електричну принципову схему у програмі КОМПАС, використовуючи прикладні бібліотеки. КОМПАС-3D — улюблений інструмент сотень...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Малювання схем у програмі КОМПАС-3D - схемопедія</h2></div></a><div class="pagetext"><p>У цій статті ми навчимося малювати електричні схеми у цій програмі. Насамперед, Вам потрібно завантажити саму програму та бібліотеки до неї.</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Програма Для Креслення Електричних Схем - tokzamer.ru</h2></div></a><div class="pagetext"><p>20 серп. 2019 р. — Сподобалася стаття? Ще одна програма для малювання схем на комп'ютері - Компас Електрик. Креслення електричних схем за ГОСТом в...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Бібліотека УДО для виконання електричних схем - В...</h2></div></a><div class="pagetext"><p>13 жовт. 2018 р. — - припинення підтримки прикладної бібліотеки "ESK" у САПР "Компас 3D" починаючи з версії 15. Призначення бібліотеки: - прискорення процесу...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Електричні схеми принципові, проекти... - 2D-3D.ru</h2></div></a><div class="pagetext"><p>Схеми електричні принципові, проекти освітлення та енергопостачання з розрахунками, використовуючи програмне забезпечення AutoCAD або Компас-3D.</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">2 Складанняелектричних схем засобами системи...</h2></div></a><div class="pagetext"><p>7 серп. 2013 р. - Робота за темою: kursach_nikita_rasp. Глава: 2 Упорядкування електричних схем засобами системи Компас 3d. ВНЗ: САФУ.</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">створення схеми електричної принципової компас</h2></div></a><div class="pagetext"><p>СТВОРЕННЯ СХЕМИ ЕЛЕКТРИЧНОЇ ПРИНЦИПІАЛЬНОЇ У КОМПАС Мета роботи: навчитися... на основі якого необхідно накреслити план: Для креслення плану квартири 1.</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Збірник методичних вказівок - Газпром технікум.</h2></div></a><div class="pagetext"><p>№6 Створення схеми електричної принципової, викорис... Правило коректного креслення в КОМПАС – «не креслити без виду». Графі-.</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Як робити схеми у компасі - Інженер ПТО</h2></div></a><div class="pagetext"><p>12 Грудня. 2019 р. - побудова та редагування ліній електричного зв'язку, електричних шин, групових ліній зв'язку; ручне та автоматичне розташування маркування...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Креслення нескладних електричних схем - Freelancehunt</h2></div></a><div class="pagetext"><p>1 лют. 2021 р. — Необхідно накреслити електричну схему нескладного вигляду, приблизно як у вкладенні,... Працюю в програмах AutoCAD, Компас.</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Програми для креслення електричних схем квартир та...</h2></div></a><div class="pagetext"><p>Компас-електрик. Більше професійний програмний пакет для проектування схем електропостачання приміщень. У Компасі існує власна база даних, в...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Програми для креслення електричних схем</h2></div></a><div class="pagetext"><p>Вичерчування електричних схем вимагає дотримання символів ГОСТ, прийнятих... Компас 3D поширюється на платній основі, але виробники...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Принципові схеми онлайн. Програми для креслення.</h2></div></a><div class="pagetext"><p>7 вер. 2019 р. — Програми для креслення електричних... Ще одна програма для малювання схем на комп'ютері — Компас Електрик. Це вже серйозніший...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Програми для малювання електричних схем</h2></div></a><div class="pagetext"><p>1.1 Проста програма длямалювання схем VISIO · 1.2 Зрозумілий ProfiCAD · 1.3 Компас Електрик · 1.4 QElectroTech · 1.5 Програма моделювання електронних схем 123D...</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" ><div class="title"><h2 class="txt">Огляд 20 найкращих програм для креслення електричних схем</h2></div></a><div class="pagetext"><p>Безкоштовні · Microsoft Visio · Компас-електрик · Eagle · Dip Trace · 1-2-3 схема · Autocad Electrical · Ельф · Kicad.</p><a rel="nofollow" href="/go.html?/articles/kompas-kreslennja-elektrichnih-shem.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/znjati-naprugu-pochervoninnja-z-ochej.html">Зняти напругу почервоніння з очей</a></li>
+<li><a href="/articles/stribok-u-puantah-5-bukv.html">Стрибок у пуантах 5 букв</a></li>
+<li><a href="/articles/shho-za-chastinu-movi-slovo-vilizlo.html">Що за частину мови слово вилізло</a></li>
+<li><a href="/articles/bulo-virisheno-taki-postavleni-zavdannja.html">Було вирішено такі поставлені завдання</a></li>
+<li><a href="/articles/fonetika-nimecka-mova-5-klas.html">Фонетика німецька мова 5 клас</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/vidma-kohannja-onlajn-garna-jakist.html">Відьма кохання онлайн гарна якість</a></li>
+<li><a href="/articles/skilki-raziv-mozhna-perehvoriti-na-kashljuk-ditini.html">Скільки разів можна перехворіти на кашлюк дитині</a></li>
+<li><a href="/articles/taksi-maksim-arhangelsk-nomer-telefonu.html">Таксі максим архангельськ номер телефону</a></li>
+<li><a href="/articles/ja-hochu-zajmatisja-dizajnom.html">Я хочу займатися дизайном</a></li>
+<li><a href="/articles/igri-dlja-hlopchikiv-po-telefonu.html">Ігри для хлопчиків по телефону</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/pamjataesh-zi-znakom.html">Пам’ятаєш зі знаком</a></li>
+<li><a href="/articles/telefoni-za-devjat.html">Телефони за дев’ять</a></li>
+<li><a href="/articles/krashhe-zverhu-chi-znizu.html">Краще зверху чи знизу</a></li>
+<li><a href="/articles/konkurs-pisni-ditej-ja-spivaju.html">Конкурс пісні дітей я співаю</a></li>
+<li><a href="/articles/torgivlja-olieju-jaki-dokumenti.html">Торгівля олією які документи</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-dogljadati-na-trojandah-u-vazi.html">Як доглядати на трояндах у вазі</a></li>
+<li><a href="/articles/monolit-ce-u-budivnictvi-foto.html">Моноліт це у будівництві фото</a></li>
+<li><a href="/articles/chi-potribno-isti-solodku-ditinu.html">Чи потрібно їсти солодку дитину</a></li>
+<li><a href="/articles/znajti-sklad-igrashok.html">Знайти склад іграшок</a></li>
+<li><a href="/articles/jak-vidkriti-sportivnij-klub-z-edinoborstv.html">Як відкрити спортивний клуб з єдиноборств</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

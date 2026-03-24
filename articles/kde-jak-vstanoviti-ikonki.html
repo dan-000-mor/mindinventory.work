@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Kde як встановити іконки | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Ручне встановлення іконок Numix в Debian Buster - Linux.org.ru 29 черв. 2018 р. — Debian Buster, KDE. Хочу вручну поставити іконки, але щось не виходить...." />
+ <meta name="keywords" content="встановити, іконки, Linux, ubuntu" />
+ <meta name="news_keywords" content="встановити, іконки, Linux, ubuntu" />
+ 
+ 
+ <meta property="og:title" content="Kde як встановити іконки" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Ручне встановлення іконок Numix в Debian Buster - Linux.org.ru 29 черв. 2018 р. — Debian Buster, KDE. Хочу вручну поставити іконки, але щось не виходить...." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="11:44:48" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Kde як встановити іконки" />
+ <meta name="twitter:description" content="Ручне встановлення іконок Numix в Debian Buster - Linux.org.ru 29 черв. 2018 р. — Debian Buster, KDE. Хочу вручну поставити іконки, але щось не виходить...." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Kde як встановити іконки</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Ручне встановлення іконок Numix в Debian Buster - Linux.org.ru</h2></div></a><div class="pagetext"><p>29 черв. 2018 р. — Debian Buster, KDE. Хочу вручну поставити іконки, але щось не виходить. Завантажую архів: https://github.com/numixproject/numix-icon-theme-...</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Як встановити значки програм у KDE?</h2></div></a><div class="pagetext"><p>без проблем, але з будь-якої причини в KDE (наприклад, Kubuntu, встановлений за допомогою sudo apt-get install kubuntu-desktop від термінатора) ці значки...</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Найкращі іконки для kde 5 - J4Web.Ru</h2></div></a><div class="pagetext"><p>18 вер. 2018 р. - Встановлення Papirus. Щоб встановити Papirus в Arch Linux, потрібно просто зібрати мета-пакет papirus з AUR. Для встановлення Papirus в Ubuntu та його...</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Як встановити теми робочого столу та іконки в Linux</h2></div></a><div class="pagetext"><p>25 черв. 2019 р. — Оскільки Linux створений для налаштування, завантаження та встановлення цих тем […]... серед Linux для настільних систем, за винятком KDE Plasma.</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Налаштування зовнішнього вигляду KDE Plasma Desktop - Unix How</h2></div></a><div class="pagetext"><p>6 січ. 2019 — Після завантаження теми натисніть кнопку «Встановити». Значки теми. Існують різні способи налаштування робочого столу Linux. Іконка теми - найкраща...</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Іконки у KDE - Ubuntu.ru</h2></div></a><div class="pagetext"><p>Це прев'юшка з пакету з іконками.... Дякую! перша ж тема (http://kde-look.org/content/show.php/.nitrux+OS+... Як встановити іконки?</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">"KDE інсталяція іконок" (2) - forum.opennet.ru</h2></div></a><div class="pagetext"><p>7 лист. 2005 р. - написано. How to install a new icon theme. Open the KDE-Menu and start the Control Center Натисніть "Look and Feel" and "Icons"</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Як змінити іконки програм QT (KDE) для gnome?</h2></div></a><div class="pagetext"><p>Системні налаштування KDE змінюють ці значки: sudo apt-get install systemsettings встановить їх. Звідти перейдіть до «Зовнішнього вигляду програми»&gt; "Значки".</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Прикрашаємо робоче оточення KDE Plasma -LinuxTheBest</h2></div></a><div class="pagetext"><p>15 серп. 2017 р. — І в цьому прикладі, я використовуватиму KDE Neon 5.10.... не дуже подобаються стандартні іконки Breeze, і тому я раджу встановити іконки...</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">KDE Plasma 5 - Налаштування віджету значок Kubuntu.ru</h2></div></a><div class="pagetext"><p>Як налаштувати сабж у п'ятій плазмі. Тикаю ПКМ "Налаштувати віджет", а там лише кнопку пропонують призначити. Як перейменувати, змінити іконку?</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">KDE5: іконки у треї - Hatred's Log Place</h2></div></a><div class="pagetext"><p>10 лист. 2017 р. — Qt4-based програми лікуються шляхом встановлення sni-qt:... На це наводить спостереження, що якщо KDE перестартувати, то іконки починають...</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Додати значки на робочий стіл у KDE та GNOME</h2></div></a><div class="pagetext"><p>Якщо ні, то я відкрию вам цей маленький секрет. Пускова установка – це значок, який відкриває програму. Ах, але пускова установка також може бути тим самим...</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Як встановити теми значків Numix та Nitrux в Ubuntu 18.04?</h2></div></a><div class="pagetext"><p>Іконки Numix у них є три варіанти, які включають вихідну версію, версію Numix Circle,... sudo apt-get install nitrux-icon-theme-kde.</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Як зробити так, щоб KDE Plasma виглядала як Unity?</h2></div></a><div class="pagetext"><p>Іконки для KDE</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Встановити тему іконок FS Icons. Linux статті - Пінгвінус</h2></div></a><div class="pagetext"><p>13 квіт. 2012 р. — Встановити красиву тему іконок FS Icons в Ubuntu для Gnome і Unity,... Щоб встановити іконки, виконайте в терміналі наступні команди:</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Як змінити іконку у системному лотку? - Manjaro Linux</h2></div></a><div class="pagetext"><p>15 бер. 2020 — Не можу знайти де змінювати іконку Keepass в системному лотку. Шукав у: /usr/share/icons/hicolor/scalable/apps/</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">У Manjaro KDE зникли деякі іконки</h2></div></a><div class="pagetext"><p>20 травня 2021 р. — Після встановлення кастомних паків іконок, перевірте чи немає помилок при створенні кеша вашої теми іконок і hicolor та кеша де, скажімо так.</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Установка тем в Ubuntu -Losst</h2></div></a><div class="pagetext"><p>8 вер. 2020 р. — Але не все так погано, якщо вам не подобається стандартна тема зовнішнього вигляду та ікон у Ubuntu, то ви можете її змінити. До чого ви можете поміняти...</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Awoken - іконки для Ubuntu - Linux</h2></div></a><div class="pagetext"><p>Дана оновлена ​​версія цього "паку", тепер доступна для встановлення у всі нині діючі релізи Ubuntu, Linux Mint і для робочого середовища KDE,...</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" ><div class="title"><h2 class="txt">Завантажуємо та встановлюємо теми та іконки в Linux - Cyber-X</h2></div></a><div class="pagetext"><p>Встановлюємо теми у KDE</p><a rel="nofollow" href="/go.html?/articles/kde-jak-vstanoviti-ikonki.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/readera-dlja-ajfonu.html">Реадера для айфону</a></li>
+<li><a href="/articles/serial-ja-lechu-vsi-serii-720.html">Серіал я лечу всі серії 720</a></li>
+<li><a href="/articles/shho-oznachae-zhaba-pri-sobi.html">Що означає жаба при собі</a></li>
+<li><a href="/articles/vstanovlennja-safitu.html">Встановлення сафіту</a></li>
+<li><a href="/articles/jak-vstanoviti-carestream.html">Як встановити carestream</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/poshiti-shtori-atele.html">Пошити штори ательє</a></li>
+<li><a href="/articles/najkrashhij-kolorist-dlja-blondinok.html">Найкращий колорист для блондинок</a></li>
+<li><a href="/articles/zrobiti-foto-polaroid-onlajn-dlja-druku.html">Зробити фото полароїд онлайн для друку</a></li>
+<li><a href="/articles/jaku-oliju-zalivati-pri-stuku-kompensatoriv.html">Яку олію заливати при стуку компенсаторів</a></li>
+<li><a href="/articles/pislja-proshivki-vse-vidaljaetsja-v-telefoni.html">Після прошивки все видаляється в телефоні</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jak-diznatisja-obem-duhovoi-shafi.html">Як дізнатися об’єм духової шафи</a></li>
+<li><a href="/articles/jak-dmitro-spivakiv-stav-aktorom.html">Як Дмитро співаків став актором</a></li>
+<li><a href="/articles/do-porozhnih-vnutrishnih-organiv-ne-nalezhat.html">До порожніх внутрішніх органів не належать</a></li>
+<li><a href="/articles/de-na-honor-pochistiti-kesh.html">Де на хонор почистити кеш</a></li>
+<li><a href="/articles/napisati-lista-zradniku.html">Написати листа зраднику</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/de-ne-vikoristovujutsja-ketonovi-tila.html">Де не використовуються кетонові тіла</a></li>
+<li><a href="/articles/hronichnij-gastrit-simptomi-shho-e.html">Хронічний гастрит симптоми що є</a></li>
+<li><a href="/articles/pravo-na-gru-v-karti.html">Право на гру в карти</a></li>
+<li><a href="/articles/dovge-tire-cherez-alt.html">Довге тире через альт</a></li>
+<li><a href="/articles/robota-za-2500-na-den.html">Робота за 2500 на день</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

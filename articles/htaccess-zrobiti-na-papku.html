@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Htaccess зробити на папку | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Обробка файлів та папок у htaccess: заборона, правила Тепер якщо зробити запит до файлу secret.php, який знаходиться в кореневій папці сайту, то..." />
+ <meta name="keywords" content="htaccess, зробити, папку" />
+ <meta name="news_keywords" content="htaccess, зробити, папку" />
+ 
+ 
+ <meta property="og:title" content="Htaccess зробити на папку" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Обробка файлів та папок у htaccess: заборона, правила Тепер якщо зробити запит до файлу secret.php, який знаходиться в кореневій папці сайту, то..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="16:28:22" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Htaccess зробити на папку" />
+ <meta name="twitter:description" content="Обробка файлів та папок у htaccess: заборона, правила Тепер якщо зробити запит до файлу secret.php, який знаходиться в кореневій папці сайту, то..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Htaccess зробити на папку</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Обробка файлів та папок у htaccess: заборона, правила</h2></div></a><div class="pagetext"><p>Тепер якщо зробити запит до файлу secret.php, який знаходиться в кореневій папці сайту, то повернеться статус 403 (доступ заборонено) і буде показано повідомлення:</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Встановити пароль на папку сайту через htaccess</h2></div></a><div class="pagetext"><p>Спробуймо зробити папку, яка захищена паролем від зовнішнього доступу. Якщо при зверненні до такої папки пароль буде вказано неправильно, з'явиться помилка...</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Зміна кореневої папки через файл. htaccess - CodeRoad</h2></div></a><div class="pagetext"><p>Як зробити файл htaccess, який дасть перенаправлення на індексну сторінку дочірньої папки My Structure Як зробити потік...</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">налаштувати .htaccess використовувати вкладену папку як...</h2></div></a><div class="pagetext"><p>25 серп. 2016 р. — Я хотів би знати, чи це можливо: Щоб зберегти корінь чистим від усіх файлів, я хочу помістити все в підкаталог (index.php, .htaccess...</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Як зробити перенаправлення на папку htaccess? - Хабре...</h2></div></a><div class="pagetext"><p>RewriteCond %{REQUEST_URI} ^admin-control/.* [NC] RewriteCond %{REQUEST_FILENAME} !-f RewriteRule ^.* admin/src/ [QSA,L]</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Як коректно задати правило для обробки папок у...</h2></div></a><div class="pagetext"><p>30 серп. 2019 — php де далі перевіряється існування віртуальної URL. Відповідно до документації "RewriteCond" на сайті https://httpd.apache.org/docs/current/mod/...</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Як зробити з папки в корені сайту кореневий розділ при...</h2></div></a><div class="pagetext"><p>Як зробити з папки в корені сайту кореневий розділ за допомогою .htaccess? Опубліковано 30.05.2018 о 15:34. Автор: WebSofter. 186 переглядів.</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Створити перенаправлення до папки рівнем вище - Apache...</h2></div></a><div class="pagetext"><p>Є у мене підозра, що для даного VirtualHost встановлений доступ тільки для public_html (зазвичай так завжди і роблять).</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Файл .htaccess: перенаправити файлиусередині папки</h2></div></a><div class="pagetext"><p>Найкращий спосіб зробити це - просто перемістити всі файли в/блог, а потім перевизначити ваш Apache... Питання на тему: directory, wordpress, .htaccess, move,...</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">20+ правил .htaccess, які повинен знати кожен...</h2></div></a><div class="pagetext"><p>25 січ. 2010 р. — Не забудьте створити в кореневій директорії вашого сервера папку error і... У тому випадку, якщо потрібно зробити редирект з URL з параметрами,...</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">налаштування файлу htaccess і 301 редирект - Просування...</h2></div></a><div class="pagetext"><p>12 лип. 2018 р. — Якщо цей файл відсутній, його можна створити за допомогою будь-якого блокнота. Головне, щоб назва файлу була “.htaccess” – без форматів .txt,...</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Файл .htaccess — налаштування перенаправлень та...</h2></div></a><div class="pagetext"><p>.htaccess — це конфігураційний файл веб-сервера Apache,... У разі відсутності в папці головної сторінки (індексного файлу), при зверненні без вказівки...</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Як налаштувати 301 редирект через htaccess - MAXI.BY media</h2></div></a><div class="pagetext"><p>htaccess збережіть його в окрему папку, яку можна легко створити, клацнувши правою кнопкою миші по лівій частині вікна, далі "Створити каталог". .htaccess.</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Як створити файл .htaccess - Допомога REG.RU</h2></div></a><div class="pagetext"><p>Як заборонити доступ до файлу, папки або всього сайту</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Покажіть правильні .htaccess [basic] - Yii Framework</h2></div></a><div class="pagetext"><p>26 травня 2016 р. — Навіщо вам робити доступною для сервера директорію програми? Зробіть веб-коренем папку web. Htaccess у вас підійде.</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Як поставити пароль на розділ (директорію, папку) сайту</h2></div></a><div class="pagetext"><p>22 жовт. 2017 — Як налаштувати доступ по паролю · Параметри файлу .htaccess · Формат файлу .htpasswd · Як створити файл .htpasswd · Перевірка роботи .htpasswd.</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">301 редирект через .htaccess і ще 18 налаштувань файлу...</h2></div></a><div class="pagetext"><p>Насправді цей файл може зробити набагато більше для коректної...заміни такого файлу розміщуємо у папці .htaccess і додаємо наступну команду:</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Як зробити редирект однієї папки на іншу у файлі.</h2></div></a><div class="pagetext"><p>16 бер. 2010 — Я зробила у файлі .htaccess такі рядки RewriteCond %{REQUEST_URI} !... Як зробити редирект однієї папки на іншу у файлі .htaccess?</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Редирект на index без переходу до папки - PHP - Форум...</h2></div></a><div class="pagetext"><p>Jodah, А не допомогло, коли з вкладеної папки видалив файл .htaccess. А як впливає .htaccess у вкладеній папці на .htaccess у батьківській...</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" ><div class="title"><h2 class="txt">Файл .HTACCESS: пропускний пункт вашого сайту</h2></div></a><div class="pagetext"><p>16 квіт. 2015 р. — Зробити закритими певні папки (директорії) або піддомени, захистити їх паролями. Все це можна зробити за допомогою .htaccess.</p><a rel="nofollow" href="/go.html?/articles/htaccess-zrobiti-na-papku.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/vtb-bank-u-pushkino-jak-pracjue.html">Втб банк у пушкіно як працює</a></li>
+<li><a href="/articles/meni-ne-vidshkodovujut-shkodu-za-avtomobil.html">Мені не відшкодовують шкоду за автомобіль</a></li>
+<li><a href="/articles/jak-rozrahuvati-likarnjanij-bir-2021.html">Як розрахувати лікарняний бір 2021</a></li>
+<li><a href="/articles/jak-znajti-papku-windows-system32.html">Як знайти папку windows system32</a></li>
+<li><a href="/articles/jak-stvoriti-svoe-portfolio-dlja-pershoklasnika.html">Як створити своє портфоліо для першокласника</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/chomu-ekran-kompjutera-stav-zelenim.html">Чому екран комп’ютера став зеленим</a></li>
+<li><a href="/articles/jak-dodati-formu-v-proekt-z.html">Як додати форму в проект з</a></li>
+<li><a href="/articles/hto-napisav-zirochka-moja-jasna.html">Хто написав зірочка моя ясна</a></li>
+<li><a href="/articles/32ln570v-pidkljuchiti-wifi.html">32Ln570v підключити wifi</a></li>
+<li><a href="/articles/znajti-desjatkovij-ekvivalent-101010-11.html">Знайти десятковий еквівалент 101010 11</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jak-postaviti-inshu-avu-v-vk.html">Як поставити іншу аву в вк</a></li>
+<li><a href="/articles/summer-girl-tekst-pisni.html">Summer girl текст пісні</a></li>
+<li><a href="/articles/zhivopis-9-klas-pitannja.html">Живопис 9 клас питання</a></li>
+<li><a href="/articles/molodecka-jak-pishetsja-pravilno.html">Молодецька як пишеться правильно</a></li>
+<li><a href="/articles/budemo-visilicja.html">Будемо висилиця</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-pidkljuchiti-epl-votch-do-samsungu.html">Як підключити епл вотч до самсунгу</a></li>
+<li><a href="/articles/koli-lana-diznaetsja-pravdu-pro-klarku.html">Коли лана дізнається правду про кларку</a></li>
+<li><a href="/articles/sverbljat-nogi-i-ruki-prichini-jak.html">Сверблять ноги і руки причини як</a></li>
+<li><a href="/articles/jak-pribrati-u-vatsapi-pereslane-povidomlennja.html">Як прибрати у ватсапі переслане повідомлення</a></li>
+<li><a href="/articles/jak-pomerti-vid-vich.html">Як померти від віч</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

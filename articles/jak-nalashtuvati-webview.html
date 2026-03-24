@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як налаштувати webview | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Відома проблема в Android 8.0: неполадки з WebView у робочому ... увімкнути Chrome для кожного користувача пристрою (наприклад, у робочому профілі);...." />
+ <meta name="keywords" content="налаштувати, webview, Android, Android System, System" />
+ <meta name="news_keywords" content="налаштувати, webview, Android, Android System, System" />
+ 
+ 
+ <meta property="og:title" content="Як налаштувати webview" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Відома проблема в Android 8.0: неполадки з WebView у робочому ... увімкнути Chrome для кожного користувача пристрою (наприклад, у робочому профілі);...." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="15:49:55" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як налаштувати webview" />
+ <meta name="twitter:description" content="Відома проблема в Android 8.0: неполадки з WebView у робочому ... увімкнути Chrome для кожного користувача пристрою (наприклад, у робочому профілі);...." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як налаштувати webview</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Відома проблема в Android 8.0: неполадки з WebView у робочому...</h2></div></a><div class="pagetext"><p>увімкнути Chrome для кожного користувача пристрою (наприклад, у робочому профілі);. або. почекати, поки програма Android System WebView не оновиться до...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Як увімкнути Android System WebView - Lumpics.ru</h2></div></a><div class="pagetext"><p>Спосіб 2: Вимкнення Chrome (Android 7.1-9.0) · Відкрийте «Параметри», де виберіть «Програми та сповіщення» – «Показати всі програми».</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Як включити Android System Webview, що це таке?</h2></div></a><div class="pagetext"><p>Як увімкнути Android System Webview на Android 5 і вище · Зайдіть в Налаштування смартфона; · Перейдіть до розділу “Програми”. · Через меню (три...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Android System Webview - що це за додаток і чому він...</h2></div></a><div class="pagetext"><p>Що за програма Android System Webview com.google.android.webview на телефоні або планшеті, чому вона не вмикається і як її увімкнути.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Android system webview вимкнено і не включається - Тарифи на...</h2></div></a><div class="pagetext"><p>Як увімкнути програму Andro &gt;Зайдіть до Налаштування смартфона або планшета, потім до Програми;... У списку програм знайдіть Android System Webview і топніть по...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Android: WebView - створи свій браузер</h2></div></a><div class="pagetext"><p>java та оголосимо компонент WebView, а також ініціалізуємо його – включимо підтримку JavaScript та вкажемо сторінку для завантаження. // Kotlin class MainActivity :...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Android System WebView: що це за програма, як увімкнути</h2></div></a><div class="pagetext"><p>Зайдіть у налаштування пристрою. · Знайдіть список компонентів та програм. · У системних програмах або загальному списку знайдіть Android System Webview...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Далі 8 найкращих способів виправити систему Android WebView</h2></div></a><div class="pagetext"><p>Але не хвилюйтесь. Погляньмо, як виправити помилку Android System WebView, яка відмовляється оновлювати.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Як увімкнути Webview наАндроїд - upgrade-android.ru</h2></div></a><div class="pagetext"><p>Як включити Webview на Андроїд. Що таке Android System WebView; Спосіб 1: Увімкнення в налаштуваннях (Android 5.0-7.0 та Android...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Навіщо Android потрібний WebView і як він працює - AndroidInsider.ru</h2></div></a><div class="pagetext"><p>Як оновити Android WebView · У вікні, натисніть «Оновити все» або знайдіть Google Chrome і оновіть його; · Для надійності рекомендується...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Android system webview – що це за програма і чи можна її видалити</h2></div></a><div class="pagetext"><p>Як увімкнути Android System WebView. На Android 7 версії та вище служба неактивна за замовчуванням. Ці завдання покладено на інструменти Google Chrome і вбудовані...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Як Включити Додаток Android System Webview і Що Це Таке</h2></div></a><div class="pagetext"><p>Зайшовши у додатки ОС, вимикаємо Хром. · Встановлюємо або оновлюємо Android System Webview із Маркета. · Відкриваємо налаштування, в них шукаємо кнопочку...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Android WebView: актуальні проблеми та їх вирішення / Блог...</h2></div></a><div class="pagetext"><p>Як це влаштовано технічно? WebView має можливість певним чином інжектувати Java код в JavaScript. JavaScript може викликати код,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Дві сторони WebView: про швидкий запуск проектів та крадіжку... - Habr</h2></div></a><div class="pagetext"><p>Також трохи розповім про те, як ви можете використовувати WebView та як його можуть використовувати проти вас зловмисники. Приклади у статті будуть...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Android System WebView: все, що ви повинні знати про цю приховану...</h2></div></a><div class="pagetext"><p>Як увімкнути Android System WebView. На Android 7 версії та вище служба неактивна за замовчуванням. Ці завдання покладено на інструменти Google Chrome і вбудовані...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Налаштування WebView для перегляду настільного сайту, а не...</h2></div></a><div class="pagetext"><p>Налаштування WebView для перегляду настільного веб-сайту, а не мобільного веб-сайту. Я провів досить багато досліджень з Stack Overflow і багатодосліджень у...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Android-налаштування програми за допомогою webview для...</h2></div></a><div class="pagetext"><p>Android-налаштування програми за допомогою webview для автоматичного запуску PDF reader під час завантаження PDF openned. APP використовує webview для відображення сайту...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Через баг в оновленні Android WebView почали вилітати...</h2></div></a><div class="pagetext"><p>Нестабільність з'явилася в Google Pay, DownDetector, Reddit, Twitter, Gmail, Facebook та багатьох інших додатках. Як повідомляє The Verge,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" ><div class="title"><h2 class="txt">Оптимальні параметри WebView для підтримки HTML5? Ох! Android</h2></div></a><div class="pagetext"><p>Мені цікаво визначити, які оптимальні налаштування для WebView призначені... Звичайно, цей список є об'єднанням налаштувань, скомпільованих в...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-webview.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/virshi-otrimaj-vid-mene-podarunok.html">Вірші отримай від мене подарунок</a></li>
+<li><a href="/articles/de-obrane-v-ajfoni-6.html">Де обране в айфоні 6</a></li>
+<li><a href="/articles/shema-elektroprovodki-budinku-serii-p-46.html">Схема електропроводки будинку серії п 46</a></li>
+<li><a href="/articles/strashnij-film-vkljuchi-alisa-bud-laska.html">Страшний фільм включи аліса будь ласка</a></li>
+<li><a href="/articles/remont-termoprivodu-dlja-provitrjuvannja-teplic.html">Ремонт термоприводу для провітрювання теплиць</a></li></ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/ti-meni-oko-prostriliv.html">Ти мені око прострілив</a></li>
+<li><a href="/articles/jaka-zarobitna-plata-u-mns.html">Яка заробітна плата у МНС</a></li>
+<li><a href="/articles/zentyal-vstanovlennja.html">Zentyal встановлення</a></li>
+<li><a href="/articles/povnij-ekran-u-rosijskij-ribalci.html">Повний екран у російській рибалці</a></li>
+<li><a href="/articles/jaka-davnja-kraina-vinajshla-kanalizaciju.html">Яка давня країна винайшла каналізацію</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/remont-volvo-fh12-svoimi-rukami.html">Ремонт вольво fh12 своїми руками</a></li>
+<li><a href="/articles/zalizne-nebo-garnoi-jakosti.html">Залізне небо гарної якості</a></li>
+<li><a href="/articles/oblik-progalin-u-vordi.html">Облік прогалин у ворді</a></li>
+<li><a href="/articles/chastina-vichnoi-sili-ja.html">Частина вічної сили я</a></li>
+<li><a href="/articles/ja-v-cheshkah-na-roboti.html">Я в чешках на роботі</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/ajfon-8-skilki-gigabajt.html">Айфон 8 скільки гігабайт</a></li>
+<li><a href="/articles/shvidkij-remont-oficijnij-sajt.html">Швидкий ремонт офіційний сайт</a></li>
+<li><a href="/articles/asembler-podil-zi-znakom.html">Асемблер поділ зі знаком</a></li>
+<li><a href="/articles/mij-cholovik-skorpion-a-ja-oven.html">Мій чоловік скорпіон а я овен</a></li>
+<li><a href="/articles/za-komunistiv-bulo-krashhe.html">За комуністів було краще</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

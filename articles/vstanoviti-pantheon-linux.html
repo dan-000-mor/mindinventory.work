@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Встановити pantheon linux | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Як встановити робочий стіл Pantheon на Ubuntu LTS і ... Середовище робочого столу Pantheon є частиною проекту розповсюдження Linux Elementary OS...." />
+ <meta name="keywords" content="встановити, Pantheon, linux, ubuntu" />
+ <meta name="news_keywords" content="встановити, Pantheon, linux, ubuntu" />
+ 
+ 
+ <meta property="og:title" content="Встановити pantheon linux" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Як встановити робочий стіл Pantheon на Ubuntu LTS і ... Середовище робочого столу Pantheon є частиною проекту розповсюдження Linux Elementary OS...." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="16:14:14" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Встановити pantheon linux" />
+ <meta name="twitter:description" content="Як встановити робочий стіл Pantheon на Ubuntu LTS і ... Середовище робочого столу Pantheon є частиною проекту розповсюдження Linux Elementary OS...." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Встановити pantheon linux</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Як встановити робочий стіл Pantheon на Ubuntu LTS і...</h2></div></a><div class="pagetext"><p>Середовище робочого столу Pantheon є частиною проекту розповсюдження Linux Elementary OS. Написано з нуля за допомогою Vala та GTK3.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Встановлення робочого столу Pantheon в Debian - Linux та...</h2></div></a><div class="pagetext"><p>11 квіт. 2019 р. - Pantheon - одне з найпопулярніших нових настільних середовищ у світі Linux. Спочатку вона була створена для Elementary OS, але встановлюється...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Як встановити Pantheon Desktop на Debian - Unix How</h2></div></a><div class="pagetext"><p>Pantheon - одне з найпопулярніших нових настільних середовищ у світі Linux. Спочатку він був створений для Elementary OS, але поширюється...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Як встановити Pantheon на Ubuntu 16.04? - QA Stack</h2></div></a><div class="pagetext"><p>Щоб встановити робочий стіл Pantheon в Ubuntu з офіційною PPA Elementary OS, введіть: sudo add-apt-repository ppa:elementary-os/stable sudo apt-get...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Pantheon Desktop у Debian Stretch by Alexander Bazhenov</h2></div></a><div class="pagetext"><p>Про встановлення версії 0.5 та іншу інформацію ви зможете отримати тут. Зверніть увагу, що встановлення Pantheon Loki можливе на Debian Stretch тільки для 64...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Встановити робоче оточення Pantheon в Ubuntu 16.04</h2></div></a><div class="pagetext"><p>28 лист. 2016 р. - Встановити робоче оточення Pantheon як в Elementary OS в Ubuntu 16.04. Для встановлення цього робочого оточення існує офіційний...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Як встановити pantheon? - LinuxMint.com.ru</h2></div></a><div class="pagetext"><p>21 лип. 2017 р. — Скажімо, так... я намагався встановити DE від Elementary OS (він же pantheon), але після встановлення (підключив репозиторій, apt-get update,...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Як встановити робочий стіл Elementary OS у Fedora Linux</h2></div></a><div class="pagetext"><p>Встановіть настільні пакети Pantheon</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Установка Pantheon - Manjaro Linux</h2></div></a><div class="pagetext"><p>9 Грудня. 2019 р. - Встановлення Pantheon. Доброго вам дня. Хтось встановлював, може хтосьто користується DE Pantheon (від elementary OS).</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Як встановити Pantheon на Arch Linux? - Відповіді Mail.ru</h2></div></a><div class="pagetext"><p>Думаю перейти на Arch Linux з elementary OS, але оточення Pantheon прямо зайшло. Чи можливо встановити його?</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Elementary OS Російськомовна документація щодо Ubuntu</h2></div></a><div class="pagetext"><p>Встановлення</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Arch Linux Pantheon (Elementary OS) - Пінгвінус</h2></div></a><div class="pagetext"><p>3 вер. 2020 - Ось нарешті вдалося поставити Pantheon на Arch. Система спритна до жаху сам не очікував, єдине, що не можу добити — це як змінити іконки...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">pantheon - список питань Ubuntu (Убунту) та Linux</h2></div></a><div class="pagetext"><p>У мене Ubuntu, і тепер я хочу встановити робочий стіл Pantheon, але, як тільки я запустив команду sudo add-apt-repository ppa: elementary-os / daily,...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Встановлення робочого оточення Pantheon Desktop у Debian...</h2></div></a><div class="pagetext"><p>16 січ. 2016 р. — Заради інтересу (та й нудно стало), вирішив я встановити робоче оточення Pantheon Desktop у Debian Jessie. Порядок такий:</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Pantheon Shell on Archlinux - Російськомовна спільнота.</h2></div></a><div class="pagetext"><p>8 травня 2019 р. — Кожна спроба закінчувалася переконанням, що Ubuntu – зовсім не… Загалом, я вирішив ще раз спробувати встановити Pantheon на Arch. Я...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Використовуйте середовище робочого столу Elementary OS у Debian 8</h2></div></a><div class="pagetext"><p>Оточення робочого столу Pantheon має певну схожість з GNOME Shell і MacOS зокрема Пантеон... 1 Як встановити Pantheon на Debian 8 Jessie?</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Pantheon Files - файловий менеджер в Ubuntu - Linux</h2></div></a><div class="pagetext"><p>Для Ubuntu 13.10; 14.04 і Linux Mint 16, встановити Pantheon Files потрібно через термінал:... sudo apt-get install pantheon-files-plugin-ubuntuone.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Як встановити на настільний комп'ютер Elementary OS.</h2></div></a><div class="pagetext"><p>14 вер. 2019 р. — У цьому посібнику ми покажемо, що потрібно для запуску та запускуостанньої версії Pantheon у Fedora Linux. Примітка: не хочете використовувати...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Як встановити робочий стіл Elementary OS на Arch Linux</h2></div></a><div class="pagetext"><p>23 лист. 2021 - Робочий стіл Pantheon тепер знаходиться в офіційних репозиторіях Arch Linux і може бути встановлений. Ось як змусити його працювати у вашій...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" ><div class="title"><h2 class="txt">Як встановити середовище робочого столу Pantheon?</h2></div></a><div class="pagetext"><p>15 жовт. 2011 р. — Тепер, після входу до Pantheon Desktop, він, як і раніше, виглядатиме як звичайний Ubuntu, щоб легко змінити його зовнішній вигляд.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-pantheon-linux.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/u-sadu-2-klas.html">У саду 2 клас</a></li>
+<li><a href="/articles/gitara-z-krilami-jak-nazivaetsja.html">Гітара з крилами як називається</a></li>
+<li><a href="/articles/jak-dodati-logotip-do-fotografii.html">Як додати логотип до фотографії</a></li>
+<li><a href="/articles/stan-zirkoju-z-leroju.html">Стань зіркою з лерою</a></li>
+<li><a href="/articles/napishit-viraz-shvidkosti-gomogennoi-reakcii.html">Напишіть вираз швидкості гомогенної реакції</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-variti-krupi-dlja-koshenjat.html">Як варити крупи для кошенят</a></li>
+<li><a href="/articles/referat-na-znak-zodiaku-oven.html">Реферат на знак зодіаку овен</a></li>
+<li><a href="/articles/ustanovka-transportnogo-zasobu-na-vaz-2115.html">Установка транспортного засобу на ваз 2115</a></li>
+<li><a href="/articles/dzhentlmeni-bezkoshtovno-u-horoshomu.html">Джентльмени безкоштовно у хорошому</a></li>
+<li><a href="/articles/telefon-dovidkovoi-sluzhbi-u-ribinsku.html">Телефон довідкової служби у рибинську</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jaki-sprei-dlja-nosa-z-antibiotikom.html">Які спреї для носа з антибіотиком</a></li>
+<li><a href="/articles/dekorativna-vishivka.html">Декоративна вишивка</a></li>
+<li><a href="/articles/operativnij-chergovij-kaliningradskij-oblasti.html">Оперативний черговий Калінінградській області телефон</a></li>
+<li><a href="/articles/drenazh-diljanki-navkolo-budinku-svoimi-rukami.html">Дренаж ділянки навколо будинку своїми руками</a></li>
+<li><a href="/articles/materiali-z-remontu-dviguna.html">Матеріали з ремонту двигуна</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-povoditisja-koli-nachalnik-prichipaetsja.html">Як поводитися коли начальник причіпається</a></li>
+<li><a href="/articles/jak-zberegti-nomer-na-telefon-meizu.html">Як зберегти номер на телефон meizu</a></li>
+<li><a href="/articles/telefon-z-nfc-i-glonass.html">Телефон з nfc і глонасс</a></li>
+<li><a href="/articles/vstanoviti-prava-na-zemlju.html">Встановити права на землю</a></li>
+<li><a href="/articles/jaka-richka-v-michurinsku.html">Яка річка в Мічурінську</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

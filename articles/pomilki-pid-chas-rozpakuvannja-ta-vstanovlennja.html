@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Помилки під час розпакування та встановлення програм | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Чи не збігається контрольна сума! Unarc.dll повернув код ... Чому під час встановлення гри або програми виникає помилка: "Сталася помилка під час..." />
+ <meta name="keywords" content="помилки, розпакування, встановлення" />
+ <meta name="news_keywords" content="помилки, розпакування, встановлення" />
+ 
+ 
+ <meta property="og:title" content="Помилки під час розпакування та встановлення програм" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Чи не збігається контрольна сума! Unarc.dll повернув код ... Чому під час встановлення гри або програми виникає помилка: "Сталася помилка під час..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:48:11" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Помилки під час розпакування та встановлення програм" />
+ <meta name="twitter:description" content="Чи не збігається контрольна сума! Unarc.dll повернув код ... Чому під час встановлення гри або програми виникає помилка: "Сталася помилка під час..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Помилки під час розпакування та встановлення програм</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Чи не збігається контрольна сума! Unarc.dll повернув код...</h2></div></a><div class="pagetext"><p>Чому під час встановлення гри або програми виникає помилка: "Сталася помилка під час розпакування: Не збігається контрольна сума!"</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Код помилки unarc.dll під час розпакування архіву або встановлення...</h2></div></a><div class="pagetext"><p>Якщо при інсталяції на комп'ютер програми або при розпакуванні архівів виникає помилка unarc.dll, проблема може бути пов'язана безпосередньо з файлом, з яким...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">«Відбулася помилка під час розпакування: Не збігається...</h2></div></a><div class="pagetext"><p>Метод №2 Прибрати кирилицю директорії установки — Якщо ви завантажили якусь іграшку або програму з торрент-трекера, і при встановленні вона показує вам...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Unarc.dll повернув код помилки 1,6,7,12,14 - Девайси та ОС</h2></div></a><div class="pagetext"><p>Отже, як усунути помилку 11 під час встановлення гри? Насамперед потрібно відключити антивірусну програму, далі проводять розпакування необхідного...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Виникла помилка при розпакуванні unarc.dll повернув код...</h2></div></a><div class="pagetext"><p>5. Також помилка може бути пов'язана із правами доступу. Заходимо в Мій комп'ютер, натискаємо правою кнопкою миші по тому диску, куди хочемо встановити програму і...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">112 «програмі установки не вдається розпакувати та...</h2></div></a><div class="pagetext"><p>При інсталяції програми локально або з вузла Microsoft Windows Update може з'явитися... Зверніться до постачальника програмного забезпечення. помилка 112...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Unarc.dll повернув код помилки -1, -12, -14 - WiFiGid</h2></div></a><div class="pagetext"><p>помилка при розпакуванні Unarc.dll, яка повернула код помилки: -1. З такою проблемою стикаються користувачі, які намагаються встановити гру або програму.</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Unarc.dll повернув код помилки 12, 11, 1, 6, 7 - Як виправити</h2></div></a><div class="pagetext"><p>Виправити помилку, коли ISDone.dll Unarc.dll повернув код помилки 12, 11, 1, 6, 7 під час розпакування або встановлення гри, архіву в Windows 11/10.</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Сталася помилка прирозпакування - не збігається...</h2></div></a><div class="pagetext"><p>Якщо помилка виникає при встановленні гри або програми, завантаженої за допомогою торрент-трекера, то дуже висока ймовірність того, що причиною...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Unarc.dll повернув код помилки 11 при встановленні гри як...</h2></div></a><div class="pagetext"><p>Відбулася помилка при розпакуванні unarc dll повернув код помилки 11... Як встановити пароль на запуск програми у Windows. Зображення помилки...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Помилка 6 при встановленні гри - comuedu.ru</h2></div></a><div class="pagetext"><p>Спочатку зніміть всі модулі RAM, а потім вмикайте по одному і перевіряйте, чи архів розпаковується з грою або програмою. Другий варіант швидше та надійніше.</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Помилка ISDone.dll і Unarc.dll під час встановлення гри, повернув код</h2></div></a><div class="pagetext"><p>При установці великих ігор або програм, інсталятор часто містить стислі дані, які розпаковуються на жорсткий диск. Процес розпакування...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Що таке не збігається контрольна сума - 4apple</h2></div></a><div class="pagetext"><p>Якщо при установці або розпакуванні ви зустрічаєте помилку пов'язану з unarc.dll - почитайте окрему... У цьому нам допоможе програма HDDScan.</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Скайрім при встановленні видає помилку 1. - Як бути на ти.</h2></div></a><div class="pagetext"><p>Відео: ISDone.dll сталася помилка під час розпакування Unarc.dll повернув код помилки. 1. Знайдіть такий самий архів (гру, програму), тільки на...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Виникла помилка при розпакуванні unarc.dll повернув код...</h2></div></a><div class="pagetext"><p>Вони виникають, коли ви намагаєтеся розпакувати архів завантажений з Інтернету, або під час встановлення гри або програми. Помилка unarc</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Відбулася помилка при розпакуванні не збігається.</h2></div></a><div class="pagetext"><p>dll повернув код помилки: -12». Зазвичай це пов'язано з некоректно створеним ріпаком будь-якої програми, але трапляються випадки, що причиною цієї...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Помилка unarc.dll Як швидко вирішити проблему? - Geek...</h2></div></a><div class="pagetext"><p>Помилка із системною бібліотекоювиникає при розпаковуванні програм і ріпак ігор в ОС... Як правило, код помилки 6 з'являється вже в процесі встановлення гри.</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Помилка unarc.dll та ISDone.dll - як виправити remontka.pro</h2></div></a><div class="pagetext"><p>помилка unarc.dll або ISDone.dll при установці гри або розпакуванні... після чого спробувати інсталяцію гри або програми заново — частіше...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" ><div class="title"><h2 class="txt">Помилка розбіжності контрольної суми RAR</h2></div></a><div class="pagetext"><p>Чому при розпакуванні файлів RAR виникає помилка розбіжності контрольної суми.... пакети програм для встановлення поставляються саме у вигляді архівів,...</p><a rel="nofollow" href="/go.html?/articles/pomilki-pid-chas-rozpakuvannja-ta-vstanovlennja.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/prisnovodni-krevetki-ja-utrimuvav.html">Прісноводні креветки я утримував</a></li>
+<li><a href="/articles/shho-mozhna-zisti-pislja-6.html">Що можна з’їсти після 6</a></li>
+<li><a href="/articles/jaka-minvata-krashhe-dlja-shumoizoljacii.html">Яка мінвата краще для шумоізоляції</a></li>
+<li><a href="/articles/pisnja-ti-mene-ogornula-marivanna.html">Пісня ти мене огорнула мариванна</a></li>
+<li><a href="/articles/ajfon-6s-jaka-diagonal-ekranu.html">Айфон 6s яка діагональ екрану</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/telefon-firmi-verta.html">Телефон фірми верта</a></li>
+<li><a href="/articles/jak-harchuetsja-volossja-video.html">Як харчується волосся відео</a></li>
+<li><a href="/articles/evroavto-viprobuvachiv-2-nomer-telefonu.html">Євроавто випробувачів 2 номер телефону</a></li>
+<li><a href="/articles/jak-z-telefonu-vidpraviti-majachok-z.html">Як з телефону відправити маячок з</a></li>
+<li><a href="/articles/aranzhuvannja-ti-potribna-meni.html">Аранжування ти потрібна мені</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/diznatisja-pro-trafik-mtskonekt.html">Дізнатися про трафік мтсконект</a></li>
+<li><a href="/articles/prijmati-platezhi-cherez-jandeks.html">Приймати платежі через яндекс</a></li>
+<li><a href="/articles/avtor-cogo-ljutera-prijmav.html">Автор цього лютера приймав</a></li>
+<li><a href="/articles/pri-farbuvanni-mashini-poteki.html">При фарбуванні машини потеки</a></li>
+<li><a href="/articles/jak-rozrahuvati-podatok-na-majno-za-balansom.html">Як розрахувати податок на майно за балансом</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/de-mozhna-vidremontuvati-zolotij-lancjuzhok.html">Де можна відремонтувати золотий ланцюжок</a></li>
+<li><a href="/articles/jak-vstanoviti-quickshortcutmaker.html">Як встановити quickshortcutmaker</a></li>
+<li><a href="/articles/tb-hitachi-nalashtuvati-bez-pulta.html">ТБ hitachi налаштувати без пульта</a></li>
+<li><a href="/articles/papka-dlja-paperu-dlja-hudozhnikiv.html">Папка для паперу для художників</a></li>
+<li><a href="/articles/skillet-krashhij-za-narkotiki.html">Скіллет кращий за наркотики</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

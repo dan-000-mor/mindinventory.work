@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Що таке правило для хеш | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Створення правила, яке використовує умову "hash file... Windows 10. Windows Server. У цьому розділі для ІТ-фахівців показано, як створити правило..." />
+ <meta name="keywords" content="таке, правило" />
+ <meta name="news_keywords" content="таке, правило" />
+ 
+ 
+ <meta property="og:title" content="Що таке правило для хеш" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Створення правила, яке використовує умову "hash file... Windows 10. Windows Server. У цьому розділі для ІТ-фахівців показано, як створити правило..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="18:47:44" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Що таке правило для хеш" />
+ <meta name="twitter:description" content="Створення правила, яке використовує умову "hash file... Windows 10. Windows Server. У цьому розділі для ІТ-фахівців показано, як створити правило..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Що таке правило для хеш</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Створення правила, яке використовує умову "hash file...</h2></div></a><div class="pagetext"><p>Windows 10. Windows Server. У цьому розділі для ІТ-фахівців показано, як створити правило AppLocker за умови хешу файлів. Правила для...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Хеш-функція - Вікіпедія</h2></div></a><div class="pagetext"><p>Хеш-функція (англ. hash function від hash — «перетворювати на фарш», «мішанина»), або функція... Як правило, алгоритм повинен забезпечити найменшу кількість колізій,...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Хеш-сума - Вікіпедія.</h2></div></a><div class="pagetext"><p>Явне значення хеш-суми, як правило, записується у шістнадцятковому вигляді. Так, утиліта md5sum, що обчислює значення хеш-функції MD5 від заданого файлу,...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Хеш-функція, що таке? / Хабр</h2></div></a><div class="pagetext"><p>Підсумки. У цій статті я постарався пояснити, що таке хеш-функція і навіщо вона потрібна. Також загалом мною було розібрано принцип роботи...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Хеш: що це таке простими словами</h2></div></a><div class="pagetext"><p>Що таке Хеш? Розбираємо поняття. Якими властивостями має хеш-функція?</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Універсальне сімейство хеш-функцій.</h2></div></a><div class="pagetext"><p>Але це умова зазвичай неможливо перевірити, оскільки розподіл ймовірностей, із якими надходять вхідні дані, зазвичай, невідомо.</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Ідеальне хешування.</h2></div></a><div class="pagetext"><p>Ідеальна хеш-функція (англ. perfect hash function) - хеш-функція, яка без колізій відображає різні елементи з безлічі об'єктів на безліч ключів...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Алгоритми хешування - просте пояснення складного - Крипто.</h2></div></a><div class="pagetext"><p>Одним з перших стандартів алгоритму хешування був MD5 hash, який широко використовувався для перевірки цілісності файлів (контрольних сум) і...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Хешування — Problem Solving with Algorithms and Data Structures</h2></div></a><div class="pagetext"><p>Однак далі ми побачимо, що це, як правило, не єдиний вихід. Хеш-таблиця - це колекція елементів,які зберігаються таким чином,...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Криптографічні хеш-функції на допомогу IT-юристу - Закон.ру</h2></div></a><div class="pagetext"><p>1.2 Тепер отримаємо MD5-хеш файлу, що вийшов за допомогою команди md5sum.... і, в цифровому підписі, як правило, використовуються застарілі...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Додавання умови спрацьовування в правило Контролю програм</h2></div></a><div class="pagetext"><p>Kaspersky Endpoint Security не підтримує MD5-хеш файлу та не контролює запуск програм на основі MD5-хешу. Як умова...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">ГОСТ 34.11-2018 Інформаційна технологія (ІТ...</h2></div></a><div class="pagetext"><p>Стандарти міждержавні, правила та рекомендації щодо... Цей стандарт визначає алгоритм та процедуру обчислення хеш-функції для будь-якої...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">ГОСТ Р 34.11-2012 Інформаційна технологія (ІТ...</h2></div></a><div class="pagetext"><p>N 184-ФЗ "Про технічне регулювання", а правила застосування національних... обчислення хеш-функції для будь-якої послідовності двійкових символів,...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Хеш-сума – це... Що таке Хеш-сума?</h2></div></a><div class="pagetext"><p>Явне значення хеш-суми, як правило, записується у шістнадцятковому вигляді. Так, утиліта md5sum, що обчислює значення хеш-функції MD5 від заданого файлу,...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Хеш-алгоритм з керуючою деревоподібною структурою та метод...</h2></div></a><div class="pagetext"><p>2017 ·</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">ВСІ ЩО ПОТРІБНО ТЕБЕ ЗНАТИ ПРО ХЕШ ВКонтакте</h2></div></a><div class="pagetext"><p>Алгоритм роботи хеш-функції зазвичай робиться відкритим, щоб при необхідності можна було оцінити її стійкість до відновлення...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Як в Universal Analytics фіксувати знак # в URL</h2></div></a><div class="pagetext"><p>ga('set', 'page', '/my-page#' + u.hash);. ga('send',...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Хеш - Глосарій MDN</h2></div></a><div class="pagetext"><p>Хеш-функція отримує на вхід текстове повідомлення довільної довжини та видає хеш фіксованої довжини. Як правило, у формі 128-бітного "відбитка пальців"...</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Як працює перевірка хешів, якщо ніякі 2 хеш ніколи не...</h2></div></a><div class="pagetext"><p>і цепризводить до того, що хеші будуть іншими. Примітка. MD5, як правило, не підходить для хешування паролів через відому слабкість. Поділитися</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" ><div class="title"><h2 class="txt">Забули свій пароль? Як проходив злом хешів на PHDays 2012</h2></div></a><div class="pagetext"><p>На таких змаганнях зберігається, зазвичай, панування низки окремих команд: Hashcat, Inside Pro, john-users.</p><a rel="nofollow" href="/go.html?/articles/shho-take-pravilo-dlja-hesh.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/ne-zmig-pracjuvati-za-fahom.html">Не зміг працювати за фахом</a></li>
+<li><a href="/articles/shho-robiti-na-in-u-17.html">Що робити на ін у 17</a></li>
+<li><a href="/articles/jak-mozhna-prijmati-akvadetrim-doroslim.html">Як можна приймати аквадетрім дорослим</a></li>
+<li><a href="/articles/shho-stalo-pislja-boju-z-emeljanenkom.html">Що стало після бою з ємельяненком</a></li>
+<li><a href="/articles/nazvit-oznaki-otruennja-shho-slid-robiti.html">Назвіть ознаки отруєння що слід робити</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/najkrashhi-igri-xbox-360-kinect.html">Найкращі ігри xbox 360 kinect</a></li>
+<li><a href="/articles/ja-vmirala-duhovno.html">Я вмирала духовно</a></li>
+<li><a href="/articles/u-chomu-krashhe-planshet-apple.html">У чому краще планшет apple</a></li>
+<li><a href="/articles/programa-z-foto-zrobiti-maljunok.html">Програма з фото зробити малюнок</a></li>
+<li><a href="/articles/u-jaku-smugu-zdijsnjuetsja-povorot.html">У яку смугу здійснюється поворот</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jak-diznatisja-kindle-paperwhite.html">Як дізнатися kindle paperwhite</a></li>
+<li><a href="/articles/shkidlivi-zvichki-ta-profilaktika-3-klas.html">Шкідливі звички та профілактика 3 клас</a></li>
+<li><a href="/articles/jak-pracjue-poshta-105275.html">Як працює пошта 105275</a></li>
+<li><a href="/articles/jak-vigljadae-naturalne-rude-volossja.html">Як виглядає натуральне руде волосся</a></li>
+<li><a href="/articles/jak-nazivaetsja-reklama-shho-krutjatsja.html">Як називається реклама що крутяться</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/najkrashhi-sorti-tomativ-rannih-sortiv.html">Найкращі сорти томатів ранніх сортів</a></li>
+<li><a href="/articles/zrobiti-onlajn-prezentaciju-foto-slajdiv.html">Зробити онлайн презентацію фото слайдів</a></li>
+<li><a href="/articles/kudi-z-ajfonu-znik-rezhim-modemu.html">Куди з айфону зник режим модему</a></li>
+<li><a href="/articles/mozhna-mazati-tatu-dekspantenol.html">Можна мазати тату декспантенол</a></li>
+<li><a href="/articles/ja-zradnik-i-negidnik-virshi.html">Я зрадник і негідник вірші</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

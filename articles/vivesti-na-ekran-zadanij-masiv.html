@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Вивести на екран заданий масив | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Вивести заданий масив на екран - Pascal - Кіберфорум Відповіді з готовими рішеннями: Сформувати та вивести на екран заданий двовимірний масив (для..." />
+ <meta name="keywords" content="вивести, екран, заданий" />
+ <meta name="news_keywords" content="вивести, екран, заданий" />
+ 
+ 
+ <meta property="og:title" content="Вивести на екран заданий масив" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Вивести заданий масив на екран - Pascal - Кіберфорум Відповіді з готовими рішеннями: Сформувати та вивести на екран заданий двовимірний масив (для..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="14:16:23" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Вивести на екран заданий масив" />
+ <meta name="twitter:description" content="Вивести заданий масив на екран - Pascal - Кіберфорум Відповіді з готовими рішеннями: Сформувати та вивести на екран заданий двовимірний масив (для..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Вивести на екран заданий масив</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Вивести заданий масив на екран - Pascal - Кіберфорум</h2></div></a><div class="pagetext"><p>Відповіді з готовими рішеннями: Сформувати та вивести на екран заданий двовимірний масив (для заповнення масиву використовувати формулу).</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Рішення: Вивести заданий масив на друк - Pascal ABC</h2></div></a><div class="pagetext"><p>[Pascal ABC] ➣ Завдання: Вивести заданий масив на друк ➣ Вихідний код... Потрібно вивести в рядок через пропуск значення всіх елеметів заданого масиву...</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Рішення: Стисніть заданий масив, викинувши кожен другий...</h2></div></a><div class="pagetext"><p>[Turbo Pascal] ➣ Завдання: Стисніть масив, викинувши кожен другий елемент масиву. Вивести на екран заданий та новий масив ➣ Вихідний код...</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Програмування. Одновимірні масиви Pascal-Паскаль</h2></div></a><div class="pagetext"><p>виведемо на екран отриманий масив. Текст програми: Приклад програми підсумовування векторів. Program summa; Var a, b, c: array...</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Динамічний чи статичний?</h2></div></a><div class="pagetext"><p>Саме тому такі масиви називаються статичними: їх розмір статичний і має бути заданий на етапі компіляції програми. У Delphi Object Pascal з'явилися...</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Розв'язання задач на масиви</h2></div></a><div class="pagetext"><p>У Pascal можна ставити як одновимірні, і двовимірні масиви.... Вивести елементи масиву, які більші за середній арифметичний.</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Сформувати послідовність із n елементів заданих ДСЧ...</h2></div></a><div class="pagetext"><p>Для того щоб заповнити масив нам знадобиться цикл for а для нього потрібна...</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Архіви Одновимірні масиви - Розв'язання задач з...</h2></div></a><div class="pagetext"><p>У одновимірному масиві цілих чисел визначити два найменші елементи. Вони можуть бути як рівні... Вивести на екран його значення та позицію ст.</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Реверс масиву - Розв'язання задач з програмування</h2></div></a><div class="pagetext"><p>Переставити елементи заданого масиву у зворотномупорядку, тобто зробити реверс масиву. Вирішуємо завдання мовами Python, Pascal, Сі.</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Java - Масиви / ProgLang</h2></div></a><div class="pagetext"><p>Шукає заданий масив об'єктів (byte, int, double, і т.д.) для зазначеного значення... У цьому прикладі розглянемо як вивести масив на екран Java.</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Масив (тип даних) - Вікіпедія</h2></div></a><div class="pagetext"><p>Масив (у деяких мовах програмування також таблиця, ряд, матриця, вектор) - структура... type TArrayType = array [0.9] of Integer; (* Масиви, що мають задані...</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Pascal Практична №6 - Портал програмування - Coderbook.ru</h2></div></a><div class="pagetext"><p>Знайти в масиві елементи, рівні кількості, заданому користувачем.... Потрібно вивести на екран суму парних елементів масиву із 10 чисел.</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Pascal Задано масив чисел. Знайти номери парних елементів та...</h2></div></a><div class="pagetext"><p>Pascal Задано масив чисел. Знайти номери парних елементів та вивести їх на екран. Подивись відповіді прямо зараз!</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Сортування масивів методом вибору C++ Уроки С++ - Ravesli</h2></div></a><div class="pagetext"><p>Тепер, коли весь масив відсортований - виводимо його на екран... які знаходяться поруч, і якщо задоволені задані критерії, значення з цієї пари...</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">C# та .NET Масиви - Metanit</h2></div></a><div class="pagetext"><p>Так само незрозуміло, як вивести на екран вибірково будь-який з елементів такого масиву? Наприклад, мені потрібно вивести тільки цифру 8. Yulia...</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Статичний масив: оголошення, заповнення, використання</h2></div></a><div class="pagetext"><p>на екран дисплея виводиться кількість елементів масиву (7). Спробував створити, щоб кількість елементів виводити так:.</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Типові завдання обробки одновимірних числових масивів</h2></div></a><div class="pagetext"><p>Виведення на екран елементів масиву із заданими властивостями... Вивести на екран елементи цілісного масиву, що закінчуються на 49.</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">(Частина 2) Бельченко В.Є.</h2></div></a><div class="pagetext"><p>функції у = 0,5х призначення аргументу, заданих у вихідному масиві, і помістити їх в інший масив. Вивести на екран дисплея обидва масиви у вигляді двох.</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Посібник із програмування на C#. Одновимірні масиви.</h2></div></a><div class="pagetext"><p>int[] array = new int[5]; Цей масив містить елементи з array[0] до array[4] . Елементи масиву елементи ініціалізуються до значення по...</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" ><div class="title"><h2 class="txt">Масиви - Сучасний підручник JavaScript</h2></div></a><div class="pagetext"><p>Вивести масив цілком можна за допомогою alert. … Наприклад, черга повідомлень, які треба показати на екрані.</p><a rel="nofollow" href="/go.html?/articles/vivesti-na-ekran-zadanij-masiv.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-na-vordi-zrobiti-latinski-cifri.html">Як на ворді зробити латинські цифри</a></li>
+<li><a href="/articles/farba-palet-popeljastij-kolir-volossja.html">Фарба палет попелястий колір волосся</a></li>
+<li><a href="/articles/chi-mozhna-zrobiti-kolodjaz-svoimi-rukami.html">Чи можна зробити колодязь своїми руками</a></li>
+<li><a href="/articles/terrarija-znak-anh.html">Террарія знак анх</a></li>
+<li><a href="/articles/jaki-frukti-pri-zastudi-pid-chas-vagitnosti.html">Які фрукти при застуді під час вагітності</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-robiti-sukni-z-biloi-tkanini.html">Як робити сукні з білої тканини</a></li>
+<li><a href="/articles/pochistiti-forsunki-sitroen-s4.html">Почистити форсунки ситроен с4</a></li>
+<li><a href="/articles/robi-ci-spogadi.html">Роби ці спогади</a></li>
+<li><a href="/articles/jak-nazvati-sina-veresen-zhovten.html">Як назвати сина вересень жовтень</a></li>
+<li><a href="/articles/grati-v-gru-nazvi-mashinu.html">Грати в гру назви машину</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/hram-u-serci-u-mene.html">Храм у серці у мене</a></li>
+<li><a href="/articles/dobre-buti-tihonej-hd-onlajn.html">Добре бути тихоней hd онлайн</a></li>
+<li><a href="/articles/garnij-organajzer-u-telefon.html">Гарний органайзер у телефон</a></li>
+<li><a href="/articles/jak-vidnoviti-pidkreslennja.html">Як відновити підкреслення</a></li>
+<li><a href="/articles/jak-zrobiti-mrt-z-koronkami.html">Як зробити мрт з коронками</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-poshiti-kosuhu-zi-shkiri.html">Як пошити косуху зі шкіри</a></li>
+<li><a href="/articles/rozrobka-dizajnu-vkljuchae-v-sebe.html">Розробка дизайну включає в себе</a></li>
+<li><a href="/articles/najkrashhij-znak-na-rik-vivci.html">Найкращий знак на рік вівці</a></li>
+<li><a href="/articles/jak-koristuvatisja-reversivnoju-zarjadkoju.html">Як користуватися реверсивною зарядкою</a></li>
+<li><a href="/articles/mene-dratue-najkrashha-podruga-mogo-hlopcja.html">Мене дратує найкраща подруга мого хлопця</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

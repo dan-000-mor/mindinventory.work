@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як встановити ubuntu на amd | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Встановлення драйвера AMD в Ubuntu Losst Далі розберемося як виконується установка amdgpu pro в ubuntu 18.04. Встановлення драйверів AMD на Ubuntu. Тепер..." />
+ <meta name="keywords" content="встановити, Ubuntu, драйвера, драйверів" />
+ <meta name="news_keywords" content="встановити, Ubuntu, драйвера, драйверів" />
+ 
+ 
+ <meta property="og:title" content="Як встановити ubuntu на amd" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Встановлення драйвера AMD в Ubuntu Losst Далі розберемося як виконується установка amdgpu pro в ubuntu 18.04. Встановлення драйверів AMD на Ubuntu. Тепер..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="10:14:24" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як встановити ubuntu на amd" />
+ <meta name="twitter:description" content="Встановлення драйвера AMD в Ubuntu Losst Далі розберемося як виконується установка amdgpu pro в ubuntu 18.04. Встановлення драйверів AMD на Ubuntu. Тепер..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як встановити ubuntu на amd</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Встановлення драйвера AMD в Ubuntu Losst</h2></div></a><div class="pagetext"><p>Далі розберемося як виконується установка amdgpu pro в ubuntu 18.04. Встановлення драйверів AMD на Ubuntu. Тепер ми можемо зайнятися встановленням...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Сумісність обладнання AMD з Ubuntu Російськомовна...</h2></div></a><div class="pagetext"><p>HD 6370M: Працює з коробки (11.04-12.04), якщо поставити пропрієтарні драйвера не працює Gnome Shell. HD 6670:.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Пропрієтарний драйвер для відеокарт AMD Російськомовна...</h2></div></a><div class="pagetext"><p>У цій статті ми розглянемо способи встановлення пропрієтарного драйвера AMD (Catalyst/FGLRX) в Ubuntu Linux, а також...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">How-To Install/Uninstall AMD Radeon™ Software AMDGPU-PRO Driver...</h2></div></a><div class="pagetext"><p>Notice Цей driver не може бути з Ubuntu 16.04.3 HWE. Please refer to this advisory for details.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Як встановити драйвери AMD Radeon в Ubuntu 18.10 Cosmic.</h2></div></a><div class="pagetext"><p>Нашою метою є встановлення драйверів AMD Radeon в Ubuntu 18.10 Cosmic Cuttlefish Linux. Тут також ми розглянемо можливе оновлення...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Як встановити драйвери AMD/ATI в Ubuntu 18.04? Убунлог - Ubunlog</h2></div></a><div class="pagetext"><p>1 Встановлення драйверів Privative AMD в Ubuntu; 2 Як видалити драйвери Radeon в Ubuntu 18.04? 3 Встановлення драйверів ATI/AMD з відкритим вихідним кодом у...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Деякі особливості установки драйверів Amd в Ubuntu</h2></div></a><div class="pagetext"><p>Mesa - інтегровані в ядро ​​системи Linux відкриті драйвера radeon (застарілі); rocm (Radeon Open Compute) — реалізація OpenCL від компанії...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Як встановити графічні драйвери AMD на Ubuntu 18.04</h2></div></a><div class="pagetext"><p>Як встановити графічні драйвери AMD на Ubuntu 18.04. 16. Я завжди був користувачем Windows, але вчора я скачав і встановив Ubuntu 18.04 LTS з цієї...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Інсталяція драйвера AMD Radeon Ubuntu 20.04 - goto-linux.com</h2></div></a><div class="pagetext"><p>Як встановити AMD Radeon із репозиторію PPA; Яквстановити офіційний драйвер AMD Radeon AMDGPU-PRO; Як перевірити продуктивність вашої...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Установка AMDGPU Ubuntu 18.04-19.10 — General — Форум</h2></div></a><div class="pagetext"><p>Відеокарта AMD RX-580 8G, система на якій встановлював. Ubuntu gnome 19.10 та Kubuntu 18.04.2 на 18.04 спочатку начебто почало встановлювати, але...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Як встановити AMD RADEON на KUBUNTU 21.04? - Desktop...</h2></div></a><div class="pagetext"><p>сайту скачав драйвера amdgpu-pro-21.10-1247438-ubuntu-20.04.tar.xz як їх встановити через консоль?) vboykov 24.05.21 17:28:22.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Як встановити драйвер ATI AMD в Ubuntu Linux? - ABCLinux.org</h2></div></a><div class="pagetext"><p>Як встановити драйвера для вашого відеоадаптера ATI / AMD, запитуєте це питання і не можете знайти рішення, читайте матеріал нижче і...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Установка драйверів для відеокарт від Intel, AMD та NVIDIA на Ubuntu.</h2></div></a><div class="pagetext"><p>Найпростіший спосіб встановлення драйверів для відеокарт від Intel, AMD та NVIDIA на Ubuntu та Linux Mint.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Установка Legacy драйверів на відеокарти AMD... - LINUX для всіх!</h2></div></a><div class="pagetext"><p>На старі відеокарти компанія AMD припинила підтримувати драйвера для linux. На такі відеокарти як AMD Radeon HD 4000, AMD Radeon HD 3000 та AMD Radeon HD...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Встановлюємо свіжі драйвери для відеокарт ATI (AMD) та NVIDIA.</h2></div></a><div class="pagetext"><p>Як визначити та встановити правильну версію драйвера для вашої відеокарти Nvidia в Ubuntu/...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Як встановити графічні драйвери AMD на Ubuntu 18.04.</h2></div></a><div class="pagetext"><p>Але вчора я завантажив та встановив Ubuntu 18.04 LTS з цієї сторінки , але я не вдається знайти спосіб встановлення графічних драйверів AMD.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Установка нових драйверів amd не виконується ubuntu linux</h2></div></a><div class="pagetext"><p>Встановлення драйвера amd/ati radeon у debian 9. Усунення можливих проблем. Неправильно визначаються роздільна здатність та частота монітора. Якщо не...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">AMD: як встановитинайновішу версію драйвера для... - Linux FAQ</h2></div></a><div class="pagetext"><p>AMD: як встановити найновішу версію драйвера для відеокарти... У Ubuntu символи вашого пароля не будуть відображатися жодним чином, навіть за допомогою точок,...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" ><div class="title"><h2 class="txt">Встановлення нових/оновлення драйверів Intel/Nvidia/AMD в Ubuntu</h2></div></a><div class="pagetext"><p>Ми розповімо вам, як встановити нові або оновити існуючі драйвери для відеокарт на базі чіпів Intel/nVidia/AMD на прикладі Ubuntu/Mint...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-ubuntu-na-amd.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-skinuti-na-ajfoni-3-parol-jakshho-jogo-zabuv.html">Як скинути на айфоні 3 пароль якщо його забув</a></li>
+<li><a href="/articles/najkrashhi-anime-201.html">Найкращі аніме 201</a></li>
+<li><a href="/articles/jak-mozhna-stavitisja-do-groshej.html">Як можна ставитися до грошей</a></li>
+<li><a href="/articles/jak-iz-tjutjunu-zrobiti-narkotik.html">Як із тютюну зробити наркотик</a></li>
+<li><a href="/articles/ja-zroblju-masku-zorro.html">Я зроблю маску зорро</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/zachiski-shhipcjami-na-seredne-volossja.html">Зачіски щипцями на середнє волосся</a></li>
+<li><a href="/articles/smolensk-plan-shema.html">Смоленськ план схема</a></li>
+<li><a href="/articles/sklovolokno-svoimi-rukami-porogi-na.html">Скловолокно своїми руками пороги на</a></li>
+<li><a href="/articles/shema-pidkljuchennja-pidsiljuvacha-rosijskoju.html">Схема підключення підсилювача російською</a></li>
+<li><a href="/articles/jak-vimirjati-shirinu-richki-mozhna-na.html">Як виміряти ширину річки можна на</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jak-nazvati-muzej-ljalok.html">Як назвати музей ляльок</a></li>
+<li><a href="/articles/jak-diznatisja-skilki-v-meni-holesterinu.html">Як дізнатися скільки в мені холестерину</a></li>
+<li><a href="/articles/pochistiti-sribnij-lancjuzhok-u-domashnih-umovah.html">Почистити срібний ланцюжок у домашніх умовах</a></li>
+<li><a href="/articles/chi-potribna-koma-pislja-slova-shanovnij.html">Чи потрібна кома після слова шановний</a></li>
+<li><a href="/articles/kordoni-kontinentu-karta-evrazii.html">Кордони континенту карта євразії</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/zavdannja-dlja-3-klasu-vinogradu.html">Завдання для 3 класу винограду</a></li>
+<li><a href="/articles/de-pishut-nacionalnist-u-pasporti.html">Де пишуть національність у паспорті</a></li>
+<li><a href="/articles/5-klas-averin-robochij-zoshit-onlajn.html">5 Клас аверин робочий зошит онлайн</a></li>
+<li><a href="/articles/tekst-nigerijskoju.html">Текст нігерійською</a></li>
+<li><a href="/articles/jak-testerom-pereviriti-spravnist-tenu.html">Як тестером перевірити справність тену</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

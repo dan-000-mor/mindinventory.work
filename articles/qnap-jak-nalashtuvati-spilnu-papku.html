@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Qnap як налаштувати спільну папку | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Загальні папки - QNAP Turbo NAS Software User Manual Перейдіть на вкладку "Параметри прав" &gt; "Загальні папки" &gt; "Спільні папки". Виберіть кореневий..." />
+ <meta name="keywords" content="qnap, налаштувати, спільну" />
+ <meta name="news_keywords" content="qnap, налаштувати, спільну" />
+ 
+ 
+ <meta property="og:title" content="Qnap як налаштувати спільну папку" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Загальні папки - QNAP Turbo NAS Software User Manual Перейдіть на вкладку "Параметри прав" &gt; "Загальні папки" &gt; "Спільні папки". Виберіть кореневий..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="10:25:12" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Qnap як налаштувати спільну папку" />
+ <meta name="twitter:description" content="Загальні папки - QNAP Turbo NAS Software User Manual Перейдіть на вкладку "Параметри прав" &gt; "Загальні папки" &gt; "Спільні папки". Виберіть кореневий..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Qnap як налаштувати спільну папку</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Загальні папки - QNAP Turbo NAS Software User Manual</h2></div></a><div class="pagetext"><p>Перейдіть на вкладку "Параметри прав" &gt; "Загальні папки" &gt; "Спільні папки". Виберіть кореневий каталог, наприклад «Відділ», і натисніть кнопку «Дозвіл доступу до ресурсу». Зліва буде показано ім'я спільної папки та вкладених папок першого рівня.</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Створення спільної папки</h2></div></a><div class="pagetext"><p>Виберіть Панель керування &gt; Повноваження &gt; Загальні папки &gt; Загальна папка. Відобразиться екран Загальна папка. Натисніть Створити, а потім виберіть Загальна папка. Відкриється вікно...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Створення, перейменування та видалення мережевих ресурсів.</h2></div></a><div class="pagetext"><p>21 травня 2021 р. - У File Station клацніть по значку "+" поряд з назвою NAS. У меню Панель керування &gt; Налаштування привілеїв &gt; Загальні папки &gt; Створити &gt; Загальна...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Розширені права доступу до папок у системі NAS від...</h2></div></a><div class="pagetext"><p>12 жовт. 2021 р. — Розширені права доступу до папок у системі NAS від QNAP з мікропрограмою... Після застосування налаштувань прав доступу до кореневої папки можна...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Доступ до файлів та папок мережевого сховища в робочій системі.</h2></div></a><div class="pagetext"><p>11 груд. 2021 — За промовчанням Windows використовує ім'я WORKGROUP. У прикладі робоча група називається ZYDATA. Настроювання мережевого сховища QNAP. Зайдіть на...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Налаштування доступу до файлів мережевого сховища за...</h2></div></a><div class="pagetext"><p>22 лист. 2021 — У цій статті ми розглянемо підключення комп'ютера під керуванням ОС Linux за протоколом NFS до мережевого сховища QNAP з мікропрограмою QTS.</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Мережеві накопичувачі QNAP Turbo NAS Керівництво...</h2></div></a><div class="pagetext"><p>Виберіть спільну папку мережного накопичувача, яку необхідно підключити як... відкрити порт 443 і налаштувати перенаправлення цього порту на IP-адресу...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Створення папки загального доступу в мережевих накопичувачах NAS</h2></div></a><div class="pagetext"><p>20 травня 2021 р. — Тепер ви можете отриматидоступ до спільної папки, ввівши у провіднику таку адресу: \\\. Відео-приклад:...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">QNAP Turbo NAS Software User Manual - Всі інструкції та...</h2></div></a><div class="pagetext"><p>3) Була натиснута кнопка скидання, щоб скинути налаштування… На NAS виберіть спільну папку, яку необхідно підключити як мережевий диск, та.</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Надання файлів у загальний доступ засобами...</h2></div></a><div class="pagetext"><p>Щоб видалити спільну папку, встановіть прапорець папки та натисніть "Видалити".... Для налаштування дозволів для вкладених папок виконайте наведені нижче дії.</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">QNAP Turbo NAS Посібник користувача з...</h2></div></a><div class="pagetext"><p>На сторінці "Диск" вкажіть, чи слід налаштовувати диски негайно... На NAS виберіть спільну папку, яку необхідно підключити як мережний диск, та.</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Мережеве сховище QNAP TS-431 P2 для... - PC360</h2></div></a><div class="pagetext"><p>22 груд. 2019 р. — Після виконання налаштувань QNAP переадресує нас у браузер до інтерфейсу... Також тут можна створити спільну папку або зробити це пізніше.</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Підключення до спільних папок мережного накопичувача з...</h2></div></a><div class="pagetext"><p>View online or download PDF (6 MB) QNAP TS-212P User manual • TS-212P NAS... і необхідно підключити спільну папку "public" як каталог /mnt/pub,...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Обговорення NAS QNAP для дому та малого офісу [117]</h2></div></a><div class="pagetext"><p>28 травня 2016 р. — Видалити спільну папку як і можна створити через Privilege Settings.... ось ще не знайшов, де налаштувати, щоб NAS попередив мене,...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Короткий посібник для QTS 4.3.4</h2></div></a><div class="pagetext"><p>8 лют. 2018 — З'єднання спільної папки на комп'ютері Mac.... пристрої QNAP NAS у певній мережі та отримувати до них доступ. Програма підтримується.</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Як додавати QNAP NAS до камер Hikvision</h2></div></a><div class="pagetext"><p>Натисніть кнопку Create, щоб розподіляти спільну папку користувачів. Page 3. (3)натисніть Quota, щоб налаштувати квоту користувачів. Виберіть Test,потім...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Як настроїти QNAP NAS для IP-камери Hikvision - security59</h2></div></a><div class="pagetext"><p>12 лют. 2021 — Створіть спільну папку NFS. Перейдіть в Панель керування&gt; Налаштування привілеїв&gt; Загальні папки. Натисніть кнопку Створити, щоб створити...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Ваше питання: Як знайти QNAP у мережі? - Авто-майстерня.</h2></div></a><div class="pagetext"><p>У вікні, що відкрилося, перейдіть в Системні налаштування &gt; Управління живленням.... На NAS виберіть спільну папку, яку потрібно підключити як мережевий диск,...</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" ><div class="title"><h2 class="txt">Посібник користувача QTS 4.4.x - Setevuha</h2></div></a><div class="pagetext"><p>30 вер. 2020 — Блокування або розблокування зашифрованої спільної папки.... Створення QNAP ID за допомогою ел. пошти чи номери телефону.</p><a rel="nofollow" href="/go.html?/articles/qnap-jak-nalashtuvati-spilnu-papku.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/zminiti-zachisku-na-svoij-foto-bezkoshtovno.html">Змінити зачіску на своїй фото безкоштовно</a></li>
+<li><a href="/articles/boniv-ne-v.html">Бонів не v</a></li>
+<li><a href="/articles/evropejskij-zolotij-5-bukv.html">Європейський золотий 5 букв</a></li>
+<li><a href="/articles/habar-ta-sinonimi.html">Хабар та синоніми</a></li>
+<li><a href="/articles/pvp-chi-ne-pacan.html">Пвп чи не пацан</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/film-pro-boi-bez-pravil-brati.html">Фільм про бої без правил брати</a></li>
+<li><a href="/articles/shho-dae-nomer-kartki-shahrajam.html">Що дає номер картки шахраям</a></li>
+<li><a href="/articles/otek-v-gorle-ne-prohodit-nedelju.html">otek v gorle ne prohodit nedelju</a></li>
+<li><a href="/articles/kubiki-zajceva-golosni-literi-drukuvati.html">Кубики зайцева голосні літери друкувати</a></li>
+<li><a href="/articles/tekst-bigudi-jogor.html">Текст бігуді йогор</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/vesna-a-meni-do-zirki.html">Весна а мені до зірки</a></li>
+<li><a href="/articles/jak-zrobiti-shashlik-z-krevetok-na.html">Як зробити шашлик з креветок на</a></li>
+<li><a href="/articles/jak-nalashtuvati-kanal-bst-na-pristavci.html">Як налаштувати канал бст на приставці</a></li>
+<li><a href="/articles/remont-televizoriv.html">Ремонт телевізорів</a></li>
+<li><a href="/articles/u-jakih-vipadkah-past-perfect-continuous.html">У яких випадках past perfect continuous</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/pogoda-u-volodimirskij-oblasti-karta.html">Погода у Володимирській області карта</a></li>
+<li><a href="/articles/pro-svjato-den-peremogi-anglijskoju.html">Про свято день перемоги англійською</a></li>
+<li><a href="/articles/bunlari-pereklad.html">Bunlari переклад</a></li>
+<li><a href="/articles/alsu-ja-tebe-ne-rozljublju.html">Алсу я тебе не розлюблю</a></li>
+<li><a href="/articles/jak-pereklasti-down-to-earth.html">Як перекласти down to earth</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

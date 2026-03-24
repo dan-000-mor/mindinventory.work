@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Network manager linux як встановити | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Установка NetworkManager в Ubuntu - Lumpics.ru 5 березня. 2019 р. — Відкрийте консоль будь-яким зручним методом, наприклад, через меню, вибравши..." />
+ <meta name="keywords" content="network, manager, Linux, встановити" />
+ <meta name="news_keywords" content="network, manager, Linux, встановити" />
+ 
+ 
+ <meta property="og:title" content="Network manager linux як встановити" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Установка NetworkManager в Ubuntu - Lumpics.ru 5 березня. 2019 р. — Відкрийте консоль будь-яким зручним методом, наприклад, через меню, вибравши..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="18:05:30" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Network manager linux як встановити" />
+ <meta name="twitter:description" content="Установка NetworkManager в Ubuntu - Lumpics.ru 5 березня. 2019 р. — Відкрийте консоль будь-яким зручним методом, наприклад, через меню, вибравши..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Network manager linux як встановити</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Установка NetworkManager в Ubuntu - Lumpics.ru</h2></div></a><div class="pagetext"><p>5 березня. 2019 р. — Відкрийте консоль будь-яким зручним методом, наприклад, через меню, вибравши відповідну іконку. · Напишіть у поле введення рядок sudo apt-get install...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Встановлюємо NetworkManager в Ubuntu - Технічка</h2></div></a><div class="pagetext"><p>Встановлюємо через термінал. Відкриваємо термінал поєднанням клавіш Ctrl+Alt+T, вводимо команду: sudo apt-get install network-manager. Після інсталяція...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Налаштування Network Manager у консолі - Losst</h2></div></a><div class="pagetext"><p>19 травня 2020 р. — NetworkManager - популярний інструмент керування мережевими підключеннями в Linux, має зручний графічний інтерфейс як для Gnome,...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Установка network-manager в Ubuntu/Linux Mint/Debian</h2></div></a><div class="pagetext"><p>5 вер. 2018 р. — Для встановлення network-manager в Ubuntu/Linux Mint/Debian, введіть у Термінал: sudo apt update. sudo apt install network-manager.</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Як перевстановити мережевий менеджер без доступу до...</h2></div></a><div class="pagetext"><p>Завантажте Ubuntu live CD у розділі «Спробуйте без встановлення». Переконайтеся, що ви підключені... sudo apt-get update sudo apt-get install network-manager.</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">як встановити мережевий менеджер в Ubuntu? - QA Stack</h2></div></a><div class="pagetext"><p>як встановити мережевий менеджер в Ubuntu? · Завантажтеся з інсталяційного носія Ubuntu. · Змонтуйте ваші системні диски: sudo mount /dev/sdX /mnt · chroot в...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">ru/NetworkManager - Debian Wiki</h2></div></a><div class="pagetext"><p>Встановлення</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">NetworkManager Російськомовна документація щодо Ubuntu</h2></div></a><div class="pagetext"><p>Керування мережними налаштуваннями через редагування файлу /etc/network/interfaces. Використання аплету мережі, він же nm-applet, аплет NetworkManager і т.д.</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Встановити network-manager-openvpn у Debian - Linux...</h2></div></a><div class="pagetext"><p>apt install network-manager-openvpn. Після встановлення пакета в network-manager з'явиться Hardware,Virtual та OpenVPN. Але при спробі завантажити файл із налаштуваннями...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Чим замінити Network Manager в Ubuntu або Wicd</h2></div></a><div class="pagetext"><p>Установка Wicd в Ubuntu \ Kubuntu \ Xubuntu</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Налаштування Linux - ТОВ "Інтермережа"</h2></div></a><div class="pagetext"><p>Якщо ОС Linux вже встановлений, можна налаштувати мережу вручну наступним чином: Для початку, видалимо службу,... sudo apt-get remove network-manager.</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">NetworkManager - Linux</h2></div></a><div class="pagetext"><p>В принципі, налаштувати мережу в Ubuntu Linux - це зовсім не складне завдання, як може здатися спочатку. Якщо клацнути мишкою по значку, то відкриється меню, в...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Керуємо мережевими підключеннями в Linux за допомогою...</h2></div></a><div class="pagetext"><p>23 лип. 2020 р. —... NetworkManager у командному рядку Linux за допомогою утиліти nmcli.... Якщо вам навпаки потрібно встановити DHCP, замість manual використовуйте...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Як встановити статичну IP-адресу в Linux в Network...</h2></div></a><div class="pagetext"><p>20 лют. 2021 р. — Як встановити статичну IP-адресу в Linux у Network Manager... На думку спадають такі речі, як швидкий ігровий сервер Linux, TeamSpeak або...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Налаштування мережі в Ubuntu 18.04 через Network Manager</h2></div></a><div class="pagetext"><p>9 Грудня. 2019 р. - Управління через WiFi Wicd. Установка: apt install wicd. Wicd керує WiFi. У принципі, цього достатньо для ноутбука. Після його встановлення...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Network-manager ::gentoo - Linux-install - Форум</h2></div></a><div class="pagetext"><p>5 квіт. 2021 - Ну що, продовжуємо налаштування xfce. Я звичайно можу, при кожному перезавантаженні продовжувати вводити цей довгий рядок, з підніманням wifi.24 повідомлення  ·  Не знаю, може я погано описав. Але в мене не встановлено…</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Network Manager - Linux-install - Форум</h2></div></a><div class="pagetext"><p>6 лют. 2018 р. - У /etc/NetworkManager/conf.d/dhcp-client.conf прописав: [main] dhcp=dhclient. Пакет dhclient встановлено. Можете підказати ЧЯДНТ?</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Network Manager L2TPплагін для NetworkManager для...</h2></div></a><div class="pagetext"><p>Як встановити L2TP Network Manager на Ubuntu 14.05 LTS та Ubuntu 16.06 LTS? Створено за допомогою GIMP. Щоб встановити цей мережевий менеджер L2TP / Ipsec в...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">How to Use the Network Manager в Arch Linux DevsDay.ru</h2></div></a><div class="pagetext"><p>14 жовт. 2020 р. — Цей комбінація буде sync, refresh, і update packages, які є доступні в вашому Arch Linux офіційного database. It is very easy to install...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" ><div class="title"><h2 class="txt">Шаблон:) - ALT Linux Wiki</h2></div></a><div class="pagetext"><p>2-й спосіб Видалити NetworkManager і встановити його по-новому (УВАГА ДОСТУП ДО МЕРЕЖІ ПОВИНЕН БУТИ ОРГАНІЗОВАНИЙ ЧЕРЕЗ etcnet, Інакше МИ НЕ ЗМОЖЕМО ВСТАНОВИТИ...</p><a rel="nofollow" href="/go.html?/articles/network-manager-linux-jak-vstanoviti.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/like-a-road-pereklad.html">Like a road переклад</a></li>
+<li><a href="/articles/pereviriti-angl-pereklad.html">Перевірити англ переклад</a></li>
+<li><a href="/articles/leninska-149-karti.html">Ленінська 149 карти</a></li>
+<li><a href="/articles/chi-ne-chitae-la.html">Чи не читає la</a></li>
+<li><a href="/articles/hto-ne-splachuvav-podatki-u-francii.html">Хто не сплачував податки у Франції</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/aromat-perevirochne-slovo-na-literu-pro.html">Аромат перевірочне слово на літеру про</a></li>
+<li><a href="/articles/rozpovid-pro-krainu-2-klas.html">Розповідь про країну 2 клас</a></li>
+<li><a href="/articles/den-narodzhennja.html">День народження</a></li>
+<li><a href="/articles/koli-zaproshujut-buti-hreshhenoju.html">Коли запрошують бути хрещеною</a></li>
+<li><a href="/articles/did-we-win-pereklad.html">Did we win переклад</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/mozhna-zamoroziti-silsku-smetanu.html">Можна заморозити сільську сметану</a></li>
+<li><a href="/articles/jak-vstanoviti-teplicju-z-karbonatu-video.html">Як встановити теплицю з карбонату відео</a></li>
+<li><a href="/articles/model-telefonu-m611n.html">Модель телефону м611н</a></li>
+<li><a href="/articles/ja-i-mij-robot-32.html">Я і мій робот 32</a></li>
+<li><a href="/articles/shho-zvariti-z-golovi-somgi.html">Що зварити з голови сьомги</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/virsh-kadri-e.html">Вірш кадри є</a></li>
+<li><a href="/articles/karta-zmiinih-stepiv-bravo-stars.html">Карта зміїних степів браво старс</a></li>
+<li><a href="/articles/u-comu-sviti-krasivishij-za-tebe-tekst.html">У цьому світі красивіший за тебе текст</a></li>
+<li><a href="/articles/slova-zi-slova-znamjate.html">Слова зі слова знам’яте</a></li>
+<li><a href="/articles/multik-pro-majnkraft-serena-golova.html">Мультик про майнкрафт серена голова</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

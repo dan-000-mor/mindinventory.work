@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>1С 8 встановлення на сервер | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Як встановити 1С на сервер - покрокова інструкція по ... 12 жовт. 2017 р. — Якщо з базою працюють 8-12 осіб і вага бази наближається до 4Гб, то є сенс..." />
+ <meta name="keywords" content="встановлення, сервер, сервера" />
+ <meta name="news_keywords" content="встановлення, сервер, сервера" />
+ 
+ 
+ <meta property="og:title" content="1С 8 встановлення на сервер" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Як встановити 1С на сервер - покрокова інструкція по ... 12 жовт. 2017 р. — Якщо з базою працюють 8-12 осіб і вага бази наближається до 4Гб, то є сенс..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="17:59:50" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="1С 8 встановлення на сервер" />
+ <meta name="twitter:description" content="Як встановити 1С на сервер - покрокова інструкція по ... 12 жовт. 2017 р. — Якщо з базою працюють 8-12 осіб і вага бази наближається до 4Гб, то є сенс..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">1С 8 встановлення на сервер</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Як встановити 1С на сервер - покрокова інструкція по...</h2></div></a><div class="pagetext"><p>12 жовт. 2017 р. — Якщо з базою працюють 8-12 осіб і вага бази наближається до 4Гб, то є сенс задуматися про перехід на клієнт-сервер. В даному випадку...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Установка сервера 1С:підприємство, установка та... - EFSOL</h2></div></a><div class="pagetext"><p>Якщо все зроблено правильно, залишається натиснути кнопку «Далі» і дочекатися установки SQL Server. 3. Оптимізація та тонке налаштування Сервера 1С:Підприємство. 3.1.</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">1С:Підприємства» 8.3 на MS SQL Server 2012/2008 (R2)</h2></div></a><div class="pagetext"><p>Встановлення сервера «1С:Підприємства»</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Глава 3. Установка компонентів системи - 1С:ІТС</h2></div></a><div class="pagetext"><p>1С:Підприємство 8 (x86-64) – дозволяє виконати встановлення 64-розрядного сервера «1С:Підприємства». Принципи роботи з кожною програмою установки однакові,...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Встановлення сервера 1С</h2></div></a><div class="pagetext"><p>Детальна інструкція щодо встановлення платформи 1С на сервер (серверна частина платформи 1C aka сервер 1С). Ця стаття присвячена встановленню сервера 1С.</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Як встановити 1С на сервер ВДГБ</h2></div></a><div class="pagetext"><p>18 лист. 2019 р. — Загалом роботи зі встановлення системи виглядають так: На сервер встановлюється СУБД, наприклад, MS SQL; Туди ж встановлюється платформа 1С...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Як встановити та налаштувати 1С спільно з MS SQL Server</h2></div></a><div class="pagetext"><p>У разі успішного встановлення технологічної платформи 1С:Підприємство 8 буде видано системне повідомлення. Створення інформаційної бази SQL-сервері. Створення в...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Установка та налаштування MS SQL Server для 1С - Перший БІТ</h2></div></a><div class="pagetext"><p>Перші два варіанти MS SQL Server можна інсталювати на той же сервер, де є встановлений 1С, що переважно актуально для другого варіанта, якщо...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Встановлення та налаштування 1C:Підприємства 8.х у варіанті...</h2></div></a><div class="pagetext"><p>Встановлення та налаштування SQL-сервера детально описано в документації поMicrosoft SQL Server. Для успішної роботи Сервера 1С:Підприємства з SQL-сервером необхідно...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Інструкція зі встановлення різних версій серверів 1С на...</h2></div></a><div class="pagetext"><p>7 квіт. 2020 р. — Користувачеві USR1CV8_8_3_12 необхідно надати право створення баз даних на сервері СУБД Microsoft SQL Server. У MS SQL Management Studio,...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Як встановити 1с серверну - Аделіт</h2></div></a><div class="pagetext"><p>8. Висновок. У цьому установка кластера серверів «1С:Підприємство» на СУБД MS SQL Server завершено. Тепер можна переходити до наступних етапів розгортання...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Установка 1С 8.2 та 8.3 на одному сервері</h2></div></a><div class="pagetext"><p>версії 1С 8.2 та 8.3 на одному сервері. Проста інструкція із запуску різних версій сервера 1С на одній машині.... 8 Server Agent, параметр ImagePath.</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Встановлення та налаштування SQL-сервера та сервера 1С.</h2></div></a><div class="pagetext"><p>Встановлення та налаштування СУБД «MS SQL Server» та серверної частини платформи «1С:Підприємство 8» виконується: При прийнятті сервера на обслуговування. При заміні...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Посібник із встановлення сервера 1С на Linux (грудень...</h2></div></a><div class="pagetext"><p>10 Грудня. 2019 р. - Ubuntu-16.04.3-server-amd64. PostgreSQL Pro 9.6.3.3. Apache 2.2. Сервер 1С 8.3.13.1513. Зміст. терміни; Установка ОС Ubuntu...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Установка на сервер платформи 8.3 при встановленій системі...</h2></div></a><div class="pagetext"><p>9 вересня. 2013 р. - "Запуск декількох екземплярів сервера 1С:Підприємства 8 на одному комп'ютері" http://its.1c.ru/db/metod81#content:3413:1</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Встановлення та налаштування 1С на CentOS 8 - BookFlow</h2></div></a><div class="pagetext"><p>5 лют. 2020 - Встановлення та налаштування сервера 1С на CentOS 8. Передбачається, що у вас є дистрибутиви 1С. Усі дії виконуються від імені...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Установка сервера 1С на Ubuntu 20.04 - Losst</h2></div></a><div class="pagetext"><p>Встановлення сервера 1С</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Установка сервера 1С на Ubuntu server 18.04.3 amd64</h2></div></a><div class="pagetext"><p>23 груд. 2019 р.роботи під управлінням ОС Linux потрібна наявність встановлених бібліотек: Webkitgtx 1.2.5 і вище; ImageMagick 6.2.8 і вище; Freetype 2.1...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" ><div class="title"><h2 class="txt">Встановлення та налаштування MS SQL Server для 1С - WiseAdvice-IT</h2></div></a><div class="pagetext"><p>Варіант 1. Підприємство з кількістю операцій на день до 500; · Варіант 1. Не нижче 1.8 ГГц (бажано 2-х ядерний) · Варіант 1. Не менше 8 ГБ · Варіант 1. SAS не...</p><a rel="nofollow" href="/go.html?/articles/1s-8-vstanovlennja-na-server.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/vkljuchi-multik-ivan-carevich-4.html">Включи мультик Іван царевич 4</a></li>
+<li><a href="/articles/jak-chuzhu-istoriju-perekinuti-sobi.html">Як чужу історію перекинути собі</a></li>
+<li><a href="/articles/petrozavodsk-telefon-sluzhbi-taksi.html">Петрозаводськ телефон служби таксі</a></li>
+<li><a href="/articles/2-ja-dekada-vagi.html">2 Я декада ваги</a></li>
+<li><a href="/articles/z-trikotazhnoi-kofti-zrobiti-plattja.html">З трикотажної кофти зробити плаття</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/kontrolnij-diktant-dlja-vchiteliv.html">Контрольний диктант для вчителів</a></li>
+<li><a href="/articles/jak-dodati-ljudinu-v-im.html">Як додати людину в ім</a></li>
+<li><a href="/articles/vidrivaetsja-vuho-shho-robiti.html">Відривається вухо що робити</a></li>
+<li><a href="/articles/ne-pracjue-plum.html">Не працює плум</a></li>
+<li><a href="/articles/shho-robiti-jakshho-ajfon-prosit-parol.html">Що робити якщо айфон просить пароль</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/chi-ne-1054.html">Чи не 1054</a></li>
+<li><a href="/articles/odin-trek-tochka-ru.html">Один трек точка ру</a></li>
+<li><a href="/articles/dorozhnja-karta-novobudovi-surgut.html">Дорожня карта новобудови сургут</a></li>
+<li><a href="/articles/status-u-den-simi-ta-virnosti.html">Статус у день сім’ї та вірності</a></li>
+<li><a href="/articles/den-imeninnika-u-2-klasi.html">День іменинника у 2 класі</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/chi-mozhna-staviti-linzi-za-temperaturi.html">Чи можна ставити лінзи за температури</a></li>
+<li><a href="/articles/telefon-galmue-vid-virusiv.html">Телефон гальмує від вірусів</a></li>
+<li><a href="/articles/zamoviti-shlejf-dlja-telefonu-samsung.html">Замовити шлейф для телефону Samsung</a></li>
+<li><a href="/articles/interni-5-serija-u-horoshomu.html">Інтерни 5 серія у хорошому</a></li>
+<li><a href="/articles/jake-leksichne-znachennja-slova-telemist.html">Яке лексичне значення слова телеміст</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

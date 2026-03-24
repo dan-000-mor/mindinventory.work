@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Схема вирішення шляхом основних елементів | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="ОЧИСЮВАЛЬНІ МЕТОДИ ЛІНІЙНОЇ АЛГЕБРИ Метод головних елементів є одним з безлічі варіантів обчислювальних схем методу Г аусса і відрізняється тим, що при..." />
+ <meta name="keywords" content="схема, вирішення, шляхом, основних, елементів" />
+ <meta name="news_keywords" content="схема, вирішення, шляхом, основних, елементів" />
+ 
+ 
+ <meta property="og:title" content="Схема вирішення шляхом основних елементів" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="ОЧИСЮВАЛЬНІ МЕТОДИ ЛІНІЙНОЇ АЛГЕБРИ Метод головних елементів є одним з безлічі варіантів обчислювальних схем методу Г аусса і відрізняється тим, що при..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="13:04:31" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Схема вирішення шляхом основних елементів" />
+ <meta name="twitter:description" content="ОЧИСЮВАЛЬНІ МЕТОДИ ЛІНІЙНОЇ АЛГЕБРИ Метод головних елементів є одним з безлічі варіантів обчислювальних схем методу Г аусса і відрізняється тим, що при..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Схема вирішення шляхом основних елементів</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">ОЧИСЮВАЛЬНІ МЕТОДИ ЛІНІЙНОЇ АЛГЕБРИ</h2></div></a><div class="pagetext"><p>Метод головних елементів є одним з безлічі варіантів обчислювальних схем методу Г аусса і відрізняється тим, що при веденні матриці А до верхньої (або нижньої) трикутної форми її рядки і стовпці переставляють так, щоб найбільший за модулем з усіх елементів матриці, що залишилися, став провідним, і на нього...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Метод головних елементів для вирішення... - ppt Онлайн</h2></div></a><div class="pagetext"><p>Метод головних елементів для розв'язання системи лінійних рівнянь Формули: продовження Схему обчислень за методом Гауса з вибором головного елемента пояснює...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Метод головних елементів для вирішення системи...</h2></div></a><div class="pagetext"><p>Метод головних елементів для розв'язання системи лінійних рівнянь... Схему обчислень за методом Гауса з вибором головного елемента пояснює наступний приклад:...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Метод головних елементів серії LU для вирішення...</h2></div></a><div class="pagetext"><p>1. L-U метод головних елементів стовпця для вирішення лінійних рівнянь · 1.1 Експериментальний принцип · 1.2 Опис алгоритму · 1.3 Блок-схема · 1.4 Інструкції з...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Чисельні методи: розв'язання систем лінійних рівнянь</h2></div></a><div class="pagetext"><p>Чисельні методи: розв'язання систем лінійних рівнянь html.... Якщо робити також вибір головних елементів, необхідно використовувати оператор P...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">3.2. Метод основних елементів</h2></div></a><div class="pagetext"><p>31 травня 2015 р. — Така обчислювальна схема називається методом Гауса з вибором провідного елемента. Якщо ж вибирати при наведенні матриці найбільший (по...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Точні методи вирішення систем лінійних...</h2></div></a><div class="pagetext"><p>Метод Гаусса із вибором головного елемента. Зауважимо, що у методі послідовного виключення Гаусса обчислення можливі, якщо провідні елементи системи .</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Точні методи вирішення систем лінійних...</h2></div></a><div class="pagetext"><p>При вирішенні системи лінійних рівнянь алгебри методомГауса та його... застосовується метод Гауса з вибором головного елемента, або схема Жордана,...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Розв'язання систем лінійних рівнянь алгебри...</h2></div></a><div class="pagetext"><p>Матричний метод розв'язання систем лінійних рівнянь (рішення СЛАУ за допомогою зворотної матриці).</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">9. Розв'язання систем лінійних рівнянь</h2></div></a><div class="pagetext"><p>і вибрати як провідний рядок, в якому цей коефіцієнт розташовується (дана схема вибору провідного значення носить найменування методу головних елементів)...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Лабораторна робота 3: Паралельні методи вирішення...</h2></div></a><div class="pagetext"><p>і вибрати як провідний рядок, в якому цей коефіцієнт розташовується (дана схема вибору провідного значення носить найменування методу головних елементів)...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Лекція Розмноження розріджених матриць - НОУ ІНТУІТ</h2></div></a><div class="pagetext"><p>2 жовтня. 2012 р. — Методи вирішення систем лінійних рівнянь алгебри (СЛАУ) відносяться... провідного значення носить найменування методу головних елементів).</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Метод Гауса з постолбцовим вибором головного елемента</h2></div></a><div class="pagetext"><p>Численні методи на Python. Метод Гаусса є найвідомішим методом розв'язання систем лінійних рівнянь.... Стовпцевий вибір основних елементів.</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">ОСНОВИ ЧИСЛЕННИХ МЕТОДІВ ЛІНІЙНОЇ АЛГЕБРИ</h2></div></a><div class="pagetext"><p>автор: РЗ Даутов · 2018 — Неявну схему можна використати і для розв'язання задачі Коші... (головними) елементами методу Гауса і тільки на них проводиться поділ під час обчислень.</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Схема часткового вибору методу гауса.</h2></div></a><div class="pagetext"><p>Рішення системи методом Гауса з вибором головного елемента по стовпцю.... Тому якщо один із головних елементів виявляється рівним нулю, то схема...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">1. Схема Гаусса із вибором головного елемента. - Наукова...</h2></div></a><div class="pagetext"><p>Ми почнемо вивчення чисельних методів вирішення систем лінійних... Взявши рівняння, в яких вибиралися головніелементи, отримаємо нову систему,...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Вирішення систем лінійних рівнянь методом Гауса</h2></div></a><div class="pagetext"><p>Для цього серед елементів першого стовпця матриці вибирають ненульовий (а частіше максимальний) елемент і переміщують його на крайнє верхнє положення перестановкою...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">метод кінцевих елементів у механіці деформованого...</h2></div></a><div class="pagetext"><p>автор: ВГ ФОКІН · Цитується: 55 - Метод кінцевих елементів (МКЕ) - це метод наближеного чисельного вирішення фізичних завдань. В його основі лежать дві головні ідеї: дискретизація...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" ><div class="title"><h2 class="txt">Метод Гауса - Вікіпедія</h2></div></a><div class="pagetext"><p>Кількість основних змінних дорівнює рангу системи і залежить від її рішення. Якщо ранг спільної системи дорівнює числу змінних даної системи, то вона...</p><a rel="nofollow" href="/go.html?/articles/shema-virishennja-shljahom-osnovnih-elementiv.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/z-jakogo-ja-zareestruvavsja-v.html">З якого я зареєструвався в</a></li>
+<li><a href="/articles/robochij-zelenogo-budivnictva-vitebsk.html">Робочий зеленого будівництва вітебськ</a></li>
+<li><a href="/articles/jak-viznachiti-shvidkist-velosipeda-za-zirochkami.html">Як визначити швидкість велосипеда за зірочками</a></li>
+<li><a href="/articles/jak-nazivaetsja-kozachij-tabir.html">Як називається козачий табір</a></li>
+<li><a href="/articles/prijshov-vchit-uroki-viebal.html">Прийшов вчить уроки виебал</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/4u-shema.html">4U схема</a></li>
+<li><a href="/articles/chomu-duba-dobre-zhivut.html">Чому дуба добре живуть</a></li>
+<li><a href="/articles/znak-perehodu-klipart.html">Знак переходу кліпарт</a></li>
+<li><a href="/articles/druk-plastikovih-kart-na-chomu-krashhe.html">Друк пластикових карт на чому краще</a></li>
+<li><a href="/articles/jaki-zmini-u-prohodzhenni-medichnogo-ogljadu.html">Які зміни у проходженні медичного огляду</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/podarunok-z-paperu-podruzhki.html">Подарунок з паперу подружки</a></li>
+<li><a href="/articles/jak-koristuvatis-1-z-biblioteka.html">Як користуватись 1 з бібліотека</a></li>
+<li><a href="/articles/jaki-zapchastini-dlja-skutera-krashhe.html">Які запчастини для скутера краще</a></li>
+<li><a href="/articles/budova-giacintu-shema.html">Будова гіацинту схема</a></li>
+<li><a href="/articles/jurist-z-cinnih-paperiv-vakansii.html">Юрист з цінних паперів вакансії</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/vul-golovna-8-karta.html">Вул головна 8 карта</a></li>
+<li><a href="/articles/2-dnja-premiumu.html">2 Дня преміуму</a></li>
+<li><a href="/articles/z-dnem-narodzhennja-duzhe-garni-orhidei.html">З днем ​​народження дуже гарні орхідеї</a></li>
+<li><a href="/articles/dahau-jak-perekladaetsja.html">Дахау як перекладається</a></li>
+<li><a href="/articles/chi-majut-buti-pravila-vnutrishnogo-rozporjadku.html">Чи мають бути правила внутрішнього розпорядку</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

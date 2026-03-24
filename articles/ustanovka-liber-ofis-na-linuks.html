@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Установка лібер офіс на лінукс | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="LibreOffice Російськомовна документація щодо Ubuntu Відкрийте менеджер джерел Система → Адміністрація → Джерела програм. Додайте джерело..." />
+ <meta name="keywords" content="установка, лібер, офіс, лінукс, Linux" />
+ <meta name="news_keywords" content="установка, лібер, офіс, лінукс, Linux" />
+ 
+ 
+ <meta property="og:title" content="Установка лібер офіс на лінукс" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="LibreOffice Російськомовна документація щодо Ubuntu Відкрийте менеджер джерел Система → Адміністрація → Джерела програм. Додайте джерело..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:18:21" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Установка лібер офіс на лінукс" />
+ <meta name="twitter:description" content="LibreOffice Російськомовна документація щодо Ubuntu Відкрийте менеджер джерел Система → Адміністрація → Джерела програм. Додайте джерело..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Установка лібер офіс на лінукс</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">LibreOffice Російськомовна документація щодо Ubuntu</h2></div></a><div class="pagetext"><p>Відкрийте менеджер джерел Система → Адміністрація → Джерела програм. Додайте джерело ppa:libreoffice/ppa до системи та оновіть список пакетів. У «Центрі програм Ubuntu» (Меню Програми → Центр програм Ubuntu ) знайдіть LibreOffice через пошук. Натисніть кнопку «Встановити» та введіть свій пароль.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Встановлення Libreoffice в Ubuntu - Losst</h2></div></a><div class="pagetext"><p>Встановлення Libreoffice в Ubuntu. Інструкції Оновлено: 10 вересня, 2020 5 admin · ubuntu, офіс, установка. LibreOffcie - це один із найпопулярніших...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Установка LibreOffice в Linux - The Document Foundation Wiki</h2></div></a><div class="pagetext"><p>14 жовт. 2021 р. - У більшості сучасних дистрибутивів Linux процес встановлення... вашого системного меню Програми &gt; Офіс. Крім того, LibreOffice стане...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Встановлення Libre Office на Debian/Ubuntu/Linux Mint</h2></div></a><div class="pagetext"><p>28 черв. 2014 р. — Є кілька способів встановлення офісу на Debian, Ubuntu або Linux Mint. У цій темі "Встановлення Libre Office на Debian/Ubuntu/Linux Mint" я...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Установка LibreOffice в Ubuntu - Nastroyvse.ru</h2></div></a><div class="pagetext"><p>Детальні інструкції щодо встановлення, оновлення та видалення пакету офісних програм в Ubuntu.... Також можливе повернення до OpenOffice при видаленні Libre.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Як встановити або видалити LibreOffice - Nastroyvse.ru</h2></div></a><div class="pagetext"><p>Однією з переваг Лібреофіс є його мультиплатформенність - встановити програму можна як на Windows, так і на Linux-системи.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Ласкаво просимо на російську сторінку LibreOffice.</h2></div></a><div class="pagetext"><p>Перекладено більш ніж 30 мовами світу. Підтримує більшість популярних операційних систем, включаючи GNU/Linux, Microsoft Windows та Mac OS X.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Встановлення LibreOffice з інсталяційного диска AL SE - Astra...</h2></div></a><div class="pagetext"><p>29 груд. 2020 р. - Привстановлення ОС, офісні програми не були встановлені. На...... sudo apt-get install libre-office* або разом, без -, не пам'ятаю.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Як встановити LibreOffice на Manjaro 20 - INFOIT.COM.UA</h2></div></a><div class="pagetext"><p>31 бер. 2021 — Останню версію LibreOffice 8 можна завантажити та змонтувати в системі Linux. У цій статті передбачається, що у вас є хоча б базові...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Встановлення та видалення LibreOffice в Ubuntu</h2></div></a><div class="pagetext"><p>1 черв. 2016 р. — Встановлення та видалення LibreOffice в Ubuntu: Допомога в освоєнні... І якщо просто гуглити англійською щось на кшталт sudo libre-office update...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Як оновити LibreOffice Linux</h2></div></a><div class="pagetext"><p>13 бер. 2021 р. — Оновити LibreOffice Linux, встановлений у багатьох дистрибутивах… Якщо офіс не був русифікований, то встановлюємо словник та русифікатор</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">LibreOffice (Англійською) - ArchWiki</h2></div></a><div class="pagetext"><p>17 вер. 2021 р. - Встановлення макросів. Якщо Ви маєте намір використати макроси, Вам потрібно встановити Java Runtime Environment. В Arch Linux стандартний шлях до...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Як встановити Times New Roman в Linux - Техноджем</h2></div></a><div class="pagetext"><p>7 груд. 2018 р. - Встановлення Times New Roman в Ubuntu, Linux Mint, Archlinux, Manjaro та використання в Libreoffice. Штатними засобами цей шрифт на жаль не...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Manjaro KDE LibreOffice, як встановити не весь пакет, а...</h2></div></a><div class="pagetext"><p>Wine + Libre Office.Сумісність документів Libre та microsoft.LibreOffice Base та PostgreSQL, неактивні поля після створення таблиць.Русифікація програм.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Русифікація LibreOffice та іншого програмного забезпечення на Linux - AlexGur...</h2></div></a><div class="pagetext"><p>7 січ. 2017 р. - sudo apt-get install libreoffice-l10n-ru libreoffice-help-ru. Перезапускаємо офіс - все російською. Русифікація має працювати, якщо в...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">LibreOffice - SysadminWiki.ru</h2></div></a><div class="pagetext"><p>23 лист. 2021 р. - LibreOffice - вільний (лат. libre) офіс (англ.office),... LibreOffice 4-6 (Linux): /home/user/.config/libreoffice/4/user/wordbook...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Як встановити або видалити libreoffice - ПК Консультант</h2></div></a><div class="pagetext"><p>1 груд. 2019 р. — LibreOffice реалізований для таких операційних систем як: Linux,... Навіть на найслабшому «залізі» процедура встановлення Лібре Офіс рідко...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Як русифікувати libreoffice? - LinuxMint.com.ru</h2></div></a><div class="pagetext"><p>1 лист. 2017 р. — sudo apt-get install libreoffice-l10n-ua libreoffice-help-ru //Русифікація довідки та інтерфейсу libreoffice</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" ><div class="title"><h2 class="txt">Дочекалися: вийшов LibreOffice 7.0</h2></div></a><div class="pagetext"><p>6 серп. 2020 — Уже готові пакети для різних ОС, включаючи Linux, Windows,.... підтримують експорт у PDF, з'явилася можливість встановлення розміру сторінки...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-liber-ofis-na-linuks.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-pracjuvati-v-dynamic-ax.html">Як працювати в dynamic ax</a></li>
+<li><a href="/articles/vnutrishnja-chastina-zhivota-7-bukv.html">Внутрішня частина живота 7 букв</a></li>
+<li><a href="/articles/opel-ajstra-j-ne-pracjujut-lampi.html">Опель айстра j не працюють лампи</a></li>
+<li><a href="/articles/chi-varto-robiti-ukoli-gialuronovoi.html">Чи варто робити уколи гіалуронової</a></li>
+<li><a href="/articles/jak-rozrahuvati-kilkist-krokv-na-chotirishilij-dah.html">Як розрахувати кількість крокв на чотирисхилий дах онлайн калькулятор</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/shvidko-beri-trubku-pes-koli-tobi.html">Швидко бери трубку пес коли тобі</a></li>
+<li><a href="/articles/chi-e-elektronni-karbjuratori.html">Чи є електронні карбюратори</a></li>
+<li><a href="/articles/minat-slova-ce-shho.html">Мінат слова це що</a></li>
+<li><a href="/articles/ne-spracovue-redirekt-htaccess.html">Не спрацьовує редирект htaccess</a></li>
+<li><a href="/articles/pidvishhena-temperatura-u-ditej-pochervoninnja.html">Підвищена температура у дітей почервоніння шкіри</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/vidi-vjazanih-kvitiv-spicjami.html">Види в’язаних квітів спицями</a></li>
+<li><a href="/articles/najkrashha-muzika-dlja-mashini-bas.html">Найкраща музика для машини бас</a></li>
+<li><a href="/articles/saraj-iz-brusa-50h50-svoimi-rukami.html">Сарай із бруса 50х50 своїми руками</a></li>
+<li><a href="/articles/znak-vidminjuvannja-zirki.html">Знак відмінювання зірки</a></li>
+<li><a href="/articles/jak-mozhna-vlashtuvati-mini-piknik.html">Як можна влаштувати міні пікнік</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/majnkraft-njashnij-skin-divchini.html">Майнкрафт няшний скін дівчини</a></li>
+<li><a href="/articles/big-jak-pravilno-pochati.html">Біг як правильно почати</a></li>
+<li><a href="/articles/pomilka-znachennja-ne-vidpovidae-masci.html">Помилка значення не відповідає масці</a></li>
+<li><a href="/articles/domashnij-marmelad-proporcii.html">Домашній мармелад пропорції</a></li>
+<li><a href="/articles/krishnaizm-jak-vin-e.html">Крішнаїзм як він є</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

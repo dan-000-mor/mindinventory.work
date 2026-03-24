@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Фоторезистори у схемах реле | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Три схеми фотодатчиків на фоторезисторах - QRZ.RU Транзистор VT1 відкривається, на реле К1 надходить напруга живлення та реле комутує навантаження. Діод..." />
+ <meta name="keywords" content="фоторезистори, схемах, реле, фотореле" />
+ <meta name="news_keywords" content="фоторезистори, схемах, реле, фотореле" />
+ 
+ 
+ <meta property="og:title" content="Фоторезистори у схемах реле" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Три схеми фотодатчиків на фоторезисторах - QRZ.RU Транзистор VT1 відкривається, на реле К1 надходить напруга живлення та реле комутує навантаження. Діод..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="20:14:32" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Фоторезистори у схемах реле" />
+ <meta name="twitter:description" content="Три схеми фотодатчиків на фоторезисторах - QRZ.RU Транзистор VT1 відкривається, на реле К1 надходить напруга живлення та реле комутує навантаження. Діод..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Фоторезистори у схемах реле</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Три схеми фотодатчиків на фоторезисторах - QRZ.RU</h2></div></a><div class="pagetext"><p>Транзистор VT1 відкривається, на реле К1 надходить напруга живлення та реле комутує навантаження. Діод VD2 перешкоджає кидкам зворотного струму при включенні/...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Схеми фотореле для керування освітленням.</h2></div></a><div class="pagetext"><p>Таким чином, дуже малопотужний сигнал фоторезистора перетворюється на достатній сигнал для включення обмотки реле. Чутливість цієї простої схеми...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Різні схеми фотореле.</h2></div></a><div class="pagetext"><p>Щоб у момент включення реле не виникала самоіндукція і малопотужний сигнал фоторезистора перетворився на достатній для включення обмотки включений сигнал...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Схема вимикача з фоторезистором - Лічильники та...</h2></div></a><div class="pagetext"><p>Три схеми фотодатчиків на фоторезисторах Різні схеми фотореле,... Транзистор VT1 відкривається, на реле К1 надходить напруга живлення і...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Схема фотоелектронного реле з змінним живленням.</h2></div></a><div class="pagetext"><p>Схема фотоелектронного реле на транзисторі та фоторезисторі показана на рис. 3.... що обмежує їх застосування у схемах фотореле.</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Фотореле своїми руками: схема, відео, інструкція з...</h2></div></a><div class="pagetext"><p>Схеми складання сутінкового вимикача, а також відео інструкції,... Основним елементом реле є фотодатчик, у схемах можуть застосовуватися фоторезистори,...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Схеми фотореле для управління освітленням.</h2></div></a><div class="pagetext"><p>Основними компонентами схеми є фоторезистори (RP1), транзистори (VT1, VT2), зворотний діод (VD1) і реле (К1). Транзистори зібрані за схемою Дарлінгтон.</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Фотореле на транзисторах - Сайт Паяльник</h2></div></a><div class="pagetext"><p>Схема фотореле на 3-х транзисторах та реле.... На важливих схемах фоторезистор позначається знаком резистора в гуртку з бічними стрілками.</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Схеми фотореле на фоторезисторі - All-Audio.pro</h2></div></a><div class="pagetext"><p>Трисхеми простих фотореле на фоторезисторах... Вони включаються за схемою складових резисторів, обмотка реле цілком справляється із навантаженням даної частини.</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Схеми фотореле для керування освітленням</h2></div></a><div class="pagetext"><p>Діод VD1 захищає схему від ЕРС самоіндукції, що виникає в момент вимкнення реле K1. Таким чином, дуже малопотужний сигнал фоторезистора перетворюється на...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Фотореле - Сайт юного радіоаматора</h2></div></a><div class="pagetext"><p>Припустимо, що фоторезистор R (на його місці може бути будь-який інший фотоелемент) затемнений, наприклад, закритий рукою. Мал. 276. Три варіанти схем фотореле.</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">§ 7.4. Фотоелектронні реле - Наукова бібліотека</h2></div></a><div class="pagetext"><p>Постійна перемикання фоторезисторів становить одиниці мілісекунд, що обмежує їх застосування в схемах фотореле. Велика швидкодія...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Фотоелектронне реле на транзисторі та фоторезисторі</h2></div></a><div class="pagetext"><p>Фоторезистор є напівпровідниковим резистором, опір якого змінюється під дією випромінювання.</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Фотореле на транзисторах - схемопедія</h2></div></a><div class="pagetext"><p>На принципових схемах фоторезистор позначається знаком резистора в кухлі з бічними... Живлення реле схеми стабілізовано аналоговою мікросхемою DA1.</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Найпростіше фотореле Техніка та Програми</h2></div></a><div class="pagetext"><p>Дві схеми найпростіших фотореле показано на рис.... робоча поверхня фоторезистора (наприклад, від настільної лампи) спрацьовує реле.</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Фоторезистори. Види та робота. Застосування та особливості</h2></div></a><div class="pagetext"><p>Тому виходить зворотна залежність опору від світла, причому нелінійна. На електричних схемах фотоопіру позначаються: Fotorezistory...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Фотореле своїми руками: схеми, будову та застосування</h2></div></a><div class="pagetext"><p>Найпростіша схема фотореле складається з двох транзисторів, фоторезистора, реле, діода та змінного резистора. В якостітранзисторів використовуються...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" ><div class="title"><h2 class="txt">Навчальне фотореле - У Самодєлкіна</h2></div></a><div class="pagetext"><p>Якщо фоторезистор навантажений безпосередньо на реле,... на мікросхему 555 і підключаючи вольтметр до різних точок схеми, можна розібратися,...</p><a rel="nofollow" href="/go.html?/articles/fotorezistori-u-shemah-rele.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-nastroiti-keshuvannja-na-wordpress.html">Як настроїти кешування на wordpress</a></li>
+<li><a href="/articles/starij-bios-vstanovlennja-vindovs-10.html">Старий біос встановлення віндовс 10</a></li>
+<li><a href="/articles/jaki-slova-skazati-pri-gori.html">Які слова сказати при горі</a></li>
+<li><a href="/articles/meni-dovelosja-zdatisja.html">Мені довелося здатися</a></li>
+<li><a href="/articles/fszn-g-baranovichi-telefoni.html">Фсзн г барановичі телефони</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/rozem-dlja-ekranu-xiaomi-redmi.html">Роз’єм для екрану xiaomi redmi</a></li>
+<li><a href="/articles/luchshee-sovetskoe-kino-o-derevne.html">luchshee sovetskoe kino o derevne</a></li>
+<li><a href="/articles/jaki-zvukovi-signali-golosnishi.html">Які звукові сигнали голосніші</a></li>
+<li><a href="/articles/igri-makijazh-i-moda-divchatok.html">Ігри макіяж і мода дівчаток</a></li>
+<li><a href="/articles/ja-vzuttja-vesna-2021r.html">Я взуття весна 2021р</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/shiti-kriminalnih-sprav.html">Шити кримінальних справ</a></li>
+<li><a href="/articles/memuari-z-jakoi-movi.html">Мемуари з якої мови</a></li>
+<li><a href="/articles/windows-7-padae-u-sinij-ekran.html">Windows 7 падає у синій екран</a></li>
+<li><a href="/articles/poroshok-vid-zhovtizni-volossja.html">Порошок від жовтизни волосся</a></li>
+<li><a href="/articles/chomu-vilitae-sinij-ekran-windows-10.html">Чому вилітає синій екран windows 10</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/vidbiljuvach-bilizna-jak-nim-koristuvatisja.html">Відбілювач білизна як ним користуватися</a></li>
+<li><a href="/articles/najkrashhi-diski-z-nimechchini.html">Найкращі диски з Німеччини</a></li>
+<li><a href="/articles/remont-pokrivli.html">Ремонт покрівлі</a></li>
+<li><a href="/articles/z-jakogo-viku-smertnist-vid-koronavirusu.html">З якого віку смертність від коронавірусу</a></li>
+<li><a href="/articles/najkrashhi-prigodi-2013-roku.html">Найкращі пригоди 2013 року</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Датчик вологості ардуїно | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="ARDUINO - Найкращий датчик температури та вологості Всім привіт! Підкажіть будь ласка, на ваш погляд, найкращий датчик температури та вологості. Можна..." />
+ <meta name="keywords" content="датчик, вологості, ардуїно" />
+ <meta name="news_keywords" content="датчик, вологості, ардуїно" />
+ 
+ 
+ <meta property="og:title" content="Датчик вологості ардуїно" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="ARDUINO - Найкращий датчик температури та вологості Всім привіт! Підкажіть будь ласка, на ваш погляд, найкращий датчик температури та вологості. Можна..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="17:08:27" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Датчик вологості ардуїно" />
+ <meta name="twitter:description" content="ARDUINO - Найкращий датчик температури та вологості Всім привіт! Підкажіть будь ласка, на ваш погляд, найкращий датчик температури та вологості. Можна..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Датчик вологості ардуїно</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">ARDUINO - Найкращий датчик температури та вологості</h2></div></a><div class="pagetext"><p>Всім привіт! Підкажіть будь ласка, на ваш погляд, найкращий датчик температури та вологості. Можна топ3 Дякую!</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Датчик вологості повітря Який брати? Амперка / Форум</h2></div></a><div class="pagetext"><p>Хочу зробити витяжку у туалеті на ардуїно. Я не розумію чому у HR202L є 2 контакти, а у DHT11 або 22 4 контакти?</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Вибір датчика вологості Апаратна платформа Arduino</h2></div></a><div class="pagetext"><p>Був DHT22, датчик вологості вийшов з ладу...... humidity sensor dixell XH20P, наприклад, для вологості вище 90 відс. вихід 4-20 мА.</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Бездротовий модуль для ємнісного датчика вологості.</h2></div></a><div class="pagetext"><p>Бездротовий модуль для ємнісного датчика вологості ґрунту на nRF52832. Розробка під Arduino *DIY або Зроби сам. Всім привіт,...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Підключення датчика DHT11 або DHT22 до Ардуїно</h2></div></a><div class="pagetext"><p>Датчики температури та вологості DHT11 та DHT22. Підключення до Arduino Uno, Mega, Nano. Приклад скетчу, бібліотека для підключення датичків.</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Arduino: Датчики температури та вологості.</h2></div></a><div class="pagetext"><p>Існує сімейство датчиків вологості та температури DHT (DHT11, DHT22 та ін.)… Хороший варіант – готова плата з резистором та конденсатором.</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Найпопулярніші датчики для Ардуїно - Електрик Інфо</h2></div></a><div class="pagetext"><p>У цій статті ми розглянемо датчики для Ардуїно, але вони можуть і... температури та вологості повітря – можна знизити, вимірюючи температуру за допомогою DHT-11...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Купити датчик вологості Arduino за низькою ціною - Joom.</h2></div></a><div class="pagetext"><p>Датчик вологості Arduino в інтернет-магазині Joom. Безкоштовна доставка додому! Акції та знижки до 70% на всі товари!</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Датчик вологості ґрунту: опис, підключення, схема.</h2></div></a><div class="pagetext"><p>Плата Arduino Uno; Датчик вологості ґрунту; 8 світлодіодів; Макетна плата; З'єднувальні дроти. Зберемо схему,показану на малюнку нижче. skhema-datchik-...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Огляди датчиків Arduino: опис, приклади використання</h2></div></a><div class="pagetext"><p>Детальний опис датчиків Arduino: схеми підключення, скетчі, характеристики.... Модуль датчика вологості та температури GY21 на основі датчика SHT21...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Огляд датчика вологості та температури si7021 та...</h2></div></a><div class="pagetext"><p>Як згодом з'ясувалося показання датчиків практично збіглися з цією метостанцією. Коли все прийшло, для своєї метеостанції я обрав: Arduino UNO...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Порівняння датчиків DHT11, DHT22 та DHT21 - блог - Вольтик</h2></div></a><div class="pagetext"><p>Якщо ви тільки починаєте знайомство з Ардуїном і нещодавно приступили до... Складаються вони з термістора та ємнісного датчика вологості.</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Як підключити DHT11 та DHT22 до Ардуїно</h2></div></a><div class="pagetext"><p>Підключення датчика DHT22 до Arduino Uno — Ардуїно датчик температури та вологості DHT11. #include // підключаємо бібліотеку для датчика DHT dht...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Датчик вологості компонент датчики температури та...</h2></div></a><div class="pagetext"><p>Знайдіть на eBay вигідні пропозиції по запиту Датчик вологості компонент... Arduino DHT11 температура та відносна вологість датчик модуль новий.</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">arduino humidity sensor - купити за вигідною ціною AliExpress</h2></div></a><div class="pagetext"><p>null в категоріях і не тільки,arduino humidity sensor іarduino humidity sensor в... Ємнісний датчик вологості грунту, провід широкосмугове напруги для...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">DHT12 - I2C датчик вологості та температури - MicroPi</h2></div></a><div class="pagetext"><p>Даний датчик може бути підключений до будь-якого мікроконтролера, у тому числі Arduino. Цей датчик є оновлений DHT11, він менший за...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Датчик вологості ґрунту Soil-Hum-Sensor - Electronoff</h2></div></a><div class="pagetext"><p>Датчик вологості ґрунту (гігрометр) Soil-Hum-Sensor — використовується для управління поливальними станціями, контролю вологості ґрунту у вазонах,...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Як працюютьдатчики температури та вологості DHT11 та...</h2></div></a><div class="pagetext"><p>Підключення DHT11 та DHT22/AM2302 до Arduino UNO. Тепер, коли ми маємо повне розуміння того, як працює датчик DHT, ми можемо почати...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" ><div class="title"><h2 class="txt">Датчик вологості та температури DHT11 (V2) - Ардуїно в...</h2></div></a><div class="pagetext"><p>Увага! У продаж є зниження цін "Датчик вологості та температури DHT11 (±5%)"... Плата Arduino має вбудовані pull-up, однак вони дуже слабенькі - близько...</p><a rel="nofollow" href="/go.html?/articles/datchik-vologosti-arduino.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/meni-perelili-donorsku-krov.html">Мені перелили донорську кров</a></li>
+<li><a href="/articles/pivdenni-merezhi-shpaleri-dispetcherska-telefon.html">Південні мережі шпалери диспетчерська телефон</a></li>
+<li><a href="/articles/pro-krashhe-stae-zhinkoju.html">Про краще стає жінкою</a></li>
+<li><a href="/articles/igri-virostiti-kishku.html">Ігри виростити кішку</a></li>
+<li><a href="/articles/znaki-vidminnosti-vs-rf-2015.html">Знаки відмінності вс рф 2015</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jakshho-remont-zatopiv-ves-budinok.html">Якщо ремонт затопив весь будинок</a></li>
+<li><a href="/articles/najkrashhi-foto-mul-76.html">Найкращі фото мул 76</a></li>
+<li><a href="/articles/jaka-stavka-za-kreditami-v-evropi.html">Яка ставка за кредитами в Європі</a></li>
+<li><a href="/articles/poslugi-po-remontu-vzuttja.html">Послуги по ремонту взуття</a></li>
+<li><a href="/articles/ao-npf-vidkrittja-adresu-ta-telefon.html">Ао нпф відкриття адресу та телефон</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/trusi-v-jaki-mozhna-pukati.html">Труси в які можна пукати</a></li>
+<li><a href="/articles/porej-luk-najkrashhi-sorti-dlja.html">Порей лук найкращі сорти для</a></li>
+<li><a href="/articles/remont-vannoi-kimnati-plastikovimi-paneljami.html">Ремонт ванної кімнати пластиковими панелями</a></li>
+<li><a href="/articles/generator-stabilnogo-strumu-shema-tranzistor.html">Генератор стабільного струму схема транзистор</a></li>
+<li><a href="/articles/jaki-e-eliksiri.html">Які є еліксири</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/podovzhuvach-ne-vhodit-vilka.html">Подовжувач не входить вилка</a></li>
+<li><a href="/articles/reaper-silverberg-pereklad-pisni.html">Reaper silverberg переклад пісні</a></li>
+<li><a href="/articles/poizdi-italii-2-klas-shho-ce.html">Поїзди Італії 2 клас що це</a></li>
+<li><a href="/articles/vipisujut-iz-pologovogo-budinku-na-drugij-den.html">Виписують із пологового будинку на другий день</a></li>
+<li><a href="/articles/karta-rotenburzi-na-tauberi.html">Карта ротенбурзі на таубері</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

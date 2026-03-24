@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Розгалуження в паскалі 11 клас | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Програмування розгалужень на Паскалі (11 клас) Презентація ... Слайд 1. Тема уроку: Програмування розгалужень на Паскалі Предмет: ІНФОРМАТИКА Клас: 9...." />
+ <meta name="keywords" content="розгалуження, Паскалі, клас, Програмування, Програмування розгалужень" />
+ <meta name="news_keywords" content="розгалуження, Паскалі, клас, Програмування, Програмування розгалужень" />
+ 
+ 
+ <meta property="og:title" content="Розгалуження в паскалі 11 клас" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Програмування розгалужень на Паскалі (11 клас) Презентація ... Слайд 1. Тема уроку: Програмування розгалужень на Паскалі Предмет: ІНФОРМАТИКА Клас: 9...." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="17:44:20" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Розгалуження в паскалі 11 клас" />
+ <meta name="twitter:description" content="Програмування розгалужень на Паскалі (11 клас) Презентація ... Слайд 1. Тема уроку: Програмування розгалужень на Паскалі Предмет: ІНФОРМАТИКА Клас: 9...." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Розгалуження в паскалі 11 клас</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Програмування розгалужень на Паскалі (11 клас) Презентація...</h2></div></a><div class="pagetext"><p>Слайд 1. Тема уроку: Програмування розгалужень на Паскалі Предмет: ІНФОРМАТИКА Клас: 9. Слайд 2. Розгалуження – це алгоритмічна...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Програмування розгалужень на Паскалі</h2></div></a><div class="pagetext"><p>Тут if - "якщо", then - "те", else - "інакше". Програмування повного та неповного розгалуження. Порівняйте запис алгоритму БІД1 з попереднього параграфа з...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Програмування розгалуження - Інформатика - 11 клас</h2></div></a><div class="pagetext"><p>Конспект уроку до інформатики для 11 класу, тема "Програмування розгалуження мовою Паскаль" урок допомагає підготуватися до ЄДІ та осмислити...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Урок-практикум з Інформатики «Розгалуження на Паскалі»</h2></div></a><div class="pagetext"><p>Навчити вирішувати завдання на тему “Організація розгалуження мовою Паскаль”.... Ви зараз ще в 9 класі, але скоро прийде той час, коли вам потрібно буде...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Конспект уроку інформатики, 11 клас. Оператор розгалуження в...</h2></div></a><div class="pagetext"><p>Конспект уроку інформатики, 11 клас. Оператор розгалуження у Паскалі. Автор: Зубова Катерина Миколаївна, вчитель математики та інформатики...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Програмування розгалужень на Паскалі. - Інфоурок</h2></div></a><div class="pagetext"><p>Обладнання: комп'ютерний клас із встановленим програмним забезпеченням, презентація «Розгалуження на Паскалі», проектор, екран. Дидактичні матеріали до навчального...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Програмування розгалужень на Паскалі - Інфоурок</h2></div></a><div class="pagetext"><p>Опис слайду: Оператор розгалуження у повному варіанті IF A≫B THEN max:=A ELSE max:=B; IF (умова) THEN (оператори) ELSE (оператори);...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Презентація на тему "Розгалуження в Паскалі" з інформатики для 9...</h2></div></a><div class="pagetext"><p>Найкраща презентація на цю тему представлена ​​тут! Середня оцінка: 3.5 бали з 5. Також представлені інші презентації з інформатики для 9-11 класу.</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Програмування розгалужень на Паскалі - Відеоуроки</h2></div></a><div class="pagetext"><p>Програмування розгалужень на Паскалі Інформатика 9 клас.... Інформатика 11 клас (Білорусь) · Електронний зошит з інформатики 6.</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Конспект уроку "Програмування розгалужень на Pascal" 9 клас.</h2></div></a><div class="pagetext"><p>Обладнання: комп'ютерний клас із встановленим ПЗ, презентація «Розгалуження на Паскалі». проектор, екран. Дидактичні матеріали до навчального заняття: опорний...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">school_17_kv_informatika.pdf</h2></div></a><div class="pagetext"><p>Курс лекцій для початківців вивчення мови Паскаль. Комарова І.М. 3. Навчальні матеріали до курсів з інформатики для 10-11 класів, випуск 2.</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Інфопланета – Урок 37. Умовний оператор IF. Практична робота...</h2></div></a><div class="pagetext"><p>Алгоритмічна структура розгалуження програмується у Паскалі за допомогою умовного оператора If.... присвяченому інформаційному моделюванню (у 11 класі).</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Умовний оператор в Паскалі коротко.</h2></div></a><div class="pagetext"><p>Формат запису умовного оператора з повним розгалуженням виглядає так... IF THEN ELSE; IF ELSE THEN; IF ELSE THEN; IF THEN ELSE.</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Презентація на тему: "Програмування розгалужень на...</h2></div></a><div class="pagetext"><p>Програмування розгалужень на Паскалі. Оператор розгалуження або умовний оператор if then else if - "якщо", then - "то", else - "інакше" - презентація.</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Умовний оператор if-else у Pascal • Вторге.</h2></div></a><div class="pagetext"><p>Умовний оператор if служить організації розгалуження у програмі мовою Паскаль. Повна форма: if a = b then begin. {...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Мова Паскаль: матеріали до підручника інформатики К.Ю.</h2></div></a><div class="pagetext"><p>Матеріали вивчення мови Паскаль до підручника інформатики К.Ю. Полякова та Є.А. Єрьоміна для 10-11 класів (ФГОС, поглиблений рівень).</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Мова програмування Паскаль. - інформатика, уроки</h2></div></a><div class="pagetext"><p>«Розгалуження мовою Паскаль». Урок у 9-му класі на тему "Розгалуження мовоюПаскаль"... Слайд 11. Завдання алгоритмічною мовою.</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Тема: Програмування розгалужень на Паскалі АВС</h2></div></a><div class="pagetext"><p>Тема: Програмування розгалужень на Паскалі АВС. Тип уроку – вивчення нового матеріалу. Тривалість: 2 години. Місце проведення: комп'ютерний клас,...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" ><div class="title"><h2 class="txt">Пошук матеріалу «Поурочний план з інформатики - Оператор...</h2></div></a><div class="pagetext"><p>Урок інформатики в 11 класі на тему: «Оператор розгалуження...»...на тему: «Оператор розгалуження в Turbo Pascal» план-конспект уроку з інформатики та ікт на...</p><a rel="nofollow" href="/go.html?/articles/rozgaluzhennja-v-paskali-11-klas.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/rosinka-razbor-slova-po-zvukam.html">rosinka razbor slova po zvukam</a></li>
+<li><a href="/articles/kozhen-zvir-mae-svij-hvist.html">Кожен звір має свій хвіст</a></li>
+<li><a href="/articles/olhon-na-karti-google-karti.html">Ольхон на карті Google карти</a></li>
+<li><a href="/articles/e-pered-operacieju-na-grizhu-zhivota.html">Є перед операцією на грижу живота</a></li>
+<li><a href="/articles/shho-oznachae-bukvi-ts.html">Що означає букви ts</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/shho-take-kategorija-budivelnoi-stali.html">Що таке категорія будівельної сталі</a></li>
+<li><a href="/articles/jak-pomiti-laminat-vid-budivelnogo-pilu.html">Як помити ламінат від будівельного пилу</a></li>
+<li><a href="/articles/ne-pracjue-hd-9305.html">Не працює hd 9305</a></li>
+<li><a href="/articles/jakij-chas-prijmati-gljukofazh.html">Який час приймати глюкофаж</a></li>
+<li><a href="/articles/kalkuljator-banku-vidkrittja-spozhivchogo-kreditu.html">Калькулятор банку відкриття споживчого кредиту розрахувати 2021 року</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/samarkand-masazh-telefon.html">Самарканд масаж телефон</a></li>
+<li><a href="/articles/jak-zrobiti-arhiv-dlja-video.html">Як зробити архів для відео</a></li>
+<li><a href="/articles/shho-krashhe-prodavati-voseni.html">Що краще продавати восени</a></li>
+<li><a href="/articles/osnovni-spozhivachi-paperu.html">Основні споживачі паперу</a></li>
+<li><a href="/articles/fanfik-garri-potter-najkrashhij-drug.html">Фанфік гаррі поттер найкращий друг</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/ajfon-vimknuvsja-i-vantazhitsja.html">Айфон вимкнувся і вантажиться</a></li>
+<li><a href="/articles/chomu-mi-povinni-minjati-elektrolichilnik.html">Чому ми повинні міняти електролічильник</a></li>
+<li><a href="/articles/blochok-na-ajfon-11.html">Блочок на айфон 11</a></li>
+<li><a href="/articles/zaplutalo-shhastja-zablukalo-i-mene.html">Заплутало щастя заблукало і мене</a></li>
+<li><a href="/articles/kogo-vigidnishe-viroshhuvati-jak-biznes.html">Кого вигідніше вирощувати як бізнес</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

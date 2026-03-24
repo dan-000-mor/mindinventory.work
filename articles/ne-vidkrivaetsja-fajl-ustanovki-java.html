@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Не відкривається файл установки java | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Поради щодо усунення несправностей під час роботи з Java Файл пакета установки в автономному режимі займає багато місця і вимагає більше ... Не забудьте..." />
+ <meta name="keywords" content="відкривається, файл, установки" />
+ <meta name="news_keywords" content="відкривається, файл, установки" />
+ 
+ 
+ <meta property="og:title" content="Не відкривається файл установки java" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Поради щодо усунення несправностей під час роботи з Java Файл пакета установки в автономному режимі займає багато місця і вимагає більше ... Не забудьте..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="12:57:04" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Не відкривається файл установки java" />
+ <meta name="twitter:description" content="Поради щодо усунення несправностей під час роботи з Java Файл пакета установки в автономному режимі займає багато місця і вимагає більше ... Не забудьте..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Не відкривається файл установки java</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Поради щодо усунення несправностей під час роботи з Java</h2></div></a><div class="pagetext"><p>Файл пакета установки в автономному режимі займає багато місця і вимагає більше... Не забудьте знову увімкнути міжмережевий екран або антивірусну програму...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Не запускається інсталятор Java - JAVA IDE - Форум...</h2></div></a><div class="pagetext"><p>1) Помістив файл установки корінь у C:\; 2) Вимкнув повністю DrWeb; 3) Увімкнув автозавантаження Java через msconfig. Windows 7 x64.</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">[вирішено] При установці Java нічого не відбувається...</h2></div></a><div class="pagetext"><p>Не можу встановити Java, новий ноутбук, на офіційній WIN10 (домашня). Завантажую інсталяційний файл з офіційного сайту Java,...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Що робити, якщо не запускається установка java. Чи не...</h2></div></a><div class="pagetext"><p>Справа в тому, що Java скачується з офіційного сайту у вигляді веб-установника. Тобто після даного завантаження та відкриття завантаженого файлу лаунчер через...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Чому не запускається інсталятор Java? - Відповіді Mail.ru</h2></div></a><div class="pagetext"><p>у документації брандмауера. Перейдіть на сторінку завантаження вручну. Натисніть кнопку Windows Online (Windows Інсталяція з мережі) Відкриється діалогове вікно 'File...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Java JDK установник не запускається - CodeRoad</h2></div></a><div class="pagetext"><p>Я намагаюся встановити Weblogic 12c. Я помістив файли Weblogic jar у свій диск C. Щоб скомпілювати та запустити файл jar, я набрав наступну команду java -jar...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Інсталятор JDK/JRE не працює на x64 - CodeRoad</h2></div></a><div class="pagetext"><p>Але я хочу встановити JRE по... Як я можу отримати JAVA 9 JRE / JDK як файл zip, а не інсталятор EXE або MSI? Як я можу отримати JAVA 9 JRE...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Не запускається інсталятор Java. - Запитування</h2></div></a><div class="pagetext"><p>У мене windows 8.1 хотів встановити Java, але нічого не вийшло. Відкриваю завантажений файл Java з офіційного сайту просить дозвіл на зміну в жорсткому диску...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">JAR-файли не відкриваються у Windows 10 [FIX] - generd.ru</h2></div></a><div class="pagetext"><p>3 вер. 2019 р. — Java-додатки зберігаються у вигляді jar-файлів,... Майте на увазі, що видалення попередньої установки Java не обов'язково, тому ви можете...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Чи не встановлюється Java (error java installer) - що робити?</h2></div></a><div class="pagetext"><p>Помилки під час встановлення. Якщо файл завантажився, а Java не встановлюється на Windows 7, 8, 10 або XP, проблема глибше. Способи вирішення проблеми.</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Чому не встановлюється java - Ремонт та налаштування...</h2></div></a><div class="pagetext"><p>1 жовтня. 2018 р. — Помилки в реєстрі також можуть блокувати інсталяцію Java,... Файл пакета установки в автономному режимі займає багато місця і вимагає більше...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Не запускається інсталятор java на віддаленому win server.</h2></div></a><div class="pagetext"><p>19 серпня. 2017 р. - Завантажив з яву оракл Java, не запускається установник.... На жаль, адміністрування послуг, у тому числі встановлення та... Ім'я файлу?</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Встановлення JDK (Java) вручну windows adminstuff</h2></div></a><div class="pagetext"><p>Ручна установка Java (обхід помилки інсталятора RegDeleteKeyExA не знайдена в DLL... Це буде виконуваний файл на зразок jdk-8u5-windows-i586.exe).</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Пам'ятка щодо вирішення типових проблем СУФД-онлайн</h2></div></a><div class="pagetext"><p>Для зручності можете встановити дистрибутив портабельного складання Mozilla Firefox з локальної Java за адресою: http://yadi.sk/d/jhHZkE-gKvGvj. СУФД не працює...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Чому не запускається код Java? - Хабр Q&amp;A</h2></div></a><div class="pagetext"><p>У книзі немає інструкції щодо встановлення та налаштування Java, але знайомий підказав створити змінні у властивостях системи. Код: public class HelloWorld { public static...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Проблема Установка Java на Windows 10 - PowerUser</h2></div></a><div class="pagetext"><p>Спробуйте Microsoft Fixit utility Software для автоматичного очищення реєстру. Або перейдіть на java.com та знайдіть. Після видалення Java, як я можу видалити...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Пакетування та розповсюдження настільних...</h2></div></a><div class="pagetext"><p>Подвійне натискання файлу архіву Java (JAR) програми.... Якщо вікно xGrep не відкривається, то, швидше за все,... Див. Встановлення змінного середовища PATH...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Довідка - Java - Альфа-Клієнт</h2></div></a><div class="pagetext"><p>Щоб встановити Java, відкрийте сайт java.com та завантажте нову версію.... Відкриється діалогове вікно «File Download» («Завантаження файлу»), де вам буде...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" ><div class="title"><h2 class="txt">Не встановлюється java на windows 7 - htfi.ru</h2></div></a><div class="pagetext"><p>Щоб встановити Java на windows 7, потрібно завантажити з офіційного сайту oracle.com… (windows Установка з мережі); Відкриється діалогове вікно 'File Download'...</p><a rel="nofollow" href="/go.html?/articles/ne-vidkrivaetsja-fajl-ustanovki-java.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jaki-osoblivosti-reguljuvannja-praci-nepovnolitnih.html">Які особливості регулювання праці неповнолітніх є</a></li>
+<li><a href="/articles/de-nalashtuvati-mashinu-v-drift-paradise.html">Де налаштувати машину в drift paradise</a></li>
+<li><a href="/articles/izitronik-ford-fiestu-remont.html">Ізітронік форд фієсту ремонт</a></li>
+<li><a href="/articles/jak-visvitliti-volossja-z-menshoju-shkodoju.html">Як висвітлити волосся з меншою шкодою</a></li>
+<li><a href="/articles/z-chogo-i-jak-zrobiti-barelefi.html">З чого і як зробити барельєфи</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/shkoda-superb-omivach-far-jak-pracjue.html">Шкода суперб омивач фар як працює</a></li>
+<li><a href="/articles/hamachi-statusvpn-pomilka-shho-robiti.html">Хамачі статусvpn помилка що робити</a></li>
+<li><a href="/articles/znajti-budovu-organu-zoruoko.html">Знайти будову органу зоруоко</a></li>
+<li><a href="/articles/zaproshennja-dlja-vchitelja.html">Запрошення для вчителя</a></li>
+<li><a href="/articles/zareestruvatisja-u-gri-starij.html">Зареєструватися у грі старий</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/znajti-pisnju-be-po-ochah.html">Знайти пісню б’є по очах</a></li>
+<li><a href="/articles/shho-robit-robot-u-fallout.html">Що робить робот у fallout</a></li>
+<li><a href="/articles/robimo-razom-doviru.html">Робимо разом довіру</a></li>
+<li><a href="/articles/ne-pracjue-verhnja-chastina-displeja-iphone.html">Не працює верхня частина дисплея iphone</a></li>
+<li><a href="/articles/vitchiznjana-vijna-prichini-etapi-osnovni-bitvi.html">Вітчизняна війна причини етапи основні битви</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/pravila-sambista.html">Правила самбіста</a></li>
+<li><a href="/articles/e-zapah-prirodnogo-gazu.html">Є запах природного газу</a></li>
+<li><a href="/articles/scenarij-vistupu-nash-klas.html">Сценарій виступу наш клас</a></li>
+<li><a href="/articles/ne-vvoditsja-kod-pidtverdzhennja.html">Не вводиться код підтвердження</a></li>
+<li><a href="/articles/jak-pereklasti-terasa.html">Як перекласти тераса</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Двозв’язковий список клас на с | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Клас типу двозв’язковий список - C++ - Кіберфорум Створити клас типу – двозв’язковий список. Функції-члени додають елемент до списку, видаляють елемент..." />
+ <meta name="keywords" content="двозв, язковий, список" />
+ <meta name="news_keywords" content="двозв, язковий, список" />
+ 
+ 
+ <meta property="og:title" content="Двозв’язковий список клас на с" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Клас типу двозв’язковий список - C++ - Кіберфорум Створити клас типу – двозв’язковий список. Функції-члени додають елемент до списку, видаляють елемент..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="15:32:28" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Двозв’язковий список клас на с" />
+ <meta name="twitter:description" content="Клас типу двозв’язковий список - C++ - Кіберфорум Створити клас типу – двозв’язковий список. Функції-члени додають елемент до списку, видаляють елемент..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Двозв’язковий список клас на с</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Клас типу двозв'язковий список - C++ - Кіберфорум</h2></div></a><div class="pagetext"><p>Створити клас типу – двозв'язковий список. Функції-члени додають елемент до списку, видаляють елемент зі списку. Відображають елементи списку від...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Двозв'язковий список С++ для початківців C++ для початківців</h2></div></a><div class="pagetext"><p>Двозв'язковий список — це список, який ґрунтується на однозв'язному, лише адресних полів у ньому два.... class List / / Створюємо тип даних Список.</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Реалізація двозв'язкового списку на c [АйТі бубон]</h2></div></a><div class="pagetext"><p>Видалення елемента із двозв'язкового списку.... struct Elem {int data; // Дані Elem * next, * prev; }; class List { // Голова, хвіст Elem * Head, * Tail;...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Структури даних C# Двозв'язкові списки - Metanit</h2></div></a><div class="pagetext"><p>В іншому двозв'язковий список ні чим не відрізнятиметься від однозв'язкового списку. Для створення двозв'язкового списку спочатку треба визначити клас...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Шаблон кільцевого двозв'язку своїми руками / Habr</h2></div></a><div class="pagetext"><p>Клас списків List включає вказівник Head на голову списку, вказівник на поточний елемент Curr та кількість елементів length.</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Двозв'язковий список (Doubly Linked Lists) Frontend Stuff</h2></div></a><div class="pagetext"><p>Вузол двозв'язкового списку. Подібно до однозв'язкового списку, двозв'язний список складається з серії вузлів. Ось, просте уявлення в JavaScript: class...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Двонаправлений список - CppStudio</h2></div></a><div class="pagetext"><p>Котик Добрий · 04.02.2015. template class MyList { struct node { T value; struct node *nextNode; struct node *beforeNode; };</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Двозв'язковий список Python – Розширена структура даних...</h2></div></a><div class="pagetext"><p>Обхід двозв'язку дуже схожий на обхід однозв'язку. Функція traverse_list() додається до класу Double Linked List, доданого...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Двозв'язковий лінійний список - prog-cpp</h2></div></a><div class="pagetext"><p>Значенням, що повертається, буде новий корінь списку — той вузол, на якийвказує корінь, що видаляється. 1 2 3 4 5 6 7 8. struct list * deletehead(list *...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Додайте об'єкт перед іншим у двозв'язковий список у Java...</h2></div></a><div class="pagetext"><p>Я написав просту реалізацію двозв'язкового списку Java, що містить персоніфіковані об'єкти. class Node { Node next, previous; Object data;...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">як створити порожній двозв'язковий список? - CodeRoad</h2></div></a><div class="pagetext"><p>якщо я маю наступний клас вузлів class Node { public: Node() { next = NULL; prev = NULL; } ~Node() {} public : Node *next; Node *prev; T data; };.</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">LinkedList&lt;T&gt; Клас (System... - Microsoft Docs</h2></div></a><div class="pagetext"><p>Представляє двонаправлений список. Represents a doubly linked list.... Public class LinkedList : System.Collections.Generic.ICollection, System.</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Посібник C# Зв'язковий список: клас LinkedList&lt;T&gt; - Professor Web</h2></div></a><div class="pagetext"><p>Концепція зв'язкового списку, клас LinkedList.... Клас LinkedList є двозв'язним списком, в якому кожен елемент посилається на наступний і...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Рішення: Реалізувати двозв'язковий список - C# - Studassistent</h2></div></a><div class="pagetext"><p>internal class DoubleLinkedList : IEnumerable, IMyMethodSignatureInterface; {; #region Поля, індексатор, властивість; private NodeDoubleLinkedList...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Дублювати парні елементи двозв'язкового списку С# - Stack...</h2></div></a><div class="pagetext"><p>У мене є двозв'язковий список з чисел {1, 2, 6, 7, 9}. Мені необхідно продублювати...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Реалізуйте двозв'язок у C++ Delft Stack</h2></div></a><div class="pagetext"><p>Створений: June-28, 2021. Використовуйте struct для реалізації двозв'язкового списку C++; Використовуйте контейнер std::list як двозв'язок у C++.</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Моя реалізація двозв'язкового списку</h2></div></a><div class="pagetext"><p>Клас LinkedList реалізовуватиме наш двозв'язковий список. Зручно зробити його шаблонним, щоб у ньому можна було зберігати будь-який тип даних.</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Курс JavaSyntax Pro - Лекція: Знайомство з колекцією LinkedList</h2></div></a><div class="pagetext"><p>Тож навіщо потрібен ще один клас-список? Вся справа у внутрішньому пристрої класу LinkedList. Замість масиву там використовується двозв'язковий список. Що це таке...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" ><div class="title"><h2 class="txt">Контейнер list (двозв'язковий список)</h2></div></a><div class="pagetext"><p>list A(n, value) Створюється список із n елементів зі значенням value. Деякі методи класу List. front() – перший елемент списку. back() - останній...</p><a rel="nofollow" href="/go.html?/articles/dvozvjazkovij-spisok-klas-na-s.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/shema-elektroprovodki-na-generator-gazel.html">Схема електропроводки на генератор газель</a></li>
+<li><a href="/articles/kotelkom-karpinsk-telefon.html">Котелком карпінськ телефон</a></li>
+<li><a href="/articles/ditjacha-oblasna-likarnja-pskiv-telefoni-viddilen.html">Дитяча обласна лікарня псків телефони відділень</a></li>
+<li><a href="/articles/soni-vegas-jak-zrobiti-zgasannja-video.html">Соні вегас як зробити згасання відео</a></li>
+<li><a href="/articles/shema-podilu-na-3.html">Схема поділу на 3</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-gru-v-stimi-zrobiti-giftom.html">Як гру в стимі зробити гіфтом</a></li>
+<li><a href="/articles/kapeljushki-zhinochi-svoimi-rukami.html">Капелюшки жіночі своїми руками</a></li>
+<li><a href="/articles/bank-zenit-ekvajring-telefon.html">Банк зеніт еквайринг телефон</a></li>
+<li><a href="/articles/vikonavcha-shema-na-zovnishnij-vodoprovid-zrazok.html">Виконавча схема на зовнішній водопровід зразок</a></li>
+<li><a href="/articles/jak-zrobiti-muziku-na-storiz.html">Як зробити музику на сториз</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/ja-mozhu-pripuskati-anglijskoju.html">Я можу припускати англійською</a></li>
+<li><a href="/articles/magazin-tehniki-dlja-volossja.html">Магазин техніки для волосся</a></li>
+<li><a href="/articles/uroki-u-fotoshopi-z-0.html">Уроки у фотошопі з 0</a></li>
+<li><a href="/articles/podatkova-pleshanovij-telefon.html">Податкова плешановий телефон</a></li>
+<li><a href="/articles/viddil-policii-smolensk-promislovij-rajon-telefon.html">Відділ поліції смоленськ промисловий район телефон</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/mi-watch-lite-ne-pidkljuchaetsja-do-ajfonu.html">Mi watch lite не підключається до айфону</a></li>
+<li><a href="/articles/jak-nastroiti-sebe-na-dovge-zhittja.html">Як настроїти себе на довге життя</a></li>
+<li><a href="/articles/nomer-telefonu-kropivinskogo-mfc.html">Номер телефону кропивінського мфц</a></li>
+<li><a href="/articles/vjazanij-kokon-dlja-zhinok.html">В’язаний кокон для жінок</a></li>
+<li><a href="/articles/chi-mozhna-obganjati-traktor-na-dorozi.html">Чи можна обганяти трактор на дорозі</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

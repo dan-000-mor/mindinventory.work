@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Не монтуються папки ubuntu | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Монтування папок у Linux Losst Монтувати можна не лише розділи, а й папки. Монтування папок у Linux. Ви можете вмонтувати будь-яку папку з файлової..." />
+ <meta name="keywords" content="монтуються, папки, ubuntu, Linux" />
+ <meta name="news_keywords" content="монтуються, папки, ubuntu, Linux" />
+ 
+ 
+ <meta property="og:title" content="Не монтуються папки ubuntu" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Монтування папок у Linux Losst Монтувати можна не лише розділи, а й папки. Монтування папок у Linux. Ви можете вмонтувати будь-яку папку з файлової..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="14:36:31" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Не монтуються папки ubuntu" />
+ <meta name="twitter:description" content="Монтування папок у Linux Losst Монтувати можна не лише розділи, а й папки. Монтування папок у Linux. Ви можете вмонтувати будь-яку папку з файлової..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Не монтуються папки ubuntu</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Монтування папок у Linux Losst</h2></div></a><div class="pagetext"><p>Монтувати можна не лише розділи, а й папки. Монтування папок у Linux. Ви можете вмонтувати будь-яку папку з файлової системи в іншу...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Монтування мережної папки в Linux Losst</h2></div></a><div class="pagetext"><p>У цій статті ми поговоримо про те, як монтувати такі папки вручну,... описаних у файлі /etc/auto.nfs - /mnt і якщо до ресурсу не...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Автоматичне монтування папки мережі в Ubuntu, AltLinux...</h2></div></a><div class="pagetext"><p>Після перезавантаження вміст папки мережі з'явиться в примонтованій директорії (/mnt/server2003_d). Можливі проблеми. 1. Не монтується мережевий диск при...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Монтування мережної папки у Linux Ubuntu Obu4alka.ru</h2></div></a><div class="pagetext"><p>Сьогодні у статті розглянемо приклад монтування мережевої папки в... share - назва директорія куди монтуватимемо нашу мережеву папку.</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Як змонтувати мережну папку Windows / Samba в Linux - ZaLinux.ru</h2></div></a><div class="pagetext"><p>У Debian, Linux Mint, Ubuntu, Kali Linux та похідних виконайте:... Щоб не виникало проблем із правами доступу, папка, куди монтується...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Автомонтування мережевих папок під час завантаження Ubuntu - Ubuntu.ru</h2></div></a><div class="pagetext"><p>Як автоматично монтувати розшаровані в локальній мережі папки при... А я ось не знаю як у fstab аналізувати доступність кулі в момент...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Монтування розділів Російськомовна документація з...</h2></div></a><div class="pagetext"><p>На даний момент Ubuntu Linux виконує автоматичне монтаж всіх... У будь-якому випадку вам не треба замислюватися куди і як монтувати зовнішні носії.</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Не можу змонтувати мережну папку windows - LinuxMint.com.ru</h2></div></a><div class="pagetext"><p>Наступного дня не монтується ні під час запуску системи, ні під час виконання mount -a.... "Не ти вибираєш Linux, а Linux вибирає тебе"</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Автоматичне монтування папки мережі при завантаженніubuntu</h2></div></a><div class="pagetext"><p>Далі нічого не ламаючи не змінюючи наявні записи внизу... Після завантаження операційної системи папка монтується автоматично.</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Як увімкнути автомонтаж для дисків у Linux Ubuntu Білі...</h2></div></a><div class="pagetext"><p>В Ubuntu дискові пристрої за замовчуванням монтуються в папку... Тому в строгому значенні слова в Linux немає поняття дисків і томів,...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Монтування папки Windows з дозволами на запис в Ubuntu</h2></div></a><div class="pagetext"><p>Спочатку перевірте, чи ваша система може монтувати розділ ntfs в режимі... Не спрацювало І розділ, і папки все ще доступні тільки для читання.</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Як змонтувати спільну папку VirtualBox під час запуску? - QA Stack</h2></div></a><div class="pagetext"><p>[Рішення знайдено!] Щоб завжди монтувати віртуальну коробку «загальну папку» при завантаженні гостя Ubuntu, у нас є два варіанти.</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Не монтується мережева папка - Admin - Форум - Linux.org.ru</h2></div></a><div class="pagetext"><p>Не монтується мережева папка · cifs, mount. 0 1. Вітаю, я зовсім недавно почав вивчення linux (юзаю mint 18.3) і ось яка проблема,...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Куди монтуються системні папки Android в Ubuntu - General...</h2></div></a><div class="pagetext"><p>у мене IMEI чужий ще подумають, що вкрав спробуй потім доведи, що не верблюд. а прогою злитий nvram навіть не монтується в ubuntu.</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Монтування розшарованих мережевих папок в Ubuntu</h2></div></a><div class="pagetext"><p>Як монтувати Windows або samba папки в ubuntu/mint. mount -t cifs/ mount.cifs... розподілене кешування та використовує рідні імена TCP (а не RFC1001,...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Монтування розшарованих windows-ресурсів у Linux через...</h2></div></a><div class="pagetext"><p>Тепер спочатку давайте розберемо як монтувати розшаровані папки вручну.... Якщо потрібна папка не вимагає обов'язкової авторизації, то підключити...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Монтування SMB - Системний Адміністратор</h2></div></a><div class="pagetext"><p>mount-cifs. Linux... Монтування SMB не що інше якпідключення мережної папки WIndows до Linux. SMB (Server Message Block) – мережевий...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Як підключити спільну папку (мережевий ресурс, кулі) Windows до...</h2></div></a><div class="pagetext"><p>Зараз ми встановимо пакет cifs-utils на Ubuntu Linux (так само можна... Зараз ми розберемо на прикладах, як монтувати спільну папку...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Підключення файлових систем. Команда mount в Linux - ІТ...</h2></div></a><div class="pagetext"><p>-T, -fstab - використовувати альтернативний fstab; -B, -bind - монтувати локальну папку; -R, -rbind - Перемонтувати локальну папку. Повний список опцій можна...</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" ><div class="title"><h2 class="txt">Як змонтувати спільні папки в Ubuntu за допомогою інструментів.</h2></div></a><div class="pagetext"><p>Експерти. Я'ве успішно встановлені інструменти VMware для Ubuntu. Все начебто працює нормально.</p><a rel="nofollow" href="/go.html?/articles/ne-montujutsja-papki-ubuntu.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/ja-povinna-zhiti-anglijskoju.html">Я повинна жити англійською</a></li>
+<li><a href="/articles/svoju-mamu-ja-ljublju-noti.html">Свою маму я люблю ноти</a></li>
+<li><a href="/articles/fotoaparat-na-telefoni.html">Фотоапарат на телефоні</a></li>
+<li><a href="/articles/igri-na-android-najkrashhi-spisok-najkrashhih.html">Ігри на андроїд найкращі список найкращих</a></li>
+<li><a href="/articles/travmpunkt-z-jakogo-viku-mozhna-zvernutisja.html">Травмпункт з якого віку можна звернутися</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-namaljuvati-ejfelevu-vezhu-dlja-pochatkivciv.html">Як намалювати ейфелеву вежу для початківців</a></li>
+<li><a href="/articles/tekst-anglijskoju-z-intonacieju.html">Текст англійською з інтонацією</a></li>
+<li><a href="/articles/znjati-direktora-ta-ne-priznachiti-novogo.html">Зняти директора та не призначити нового</a></li>
+<li><a href="/articles/gorilka-u-vichi-shho-bude.html">Горілка у вічі що буде</a></li>
+<li><a href="/articles/6-bereznja-robochij-den-u-2021.html">6 Березня робочий день у 2021</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jaka-chastina-movi-slovo-shili.html">Яка частина мови слово схилі</a></li>
+<li><a href="/articles/najkrashhi-biznes-lideri.html">Найкращі бізнес лідери</a></li>
+<li><a href="/articles/vjazannja-gachkom-dlja-pochatku.html">В’язання гачком для початку</a></li>
+<li><a href="/articles/ja-scenarist-i-ja-rezhiser-prikol.html">Я сценарист і я режисер прикол</a></li>
+<li><a href="/articles/ajfon-4s-skinuti-do-zavodskih-nalashtuvan-bez.html">Айфон 4s скинути до заводських налаштувань без пароля</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/okuljari-kamera-svoimi-rukami.html">Окуляри камера своїми руками</a></li>
+<li><a href="/articles/jaki-banki-potribni-dlja-anticeljulitnogo-masazhu.html">Які банки потрібні для антицелюлітного масажу</a></li>
+<li><a href="/articles/jak-vstanoviti-plejstejshen-4-pro.html">Як встановити плейстейшен 4 про</a></li>
+<li><a href="/articles/ustanovka-obbivok-sidin-vaz-2114.html">Установка оббивок сидінь ваз 2114</a></li>
+<li><a href="/articles/privit-ja-koshenja-tom.html">Привіт я кошеня том</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

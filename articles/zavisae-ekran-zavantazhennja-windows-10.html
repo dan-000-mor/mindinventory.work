@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Зависає екран завантаження windows 10 | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Windows 10 зависає на логотипі під час завантаження - Технічка Отже, варто спробувати оновити драйвери основних пристроїв, запустивши ОС в безпечному..." />
+ <meta name="keywords" content="зависає, екран, завантаження, Windows" />
+ <meta name="news_keywords" content="зависає, екран, завантаження, Windows" />
+ 
+ 
+ <meta property="og:title" content="Зависає екран завантаження windows 10" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Windows 10 зависає на логотипі під час завантаження - Технічка Отже, варто спробувати оновити драйвери основних пристроїв, запустивши ОС в безпечному..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="20:17:21" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Зависає екран завантаження windows 10" />
+ <meta name="twitter:description" content="Windows 10 зависає на логотипі під час завантаження - Технічка Отже, варто спробувати оновити драйвери основних пристроїв, запустивши ОС в безпечному..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Зависає екран завантаження windows 10</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10 зависає на логотипі під час завантаження - Технічка</h2></div></a><div class="pagetext"><p>Отже, варто спробувати оновити драйвери основних пристроїв, запустивши ОС в безпечному режимі. Для цього: Створюємо флешку для завантаження з Windows. Вставляємо її в...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10 зависає під час завантаження екрану - TechArks.Ru</h2></div></a><div class="pagetext"><p>Завантаження із завантажувального диска Windows 10</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Чому Windows 10 зависає під час завантаження: що робити?</h2></div></a><div class="pagetext"><p>12 вер. 2019 р. — Чому Windows 10 зависає під час завантаження: що робити? · Вимкнення швидкого запуску · Відключення служб розташування, криптографії та вибіркового...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Віндовс 10 зависає на логотипі під час завантаження - Microsoft...</h2></div></a><div class="pagetext"><p>30 лип. 2016 р. — Якщо до цього все працювало з цією ж версією ОС на цьому ж пристрої, то перевірте жорсткий диск, можливо пошкоджений завантажувальний сектор або він...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">При запуску Windows 10 зависає на логотипі - Microsoft...</h2></div></a><div class="pagetext"><p>При запуску системи зависає комп'ютер, на логотипі системи (завантажувальний екран з "кружечками"), після перезавантаження системи, все завантажується...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10 зависає під час завантаження на екрані привітання.</h2></div></a><div class="pagetext"><p>Windows 10 зависає під час завантаження на екрані привітання. Так, начебто, нічого нового: вже звик до чорного екрану, намагався його лікувати...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10 при завантаженні зависає на логотипі - Lumpics.ru</h2></div></a><div class="pagetext"><p>20 бер. 2020 р. — Докладніше: Створення завантажувального диска з Windows 10... Windows 10. Очікуйте закінчення цієї операції, стежачи за прогресом на екрані.</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10 зависає під час завантаження на логотипі</h2></div></a><div class="pagetext"><p>Не виключена й поява на екрані в... com/windows-9</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10 зависає під час завантаження: причини і як...</h2></div></a><div class="pagetext"><p>Операційна система Windows 10 зависає при перезавантаженні або завантаженні пристрою – опис можливих причин таосновних способів усунення...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10 зависає під час завантаження – що робити?</h2></div></a><div class="pagetext"><p>27 лист. 2016 - Варіант №3 - виникнення помилок OS wasn't found або Boot failure. Не виключена і поява на екрані під час процесу завантаження чорного екрана...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10 зависає на екрані "Будь ласка, зачекайте"</h2></div></a><div class="pagetext"><p>Було б розумно використовувати завантажувальний USB-накопичувач Windows 10 для завантаження в безпечному режимі, але якщо у вас немає доступу до іншого комп'ютера,...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">При завантаженні windows 10 зависає на логотипі - Експерт...</h2></div></a><div class="pagetext"><p>Причини Windows 10 Setup зависають/зависають на логотипі, чи не з'являється завантажувальний круг?</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10 зависає на екрані завантаження [Виправлено</h2></div></a><div class="pagetext"><p>Windows 10 зависає на екрані завантаження [Виправлено — 9 різних способів]... проблеми із жорстким диском під час завантаження системи за допомогою завантажувального диска.</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows зависає під час завантаження «Ласкаво просимо</h2></div></a><div class="pagetext"><p>Іноді в системі відбувається серйозний збій, (особливо схильні до цієї помилки версії Windows 7 і вище), і екран зависає на вітальному повідомленні «Добро...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Комп'ютер зависає при включенні чи завантаженні - Hpc.by</h2></div></a><div class="pagetext"><p>28 травня 2021 р. — Існує ціла низка причин, за яких ноутбук, комп'ютер зависає при включенні; на "початковому екрані"; під час завантаження Windows.</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows зависає під час завантаження «Ласкаво просимо</h2></div></a><div class="pagetext"><p>Але що робити, якщо не завантажується Windows 10 (7, 8, XP) на ноутбуці або звичайному Windows 7 і вище), і екран зависає на вітальному повідомленні «Добро...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows 10. Висне після завантаження. - Конференція iXBT.com</h2></div></a><div class="pagetext"><p>6 лист. 2020 р. - Тепер докладніше. Комп'ютер завантажується до привітання, після входу в Windows просто зависає. Іноді екран залишається і нічого не рухається,...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Windows10 зависає на мить синій екран після...</h2></div></a><div class="pagetext"><p>Windows 10 зависає на мить синій екран після входу в систему (виправлення)... Microsoft допоможе вам оновити ваш комп'ютер або створити завантажувальний...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" ><div class="title"><h2 class="txt">Hearthstone зависає на початковому екрані на ПК або...</h2></div></a><div class="pagetext"><p>Натисніть клавіші Windows Key + R, щоб відкрити вікно "Виконати". Введіть %LocalAppData% у рядок "Відкрити" та натисніть OK. Відкрийте папку Blizzard. Якщо...</p><a rel="nofollow" href="/go.html?/articles/zavisae-ekran-zavantazhennja-windows-10.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/nigti-ta-volossja-v-poganomu-stani.html">Нігті та волосся в поганому стані</a></li>
+<li><a href="/articles/vstanoviv-na-acer-w700.html">Встановив на acer w700</a></li>
+<li><a href="/articles/rak-matki-mozhna-zajmatisja.html">Рак матки можна займатися</a></li>
+<li><a href="/articles/telefon-inoi-zobrazhennja.html">Телефон inoi зображення</a></li>
+<li><a href="/articles/magazin-svitlofor-u-jakih-krainah-e.html">Магазин світлофор у яких країнах є</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/budesh-ti-shhasliva-moja-divchinka.html">Будеш ти щаслива моя дівчинка</a></li>
+<li><a href="/articles/amerikanskij-prodjuser-ta-rezhiser-6-bukv.html">Американський продюсер та режисер 6 букв</a></li>
+<li><a href="/articles/jak-pereformuvati-tekst.html">Як переформувати текст</a></li>
+<li><a href="/articles/list-kohannja-hlopcju-svoimi-slovami.html">Лист кохання хлопцю своїми словами</a></li>
+<li><a href="/articles/persha-bukva-p-ostannja-n.html">Перша буква п остання н</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/muzika-dlja-telefonu-bmw.html">Музика для телефону BMW</a></li>
+<li><a href="/articles/proektor-oftalmologichnih-znakiv-dlja-chogo.html">Проектор офтальмологічних знаків для чого потрібен</a></li>
+<li><a href="/articles/niksik-telefon.html">Ніксік телефон</a></li>
+<li><a href="/articles/skinuti-vsi-nalashtuvannja-na-telefoni-dzhi.html">Скинути всі налаштування на телефоні джи</a></li>
+<li><a href="/articles/jak-zrobiti-damp-z-bazi-danih.html">Як зробити дамп з бази даних</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-zrobiti-parasolku-to-soncja.html">Як зробити парасольку то сонця</a></li>
+<li><a href="/articles/sezon-7-13-serija-holostjak.html">Сезон 7 13 серія холостяк</a></li>
+<li><a href="/articles/posaditi-kolrabi-na-rozsadu.html">Посадити кольрабі на розсаду</a></li>
+<li><a href="/articles/prisvoiti-nomer-telefonu.html">Присвоїти номер телефону</a></li>
+<li><a href="/articles/jaki-kormi-pidhodjat-dlja-dzhungarikiv.html">Які корми підходять для джунгариків</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

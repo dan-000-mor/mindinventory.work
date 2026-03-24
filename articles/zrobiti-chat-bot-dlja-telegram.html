@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Зробити чат бот для телеграм | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="як створити чат-бота у Телеграмі Блог Jivo - JivoSite Робимо чат-бот в Telegram на функціях - VC.ru Нам потрібно десь зберігати файли для робота...." />
+ <meta name="keywords" content="зробити, телеграм, Telegram, чат-бот, бота" />
+ <meta name="news_keywords" content="зробити, телеграм, Telegram, чат-бот, бота" />
+ 
+ 
+ <meta property="og:title" content="Зробити чат бот для телеграм" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="як створити чат-бота у Телеграмі Блог Jivo - JivoSite Робимо чат-бот в Telegram на функціях - VC.ru Нам потрібно десь зберігати файли для робота...." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="18:05:58" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Зробити чат бот для телеграм" />
+ <meta name="twitter:description" content="як створити чат-бота у Телеграмі Блог Jivo - JivoSite Робимо чат-бот в Telegram на функціях - VC.ru Нам потрібно десь зберігати файли для робота...." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Зробити чат бот для телеграм</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">як створити чат-бота у Телеграмі Блог Jivo - JivoSite</h2></div></a><div class="pagetext"><p><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Робимо чат-бот в Telegram на функціях - VC.ru</h2></div></a><div class="pagetext"><p>Нам потрібно десь зберігати файли для робота. Перейдіть до каталогу та оберіть сервіс Object Storage. Натисніть кнопку Створити макета. Введіть ім'я бакета...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Як створити та підключити Telegram чат-бота - SendPulse</h2></div></a><div class="pagetext"><p>29 березня. 2021 — Перейдіть до розділу «Чат-боти» у вашому обліковому записі SendPulse. Якщо раніше у вас не було підключених каналів, натисніть кнопку «Підключити канали».</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Створити чат-бот в Telegram безкоштовно! SendPulse</h2></div></a><div class="pagetext"><p>Як підключити чат-бота до Telegram... Створіть новий бот через @BotFather командою /newbot. Якщо у вас є бот, отримайте його токен командою /token.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Як створити чат-бот для Telegram-каналу - Netpeak</h2></div></a><div class="pagetext"><p>24 лют. 2021 - Як налаштувати чат-бот... Перейдіть в чат з ботом ControllerBot, натисніть /start. Потім задайте команду /addchannel і виконайте просту покрокову...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Як створити чат-бот для бізнесу своїми руками - Unisender</h2></div></a><div class="pagetext"><p>Читайте нас у Telegram. Чат-боти – це комунікаційні програми, які спілкуються з користувачами за заданим сценарієм. Як правило, це діалог...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Як створити телеграм-бота на хмарних функціях.</h2></div></a><div class="pagetext"><p>Зареєструвати нового бота в Telegram · Знайдіть бота @BotFather у Телеграм. Це офіційний бот, створений спеціально для керування ботами. · Відправте йому...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Створюємо чат-бот в Telegram для відділу продажів.</h2></div></a><div class="pagetext"><p>16 вер. 2020 р. – Про налаштування такого помічника розповідає Руслан Ясинський, аналітик Ringostat. Як створити чат-бот у телеграмах, як користуватися ботами телеграм.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Manybot</h2></div></a><div class="pagetext"><p>Створити робота в Telegram без програмування. Створити робота. Найпотужніша робот платформа. Manybot найфункціональнішаплатформа для створення роботів. Ми поєднуємо...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Створюємо Telegram-бота та заробляємо на ньому. Інструкція</h2></div></a><div class="pagetext"><p>3 серп. 2021 р. — Telegram-бот: як створити та заробити на ньому... Відправляємо в чат @FatherBot команду /mybots та вибираємо потрібний бот для редагування...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Конструктор чат-ботів для Телеграм - інтеграції Aimylogic</h2></div></a><div class="pagetext"><p>Від простих режимів роботи до комплексних технічних питань. Чат-бот зрозуміє, про що запитує користувач. Завжди онлайн. Чат-бот буде на зв'язку 24/7.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Як зробити чат-бота за 15 хвилин - CASES Media</h2></div></a><div class="pagetext"><p>6 травня 2020 р. - Telegram; Viber. Почнемо по порядку. Чат-бот Фейсбук. Це, мабуть, найпопулярніша тема, що хвилює більшу половину користувачів. Для початку...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Як створити чат-бот безкоштовно і без навичок.</h2></div></a><div class="pagetext"><p>(Однак у цьому випадку, можливо, зручніше буде вести звичайний Telegram-канал; чат-бот більше підійде, коли потрібно створити «банк питань і відповідей»,...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Як створити чат-бот у Telegram - TexTerra</h2></div></a><div class="pagetext"><p>23 лист. 2021 р. — Чат-боти у Телеграм допомагають відправляти гроші, замовляти їжу та бронювати квитки. Чи складно зробити його самостійно?</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Дуже простий чат-бот для Telegram для найменших</h2></div></a><div class="pagetext"><p>12 груд. 2018 - Є 100500 способів і інструментів створити простого serverless чат-бота для телеграм. А наш все одно буде простіше, хоча б за кількістю кліків...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Як створити чат бота у Телеграм - MediaNation</h2></div></a><div class="pagetext"><p>17 берез. 2021 - Створити нового бота Telegram досить просто... Перший крок - Перейдіть в чат з ботом @ControllerBot, натисніть /start і оберіть мову. Потім...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Боти в Telegram що це таке і як вони працюють - Shark...</h2></div></a><div class="pagetext"><p>24 квіт. 2019 р. - Чат-боти. Представляють собою найпростіший чат, що імітує спілкування на задану користувачемтематику. Боти-інформатори. Окремий вид ботів,...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" ><div class="title"><h2 class="txt">Розробка бота для Telegram - Evergreen</h2></div></a><div class="pagetext"><p>Бот на 2 месенджери telegram і viber, який підключає оператора в чат з клієнтом... Робити масові сегментовані розсилки всередині бота.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chat-bot-dlja-telegram.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/dobre-truna-slova.html">Добре труна слова</a></li>
+<li><a href="/articles/svitlana-nizhnovartivsk-dostavka-telefon.html">Світлана Нижньовартівськ доставка телефон</a></li>
+<li><a href="/articles/sony-mini-telefoni.html">Sony mini телефони</a></li>
+<li><a href="/articles/horoshij-likar-prodovzhennja-4-sezon.html">Хороший лікар продовження 4 сезон</a></li>
+<li><a href="/articles/jak-podivitisja-vsi-vidkriti-programi-na-ajfoni.html">Як подивитися всі відкриті програми на айфоні</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/muha-jakas-krovonosna-sistema.html">Муха якась кровоносна система</a></li>
+<li><a href="/articles/zhurnal-najkrashhih-futbolistiv.html">Журнал найкращих футболістів</a></li>
+<li><a href="/articles/zarobiti-v-socialnih-merezhah-z-telefonu.html">Заробити в соціальних мережах з телефону</a></li>
+<li><a href="/articles/telefon-na-temu-fotoaparat.html">Телефон на тему фотоапарат</a></li>
+<li><a href="/articles/micni-telefoni-sensorni-nedorogi.html">Міцні телефони сенсорні недорогі</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/ne-zavazhajte-zhiti-kohanim.html">Не заважайте жити коханим</a></li>
+<li><a href="/articles/blizhnja-ta-dalnja-tochka-oka.html">Ближня та дальня точка ока</a></li>
+<li><a href="/articles/chi-bude-teplo-u-kvitni.html">Чи буде тепло у квітні</a></li>
+<li><a href="/articles/jak-zrobiti-farbi-holi-v-domashnih.html">Як зробити фарби холі в домашніх</a></li>
+<li><a href="/articles/zamotati-gomilkovostop-pravilno.html">Замотати гомілковостоп правильно</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/uvimknuti-faervol-windows.html">Увімкнути фаєрвол windows</a></li>
+<li><a href="/articles/vitjaz-hokej-z-jakogo-mista.html">Витязь хокей з якого міста</a></li>
+<li><a href="/articles/lipolitiki-shema-po-tilu.html">Ліполітики схема по тілу</a></li>
+<li><a href="/articles/ustanovka-nalashtuvannja-ta-suprovid-sql-server.html">Установка налаштування та супровід SQL Server</a></li>
+<li><a href="/articles/jak-vidkrivati-fajli-doc-na-ajfoni.html">Як відкривати файли doc на айфоні</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

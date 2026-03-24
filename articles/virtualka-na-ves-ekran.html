@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Віртуалка на весь екран | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Як зробити VirtualBox на весь екран (Windows, Linux) Як зробити VirtualBox на весь екран у випадку Windows Right Ctrl-F - відкрити віртуальну машину на..." />
+ <meta name="keywords" content="віртуалка, весь, екран" />
+ <meta name="news_keywords" content="віртуалка, весь, екран" />
+ 
+ 
+ <meta property="og:title" content="Віртуалка на весь екран" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Як зробити VirtualBox на весь екран (Windows, Linux) Як зробити VirtualBox на весь екран у випадку Windows Right Ctrl-F - відкрити віртуальну машину на..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:42:16" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Віртуалка на весь екран" />
+ <meta name="twitter:description" content="Як зробити VirtualBox на весь екран (Windows, Linux) Як зробити VirtualBox на весь екран у випадку Windows Right Ctrl-F - відкрити віртуальну машину на..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Віртуалка на весь екран</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Як зробити VirtualBox на весь екран (Windows, Linux)</h2></div></a><div class="pagetext"><p>Як зробити VirtualBox на весь екран у випадку Windows Right Ctrl-F - відкрити віртуальну машину на весь екран. · Right Ctrl-L – відкрити режим...</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Як відкрити VirtualBox на весь екран у Windows 10?</h2></div></a><div class="pagetext"><p>Що потрібно зробити, щоб відкрити VirtualBox на весь екран? Покроковий посібник з налаштування повноекранного режиму VirtualBox на Windows 10.</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Операційна система на весь екран у VirtualBox</h2></div></a><div class="pagetext"><p>Операційна система на весь екран у VirtualBox. Після встановлення операційної системи у VirtualBox, вона запускається у невеликому вікні.</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Як зробити віртуальну машину VirtualBox на весь екран</h2></div></a><div class="pagetext"><p>Right Ctrl-F – відкрити віртуальну машину весь екран. Right Ctrl-L – відкрити режим інтеграції екрана. Right Ctrl-F – відкрити режим...</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Змусіть VirtualBox використовувати повнорозмірний екран.</h2></div></a><div class="pagetext"><p>Змусіть VirtualBox використовувати повнорозмірний екран у Windows 8 · Зайдіть в меню «Пуск» та відкрийте панель керування. · Виберіть зовнішній вигляд та персоналізацію.</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Чи є спосіб зробити повноекранний режим на VirtualBox?</h2></div></a><div class="pagetext"><p>Я пробував багато способів зробити екран побільше у VirtualBox,... на тему: Як відобразити весь робочий стіл у повноекранному режимі Virtual Box?</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Virtualbox роздільна здатність екрану - Нотатки енікейника</h2></div></a><div class="pagetext"><p>У Virtualbox для роздільної здатності екрана 1920x1080 у Windows 7 (та й не тільки в ньому) необхідно виконати ряд нижчеописаних дій.</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Як зробити повний екран у VirtualBox - Відповіді Mail.ru</h2></div></a><div class="pagetext"><p>Як зробити повний екран у VirtualBox. Є Ubuntu, в якому стоїть VirtualBox, в якому стоїть windows 98, який у дрібній роздільній здатності і не розтягується.</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Роздільна здатність екрана Ubuntu в VirtualBox - Losst</h2></div></a><div class="pagetext"><p>Віртуальна машина VirtualBoxвстановлює для нових віртуальних машин розширення екрану за замовчуванням 800x600 пікселів, якщо сама гостьова...</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">РІШЕННЯ: Віртуальна машина на весь екран ВКонтакте</h2></div></a><div class="pagetext"><p>Привіт усім, сьогодні поговоримо про те, як зробити віртуалку на весь екран. Відразу скажу, що версій Virtual Box у вас можу відрізняється від моєї...</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">[вирішено] VirtualBox: Про повноекранний режим - unixforum...</h2></div></a><div class="pagetext"><p>Ну от коли врубаю VirtualBox 3.0.10 на весь екран, то знизу з'являється панелька з кнопкою "вийти з повноекранного режиму" і...</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Зробити Kali linux на весь екран (встановлений на VirtualBox)</h2></div></a><div class="pagetext"><p>якщо не розгортається на весь екран, що дуже не зручно. Перевернув весь інтернет у пошуку рішення, і вводив команди різні,...</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Linux у VirtualBox не розтягується до повного екрану.</h2></div></a><div class="pagetext"><p>До речі, на Kali Linux (яка на скріншоті), Гостьові доповнення VirtualBox встановлені за умовчанням, тому їх установка не потрібна. Для...</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">VirtualBox. Як змінити роздільну здатність екрану...</h2></div></a><div class="pagetext"><p>Гіпервізор Oracle VirtualBox. Вирішення проблеми зі зміною роздільної здатності екрана, коли в гостьовій системі не вистачає параметрів для вибору...</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Як підігнати розмір екрану у VirtualBox? - Запитування</h2></div></a><div class="pagetext"><p>Якщо у повноекранному режимі у VirtualBox запустити операційну систему з роздільною здатністю 640x480, то вона на весь екран не розтягнеться по монітору.</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" ><div class="title"><h2 class="txt">Роздільна здатність екрана Windows 8 в VirtualBox [Дублікат]</h2></div></a><div class="pagetext"><p>Всі мої інші віртуальні машини (наприклад, Windows XP і Ubuntu) будуть використовувати повний екран. З якоїсь причини я не можу змусити його відповідати...</p><a rel="nofollow" href="/go.html?/articles/virtualka-na-ves-ekran.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/servera-majnkraft-na-2-gravciv.html">Сервера Майнкрафт на 2 гравців</a></li>
+<li><a href="/articles/improvizacija-slova-na-odnu-bukvu-ja.html">Імпровізація слова на одну букву я</a></li>
+<li><a href="/articles/feminitivi-v-rosijskij-movi.html">Фемінітиви в російській мові</a></li>
+<li><a href="/articles/karta-budinok-v-dzhemeti.html">Карта будинок в джеметі</a></li>
+<li><a href="/articles/najkrashhe-skriptonit-tekst.html">Найкраще скриптонить текст</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jakij-nagolos-u-slovi-normuvati.html">Який наголос у слові нормувати</a></li>
+<li><a href="/articles/jaki-vishalki-krashhe-dlja-shtaniv.html">Які вішалки краще для штанів</a></li>
+<li><a href="/articles/jaki-najkrashhi-sorti-grushi-u-pidmoskovi.html">Які найкращі сорти груші у підмосков’ї</a></li>
+<li><a href="/articles/kadri-z-jakogo-filmu-na-foto.html">Кадри з якого фільму на фото</a></li>
+<li><a href="/articles/vitrilnij-choven-svoimi-rukami-model.html">Вітрильний човен своїми руками модель</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/zobrazhennja-t-zrobiti.html">Зображення t зробити</a></li>
+<li><a href="/articles/ogljad-najkrashhih-3d-proektoriv.html">Огляд найкращих 3d проекторів</a></li>
+<li><a href="/articles/jaka-pilka-dlja-nigtiv-z-gelem.html">Яка пилка для нігтів з гелем</a></li>
+<li><a href="/articles/zobrazhennja-na-telefon-z-rissju.html">Зображення на телефон з риссю</a></li>
+<li><a href="/articles/jaki-melodii-e-na-ajfoni.html">Які мелодії є на айфоні</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/ne-projshli-audiologichnij-skrining-shho-ce.html">Не пройшли аудіологічний скринінг що це</a></li>
+<li><a href="/articles/chim-pochistiti-zabiti-pori-na-oblichchi.html">Чим почистити забиті пори на обличчі</a></li>
+<li><a href="/articles/sekunda-koordinacii-prichina.html">Секунда координації причина</a></li>
+<li><a href="/articles/odin-dovgij-bios-na.html">Один довгий біос на</a></li>
+<li><a href="/articles/jak-pribrati-istoriju-jandeksa-z-pk.html">Як прибрати історію яндекса з пк</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

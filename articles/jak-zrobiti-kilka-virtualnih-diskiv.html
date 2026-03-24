@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як зробити кілька віртуальних дисків | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Як створити кілька віртуальних дисків - IQcomp Як створити кілька віртуальних дисків - Для додавання віртуальної мережі CD/DVD-привода потрібно виконати..." />
+ <meta name="keywords" content="зробити, кілька, віртуальних" />
+ <meta name="news_keywords" content="зробити, кілька, віртуальних" />
+ 
+ 
+ <meta property="og:title" content="Як зробити кілька віртуальних дисків" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Як створити кілька віртуальних дисків - IQcomp Як створити кілька віртуальних дисків - Для додавання віртуальної мережі CD/DVD-привода потрібно виконати..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:39:24" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як зробити кілька віртуальних дисків" />
+ <meta name="twitter:description" content="Як створити кілька віртуальних дисків - IQcomp Як створити кілька віртуальних дисків - Для додавання віртуальної мережі CD/DVD-привода потрібно виконати..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як зробити кілька віртуальних дисків</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити кілька віртуальних дисків - IQcomp</h2></div></a><div class="pagetext"><p>Як створити кілька віртуальних дисків - Для додавання віртуальної мережі CD/DVD-привода потрібно виконати такі дії. Спосіб перший.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Створення віртуального жорсткого диска у Windows</h2></div></a><div class="pagetext"><p>9 лист. 2018 — Як створити віртуальний жорсткий диск у Windows 10,... У наступних статтях я докладно опишу кілька варіантів використання. Віртуальний...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити віртуальний привід в UltraISO remontka.pro</h2></div></a><div class="pagetext"><p>25 квіт. 2018 р. — Використання та створення віртуального приводу UltraISO,... віртуальний CD/DVD привод UltraISO для монтування різних образів дисків.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як зробити віртуальний диск за 5 хвилин. Як створити та...</h2></div></a><div class="pagetext"><p>20 вер. 2021 р. — Віртуальний диск (у мережі популярна назва «образ диска») - файл, розмір якого зазвичай дорівнює або дещо більший за реальний CD/DVD диск,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити віртуальний диск на комп'ютері з Windows</h2></div></a><div class="pagetext"><p>14 лют. 2019 р. — Розглянемо, як зробити віртуальний жорсткий диск на ПК за допомогою Windows, і як створювати віртуальні cd-rom з наступним записом...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Віртуальні диски CD/DVD та дисководи. Програми...</h2></div></a><div class="pagetext"><p>10 лют. 2020 р. — У статті розказано, як створити віртуальний диск CD/DVD та дисковод,... Отже, припустимо, у нас є кілька CD-дисків з музикою, іграми,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Створити віртуальний диск на комп'ютері... - newtravelers.ru</h2></div></a><div class="pagetext"><p>запис CD/DVD дисків у кілька кліків мишкою;; програма дуже легка та проста, дизайн виконаний у стилі мінімалізм; можна копіювати аудіодиски різних...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити віртуальний привід у Ultraiso - Консультант.</h2></div></a><div class="pagetext"><p>5 черв. 2018 р. — Відповідно, віртуальний привід може читати, записувати, форматувати як справжні диски, так і створювати образидисків та завантажувальні...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити віртуальний привід в ultraiso - Vsesam</h2></div></a><div class="pagetext"><p>Ще кілька слів про диски. Для того, щоб вони могли працювати у створеному вами віртуальному приводі програмою ultraiso, то й мають бути у форматі iso, інакше...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити віртуальний привід в UltraISO - Інтернет та...</h2></div></a><div class="pagetext"><p>Як монтувати образ диска у віртуальний привід UltraISO</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити та використовувати віртуальний диск у Windows</h2></div></a><div class="pagetext"><p>Зробити віртуальний диск із віртуальним дисководом можна і використовуючи… Ви можете віддати відразу всю пам'ять, а можете розбити її на кілька томів.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Створення віртуальної машини за допомогою програми...</h2></div></a><div class="pagetext"><p>Якщо ж в одному комп'ютері створити кілька віртуальних машин, то на ньому може… На жорсткому диску 40 Гбайт один розділ, у якому встановлена ​​Windows XP.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Чим створити віртуальний диск - Ремонт та налаштування...</h2></div></a><div class="pagetext"><p>14 лист. 2018 р. — Віртуальний диск (у мережі популярна назва «образ диска») — файл, розмір якого зазвичай дорівнює або дещо більший за реальний CD/DVD диск,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Всі способи створення віртуального приводу UltraISO</h2></div></a><div class="pagetext"><p>Образ диска, це точна копія CD або DVD диска, на якому записані фільм або гра або ще щось. Таку копію можна зробити за допомогою спеціальних програм,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити віртуальний привід у Ultraiso - MyComp.su</h2></div></a><div class="pagetext"><p>Віртуальний привід CD/DVD в UltraISO можна використовувати для монтування образів дисків у різних форматах (iso, bin, cue, mdf, mds, nrg, img та інших) та роботи...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Віртуальний диск. Які найкращі програми емулятори...</h2></div></a><div class="pagetext"><p>14 черв. 2014 р. — Віртуальний диск (у мережі популярна назва «образ диска») — файл, розмір якого зазвичай дорівнює або дещо більший за реальний CD/DVD диск,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як запустити віртуальний диск вwindows 10... - MacCase.ru</h2></div></a><div class="pagetext"><p>Простими словами, операційна система сприймає віртуальний диск VHD як звичайний жорсткий диск, але диск VHD має кілька переваг, найголовніше з...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити та використовувати віртуальний диск у Windows</h2></div></a><div class="pagetext"><p>Тому, якщо вам потрібно скопіювати лише кілька файлів з вашої резервної копії, набагато простіше зробити віртуальний жорсткий диск використовувати VHD,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" ><div class="title"><h2 class="txt">Як створити віртуальний диск в Alcohol 120% - Lumpics.ru</h2></div></a><div class="pagetext"><p>20 лип. 2016 — Якщо це потрібно, користувач може створити кілька віртуальних приводів. Для цього біля напису «Число віртуальних дисків:» потрібно вибрати їх...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-kilka-virtualnih-diskiv.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/skilki-pravilnih-vidpovidej-shhodo-ege-potribno.html">Скільки правильних відповідей щодо еге потрібно</a></li>
+<li><a href="/articles/anglijski-sinonimi-prikladi.html">Англійські синоніми приклади</a></li>
+<li><a href="/articles/ivel-jak-perekladaetsja.html">Івел як перекладається</a></li>
+<li><a href="/articles/korobka-do-700-samotuzhki.html">Коробка до 700 самотужки</a></li>
+<li><a href="/articles/u-rozmovi-odni-slova-zaminiv-inshimi.html">У розмові одні слова замінив іншими</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/slova-z-bukvoju-n-u-prichastjah.html">Слова з буквою н у причастях</a></li>
+<li><a href="/articles/ne-guljav-mij-pitbul.html">Не гуляв мій пітбуль</a></li>
+<li><a href="/articles/kanturni-karti.html">Кантурні карти</a></li>
+<li><a href="/articles/komisii-z-kreditnih-kartok-nezakonni.html">Комісії з кредитних карток незаконні</a></li>
+<li><a href="/articles/rio-znizhki-u-den-narodzhennja.html">Ріо знижки у день народження</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/ja-virishenij-gerl-pisnja.html">Я вирішений герл пісня</a></li>
+<li><a href="/articles/foto-vidom-horoshoi-jakosti.html">Фото відьом хорошої якості</a></li>
+<li><a href="/articles/za-ukoliv-alflutop-mozhna-alkogol.html">За уколів алфлутоп можна алкоголь</a></li>
+<li><a href="/articles/potnicja-na-golovi-pid-volossjam.html">Потниця на голові під волоссям</a></li>
+<li><a href="/articles/shemi-roboti-vimirjuvachiv.html">Схеми роботи вимірювачів</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/trimach-dlja-paperovih-rushnikiv-zrobi-sam.html">Тримач для паперових рушників зроби сам</a></li>
+<li><a href="/articles/na-jakomu-rahunku-narahuvannja-vidpusknih-u.html">На якому рахунку нарахування відпускних у</a></li>
+<li><a href="/articles/avr-6-20-kv-shema.html">Авр 6 20 кв схема</a></li>
+<li><a href="/articles/jaka-robota-na-avtomobili-vigidna.html">Яка робота на автомобілі вигідна</a></li>
+<li><a href="/articles/shema-pristroju-teploakumuljatora.html">Схема пристрою теплоакумулятора</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як встановити apache для windows | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Як встановити веб-сервер Apache з PHP, MySQL та ... Як встановити Apache на Windows Перейдіть на сайт apachelounge.com/download та скачайте . zip архів..." />
+ <meta name="keywords" content="встановити, Apache, windows" />
+ <meta name="news_keywords" content="встановити, Apache, windows" />
+ 
+ 
+ <meta property="og:title" content="Як встановити apache для windows" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Як встановити веб-сервер Apache з PHP, MySQL та ... Як встановити Apache на Windows Перейдіть на сайт apachelounge.com/download та скачайте . zip архів..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="11:00:34" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як встановити apache для windows" />
+ <meta name="twitter:description" content="Як встановити веб-сервер Apache з PHP, MySQL та ... Як встановити Apache на Windows Перейдіть на сайт apachelounge.com/download та скачайте . zip архів..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як встановити apache для windows</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Як встановити веб-сервер Apache з PHP, MySQL та...</h2></div></a><div class="pagetext"><p>Як встановити Apache на Windows Перейдіть на сайт apachelounge.com/download та скачайте . zip архів із веб-сервером: Розпакуйте папку Apache24 з цього архіву в C:\Server\bin\. Перейдіть до каталогу C:\Server\bin\Apache24\conf\ і відкрийте файл httpd.31 серп. 2019 р.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">PHP Встановлення веб-сервера Apache на Windows - Metanit</h2></div></a><div class="pagetext"><p>26 лют. 2021 р. — Встановлення веб-сервера Apache та PHP 8 на Windows, налаштування конфігурації, httpd.conf і httpd.exe, phpinfo, запуск найпростішого скрипту на php,...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Як встановити сервер Apache 2.4 на Windows 10 та 7</h2></div></a><div class="pagetext"><p>У цій статті ви прочитаєте, як встановити сервер Apache 2.4 на будь-яку версію Windows, включаючи Windows 10 і Windows 7, без проблем.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлення веб-сервера (Apache 2.4, MySQL 8.0, PHP 8...</h2></div></a><div class="pagetext"><p>Як захистити веб-сервер Apache від злому у Windows</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Установка сервера Аpache 2.4 - Інфостарт</h2></div></a><div class="pagetext"><p>26 жовт. 2017 р. – На Windows 7 операційну систему довелося перезавантажити, на Windows Server 2008 – ні. Крок 6. Встановлення Apache як служби.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлення Apache HTTP Server 2.2.22</h2></div></a><div class="pagetext"><p>Стаття описує процес встановлення та початкового налаштування на локальному комп'ютері, що працює під операційною системою Windows XP,...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлення Apache та PHP на Windows - Oblako.kz</h2></div></a><div class="pagetext"><p>5 вер. 2018 р. — Розглянемо встановлення Apache Lounge на Windows Server 2016. Інші ставляться за аналогією, оскільки програми під Windows поставляються у вигляді...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Як встановити apache на windows 10 - htfi.ru</h2></div></a><div class="pagetext"><p>Тестування установки виконувалось на Windows XP SP3. Склад web-сервера: Apache 2.4 (версія 2.4.10); PHP 5.4 (версія 5.4.34); MySQL 5.5 (...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлення Apache на Windows 7: інструкція - Windowsprofi...</h2></div></a><div class="pagetext"><p>22 квіт. 2016 р.Розглянемо, що таке Apache, MySql, PHP, для чого вони потрібні і як виконати інсталяцію цих продуктів. Трохи теорії. Apache вільний http-...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлення Web-сервера Apache у середовищі Windows - Profiphp</h2></div></a><div class="pagetext"><p>У цій статті описано встановлення веб-сервера Apache у середовищі Windows. Призначена для веб-розробників-початківців, які хочуть встановити на домашній...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлення Apache, PHP, MySQL на Windows Server</h2></div></a><div class="pagetext"><p>26 вер. 2019 — Ця стаття допоможе встановити Apache, PHP, MySQL на Windows Server. Найпростіший спосіб, що полегшує встановлення, налаштування та керування...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлення сервера Apache на Windows. Уроки для...</h2></div></a><div class="pagetext"><p>8 Грудня. 2019 р. — Використання Apache HTTP Server у Microsoft Windows. Цей документ пояснює, як встановити, налаштувати та запустити Apache 2.4 під Microsoft...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлення Apache на Windows.</h2></div></a><div class="pagetext"><p>самостійно встановити всі необхідні компоненти Apache, MySQL, PHP на Windows і налаштувати, як це було б на Linux. Більше варіантів дивись у статті:...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлюємо на Windows Apache, MySQL та PHP - Upgrade</h2></div></a><div class="pagetext"><p>28 лют. 2019 р. - Дуже просто одним кліком встановити готовий пакет WAMP (Windows: Apache HTTPD, MySQL, PHP), а ще краще - розібратися самому.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Налаштування середовища розробки PHP у Windows</h2></div></a><div class="pagetext"><p>Встановлення та налаштування пакету XAMPP</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Встановлення Apache в Windows - Lumpics.ru</h2></div></a><div class="pagetext"><p>7 серп. 2021 — Ви опинитеся на сторінці опису версії, після чого виберіть «Files for Microsoft Windows». Встановлення apache у Windows-2. В розділі "...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Налаштування веб-сервера Apache під Windows</h2></div></a><div class="pagetext"><p>31 лип. 2020 р. - Перевірка публікації. На відміну від IIS, веб-сервер Apaсhe доступний як для Windows, так і для Linux і дозволяє налаштувати роботу публікацій з...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Компілювання та встановлення - HTTP сервер Apache</h2></div></a><div class="pagetext"><p>Цей документ висвітлює питання компілювання та встановлення сервера Apache тільки на UNIX та UNIX-подібних системах. Якщо ви хочете встановити сервер під Windows,...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" ><div class="title"><h2 class="txt">Мій досвід налаштування Apache x64 під Windows 8.1 x64</h2></div></a><div class="pagetext"><p>21 лист. 2013 - Папки, такі як \cgi-bin\, \htdocs\, \icons\ і \manual\ нам не потрібні - можете їх видалити. Перейдемо в папку: C:\Server\web\apache\conf\ І...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-apache-dlja-windows.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-vidaliti-zhovtiznu-z-gumi.html">Як видалити жовтизну з гуми</a></li>
+<li><a href="/articles/povernuti-ndfl-iz-pokupki-likiv.html">Повернути ндфл із покупки ліків</a></li>
+<li><a href="/articles/mem-navchajte-geografiju.html">Мем навчайте географію</a></li>
+<li><a href="/articles/chomu-ne-pracjujut-zadni-gabariti-gazel.html">Чому не працюють задні габарити газель</a></li>
+<li><a href="/articles/ne-vdaetsja-dodati-ljudinu-do-rozmovi.html">Не вдається додати людину до розмови</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/budivelna-forma-modeli.html">Будівельна форма моделі</a></li>
+<li><a href="/articles/vmiti-prijmati-podarunki-vid-cholovika.html">Вміти приймати подарунки від чоловіка</a></li>
+<li><a href="/articles/ochistiti-smittja-mac.html">Очистити сміття mac</a></li>
+<li><a href="/articles/vid-peredozu-chogo-mozhna-pomerti.html">Від передозу чого можна померти</a></li>
+<li><a href="/articles/pisnja-aaliya-soul.html">Пісня Aaliya Soul</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/shho-mozhe-buti-lazarnim.html">Що може бути лазарним</a></li>
+<li><a href="/articles/shkoljariv-ta-studentiv-perevedut-na-distancijne.html">Школярів та студентів переведуть на дистанційне</a></li>
+<li><a href="/articles/vid-chogo-vidbulosja-slovo-list.html">Від чого відбулося слово лист</a></li>
+<li><a href="/articles/pravopis-slovnikovih-sliv.html">Правопис словникових слів</a></li>
+<li><a href="/articles/budemo-na-vesilli-tvoim.html">Будемо на весіллі твоїм</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/resident-evil-2-remake-zrobiti-granatu.html">Resident evil 2 remake зробити гранату</a></li>
+<li><a href="/articles/jakim-buvae-zhokej-prikmetniki.html">Яким буває жокей прикметники</a></li>
+<li><a href="/articles/ja-priidu-virmenskoju.html">Я приїду вірменською</a></li>
+<li><a href="/articles/z-chogo-zrobiti-trafaret-dlja-straz.html">З чого зробити трафарет для страз</a></li>
+<li><a href="/articles/2-ja-rota-polku-dps.html">2 Я рота полку дпс</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

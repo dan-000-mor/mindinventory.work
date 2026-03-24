@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Відновити дані з raid 5 | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Відновлення даних з RAID 5 - DATARC Відновлення RAID 5. У вас зникли дані з RAID5 масиву? Пошкоджено конфігурацію чи файлову систему? Зламався контролер..." />
+ <meta name="keywords" content="відновити, дані, raid, даних" />
+ <meta name="news_keywords" content="відновити, дані, raid, даних" />
+ 
+ 
+ <meta property="og:title" content="Відновити дані з raid 5" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Відновлення даних з RAID 5 - DATARC Відновлення RAID 5. У вас зникли дані з RAID5 масиву? Пошкоджено конфігурацію чи файлову систему? Зламався контролер..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="13:21:18" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Відновити дані з raid 5" />
+ <meta name="twitter:description" content="Відновлення даних з RAID 5 - DATARC Відновлення RAID 5. У вас зникли дані з RAID5 масиву? Пошкоджено конфігурацію чи файлову систему? Зламався контролер..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Відновити дані з raid 5</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення даних з RAID 5 - DATARC</h2></div></a><div class="pagetext"><p>Відновлення RAID 5. У вас зникли дані з RAID5 масиву? Пошкоджено конфігурацію чи файлову систему? Зламався контролер або вийшли з ладу одразу...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлюємо RAID 5, 1 або 0 при поломці одного або...</h2></div></a><div class="pagetext"><p>15 бер. 2021 р. - Відновлюємо RAID 5, 1 або 0 при поломці одного або декількох дисків · Блог компанії Hetman Software · Налаштування Linux · Відновлення даних...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Приклад відновлення RAID - R-Studio Data Recovery...</h2></div></a><div class="pagetext"><p>Простий RAID5</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Як відновити Raid 5: наочна покрокова інструкція</h2></div></a><div class="pagetext"><p>Покрокова інструкція відновлення даних</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Як відновити RAID 5 зібраний на... - Hetman Software</h2></div></a><div class="pagetext"><p>16 квіт. 2021 р. - Клікаємо ПКМ по іконці розділу та вибираємо "Швидке сканування". Коли процес сканування буде завершено, залишиться лише відзначити потрібні файли...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення даних з RAID5 без двох дисків: відмінності.</h2></div></a><div class="pagetext"><p>Як відновити дані з RAID 5 або масив загалом, якщо він пошкоджений? Автоматичне визначення параметрів та відновлення даних з RAID5.</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення RAID масивів простими методами - R.LAB</h2></div></a><div class="pagetext"><p>На жаль Один зі зламаних дисків доведеться відремонтувати, або якимось чином зняти з нього дані. Потім програмне складання. RAID 5 – масиви з контролем...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення даних з масиву RAID 5 (Striping з...</h2></div></a><div class="pagetext"><p>Відновлення даних із масиву RAID5. Якщо RAID5 приходить у неробочий стан і потрібно відновити дані з нього, цей процес має свої...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення RAID 5 масиву</h2></div></a><div class="pagetext"><p>Що робити, якщо в RAID 5 відмовили два диски одночасно, як відновити дані RAID5 в лабораторії.</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення RAID масивів - STORELAB</h2></div></a><div class="pagetext"><p>Команда експертів лабораторіїготова відновити дані RAID масиву та... Відновлюємо RAID масиви будь-яких рівнів: JBOD, 0, 1, 1E, 5, 5E, 5EE, 6, 10,...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Простий спосіб відновлення втрачених даних.</h2></div></a><div class="pagetext"><p>6 вер. 2021 р. — Простий спосіб відновлення втрачених даних, втрачених після поломки RAID 5. У складанні масиву на основі контролера материнської плати...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення даних RAID масиву 5 рівня - HDD-INFO</h2></div></a><div class="pagetext"><p>Відновлення даних масиву RAID 5 рівня Масив RAID5 є досить складним розміщенням даних, що поєднує поперемінний запис частини...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">RAID-5: ВІДНОВИТИ ДАНІ З ДИСКОВОГО...</h2></div></a><div class="pagetext"><p>1 груд. 2018 р. - Завдання. Відновити дані з дискового масиву RAID-5. Опис проблеми. Масив надійшов у degraded стані, в роботу надійшло 3 диски...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення даних Raid-5 масиву HP без двох дисків</h2></div></a><div class="pagetext"><p>9 вересня. 2018 р. — Як зробити відновлення даних з Raid масиву 5-го рівня Hewlett Packard з двома дисками, що вийшли з ладу.</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення даних із RAID-5</h2></div></a><div class="pagetext"><p>Відновлення даних з RAID-5 має свої особливості, як будь-який RAID-масив. RAID-5 можна описати як масив striping (RAID-0) з розподіленою...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення даних із RAID 5 масивів</h2></div></a><div class="pagetext"><p>Відновлення даних із RAID5. Непрофесійне втручання часто є головною причиною втрати файлів на RAID, відповідальні за комп'ютери постійно...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення даних з RAID - Ремонт комп'ютерів та...</h2></div></a><div class="pagetext"><p>Компанія DICOM допоможе відновити дані із пошкоджених RAID масивів будь-якого рівня.... RAID масивів отримали назву RAID рівня 1, 2, 3, 4, 5 або 7.</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Magic RAID Recovery - програма відновлення...</h2></div></a><div class="pagetext"><p>Відновлюйте пошкоджені RAID 0, RAID 1, RAID 4, RAID 5, RAID 6 та багато...Відновлення даних із пошкоджених однодискових томів та масивів JBOD.</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" ><div class="title"><h2 class="txt">Відновлення RAID-0 та RAID-5 - Командний рядок...</h2></div></a><div class="pagetext"><p>Для відновлення набору RAID-5 служить команда REPAIR. По можливості перед цією командою необхідно створити резервну копію даних. Це гарантує, що в...</p><a rel="nofollow" href="/go.html?/articles/vidnoviti-dani-z-raid-5.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/flet-metodne-pidgodovuvannja-svoimi-rukami.html">Флет методне підгодовування своїми руками</a></li>
+<li><a href="/articles/bavovna-horosha-jakist-chi-ni.html">Бавовна хороша якість чи ні</a></li>
+<li><a href="/articles/ja-vtomilasja-strazhdati-na-virshi.html">Я втомилася страждати на вірші</a></li>
+<li><a href="/articles/ja-pogano-chuju-forum.html">Я погано чую форум</a></li>
+<li><a href="/articles/mozhna-virosti-vid-stribkiv.html">Можна вирости від стрибків</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-dobre-voditi-v-gta-5.html">Як добре водити в гта 5</a></li>
+<li><a href="/articles/jak-sformuvati-cinnist-sebe.html">Як сформувати цінність себе</a></li>
+<li><a href="/articles/chi-mozhna-vagitnim-gormoni.html">Чи можна вагітним гормони</a></li>
+<li><a href="/articles/jak-zrobiti-shahove-pechivo.html">Як зробити шахове печиво</a></li>
+<li><a href="/articles/tv-provid-dlja-telefonu.html">Тв провід для телефону</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/chi-mozhna-piti-alkogol-u-peremozi.html">Чи можна пити алкоголь у перемозі</a></li>
+<li><a href="/articles/najkrashhi-sukni-evelini-hromchenko.html">Найкращі сукні евеліни хромченко</a></li>
+<li><a href="/articles/pisnja-a-ja-chekaju-diva-jak.html">Пісня а я чекаю дива як</a></li>
+<li><a href="/articles/chi-mozhna-natiratisja-menovazinom-pri-gv.html">Чи можна натиратися меновазином при гв</a></li>
+<li><a href="/articles/ofis-z-remontu-liftiv.html">Офіс з ремонту ліфтів</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/horoshij-nedorogij-mehanichnij-godinnik.html">Хороший недорогий механічний годинник</a></li>
+<li><a href="/articles/kosa-svoimi-rukami-u-sadu.html">Коса своїми руками у саду</a></li>
+<li><a href="/articles/najkrashhi-virobniki-sumok-dlja-zhinok.html">Найкращі виробники сумок для жінок</a></li>
+<li><a href="/articles/vjazannja-kishechki-gachkom-shema-majster-klas.html">В’язання кішечки гачком схема майстер клас</a></li>
+<li><a href="/articles/shema-tahometr-sobol.html">Схема тахометр соболь</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

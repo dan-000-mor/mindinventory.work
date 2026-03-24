@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як зробити зображення в гімпі | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Створення зображень у GIMP - Рецепти Linux Щоб створити нове зображення, виберіть команду Новий у меню Файл або натисніть Ctrl+n. В результаті з’явиться..." />
+ <meta name="keywords" content="зробити, зображення, гімпі, GIMP" />
+ <meta name="news_keywords" content="зробити, зображення, гімпі, GIMP" />
+ 
+ 
+ <meta property="og:title" content="Як зробити зображення в гімпі" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Створення зображень у GIMP - Рецепти Linux Щоб створити нове зображення, виберіть команду Новий у меню Файл або натисніть Ctrl+n. В результаті з’явиться..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="17:19:15" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як зробити зображення в гімпі" />
+ <meta name="twitter:description" content="Створення зображень у GIMP - Рецепти Linux Щоб створити нове зображення, виберіть команду Новий у меню Файл або натисніть Ctrl+n. В результаті з’явиться..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як зробити зображення в гімпі</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Створення зображень у GIMP - Рецепти Linux</h2></div></a><div class="pagetext"><p>Щоб створити нове зображення, виберіть команду Новий у меню Файл або натисніть Ctrl+n. В результаті з'явиться вікно Нове зображення, в якому можна встановити розміри, тип і колір фону зображення.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Створення зображень у GIMP - Knach.com</h2></div></a><div class="pagetext"><p>Ми починаємо роботу зі створення нового зображення у випадках, коли хочемо намалювати щось самостійно, з нуля. Інструментарій GIMP, як і багатьох інших...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">2.2. Створити…</h2></div></a><div class="pagetext"><p>За допомогою діалогу «Створити нове зображення» можна створити нове порожнє... параметри цікавлять в основному для просунутих користувачів GIMP.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Глава 5. Завантаження зображень у GIMP</h2></div></a><div class="pagetext"><p>Типи зображень. Заманливо представляти зображення як щось, що відповідає одному вікну на екрані, чи одному файлу, наприклад, формату JPEG.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Створення GIMP зображень для Web</h2></div></a><div class="pagetext"><p>Відкрийте вікно нового зображення, виконавши File (Файл) =&gt; New (Новий). У діалозі New Image (Нове зображення), що з'явився, встановіть Width (Ширину) і Height (...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Робота із зображеннями в GIMP</h2></div></a><div class="pagetext"><p>GIMP може зробити дуже багато, але він має деякі обмеження. Художники, що створюють зображення для друку, можуть знайти GIMP недостатньо потужним,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Як створити прозоре зображення за допомогою Gimp</h2></div></a><div class="pagetext"><p>Метод 1. Метод 1 із 2: Як зробити прозорою картинку... Відкрийте GIMP. Натисніть на значок у вигляді собачої мордочки з пензлем.... Відкрийте картинку в GIMP.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Як зробити кругле фото в GIMP</h2></div></a><div class="pagetext"><p>10 вер. 2017 р. — З цього міні-посібника ви дізнаєтесь, як зробити кругле фото в GIMP. Іншими словами, навчитеся зберігати певну частину зображення в...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Як зробити напис на фото у програмі GIMP</h2></div></a><div class="pagetext"><p>3 черв. 2018 р.- Освоюємо створення написів на фотографіях у програмі GIMP. У посібнику розглянуто варіант додавання на зображення тексту з тінню,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Як вирізати об'єкт у Gimp - Losst</h2></div></a><div class="pagetext"><p>15 бер. 2021 р. — Gimp – це одна з найпопулярніших та найзручніших програм для редагування зображень в операційній системі Linux. У Gimp можна робити...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Обробка фото в GIMP - Nastroyvse.ru</h2></div></a><div class="pagetext"><p>Як змінити розмір та роздільну здатність фото · Відкрити в редакторі Gimp потрібне фото. · На панелі меню перейти до Зображення — Розмір зображення. · У відкритому...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Як поміняти фон у GIMP або зробити його прозорим</h2></div></a><div class="pagetext"><p>Якщо ви хочете зробити фон із будь-якої картинки з іншого файлу, виберіть команду «Відкрити як шар». Після цього на вашому зображенні з'явиться новий шар з...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">GIMP, прозорий фон в GIMP. - 448dmg.ru</h2></div></a><div class="pagetext"><p>Єдина проблема, що виникла у мене це як увімкнути прозорість або видалити фон. Все дуже просто. Відкриваємо картинку в GIMP, клацаємо на неї правою кнопкою...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">як зробити картинку прозорою в GIMP? щоб вона...</h2></div></a><div class="pagetext"><p>Ну якщо картинку зробити повністю прозорою, то на ній нічого не буде видно. У панелі "Діалог шарів" натисніть кнопку "Створити новий шар" і у відкритому...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Як зробити фон зображення прозорим за допомогою GIMP</h2></div></a><div class="pagetext"><p>Тут у гру вступає GIMP, приголомшлива альтернатива Photoshop. Хоча GIMP також складніший, ніж звичайні редактори зображень, він не уповільнює роботу вашого...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">GIMP. Робота із шарами. - Артем Кашканов</h2></div></a><div class="pagetext"><p>Цей принцип лежить в основі роботи з шарами в GIMP. Картонка – це тло, а фігурки – це шари. Поки картинка не "склеєна", шари можна як завгодно пересувати,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Як зробити картинку унікальною за допомогою Gimp</h2></div></a><div class="pagetext"><p>22 лист. 2020 р. - Урок з якого видізнаєтеся, як зробити картинку унікальною для пошукових систем за допомогою безкоштовного фоторедактора Gimp.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" ><div class="title"><h2 class="txt">Як редагувати фотографію в GIMP (10 кроків) - Davies...</h2></div></a><div class="pagetext"><p>31 бер. 2020 — Щоб відкрити фотографію, виберіть "Файл"&gt; "Відкрити" (як показано на зображенні вище). Навігація по місцях на комп'ютері в GIMP для відкриття...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-zobrazhennja-v-gimpi.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/shema-pidkljuchennja-vodonagrivacha-baxi.html">Схема підключення водонагрівача baxi</a></li>
+<li><a href="/articles/rozklad-avtobusiv-minusinsk-telefon.html">Розклад автобусів мінусинськ телефон</a></li>
+<li><a href="/articles/jakim-buv-1962-rik.html">Яким був 1962 рік</a></li>
+<li><a href="/articles/zrobiti-fljuorografiju-u-butovo.html">Зробити флюорографію у бутово</a></li>
+<li><a href="/articles/jaku-temperaturu-vitrimue-plastikova-stilnicja.html">Яку температуру витримує пластикова стільниця</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/mocart-bah-kompozitori-jakogo-stolittja.html">Моцарт бах композитори якого століття</a></li>
+<li><a href="/articles/piceroni-v-zaprudni-telefon.html">Піцероні в запрудні телефон</a></li>
+<li><a href="/articles/jak-vidnoviti-parol-elektronnogo-zhurnalu.html">Як відновити пароль електронного журналу</a></li>
+<li><a href="/articles/majster-klas-za-zachiskami-dlja-narechenoi.html">Майстер клас за зачісками для нареченої</a></li>
+<li><a href="/articles/biologija-shema-energetichnij-obmin.html">Біологія схема енергетичний обмін</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/alissum-viroshhuvannja-z-nasinnja-koli-pikiruvati.html">Аліссум вирощування з насіння коли пікірувати</a></li>
+<li><a href="/articles/jak-koristuvatisja-olieju-abrikosa.html">Як користуватися олією абрикоса</a></li>
+<li><a href="/articles/skilki-valjut-mozhna-obminjati-bez-podatkiv.html">Скільки валют можна обміняти без податків</a></li>
+<li><a href="/articles/nootropi-nedorogi-najkrashhi.html">Ноотропи недорогі найкращі</a></li>
+<li><a href="/articles/baldahin-nad-lizhkom-jak-vstanoviti.html">Балдахін над ліжком як встановити</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/remont-kvartir-engels-na-avito.html">Ремонт квартир енгельс на авіто</a></li>
+<li><a href="/articles/naturalnij-korektor-dlja-volossja.html">Натуральний коректор для волосся</a></li>
+<li><a href="/articles/remont-korobki-peredach-variator-hondu.html">Ремонт коробки передач варіатор хонду</a></li>
+<li><a href="/articles/jak-nalashtuvati-anonsi-strimu-v-diskordi.html">Як налаштувати анонси стриму в дискорді</a></li>
+<li><a href="/articles/isakovskij-poet-jakogo-stolittja.html">Ісаковський поет якого століття</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

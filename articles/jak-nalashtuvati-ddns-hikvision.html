@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як налаштувати ddns hikvision | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Як налаштувати DDNS у камері Hikvision. Статті компанії Підключення до відеореєстратора Hikvision через DDNS. Налаштування відеореєстратора Hikvision у..." />
+ <meta name="keywords" content="налаштувати, ddns, Hikvision" />
+ <meta name="news_keywords" content="налаштувати, ddns, Hikvision" />
+ 
+ 
+ <meta property="og:title" content="Як налаштувати ddns hikvision" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Як налаштувати DDNS у камері Hikvision. Статті компанії Підключення до відеореєстратора Hikvision через DDNS. Налаштування відеореєстратора Hikvision у..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:42:42" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як налаштувати ddns hikvision" />
+ <meta name="twitter:description" content="Як налаштувати DDNS у камері Hikvision. Статті компанії Підключення до відеореєстратора Hikvision через DDNS. Налаштування відеореєстратора Hikvision у..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як налаштувати ddns hikvision</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Як налаштувати DDNS у камері Hikvision. Статті компанії</h2></div></a><div class="pagetext"><p><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Підключення до відеореєстратора Hikvision через DDNS.</h2></div></a><div class="pagetext"><p>Налаштування відеореєстратора Hikvision у складі комплекту Worldvision KIT-4x1080P-DOME. Налаштування розсилки повідомлень Email у відеореєстраторі Hikvision.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Налаштовуємо DDNS без IP-адреси на Hikvision NVR.</h2></div></a><div class="pagetext"><p>6 вер. 2021 - Hikvision NVR або DVR підтримують кілька популярних DDNS, таких як DynDNS і No-IP, а OEM-версії також дозволяють налаштовувати DDNS.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Робота з хмарою та налаштування віддаленого доступу</h2></div></a><div class="pagetext"><p>Віддалений доступ на камери та реєстратори Hikvision і HiWatch можна... 2) Якщо використовується сірий IP, то єдиний спосіб налаштувати доступ - p2p сервіс...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Мережеві камери - Hikvision</h2></div></a><div class="pagetext"><p>Увімкніть DDNS і виберіть IP-сервер як тип протоколу. Докладнішу інформацію див. у розділі 7.1.2 Конфігурація DDNS. Page 23. Мережеві відеокамери.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Цифровий відеореєстратор - Hikvision</h2></div></a><div class="pagetext"><p>спрацьовує тривога, на яку можна налаштувати пов'язані дії.... Окреме налаштування розкладу запису в неробочі дні.... Налаштування DDNS.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">DS-8664NI-I8 Продукти Hikvision Russia</h2></div></a><div class="pagetext"><p>Дистанційні з'єднання, 128. Протоколи, TCP/IP, DHCP, HIK Cloud P2P, DNS, DDNS, NTP, SADP, SMTP, NFS, iSCSI, UPnP™, HTTPS...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Як налаштувати Hikvision для перегляду через інтернет</h2></div></a><div class="pagetext"><p>Після цього додайте DDNS до телефону. Як бачите, налаштування доступу до обладнання від компанії Hikvision через інтернет – це досить простий процес,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Налаштування сервісу HiDDNS динамічного домену.</h2></div></a><div class="pagetext"><p>Налаштування сервісу HiDDNS динамічного доменного імені у пристроях. У налаштуваннях пристрою необхідно увімкнути доступ до DDNS, вказати домен і при...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">4 кроки налаштування DDNS длявідеоспостереження</h2></div></a><div class="pagetext"><p>Дізнайтеся про те, як правильно налаштовувати DDNS для відеоспостереження, де отримати безкоштовне доменне ім'я та прив'язати його до своєї динамічної IP адреси,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Інструкція з експлуатації DS-8104HCI-S</h2></div></a><div class="pagetext"><p>Hikvision® Network Digital Video Recorder User's Manual... За замовчуванням пристрій налаштований на використання PPPoE Ви можете налаштувати Dynamic DNS.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Інструкція з експлуатації DS-7216HVI-ST</h2></div></a><div class="pagetext"><p>HikVision, DS-72XXHVI-ST... Також для доступу до меню налаштувань позиції екранного меню.... Натисніть Установка для входу в меню налаштувань DDNS як на мал. 6.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Hikvision DS-2CD2023G0-I (8 мм) - IP-камери - DSSL</h2></div></a><div class="pagetext"><p>IP-камера Hikvision DS-2CD2023G0-I (8 мм)... Кнопка скидання налаштувань є. Основне. Живлення, DC 12 ± 25%, PoE (802.3af).</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">NVR-216M-K/16P Продукти Hi.Watch</h2></div></a><div class="pagetext"><p>Централізоване управління IP-камерами, включаючи... Можливість підключення до інтелектуальних IP-камер від Hikvision і можливість запису,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Налаштування відеоспостереження через Інтернет - НУО.</h2></div></a><div class="pagetext"><p>10 травня 2017 р. — Ця утиліта автоматично знайде пристрій навіть в іншій підмережі, за замовчуванням, адреси всіх пристроїв Hikvision 192.0.0.64, і дозволить поміняти...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Гібридний відеореєстратор Hikvision HiWatch DS-H304QA</h2></div></a><div class="pagetext"><p>2x4.5 см. Пристрій з ОС Linux має підтримку чотирьох камер і можливість підключення одного HDD-диска на 10 ТБ. Ви можете налаштувати ручну, активувати...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Підключення та налаштування відеореєстратора Hikvision</h2></div></a><div class="pagetext"><p>Тут докладна фото та відео інструкція про порядок підключення та налаштування мережевого відео реєстратора - NVR Hikvision.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Як налаштувати та підключити IP камеру - microline</h2></div></a><div class="pagetext"><p>rtsp - тип протоколу; admin - логін облікового запису Hikvision...статична IP-адреса або вас не влаштовують її умови - скористайтеся DDNS сервісами.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Вулична IP-камера відеоспостереження (відеокамера) Wi-Fi</h2></div></a><div class="pagetext"><p>(wifi; wi fi; вайфай; вай фай), (Hikvision; хайвоч; хайвотч, хіквіжен, хіквіжн) в інтернет-магазині... недосвідченому користувачеві буде складно налаштувати.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" ><div class="title"><h2 class="txt">Серія відеореєстраторів DS-7300HI/7300HFI/8100HDI.</h2></div></a><div class="pagetext"><p>Інструкція з експлуатації мережевого відеореєстратора компанії Hikvision®... можете налаштувати динамічний DNS (DDNS) для доступу до мережі.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-ddns-hikvision.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/najkrashhi-knigi-pro-fantastiku.html">Найкращі книги про фантастику</a></li>
+<li><a href="/articles/stvorennja-shemi-v-majkrosoft-vord.html">Створення схеми в майкрософт ворд</a></li>
+<li><a href="/articles/kviti-na-shtori-z-paperu.html">Квіти на штори з паперу</a></li>
+<li><a href="/articles/zrobiti-svoe-prizvishhe-na-chohli.html">Зробити своє прізвище на чохлі</a></li>
+<li><a href="/articles/ekran-u-kolorovih-smugah.html">Екран у кольорових смугах</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/ne-zapuskati-novij-tajmer.html">Не запускати новий таймер</a></li>
+<li><a href="/articles/krepysh-sostavit-slova.html">krepysh sostavit slova</a></li>
+<li><a href="/articles/shho-dopomagae-vid-gemoroju-v-domashnih.html">Що допомагає від геморою в домашніх</a></li>
+<li><a href="/articles/slovo-volejbol-krasivo-napisane.html">Слово волейбол красиво написане</a></li>
+<li><a href="/articles/gost-na-zerno-pshenici-4-klasu.html">Гост на зерно пшениці 4 класу</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/hasanska-17-na-karti.html">Хасанська 17 на карті</a></li>
+<li><a href="/articles/vidpovid-po-zajavi-otrimano-jak-pravilno.html">Відповідь по заяві отримано як правильно</a></li>
+<li><a href="/articles/koli-cholovik-ne-naguljavsja.html">Коли чоловік не нагулявся</a></li>
+<li><a href="/articles/ukraina-vijna-chechenci-e.html">Україна війна чеченці є</a></li>
+<li><a href="/articles/ne-vstigla-vtekti-z-domu.html">Не встигла втекти з дому</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jak-vimknuti-1s-nomenklaturu.html">Як вимкнути 1с номенклатуру</a></li>
+<li><a href="/articles/ukusiv-koshenja-shheplennja-ne-robila.html">Укусив кошеня щеплення не робила</a></li>
+<li><a href="/articles/jak-pracjue-barvnik-kapus.html">Як працює барвник капус</a></li>
+<li><a href="/articles/jak-vid-pozbudetsja-zapahu-budinku.html">Як від позбудеться запаху будинку</a></li>
+<li><a href="/articles/virshi-zima-dlja-nastroju.html">Вірші зима для настрою</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

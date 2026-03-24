@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Wifislax я | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Зламуємо пароль точки доступу Wi-Fi з Wifislax 20 лют. 2020 — На прикладі використання Live Wifislax я покажу простий спосіб отримання пароля від..." />
+ <meta name="keywords" content="wifislax, Linux, Wi-Fi" />
+ <meta name="news_keywords" content="wifislax, Linux, Wi-Fi" />
+ 
+ 
+ <meta property="og:title" content="Wifislax я" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Зламуємо пароль точки доступу Wi-Fi з Wifislax 20 лют. 2020 — На прикладі використання Live Wifislax я покажу простий спосіб отримання пароля від..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="14:39:32" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Wifislax я" />
+ <meta name="twitter:description" content="Зламуємо пароль точки доступу Wi-Fi з Wifislax 20 лют. 2020 — На прикладі використання Live Wifislax я покажу простий спосіб отримання пароля від..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Wifislax я</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Зламуємо пароль точки доступу Wi-Fi з Wifislax</h2></div></a><div class="pagetext"><p>20 лют. 2020 — На прикладі використання Live Wifislax я покажу простий спосіб отримання пароля від бездротової точки доступу.</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Завантажити Wifislax - пакет утиліт для злому та... - WiFi-AX.com</h2></div></a><div class="pagetext"><p>Wifislax - потужний професійний інструмент для аудиту безпеки бездротових... (типу злому паролів та крадіжки даних) – я думаю, всі про це знають.</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">▷ Wifislax для Android » - Tehnografi.com</h2></div></a><div class="pagetext"><p>Що таке Wifislax і для чого він потрібний? Wi-Fi функції Android · Чи можу я вкрасти мережі Wi-Fi моїх сусідів за допомогою Wifislax? · Як завантажити Wifislax Android?</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Проблема із завантаженням wifislax 4.12 - General - Linux.org.ru</h2></div></a><div class="pagetext"><p>я побував wifislax 4.11 та wifislax 4.12 x64 !... образ є wifislax-4-12-final.iso! на Флешки є дві boot і wifislax. в boot є...</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">wifislax, wifi адаптер ANTICHAT - Security online community</h2></div></a><div class="pagetext"><p>19 черв. 2018 - Поставив на VM Virtual Box 4.12 wifislax, а він не бачить адаптер.... Я так думаю, ви порадите все ж таки з флешки вантажитися,...</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Wifislax 4.10 вже випущено - Linux Adictos</h2></div></a><div class="pagetext"><p>WifiSlax – це дистрибутив Linux для аудиту бездротових мереж. Решту, хоч і ймовірно, ви ставите.... Або ви мене не зрозуміли, або я погано пояснив...</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Як встановити Wifislax на наш комп'ютер - Linux Adictos</h2></div></a><div class="pagetext"><p>Напевно, ви вже знайомі зі знаменитим дистрибутивом Wifislax, заснованим на Slackware дистрибутивом, який використовується для аудиту наших мереж.</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Випуск Wifislax 4.12, дистрибутива для тестування Wi-Fi</h2></div></a><div class="pagetext"><p>6 серп. 2016 р. - Коротке посилання: https://opennet.ru/44926-wifislax... Я теж не розумію, навіщо стільки дистрибутивів, якщо є такі речі як Gentoo?</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Wifislax: спробуйте цей пакет для зламування мережWi-Fi на...</h2></div></a><div class="pagetext"><p>WiFislax - це те, що нам потрібно, щоб почати вивчати злом і аудит бездротових... Виберіть останній варіант Я встановлюю операційну систему пізніше .</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Як встановити драйвер wifi у дистрибутиві WifiSlax</h2></div></a><div class="pagetext"><p>21 січ. 2017 р. — Доброго дня, як встановити драйвер зовнішнього wifi пристрою в WifiSlax, який я запускаю з флешки ? Використовую ноутбук.</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Kali linux або wifislax Пікабу</h2></div></a><div class="pagetext"><p>4 лист. 2016 р. — І що краще за kali linux чи wifislax? Gool*я звичайно на допомогу ,But it is better to live literature book. Працюю кочегаром у міській...</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Wifi WPS Crack - 4PDA</h2></div></a><div class="pagetext"><p>Я перевірив свій драйвер (Atheros, драйвер ath5k) на оф сайті програми... гуглиться ж. wifislax.ucoz.ua або торенти. iso образ записати на флешку (прогою...</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Як зробити multiattack на wifislax? - BHF.IO/.IM/.LA</h2></div></a><div class="pagetext"><p>27 січ. 2021 р. - ще я на вінді ламав на dumper юзал піни і вводив їх у jumpstart мені сподобалося але зараз цим нікого не поломвть.</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Airslax 5.16 Pro Лікування не вимагає - Page 5 - BHF.IO</h2></div></a><div class="pagetext"><p>29 січ. 2020 р. — Чому такий негатив у бік WifiSlax? Я сам теж в основному користуюсь AirSlax, але і WifiSlax має місце бути.</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">завантажувач GRUB 2 (не legacy), Wifislax, Windows 10 Pro.</h2></div></a><div class="pagetext"><p>Windows 7 Pro, Як змінити меню завантаження на своє? а то пише: Wifislax == windows vista... На одному я чисто пишу код, другий так для серфінгу та перевірки.</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Доступний BackBox 2.01, ще один дистрибутив для злому.</h2></div></a><div class="pagetext"><p>Wi-Fi, він сказав мені, що використовував WifiSlax, Я сказав йому, що колись використовував BackTrack Ну ось і підійшла тема додатків, типів шифрування для...</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">▷ Керівництво Wifislax - computercoach</h2></div></a><div class="pagetext"><p>Wifislax це дистрибутив Linux (LiveCD тобто не вимагає установки) і це дозволяє... бездозволу абсолютно незаконний у кожній країні, яку я знаю.</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Запис на стіні - ВКонтакте</h2></div></a><div class="pagetext"><p>Всім ку, Backtrack,reaver-це добре але раджу заюзати Wifislax,... я повзуюс з Wifislax сом раніше норм зламував а зараз коли запускаю злом комп...</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" ><div class="title"><h2 class="txt">Wifislax оновлення - Kleiberit</h2></div></a><div class="pagetext"><p>Wifislax 48 - оновлення версії дистрибутива.... А wifislax я завжди записую на флешку ось цейп! Оновлення java se на maemo nokia n900.</p><a rel="nofollow" href="/go.html?/articles/wifislax-ja.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-poshiti-kostjum-pivnja-svoimi.html">Як пошити костюм півня своїми</a></li>
+<li><a href="/articles/jak-onoviti-storinku-mac.html">Як оновити сторінку mac</a></li>
+<li><a href="/articles/stancija-perelivannja-stavropol-telefon.html">Станція переливання ставрополь телефон</a></li>
+<li><a href="/articles/a-ja-zhuju-svij-orbit.html">А я жую свій орбіт</a></li>
+<li><a href="/articles/vjazani-getri-zhinochi.html">В’язані гетри жіночі</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jaki-fishki-e-v-manikjuri.html">Які фішки є в манікюрі</a></li>
+<li><a href="/articles/jaki-organi-pidvidomchi-sudu.html">Які органи підвідомчі суду</a></li>
+<li><a href="/articles/z18xervstanovlennja-polumjagasnika.html">Z18xerвстановлення полум’ягасника</a></li>
+<li><a href="/articles/shema-elektronnogo-keruvannja-vitjazhkoju.html">Схема електронного керування витяжкою</a></li>
+<li><a href="/articles/skazhit-jak-meni-otrimati-gromadjanstvo.html">Скажіть як мені отримати громадянство</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/nalashtuvati-ekran-na-mac.html">Налаштувати екран на mac</a></li>
+<li><a href="/articles/jaki-elektroni-zapovnjujut-zovnishnij-riven.html">Які електрони заповнюють зовнішній рівень</a></li>
+<li><a href="/articles/jak-privjazati-do-sebe-ljudinu-prikmeti.html">Як прив’язати до себе людину прикмети</a></li>
+<li><a href="/articles/1-alfa-chastka-javljae-soboju.html">1 Альфа частка являє собою</a></li>
+<li><a href="/articles/ditina-bere-chuzhi-rechi-sobi.html">Дитина бере чужі речі собі</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/peredacha-z-ajfonu-na-televizor.html">Передача з айфону на телевізор</a></li>
+<li><a href="/articles/zrobiti-kreditnu-kartku-ditini.html">Зробити кредитну картку дитині</a></li>
+<li><a href="/articles/jaki-nauki-vivchav-lomonosiv-spisok.html">Які науки вивчав ломоносів список</a></li>
+<li><a href="/articles/temnij-ekran-monitora.html">Темний екран монітора</a></li>
+<li><a href="/articles/krashhij-krem-vid-suhosti-shkiri.html">Кращий крем від сухості шкіри</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

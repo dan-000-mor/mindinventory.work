@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Aircrack ng на телефон | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Запуск Aircrack-ng та Reaver на Android 19 серпня. 2013 р. — Де wlan0 та mon0 це саме те, що нам потрібно. Для роботи монітора WiFi повинен бути..." />
+ <meta name="keywords" content="aircrack, телефон, Android, 2020" />
+ <meta name="news_keywords" content="aircrack, телефон, Android, 2020" />
+ 
+ 
+ <meta property="og:title" content="Aircrack ng на телефон" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Запуск Aircrack-ng та Reaver на Android 19 серпня. 2013 р. — Де wlan0 та mon0 це саме те, що нам потрібно. Для роботи монітора WiFi повинен бути..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="13:17:27" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Aircrack ng на телефон" />
+ <meta name="twitter:description" content="Запуск Aircrack-ng та Reaver на Android 19 серпня. 2013 р. — Де wlan0 та mon0 це саме те, що нам потрібно. Для роботи монітора WiFi повинен бути..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Aircrack ng на телефон</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Запуск Aircrack-ng та Reaver на Android</h2></div></a><div class="pagetext"><p>19 серпня. 2013 р. — Де wlan0 та mon0 це саме те, що нам потрібно. Для роботи монітора WiFi повинен бути увімкнений у налаштуваннях телефону. Залишилася зовсім небагато.</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Скачати Aircrack-ng for Android (ROOT) 1.2 для Android</h2></div></a><div class="pagetext"><p>29 лист. 2016 - Опис Aircrack-ng for Android (ROOT). Перша версія aircrack-НГ будинок для відпустки portada пункт Android, ця версія створена (на даний...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">12 найкращих Android-додатків для хакінгу Wi-Fi</h2></div></a><div class="pagetext"><p>13 квіт. 2018 р. - Aircrack-ng; 2. WPA WPS Tester; 3. Kali Linux Nethunter; 4. Zanti; 5. Reaver; 6. Penetrate Pro; 7. Nmap...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Запуск Aircrack-ng та Reaver на Android - Rover's Home</h2></div></a><div class="pagetext"><p>16 лист. 2015 р. — Виходячи з того, що я вичитав з XDA для того, щоб як перевести WiFi в режим монітора, потрібно компілювати/ставити на телефон кастомні драйвера...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Aircrack-ng - найкращий пакет утиліт для злому WiFi</h2></div></a><div class="pagetext"><p>Aircrack-ng – пакет утиліт для моніторингу, аналізу та перехоплення трафіку, що передається через Wi-Fi мережі, контролю WEP і WPA/WPA2-PSK ключів Завантажити...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Режим моніторингу Android. ANTICHAT</h2></div></a><div class="pagetext"><p>27 лют. 2020 - Ставимо рут на телефон. Ставимо termux. У termux ставимо потрібні пакети. Code: apt install root-repo tsudo iw aircrack-ng. Власне та готово!</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Стаття - Установка aircrack-ng в Termux - BRUTE.PW...</h2></div></a><div class="pagetext"><p>8 лип. 2020 р. - Зараз розповім як встановити aircrack-ng в Termux Примітка: - Для роботи aircrack-ng потрібні... який телефон\антена використовувалися?</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Які смартфони підтримують моніторинг?</h2></div></a><div class="pagetext"><p>15 лют. 2020 - Які смартфони можуть підтримувати режим моніторингу для aircrack-ng?... penmon для чіпів куалком, у тебе який телефон (модель)?</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Найкращі програми для злому Wi-Fi мереж -AndroidInsider.ru</h2></div></a><div class="pagetext"><p>24 вер. 2019 р. - 1 Kali Linux Nethunter - Відчуйте себе хакером; 2 aircrack-ng - Зломщик для професіоналів; 3 Shark For Root — Пошук вразливостей у...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Завантажити Aircrack-ng (Ейркренк) російською безкоштовно</h2></div></a><div class="pagetext"><p>Можливості Aircrack-ng. Надає детальну інформацію про мережу WiFi; Створює віртуальний інтерфейс тунелювання; Робота з WEP та WPA ключами (перебір...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Злам WiFi з андроїд без зовнішнього адаптера - Shlyahten...</h2></div></a><div class="pagetext"><p>14 лист. 2013 р. - Не секрет, що на Android можна запускати Aircrack-ng та Reaver. Донедавна для цього був потрібен зовнішній Wi-Fi-адаптер.</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Завантажити Aircrack-ng без реєстрації та смс - HardTek.ru</h2></div></a><div class="pagetext"><p>27 вер. 2018 р. — Унікальна програма створена спеціально для злому wi-fi, а також ключів WPA/WPA2-PSK та 802.11 WEP. Aircrack-ng простий у використанні,...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Завантажити програми для злому Вай Фай на Андроїд</h2></div></a><div class="pagetext"><p>Aircrack-ng</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Як користуватись Aircrack-NG - RUSADMIN</h2></div></a><div class="pagetext"><p>3 бер. 2017 р. — Тепер ставимо галочку в «Specify BSSID», і в рядку, що відкрився, вказуємо MAC-адресу мережі (з ним допоможе та ж «CommView for WiFi», у вкладці «...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Використання NetHunter. Як користуватися... - Spy-Soft.net</h2></div></a><div class="pagetext"><p>Ця ж утиліта вміє змінювати MAC-адресу на випадкову (зручно для автоматизації):... Просканувати ефір з консолі найпростіше за допомогою Airodump-ng:...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Хакерський смартфон за допомогою Termux та Kali Linux</h2></div></a><div class="pagetext"><p>Aircrack-ng — набір утиліт, призначених для виявлення бездротових мереж,... На деякі телефони можна встановити Kali NetHunter, але зараз...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Бойовий смартфон. Робимо з пристрою з Android - Хакер</h2></div></a><div class="pagetext"><p>10 черв. 2020 р.... Встановлюємо sqlmap; Встановлюємо aircrack-ng; Встановлюємо Nmap; Ставимо на телефон повноціннийKali Linux; Висновок.</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Wifi WPS Crack - 4PDA</h2></div></a><div class="pagetext"><p>Шановний A$teroid, додайте airmon-ng у модуль.... P.S Телефон у будинку біля вікна ловить максимум 2-3 мережі, з адаптером у самому будинку спіймав штук 8.</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Як користуватися AirCrack-NG - Злом WiFi - Інструкція</h2></div></a><div class="pagetext"><p>Airodump-ng: Перехоплення Рукостискання ; -c, Канал бездротової мережі; -bssid, MAC адресу точки доступу; -w, Префікс файлу в який буде записано рукостискання; mon0...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" ><div class="title"><h2 class="txt">Як знайти всі Wi-Fi пристрої в окрузі? - HackWare.ru</h2></div></a><div class="pagetext"><p>7 жовт. 2017 р. — За допомогою програми airodump-ng можна побачити інформацію про точки... чи пристрій є мобільним телефоном, чи може підтримувати...</p><a rel="nofollow" href="/go.html?/articles/aircrack-ng-na-telefon.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-provoditi-pravilno-avansovi-vitrati.html">Як проводити правильно авансові витрати</a></li>
+<li><a href="/articles/slova-z-tortur.html">Слова з тортур</a></li>
+<li><a href="/articles/jarmarok-vihidnogo-dnja-chortanove-pivdenne.html">Ярмарок вихідного дня Чортанове південне</a></li>
+<li><a href="/articles/pislja-dtp-ne-zjavivsja-v-gidd.html">Після ДТП не з’явився в Гідд</a></li>
+<li><a href="/articles/pravilno-piljaemo-nigti-na-nogah.html">Правильно пиляємо нігті на ногах</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/zrobiti-svoju-muziku-v-4.html">Зробити свою музику в 4</a></li>
+<li><a href="/articles/tb-lg-jaki-vhodi-e.html">ТБ lg які входи є</a></li>
+<li><a href="/articles/uralski-pelmeni-vino-u-meni.html">Уральські пельмені вино у мені</a></li>
+<li><a href="/articles/vjazani-dlja-malenkih-divchatok.html">В’язані для маленьких дівчаток</a></li>
+<li><a href="/articles/dozvoljae-sebe-ljubiti-shho-dozvoljae-ljubiti.html">Дозволяє себе любити що дозволяє любити</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/martini-roso-z-chim-robljat.html">Мартіні росо з чим роблять</a></li>
+<li><a href="/articles/z-chogo-robljat-dockers.html">З чого роблять dockers</a></li>
+<li><a href="/articles/pribrati-ostanki-zgorilih-budinkiv.html">Прибрати останки згорілих будинків</a></li>
+<li><a href="/articles/rahit-u-ditej-prichini-ta-foto.html">Рахіт у дітей причини та фото</a></li>
+<li><a href="/articles/oprisnenu-vodu-vikoristovujut-dlja.html">Опріснену воду використовують для</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/zshiti-fistulu.html">Зшити фістулу</a></li>
+<li><a href="/articles/jaki-kormi-dlja-sobak-e-najkrashhimi.html">Які корми для собак є найкращими</a></li>
+<li><a href="/articles/jak-zaboroniti-sobi-isti-izhu.html">Як заборонити собі їсти їжу</a></li>
+<li><a href="/articles/jak-peresuvati-kursor-u-vordi.html">Як пересувати курсор у ворді</a></li>
+<li><a href="/articles/ja-smishnij-ntv-vsi-programi.html">Я смішний нтв всі програми</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Unity як зробити картинку | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Unity3D.ru • вставка картинки в юніті Доброго дня, я хотів запитати, як можна вставити, наприклад, картинку меню в гру, тобто у мене є jpg картинка фону..." />
+ <meta name="keywords" content="unity, зробити, картинку" />
+ <meta name="news_keywords" content="unity, зробити, картинку" />
+ 
+ 
+ <meta property="og:title" content="Unity як зробити картинку" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Unity3D.ru • вставка картинки в юніті Доброго дня, я хотів запитати, як можна вставити, наприклад, картинку меню в гру, тобто у мене є jpg картинка фону..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="12:24:18" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Unity як зробити картинку" />
+ <meta name="twitter:description" content="Unity3D.ru • вставка картинки в юніті Доброго дня, я хотів запитати, як можна вставити, наприклад, картинку меню в гру, тобто у мене є jpg картинка фону..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Unity як зробити картинку</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Unity3D.ru • вставка картинки в юніті</h2></div></a><div class="pagetext"><p>Доброго дня, я хотів запитати, як можна вставити, наприклад, картинку меню в гру, тобто у мене є jpg картинка фону меню і jpg кнопочки...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Як додати свою картинку до проекту для завдання фону в Button...</h2></div></a><div class="pagetext"><p>Як додати свою картинку до проекту для завдання фону в Button префабі? Unity, Unity3D Відповідь.</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Unity2D встановити картинку з ассетів у UI Image - Unity, Unity3D...</h2></div></a><div class="pagetext"><p>Unity2D встановити картинку з ассетів у UI Image Unity, Unity3D Відповідь.... Підкажіть, чи можливо це зробити, або як в image завантажити в...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Як зробити зображення клікабельним у unity 2d 4.3.</h2></div></a><div class="pagetext"><p>Я розробляю гру 2D в unity 4.3, я хочу знати, як ми можемо зробити зображення клікабельним за допомогою прикладу c#.For я не хочу використовувати кнопку в грі...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Як встановити зображення на текстуру в Unity 3d - CodeRoad</h2></div></a><div class="pagetext"><p>Я не знаю, як це зробити під час виконання, і я також хотів би знати, як я встановив його низької прозорості. Мені не потрібно Texture2D - мені просто потрібна...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Як замінити картинку в unity? - Хабр Q&amp;A</h2></div></a><div class="pagetext"><p>2 відповіді</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Вивести картинку на весь екран Unity 5 - Stack Overflow російською</h2></div></a><div class="pagetext"><p>Необхідно вивести (за командою у скрипті) картинку на весь екран. Перекриває все....</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Unity - створення спрайтів - CoderLessons.com</h2></div></a><div class="pagetext"><p>Щоб створити спрайт в Unity, ми повинні забезпечити двигун текстурою. Давайте спочатку створимо нашу текстуру. Отримайте стандартний файл...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Покращуємо стандартну графіку Unity за кілька хвилин – DTF</h2></div></a><div class="pagetext"><p>Це можна зробити через Package Manager, набравши пошук Post Processing.... просто не дають отримати хорошу картинку, а в Unity з черговим...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Як зробити гарну графіку для гри на Unity - Розробка на vc.ru</h2></div></a><div class="pagetext"><p>Картинка стає цікавішою, проте освітлення все ще дуже штучне. Додамо SSAO — систему затемнення на стиках геометрії всередині сцени...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Редактор спрайтів Unity Sprite Editor, як з ним працювати та чого...</h2></div></a><div class="pagetext"><p>Наприклад, зображення може містити складові персонажа, біг, стрибок, стрілянина, стан спокою. Для цих цілей Unity надає...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">GUI. Зображення в button. Масштабування. - www...</h2></div></a><div class="pagetext"><p>А чого не можна зробити так, щоб картинка яка малюється тлом у button розтягувалася під розмір... http://answers.unity3d.com/questions.</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Як змінити фон у грі unity 3d на картинку? - Яндекс.Кью</h2></div></a><div class="pagetext"><p>Ми ділимося з вами порадами з облаштування будинку, безліччю фото… Як у них вступити та що потрібно зробити, щоб стати засновником?</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Cinemachine Unity</h2></div></a><div class="pagetext"><p>Потужні функції. Розділений екран та режим «картинка в картинці». Без зусиль налаштовуйте кілька «мозків» Cinemachine для...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Як створити меню для гри на Unity - Skillbox</h2></div></a><div class="pagetext"><p>Додайте до нього об'єкт Panel і задайте якесь фонове зображення або колір. Після цього можна починати верстати меню. Створіть усередині...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Unity: як змінити розмір об'єкта згідно ContentSizeFilter...</h2></div></a><div class="pagetext"><p>У мене була думка в методі 1) зробити картинку дочірньою до тексту 2) якось змусити контент сайз оновити розміри контенту 3) прибрати...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Unity Scaling Для всіх форматів Зображення для всіх... - progi.pro</h2></div></a><div class="pagetext"><p>1 відповідь</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" ><div class="title"><h2 class="txt">Паралакс для 2D гри без нервів та милиць - Блог ITVDN</h2></div></a><div class="pagetext"><p>базові знання Unity3D 5 (на рівні створення скриптів, додавання компонентів); розуміння С#;; 3 або більше картинок у форматі .png;...</p><a rel="nofollow" href="/go.html?/articles/unity-jak-zrobiti-kartinku.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/muzika-na-telefonnij-dzvinok-pro-brata.html">Музика на телефонний дзвінок про брата</a></li>
+<li><a href="/articles/shema-kartopljanoi-sivozmini.html">Схема картопляної сівозміни</a></li>
+<li><a href="/articles/kokonut-milij-balzam-dlja-volossja.html">Коконут милий бальзам для волосся</a></li>
+<li><a href="/articles/vid-kil-pid-ochima-dlja-makijazhu.html">Від кіл під очима для макіяжу</a></li>
+<li><a href="/articles/chervonokamskij-mfc-telefon.html">Червонокамський мфц телефон</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/vstanovlennja-lakeriv-na.html">Встановлення лакерів на</a></li>
+<li><a href="/articles/modi-jak-ih-vstanoviti-video.html">Моди як їх встановити відео</a></li>
+<li><a href="/articles/vidtinok-estelja-9-76-na-volossi.html">Відтінок естеля 9 76 на волоссі</a></li>
+<li><a href="/articles/kolodki-do-znachkiv-ta-znakiv.html">Колодки до значків та знаків</a></li>
+<li><a href="/articles/probue-sebe-na-kastingu.html">Пробує себе на кастингу</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/nazvit-formulu-cu2o.html">Назвіть формулу cu2o</a></li>
+<li><a href="/articles/na-toyota-ne-pracjue-spidometr-na.html">На Toyota не працює спідометр на</a></li>
+<li><a href="/articles/ne-rozrahuvali-zarplatu-pislja-zvilnennja.html">Не розрахували зарплату після звільнення</a></li>
+<li><a href="/articles/shho-take-peredproektni-roboti-u-budivnictvi.html">Що таке передпроектні роботи у будівництві</a></li>
+<li><a href="/articles/kniga-jaka-nazivaetsja-pereklad.html">Книга яка називається переклад</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/pri-zagostrenni-virazki-shlunka-med-mozhna.html">При загостренні виразки шлунка мед можна</a></li>
+<li><a href="/articles/refine-edge-u-fotoshop-ss.html">Refine edge у фотошоп сс</a></li>
+<li><a href="/articles/mij-dim-ce-ja-tvir-ege.html">Мій дім це я твір еге</a></li>
+<li><a href="/articles/serce-na-paperi-formatu-a4.html">Серце на папері формату а4</a></li>
+<li><a href="/articles/ja-tak-ljublju-prozu.html">Я так люблю прозу</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як зробити скрипт на windows | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Пишемо програми (скрипти) у Блокноті Windows Ну і перед тим як переходити до батників (.BAT) скористаємося найкориснішим VBS скриптом із усіх перелічених..." />
+ <meta name="keywords" content="зробити, скрипт, Windows" />
+ <meta name="news_keywords" content="зробити, скрипт, Windows" />
+ 
+ 
+ <meta property="og:title" content="Як зробити скрипт на windows" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Пишемо програми (скрипти) у Блокноті Windows Ну і перед тим як переходити до батників (.BAT) скористаємося найкориснішим VBS скриптом із усіх перелічених..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="14:29:20" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як зробити скрипт на windows" />
+ <meta name="twitter:description" content="Пишемо програми (скрипти) у Блокноті Windows Ну і перед тим як переходити до батників (.BAT) скористаємося найкориснішим VBS скриптом із усіх перелічених..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як зробити скрипт на windows</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Пишемо програми (скрипти) у Блокноті Windows</h2></div></a><div class="pagetext"><p>Ну і перед тим як переходити до батників (.BAT) скористаємося найкориснішим VBS скриптом із усіх перелічених у цій статті. Скрипт, що закриває wscript.exe.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як створювати скрипти за допомогою Блокнота у Windows 10 G-ek.com</h2></div></a><div class="pagetext"><p>Відкрийте програму «Блокнот». Вставте сценарій, який ви хочете створити. Використовуйте клавіші Ctrl+Shift+S, щоб зберегти його...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як написати скрипт для windows</h2></div></a><div class="pagetext"><p>Windows Script Host – сервер виконання сценаріїв (скриптів) мовами як VBScript і JScript. WSH розроблений компанією Microsoft і він...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">7 скриптів для Windows, які допоможуть заощадити час.</h2></div></a><div class="pagetext"><p>На популярних ресурсах ви можете знайти безліч ідей, як використовувати PowerShell для розваги і справи, тут же ми розглянемо лише прості...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Написання та запуск сценаріїв в інтегрованій... - Microsoft Docs</h2></div></a><div class="pagetext"><p>У цій статті описано, як створювати, редагувати, виконувати та зберігати скрипти в області скриптів.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як створити скрипт у Windows 7 - ichudoru.com</h2></div></a><div class="pagetext"><p>Що таке Windows Script Host? Windows Script Host – сервер виконання сценаріїв (скриптів) мовами як VBScript і JScript. WSH розроблений компанією...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як створити скрипт у блокноті – Пишемо програми (скрипти) у...</h2></div></a><div class="pagetext"><p>У будь-якому випадку, файл скрипта має бути... текстовий редактор Windows 10.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як створити простий скрипт на Windows - CodeRoad</h2></div></a><div class="pagetext"><p>Якщо все, що ви робите, це створюєте текстові файли, імена яких є вашими елементами to-do, вам справді не потрібний batch file.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як зробити скрипт на комп'ютері - htfi.ru</h2></div></a><div class="pagetext"><p>Для того щоб зробити скрін "Пуска", потрібно для початку натиснути на клавіатурі клавішу "Windows" або клацнути лівою кнопкоюмиші за кнопкою "Пуск".</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як створити і запустити сценарій PowerShell в...</h2></div></a><div class="pagetext"><p>ps1 файлу в системі Windows 10 нічого не станеться, і якщо ви намагаєтеся виконати скрипт PowerShell, ви отримаєте повідомлення про помилку: «не...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Windows – автоматизація завдань за допомогою скриптів. Цікаві...</h2></div></a><div class="pagetext"><p>JScript - це, по суті, JavaScript з дещо зміненою об'єктною моделлю (наприклад, в ньому немає об'єкта window, як у браузерах, зате доданий...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як автоматизувати рутинні завдання обслуговування у Windows 10</h2></div></a><div class="pagetext"><p>Повний список команд із описом доступний на сайті Microsoft. Скрипти PowerShell. PowerShell - потужний фреймворк для керування та автоматизації...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як писати та як запускати скрипти PowerShell - Nastroyvse.ru</h2></div></a><div class="pagetext"><p>Наприклад, як запустити Windows PowerShell ISE Windows 10 і писати, працювати зі скриптами. Як відкрити PowerShell? Це можна зробити кількома наступними...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Запуск скрипта PowerShell - CoderNotes - Нотатки програміста</h2></div></a><div class="pagetext"><p>Способи запуску скрипта PowerShell, як дозволити запуск непідписаного скрипта і як...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Скрипт налаштування Windows 10. Частина II / Хабр - Habr</h2></div></a><div class="pagetext"><p>Нещодавно переписав Windows 10 Sophia Script у вигляді примітивного модуля на 11 000+.... Ніхто не міг розібратися, що саме треба робити.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Перші кроки для пауершельшиків / Хабр - Habr</h2></div></a><div class="pagetext"><p>Навіть такі конкуренти Microsoft як VMWare та IBM взяли Powershell на озброєння та керують своїми продуктами за допомогою нього. Nurked 17 лютого...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Написання Bat скриптів своїми руками - Windows - 27sysday.ru</h2></div></a><div class="pagetext"><p>Сьогодні хочу розповісти як пишуться елементарні bat скрипти. Давайте розберемо перший приклад: Необхідно раз на місяць видаляти всі файли зпапки обміну.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Інструменти командного рядка та автоматизації windows.</h2></div></a><div class="pagetext"><p>Утиліти командного рядка, bat-файли та скрипти, засновані на WSH (Windows Script... щоб вказати системі Windows що-небудь зробити, та програми у відповідь...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" ><div class="title"><h2 class="txt">Як писати скрипти в Windows? - Яндекс.Кью</h2></div></a><div class="pagetext"><p>Як писати скрипти у Windows?</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-skript-na-windows.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/lavanda-viroshhuvannja-ta-rozmnozhennja.html">Лаванда вирощування та розмноження</a></li>
+<li><a href="/articles/alfa-dent-ivanovo-telefon.html">Альфа дент Іваново телефон</a></li>
+<li><a href="/articles/remont-u-novobudovi-shushari.html">Ремонт у новобудові шушари</a></li>
+<li><a href="/articles/shho-mozhna-zrobiti.html">Що можна зробити</a></li>
+<li><a href="/articles/jak-vstanoviti-nox-na-vindovsi.html">Як встановити nox на віндовсі</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/grigorij-znak-imeni.html">Григорій знак імені</a></li>
+<li><a href="/articles/jak-zrobiti-reglanodnoshovnim.html">Як зробити регланодношовним</a></li>
+<li><a href="/articles/5-ja-osobliva-brigada.html">5 Я особлива бригада</a></li>
+<li><a href="/articles/sprej-shokoladna-glazur-dlja-estel.html">Спрей шоколадна глазурь для estel</a></li>
+<li><a href="/articles/znak-okliku-na-a4.html">Знак оклику на а4</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/ce-ne-sinok-ce-fantastika.html">Це не синок це фантастика</a></li>
+<li><a href="/articles/slova-na-literu-g-z-nagolosom.html">Слова на літеру g з наголосом</a></li>
+<li><a href="/articles/mrt-shho-ce-take-foto-legeni.html">Мрт що це таке фото легені</a></li>
+<li><a href="/articles/algebra-7-klas-27-24.html">Алгебра 7 клас 27 24</a></li>
+<li><a href="/articles/slovo-vishikujutsja.html">Слово вишикуються</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/de-ostrivskij-napisav-snigurochku.html">Де острівський написав снігурочку</a></li>
+<li><a href="/articles/jak-nazivaetsja-rich-jaka-trimae-kazanok.html">Як називається річ яка тримає казанок</a></li>
+<li><a href="/articles/jak-pravilno-ruhatisjadivchina-z-zverhu.html">Як правильно рухатисядівчина з зверху</a></li>
+<li><a href="/articles/znajti-klip-elton-dzhon.html">Знайти кліп елтон джон</a></li>
+<li><a href="/articles/napishit-rivnjannja-reakcij-oderzhannja.html">Напишіть рівняння реакцій одержання фенолформальдегідної смоли</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

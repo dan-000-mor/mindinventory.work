@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Які операції не відносяться до з’єднання | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Реляційна алгебра - Вікіпедія ... які досі використовуються (проекція, з’єднання і т. д.), так і операції, які не увійшли до вжитку (наприклад, поділ..." />
+ <meta name="keywords" content="операції, відносяться, єднання" />
+ <meta name="news_keywords" content="операції, відносяться, єднання" />
+ 
+ 
+ <meta property="og:title" content="Які операції не відносяться до з’єднання" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Реляційна алгебра - Вікіпедія ... які досі використовуються (проекція, з’єднання і т. д.), так і операції, які не увійшли до вжитку (наприклад, поділ..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="16:48:43" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Які операції не відносяться до з’єднання" />
+ <meta name="twitter:description" content="Реляційна алгебра - Вікіпедія ... які досі використовуються (проекція, з’єднання і т. д.), так і операції, які не увійшли до вжитку (наприклад, поділ..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Які операції не відносяться до з’єднання</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Реляційна алгебра - Вікіпедія</h2></div></a><div class="pagetext"><p>які досі використовуються (проекція, з'єднання і т. д.), так і операції, які не увійшли до вжитку (наприклад, поділ відносин).</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Заклепувальне з'єднання - Вікіпедія</h2></div></a><div class="pagetext"><p>Поточна версія сторінки поки не перевірялася досвідченими учасниками та може значно відрізнятися від версії, перевіреної 4 червня 2014 року; перевірки вимагає 31 редагування.</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Сталінградська битва (оборонний період із 17 липня...</h2></div></a><div class="pagetext"><p>Хоча до початку оборонної операції обладнати їх не вдалося, вони відіграли чималу роль обороні міста. З-поміж мешканців Сталінграда...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Інформація про операцію із закриття ілеостоми</h2></div></a><div class="pagetext"><p>22 квіт. 2021 р. — Після опівночі перед вашою операцією не пийте нічого іншого, це стосується й води. Якщо ваш медичний співробітник не призначив вам напій CF(...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Операції POS в інтерактивному та автономному режимах</h2></div></a><div class="pagetext"><p>ІдОпераціяСітка кнопокЕкран транзакціїЕкран привітанняДо...707Активувати пристрійНетНетНетНет134Додати призначенняТакДаНетТак643Додати код купонаДаДаНетДаПоказати ще 150 рядок</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Використання операторів у формулах Excel - Microsoft...</h2></div></a><div class="pagetext"><p>Оператори визначають операції, які необхідно виконати над... (знак «не дорівнює»)... З'єднання чи об'єднання послідовностей знаків в одну...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">AMQ4xxx: повідомлення інтерфейсу користувача... - IBM</h2></div></a><div class="pagetext"><p>У вас немає прав доступу для виконання цієї операції.... Операцію не виконано.... AMQ4059: Неможливо встановити з'єднання з адміністратором черг...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Основи з'єднання таблиць - Довідка ArcGIS Desktop</h2></div></a><div class="pagetext"><p>Ця документація ArcGIS 10.3 була переміщена до архіву і більше не оновлюється.... Підсумовування даних перед з'єднанням; Редагування та з'єднання таблиць...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Xirurgicheskie.pdf</h2></div></a><div class="pagetext"><p>Без застосування цих інструментів не обходиться майже жодна операція. До цієї групи належать інструменти, що полегшують доступ до органу шляхом розведення...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Види з'єднання проводів: 5 простих способів - АВС.</h2></div></a><div class="pagetext"><p>З'єднання електропроводів скручуванням. Для цієї простої операції достатньо взяти два проводки, зняти ізоляцію (для надійного скручування ізоляція видаляється в обсязі...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Оперативне лікування вроджених вад серця - Helios...</h2></div></a><div class="pagetext"><p>Пороки серця відносяться до найчастіших вроджених аномалій розвитку.... Будь-яка операція пов'язана з високим ризиком, проте, ми можемо сказати,...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Операція реконструкції передньої хрестоподібної зв'язки.</h2></div></a><div class="pagetext"><p>Нові рекомендації вказують на необхідність реконструкції ACL не тільки у спортсменів та молоді, але також і у людей похилого віку, менш активних фізично. Це...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">1 Умови банківського обслуговування фізичних осіб ПАТ...</h2></div></a><div class="pagetext"><p>Рахунок може використовуватися для здійснення операцій, не пов'язаних з... «Сбербанк Онлайн» відносяться Логін (Ідентифікатор користувача), Постійний пароль,...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Методи наукового пізнання - Гуманітарний портал</h2></div></a><div class="pagetext"><p>До сфери таких методів, що змінюються від науки до науки, належать, наприклад,... ні в природі, ні на практиці невіддільно, і уявний синтез — поєднання того,...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Остеосинтез (лікування переломів кісток).</h2></div></a><div class="pagetext"><p>З'єднання кісткових уламків при інтрамедулярному остеосинтезі проводиться... Як правило, такі операції не вимагають додаткової фіксації кінцівки в...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Розділ 10. Процес. Шлюзи - ELMA</h2></div></a><div class="pagetext"><p>Ці правила стосуються використання всіх типів Шлюзів.... У випадку, якщо Шлюз не має жодного вхідного потоку операцій, а Процес не містить в...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">ТЕСТОВІ ЗАВДАННЯ 1.Які із зазначених груп...</h2></div></a><div class="pagetext"><p>Кровозупинний затискач відноситься до інструментів, в якому розрізняють: а) щічки;... За допомогою чого здійснюється з'єднання тканин безкровним способом?</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">ГОСТ 2.101-68 Єдина система конструкторської...</h2></div></a><div class="pagetext"><p>а) неспецифіковані (деталі) - які мають складових частин;... Виріб, складові якого підлягають з'єднанню між собою на...</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Apache Kafka. Потокова обробка та аналіз даних</h2></div></a><div class="pagetext"><p>З'єднання.залишається.лівим,.але.тепер.з'єднуються.два.потоку,.а.не.потік.... нитку.кожну.операцію.пошуку.з.відповідними.переходами.за.посиланнями,.</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" ><div class="title"><h2 class="txt">Перевірка, чи відноситься заявлений як корисний...</h2></div></a><div class="pagetext"><p>Однак не кожен об'єкт, охарактеризований зазначеними ознаками, може бути віднесений до... та марки матеріалу, без застосування складальних операцій, наприклад:.</p><a rel="nofollow" href="/go.html?/articles/jaki-operacii-ne-vidnosjatsja-do-zednannja.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/moi-dumki-u-fotoshopi.html">Мої думки у фотошопі</a></li>
+<li><a href="/articles/katam-farba-dlja-volossja.html">Катам фарба для волосся</a></li>
+<li><a href="/articles/film-visockij-u-jakomu-roci-vijshov.html">Фільм висоцький у якому році вийшов</a></li>
+<li><a href="/articles/fotostok-dlja-mobilnih-telefoniv.html">Фотосток для мобільних телефонів</a></li>
+<li><a href="/articles/najkrashhe-maslo-dlja-polo-sedan-105.html">Найкраще масло для поло седан 105</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-mozhna-dopomogti-vizhiti.html">Як можна допомогти вижити</a></li>
+<li><a href="/articles/vid-chogo-maljuki-dobre-nabirajut-vagu.html">Від чого малюки добре набирають вагу</a></li>
+<li><a href="/articles/mama-rozbila-telefon-shkoljaru.html">Мама розбила телефон школяру</a></li>
+<li><a href="/articles/os-shho-ja-privezla-iz-barseloni.html">Ось що я привезла із барселони</a></li>
+<li><a href="/articles/jak-zrobiti-selfi-v-temrjavi-garne.html">Як зробити селфі в темряві гарне</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/ustanovka-znezarazhennja-povitrja-ams.html">Установка знезараження повітря АМС</a></li>
+<li><a href="/articles/himichni-strizhki-na-dovge-volossja.html">Хімічні стрижки на довге волосся</a></li>
+<li><a href="/articles/skilki-variti-serce-nirki-jalovichi.html">Скільки варити серце нирки яловичі</a></li>
+<li><a href="/articles/zachiski-sharlin.html">Зачіски шарлін</a></li>
+<li><a href="/articles/jak-krashhe-prasuvati-sobaku.html">Як краще прасувати собаку</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/grigorivske-silske-poselennja-telefon.html">Григорівське сільське поселення телефон</a></li>
+<li><a href="/articles/rozpovid-mumu-jaki-jakosti.html">Розповідь муму які якості</a></li>
+<li><a href="/articles/zrobiti-mm-bezsmertnim.html">Зробити мм безсмертним</a></li>
+<li><a href="/articles/jaki-e-elementi-ladu.html">Які є елементи ладу</a></li>
+<li><a href="/articles/anycast-m2-plus-jak-nalashtuvati.html">Anycast m2 plus як налаштувати</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

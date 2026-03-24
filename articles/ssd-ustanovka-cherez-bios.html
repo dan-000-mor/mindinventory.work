@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>SSD установка через біос | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Включаємо SSD диск у BIOS - Технічка Зокрема, це стосується твердотільних накопичувачів, які приходять на зміну звичним HDD. Сьогодні їх використовують..." />
+ <meta name="keywords" content="установка, біос, BIOS, Windows, диск, AHCI" />
+ <meta name="news_keywords" content="установка, біос, BIOS, Windows, диск, AHCI" />
+ 
+ 
+ <meta property="og:title" content="SSD установка через біос" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Включаємо SSD диск у BIOS - Технічка Зокрема, це стосується твердотільних накопичувачів, які приходять на зміну звичним HDD. Сьогодні їх використовують..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="10:14:01" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="SSD установка через біос" />
+ <meta name="twitter:description" content="Включаємо SSD диск у BIOS - Технічка Зокрема, це стосується твердотільних накопичувачів, які приходять на зміну звичним HDD. Сьогодні їх використовують..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">SSD установка через біос</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Включаємо SSD диск у BIOS - Технічка</h2></div></a><div class="pagetext"><p>Зокрема, це стосується твердотільних накопичувачів, які приходять на зміну звичним HDD. Сьогодні їх використовують більше як накопичувачі для встановлення системи та...</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Тонка настройка SSD диска - посібник з оптимізації</h2></div></a><div class="pagetext"><p>Після встановлення SSD перевірте, до якого роз'єму SATA він підключений. Ця інформація може бути знайдена в меню Біос (BIOS), яке можна викликати натисканням...</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Налаштування БІОС під SSD - Комп'ютери, програми...</h2></div></a><div class="pagetext"><p>1.1 Оптимізація SSD через BIOS; 1.2 Оптимізація у Windows... виграш у вигляді невибагливості до місця встановлення;; SSD споживає менше енергії, ніж HDD.</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Як підключити ssd диск у біосі - HD01.ru</h2></div></a><div class="pagetext"><p>Налаштування в БІОС та встановлення ОС</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Як налаштувати ssd диск у біосі - HD01.ru</h2></div></a><div class="pagetext"><p>коментарів на «Налаштування системи після встановлення SSD»</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Як встановити Windows 10 на SSD MBR - RemontCompa.ru</h2></div></a><div class="pagetext"><p>Установки BIOS</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Як правильно встановити SSD диск на ПК та лептоп (2021)</h2></div></a><div class="pagetext"><p>У статті ми розглянули 2 варіанти встановлення ССД в ноутбук і один - у... установка SSD в лептоп... BIOS не відображає SSD: 3 причини.</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Як я встановлював SSD диск на старий комп'ютер</h2></div></a><div class="pagetext"><p>29 вер. 2014 — Переконайтеся, що контролер диска увімкнено в меню BIOS комп'ютера. Фотографія Помилка Інсталяція Windows на цей диск не можлива. Можливо...</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Конфігурація BIOS/UEFI для оптимізації SSD M.2 PCIe.</h2></div></a><div class="pagetext"><p>Під час встановлення нового твердотільного накопичувача NVMe® PCIe® M.2 ви можете побачити повідомлення, які стосуються налаштування для збільшення швидкості твердотільних...</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Встановлення та налаштування Windows 7 на SSD накопичувач</h2></div></a><div class="pagetext"><p>Все що потрібно зробити перед встановленням, так це перевірити, чи працює наш твердотільний накопичувач в режимі AHCI. Дляцього заходимо до БІОС, якщо не знаєте...</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Налаштування SSD - встановлення Windows 7 на ssd</h2></div></a><div class="pagetext"><p>Windows 7 не бачить SSD через режим конторолера в BIOS. Швидше за все, там стоїть AHCI, - спробуйте поміняти на інший. олег.</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Встановлення Windows у системі з mSATA Dell Росія</h2></div></a><div class="pagetext"><p>Під час завантаження системи увійдіть до BIOS, змініть режим роботи SATA на AHCI та збережіть налаштування. Потім виконайте перезавантаження з носія Windows 7. Вам...</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Встановлення Windows на SSD - Microsoft Community</h2></div></a><div class="pagetext"><p>29 черв. 2019 р. — Здрастуйте. Питання щодо встановлення Windows 10 на новий SSD.... диск не виявляється, хоча в BIOS(UEFI) SSD є.</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Встановлення Windows 10 на SSD: налаштування та оптимізація...</h2></div></a><div class="pagetext"><p>24 квіт. 2018 — Тому перед встановленням SSD потрібно перевести контролер дисків у режим SATA (AHCI). Зробити це можна за допомогою меню параметрів BIOS:.</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Як встановити Windows 10 з флешки на SSD - Public-PC.com</h2></div></a><div class="pagetext"><p>Встановлюємо без БІОС</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Використання нових NVMe SSD як завантажувальний...</h2></div></a><div class="pagetext"><p>1 лют. 2020 - Старі BIOS не бачать нові NVMe SSD, на відміну від EFI (UEFI).... Один з них Hackintosh — проект встановлення останніх MacOS на будь-які...</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Не може виявити жорсткий диск або SSD після... - ASUS</h2></div></a><div class="pagetext"><p>28 черв. 2021 р. — 2 SSD (включаючи NVME M.2), інформація про диск або SSD не відображатиметься в інформації про сховище в BIOS EZ Mode через обмеження BIOS. Це...</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" ><div class="title"><h2 class="txt">Установка Windows 7 на SSD - Комп'ютерна допомога</h2></div></a><div class="pagetext"><p>Докладніше про те, як у BIOS виставити завантаження з диска або флешки читайте тут. Встановлення Windows 7 на SSD почнеться відразу після повторного перезавантаження комп'ютера.</p><a rel="nofollow" href="/go.html?/articles/ssd-ustanovka-cherez-bios.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/jak-ochistiti-lancjuzhok-sodoju.html">Як очистити ланцюжок содою</a></li>
+<li><a href="/articles/prichini-hronichnoi-infljacii.html">Причини хронічної інфляції</a></li>
+<li><a href="/articles/viznachiti-masu-oksidu-sirki-6.html">Визначити масу оксиду сірки 6</a></li>
+<li><a href="/articles/vstupiti-vchitisja-do-shvejcarii.html">Вступити вчитися до швейцарії</a></li>
+<li><a href="/articles/znajti-zvidki-moe-prizvishhe.html">Знайти звідки моє прізвище</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/massimo-dutti-prospekt-svitu-211-telefon.html">Массімо дутті проспект світу 211 телефон</a></li>
+<li><a href="/articles/jak-vidnoviti-svij-ajsikju.html">Як відновити свій айсікью</a></li>
+<li><a href="/articles/kartinka-meni-sumno-ta-sumno.html">Картинка мені сумно та сумно</a></li>
+<li><a href="/articles/jaka-epoha-ljudstva-bula-najkorotshoju.html">Яка епоха людства була найкоротшою</a></li>
+<li><a href="/articles/pisnja-ja-rozfarbuju-u-bilij-kolir.html">Пісня я розфарбую у білий колір</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jak-zvariti-idealnij-shov.html">Як зварити ідеальний шов</a></li>
+<li><a href="/articles/aforizmi-citati-zrobiti.html">Афоризми цитати зробити</a></li>
+<li><a href="/articles/ne-drukue-z-vidovogo-ekranu.html">Не друкує з видового екрану</a></li>
+<li><a href="/articles/jak-zrobiti-ljudinu-na-tablichci.html">Як зробити людину на табличці</a></li>
+<li><a href="/articles/vstanoviti-parol-kompjuter-windows-10.html">Встановити пароль комп’ютер windows 10</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/mod-u-majnkrafti-na-misto-mertvih.html">Мод у майнкрафті на місто мертвих</a></li>
+<li><a href="/articles/jak-pravilno-vibrati-kolonki-dlja-muziki.html">Як правильно вибрати колонки для музики</a></li>
+<li><a href="/articles/svjatkuvannja-mizhnarodnogo-dnja-studentiv.html">Святкування міжнародного дня студентів</a></li>
+<li><a href="/articles/ne-kazhi-likarevi-do.html">Не кажи лікареві до</a></li>
+<li><a href="/articles/pravila-povedinki-u-sportivnomu-zali.html">Правила поведінки у спортивному залі</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як встановити віджет дискорд | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="DiscordIntegrator/uk Fandom Developers Wiki Підключення віджету Віджет Дискор-сервера його адміністратори можуть увімкнути через Налаштування сервера..." />
+ <meta name="keywords" content="встановити, віджет, дискорд, Discord, сервера, віджету" />
+ <meta name="news_keywords" content="встановити, віджет, дискорд, Discord, сервера, віджету" />
+ 
+ 
+ <meta property="og:title" content="Як встановити віджет дискорд" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="DiscordIntegrator/uk Fandom Developers Wiki Підключення віджету Віджет Дискор-сервера його адміністратори можуть увімкнути через Налаштування сервера..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="12:37:13" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як встановити віджет дискорд" />
+ <meta name="twitter:description" content="DiscordIntegrator/uk Fandom Developers Wiki Підключення віджету Віджет Дискор-сервера його адміністратори можуть увімкнути через Налаштування сервера..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як встановити віджет дискорд</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">DiscordIntegrator/uk Fandom Developers Wiki</h2></div></a><div class="pagetext"><p>Підключення віджету Віджет Дискор-сервера його адміністратори можуть увімкнути через Налаштування сервера &gt; Віджет. Щоб віджет запрацював, натисніть кнопку-важіль "Підключити віджет". Якщо Ви бажаєте, щоб користувачі могли приєднуватись до заданого каналу сервера, заповніть опцію "Встановити канал для запрошень".</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Готові віджети для Discord</h2></div></a><div class="pagetext"><p>Як ставити та користуватися · Увійдіть до Дискорду. · Виберіть потрібний сервер у списку. · Зайдіть в його налаштування. · Перейдіть до категорії «Віджет». · Переведіть пункт «...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Список готових віджетів для Дискорд-сервера, як...</h2></div></a><div class="pagetext"><p>Що таке віджет для Discord... Віджет – заздалегідь підготовлений або вручну згенерований JavaScript-код, прив'язаний до сервера Дискорд по ID (...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">як додати дискорд віджет Fandom</h2></div></a><div class="pagetext"><p>Як додати дискорд віджет на головну сторінку.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Віджет для Дискорда для сайту: що це...</h2></div></a><div class="pagetext"><p>fandom.com/ua на персональну унікальну URL-адресу цікавого віджету. Наприклад, якщо вікі користувача вказано як Disney Wiki, коректним посиланням...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Як додати віджет Discord на свій сайт - zanz...</h2></div></a><div class="pagetext"><p>У меню налаштувань Discord виберіть Віджет. Щоб увімкнути віджет на сервері, виберіть повзунок «Увімкнути віджет сервера», помістивши його в положення «Увімк.» (...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Що таке віджети для Discord на сайт - user-life.com</h2></div></a><div class="pagetext"><p>15 лип. 2021 р. - Всім привіт! Сьогодні поговоримо про те, що таке віджети на сайт і як їх встановити в популярній безкоштовній програмі спілкування Discord.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Віджет discord сервера WebNull.info - Все для XenForo...</h2></div></a><div class="pagetext"><p>31 січ. 2018 р. — На форумі спочатку потрібно створити HTML віджет /admin.php?widgets і додаємо свій віджет. Визначення віджету: HTML. У "Ключ віджету"пишемо...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Просунуте налаштування спільноти сервера - Discord...</h2></div></a><div class="pagetext"><p>4 вересня. 2018 р. — Коли наш новий сервер буде встановлено та вибрано, це буде перший канал, який ми створимо. Цей вітальний канал стане виділеним...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Запрошення 101 – Discord Support</h2></div></a><div class="pagetext"><p>21 травня 2021 р. — Він може бути встановлений без обмеження або на 1, 5, 10, 25, 50 або 100 використань. 3_.jpg. Увімкнення параметра тимчасового членства...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Як я можу змінити вигляд / тему Discord?</h2></div></a><div class="pagetext"><p>4 вересня. 2018 р. — Ми в Discord чудово розуміємо, що Вам може бути важко ухвалити рішення. Справді може бути важко вибрати між Темною стороною.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Як налаштувати Discord під себе - інструкція (2019)</h2></div></a><div class="pagetext"><p>Віджет; Вихід; Висновок. Визначення. Сервіс призначений для голосового спілкування під час ігрового процесу, підтримує VoIP...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Віджет Дискорд, вк - ServerRust - Безкоштовні Приватні...</h2></div></a><div class="pagetext"><p>24 лист. 2020 р. — Друзі, як створити такий віджет Moscow.ovh? k-Svz-q-Qmz-OA.jpg...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Налаштування та використання Discord - ВсеПросто</h2></div></a><div class="pagetext"><p>віджети, що спрощують управління прогою; емодзі, смайли;; статуси, за якими можна визначити, чи в мережі користувач чи ні. Як настроїти Дискор для ігор</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">[AH] Discord Widget xenForo.Info - Ваш путівник...</h2></div></a><div class="pagetext"><p>9 лют. 2018 — Додано нову властивість стилю для кнопки Join Server. Клас .button вже застосовується автоматично, тому він виглядає як усі інші...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Discord популярні сервери. Сервера, канали та групи в...</h2></div></a><div class="pagetext"><p>Після цього клікабельний віджет буде встановлено. Як стати користувачем чат-каналу на Дискорді? Відповідно, для того, щоб стати простим учасником...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Налаштування сервера в Discord - Lumpics.ru</h2></div></a><div class="pagetext"><p>15 бер. 2021 р.початку виберіть сервер, який хочете налаштувати,... Активуйте віджет сервера, пересунувши відповідний повзунок вгорі,...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Discord (DiscordApp) - Російськомовна спільнота</h2></div></a><div class="pagetext"><p>Перш за все, цей додаток стане в нагоді любителям ігор, оскільки він використовує мінімальний обсяг системних ресурсів, абсолютно не впливаючи на показник FPS.</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" ><div class="title"><h2 class="txt">Найкращі безкоштовні плагіни для Тільди [2021] - Elfsight</h2></div></a><div class="pagetext"><p>Спробуйте безкоштовний варіант віджету та дізнайтеся його можливості або встановіть будь-який віджет зі знижкою 30%. Як впровадити плагін на Tilda сайт Щоб впровадити...</p><a rel="nofollow" href="/go.html?/articles/jak-vstanoviti-vidzhet-diskord.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/stend-dlja-okuljariv-svoimi-rukami.html">Стенд для окулярів своїми руками</a></li>
+<li><a href="/articles/chiken-hors-na-telefon.html">Чікен хорс на телефон</a></li>
+<li><a href="/articles/zrobiti-lego-gonochnu-mashinu.html">Зробити лего гоночну машину</a></li>
+<li><a href="/articles/shkola-13-gubkin-telefon.html">Школа 13 губкін телефон</a></li>
+<li><a href="/articles/zminjuemo-motorne-maslo-v-dviguni.html">Змінюємо моторне масло в двигуні</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/pravoporushennjami-vvazhajutsja-rodinni-zvjazki.html">Правопорушеннями вважаються родинні зв’язки особистості</a></li>
+<li><a href="/articles/z-algebra-somij-klas.html">З алгебра сьомий клас</a></li>
+<li><a href="/articles/bachnij-blok-majnkraft.html">Бачний блок майнкрафт</a></li>
+<li><a href="/articles/slovo-z-privodu.html">Слово з приводу</a></li>
+<li><a href="/articles/u-zhitti-e-princip-bumerangu.html">У житті є принцип бумерангу</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/mi-svoi-ne-minjaemo-zvichki-vdalini.html">Ми свої не міняємо звички вдалині</a></li>
+<li><a href="/articles/inoplanetjani-na-gorishhi-u-visokij-jakosti.html">Інопланетяни на горищі у високій якості</a></li>
+<li><a href="/articles/julja-vovkova-ti-i-ja-foto.html">Юля вовкова ти і я фото</a></li>
+<li><a href="/articles/jak-vstanoviti-dzvinok-dlja-domu.html">Як встановити дзвінок для дому</a></li>
+<li><a href="/articles/top-najkrashhih-goteliv-bodrumu.html">Топ найкращих готелів бодруму</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/taksi-tajshet-nomeri-telefoniv.html">Таксі тайшет номери телефонів</a></li>
+<li><a href="/articles/zobrazhennja-krashhi-podrugi-diti.html">Зображення кращі подруги діти</a></li>
+<li><a href="/articles/dzhut-dlja-vjazannja-gachkom.html">Джут для в’язання гачком</a></li>
+<li><a href="/articles/vidnoviti-gemoglobin-u-krovi.html">Відновити гемоглобін у крові</a></li>
+<li><a href="/articles/vstanoviti-google-analytics-4.html">Встановити google analytics 4</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

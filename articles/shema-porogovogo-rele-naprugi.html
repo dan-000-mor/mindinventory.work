@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Схема порогового реле напруги | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Схема релейного стабілізатора напруги на транзисторах В інтервалі мережевої напруги 185...205 відкрито стабілітрон VD5. При цьому вступає в роботу другий..." />
+ <meta name="keywords" content="Схема, порогового, реле" />
+ <meta name="news_keywords" content="Схема, порогового, реле" />
+ 
+ 
+ <meta property="og:title" content="Схема порогового реле напруги" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Схема релейного стабілізатора напруги на транзисторах В інтервалі мережевої напруги 185...205 відкрито стабілітрон VD5. При цьому вступає в роботу другий..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="16:45:41" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Схема порогового реле напруги" />
+ <meta name="twitter:description" content="Схема релейного стабілізатора напруги на транзисторах В інтервалі мережевої напруги 185...205 відкрито стабілітрон VD5. При цьому вступає в роботу другий..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Схема порогового реле напруги</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Схема релейного стабілізатора напруги на транзисторах</h2></div></a><div class="pagetext"><p>В інтервалі мережевої напруги 185...205 відкрито стабілітрон VD5. При цьому вступає в роботу другий граничний пристрій. Струм протікає через обмотку реле...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Пороговий пристрій на... - Форум РадіоКіт • Перегляд теми</h2></div></a><div class="pagetext"><p>Є вхід із плавною зміною напруги (від 5 до 15В).... принаймні два транзистори, включені за схемою тригера Шмітта.</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Порогове реле 12 вольт. Автомобільні реле: як...</h2></div></a><div class="pagetext"><p>Характеристики твердотільного реле. Вхідний керуючий сигнал 1,5 - 12 постійного струму; Оптимальна напруга самої схеми VCC 12 - 18...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Як вибрати та підключити реле контролю напруги: схема...</h2></div></a><div class="pagetext"><p>Для регулювання порогових вольтажів призначені: потенціометр із градуйованою шкалою або кнопки. В останньому випадку порогові, що виставляються...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Схема підключення реле напруги: зі зниженим...</h2></div></a><div class="pagetext"><p>У деяких зразках реле використовуються кнопки з відображенням параметрів на електронному табло. При виставленні необхідних порогових...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Реле контролю напруги: принцип роботи та нюанси підключення</h2></div></a><div class="pagetext"><p>Реле контролю напруги: принцип роботи, схема, нюанси підключення... Регулювання порогових значень вироблення</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">12 схем автоматичного реле (температура, звук, світло, вологість)</h2></div></a><div class="pagetext"><p>Щойно ця напруга перевищить напругу пробою порогового елемента — напівпровідникового стабілітрона VD2...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Схема для керування ДХО-2 — Співтовариство «Електронні...</h2></div></a><div class="pagetext"><p>При появі 12 вольт через нормально замкнуті контакти реле напруга надходить на схему і переводить її в режимі, що стереже, живлення на ДХО...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Реле напруги на 12 вольт – e-veterok.</h2></div></a><div class="pagetext"><p>Багато мене запитують, що за схему я ставлю всвої контролери для вітрогенераторів Я вже звичайно відповідав, знімав невелике відео, як їй користуватися, і...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Схема живлення джерела живлення - Elec.ru</h2></div></a><div class="pagetext"><p>ства комутації, як електромагюпні реле, але вигідно відмінна напруга порогового пристрою при цьому буде однакова. на.</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Схема підключення реле напруги для будинку, квартири.</h2></div></a><div class="pagetext"><p>Схема підключення реле напруги Zubr. Схема підключення напруги реле для будинку, квартири. Нині виробники запевняють, що реле...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Пороговий пристрій - Велика Енциклопедія Нафти та Газа.</h2></div></a><div class="pagetext"><p>Пороговий пристрій працює за схемою емітерного повторювача. Чутливість транзистора Т] визначається стабілізованою напругою, одержуваною на...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Реле контролю напруги - RadioRadar</h2></div></a><div class="pagetext"><p>Схема реле контролю напруги показано на рис. 1. Через діод VD1 позитивні... Вони є пороговими пристроями. Якщо напруга, подана на...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Індикатори та сигналізатори на регульованому стабілітроні.</h2></div></a><div class="pagetext"><p>Схема сигналізатора перевищення напруги показана на малюнку 2.... Коли ця напруга перевищить граничну (2,5 В), стабілітрон відкривається і запалюється...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Схеми на компараторах » Сайт для електриків - статті, поради.</h2></div></a><div class="pagetext"><p>Ось і є те саме «трохи більше», що у довідниках називається «порогова чутливість компаратора». Перевірка компаратора напруги.</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Проста схема реле часу, затримки вимикання навантаження на...</h2></div></a><div class="pagetext"><p>Отже, на вхід схеми автоматичного відключення навантаження подається постійна напруга від...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Порогові пристрої - studopedia.su</h2></div></a><div class="pagetext"><p>Швидкодія порогового пристрою на поляризованому реле визначається...вихідної напруги у схемі після досягнення порога...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">Схеми фотореле - ElektroVesti</h2></div></a><div class="pagetext"><p>Датчик, що реагує на освітлення, подає сигнал на схему реле,... Налаштування пристрою зводиться до встановлення порогової напруги таким чином,...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" ><div class="title"><h2 class="txt">§ 7.2. Електронні реле - Наукова бібліотека</h2></div></a><div class="pagetext"><p>Найпростіша схема електронного контактного реле на транзисторі наведено на рис.... При вхідному сигналі , меншому від порогової напруги спрацьовування схеми...</p><a rel="nofollow" href="/go.html?/articles/shema-porogovogo-rele-naprugi.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/est-takoj-gorod-buket.html">est takoj gorod buket</a></li>
+<li><a href="/articles/perevod-zhart.html">Перевод жарт</a></li>
+<li><a href="/articles/mebli-na-majnkraft.html">Меблі на майнкрафт</a></li>
+<li><a href="/articles/sidi-na-rivninu-dlja-majnkraft-pe.html">Сиди на рівнину для майнкрафт пе</a></li>
+<li><a href="/articles/kontrolni-testi-z-mhk-11-klas.html">Контрольні тести з МХК 11 клас</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/vjazhemo-spicjami-ditjam-shemi.html">В’яжемо спицями дітям схеми</a></li>
+<li><a href="/articles/vishivannja-na-mashini-shemi-ta.html">Вишивання на машині схеми та</a></li>
+<li><a href="/articles/ruhomij-blok-dozvoljae-zminjuvati-naprjamok-sili.html">Рухомий блок дозволяє змінювати напрямок сили</a></li>
+<li><a href="/articles/jak-zrobiti-slajdi-u-vord-pad.html">Як зробити слайди у ворд пад</a></li>
+<li><a href="/articles/ditjacha-poliklinika-u-menzelinsku-nomer-telefonu.html">Дитяча поліклініка у мензелінську номер телефону</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jak-vidnoviti-starij-akumuljator.html">Як відновити старий акумулятор</a></li>
+<li><a href="/articles/najkrashhij-zvolozhujuchij-gel-dlja-gub.html">Найкращий зволожуючий гель для губ</a></li>
+<li><a href="/articles/ja-chuv-vi-farbuete-vdoma-kniga.html">Я чув ви фарбуєте вдома книга</a></li>
+<li><a href="/articles/shho-mozhna-podaruvati-hlopchiku-o-13-j.html">Що можна подарувати хлопчику о 13 й</a></li>
+<li><a href="/articles/chi-mozhna-pri-goloduvanni-piti-alkogol.html">Чи можна при голодуванні пити алкоголь</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/pravilne-napisannja-polietilen.html">Правильне написання поліетилен</a></li>
+<li><a href="/articles/sms-privitannja-na-den-narodzhennja-podruzi.html">Смс привітання на день народження подрузі</a></li>
+<li><a href="/articles/jak-zapamjatovuvati-karti-pid-chas-gri.html">Як запам’ятовувати карти під час гри</a></li>
+<li><a href="/articles/skrinshot-karta-zablokovana.html">Скріншот карта заблокована</a></li>
+<li><a href="/articles/ne-mozhna-perenositi-na-inshij-rjadok-slova.html">Не можна переносити на інший рядок слова</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

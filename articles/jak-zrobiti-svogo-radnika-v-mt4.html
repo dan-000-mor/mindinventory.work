@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як зробити свого радника в mt4 | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Створення - Радники - Автотрейдинг - Довідка з ... Для створення радників використовуються мова програмування торгових стратегій MetaQuotes Language 4..." />
+ <meta name="keywords" content="зробити, свого, радника" />
+ <meta name="news_keywords" content="зробити, свого, радника" />
+ 
+ 
+ <meta property="og:title" content="Як зробити свого радника в mt4" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Створення - Радники - Автотрейдинг - Довідка з ... Для створення радників використовуються мова програмування торгових стратегій MetaQuotes Language 4..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="15:56:03" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як зробити свого радника в mt4" />
+ <meta name="twitter:description" content="Створення - Радники - Автотрейдинг - Довідка з ... Для створення радників використовуються мова програмування торгових стратегій MetaQuotes Language 4..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як зробити свого радника в mt4</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Створення - Радники - Автотрейдинг - Довідка з...</h2></div></a><div class="pagetext"><p>Для створення радників використовуються мова програмування торгових стратегій MetaQuotes Language 4 (MQL4) та редактор MetaEditor. Щоб запустити.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Створення готового радника - Майстер MQL4/MQL5</h2></div></a><div class="pagetext"><p>Загальні параметри · Ім'я - назва радника, це ім'я буде присвоєно і файлу експерта. Також можна змінити шлях до кінцевого файлу. Наприклад, створити його...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Створення радника форекс - System Creator - LiteForex</h2></div></a><div class="pagetext"><p>Радники форекс - створюємо свої найкращі радники форекс самостійно... хто хоче створити свого унікального радника.... MT4 Files.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Як створити радник MQL4? - Кращі стратегії Форекс.</h2></div></a><div class="pagetext"><p>Шановний трейдер, чи думали ви коли-небудь про те, як створити радник MQL4? Саме створити, а не замовити професійного програміста. Насправді.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Як написати торгового робота, якщо ви – не програміст.</h2></div></a><div class="pagetext"><p>Розглянемо, як написати гідного радника та не наробити дурниць.... що не бачить перспектив свого розвитку, і націлених лише на результат.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Як встановити форекс радник в терміналі MetaTrader 4...</h2></div></a><div class="pagetext"><p>Як правильно, швидко та без проблем встановити форекс робота у термінал MT4? 6 простих кроків з прикладами та картинками. Ви впораєтеся із цим за 3 хвилини. Будь-який...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Як створити торговий робот Forex? Детально про...</h2></div></a><div class="pagetext"><p>Запитуєш себе: як мені створити свого торгового робота Форекс для MetaTrader 4? Ми детально висвітлили основні аспекти створення радника в цьому...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Як написати торгового робота, якщо ви – не програміст.</h2></div></a><div class="pagetext"><p>Розглянемо, як написати гідного радника та не наробити дурниць.... що не бачить перспектив свого розвитку, і націлених лише на результат.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Радник назамовлення. Інструкції для трейдера. - MQL5</h2></div></a><div class="pagetext"><p>А з них далеко не всі – добрі програмісти. Що робити, якщо треба автоматизувати свою систему, а часу та бажання вивчати MQL4 немає? Зазвичай людина йде на...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">System Creator: армія роботів не встаючи з дивана</h2></div></a><div class="pagetext"><p>System Creator, огляд програми для створення радників Forex без навичок та знання... Але що якщо ви поняття не маєте, що хочете зробити?</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Конструктор радників ENSED COR - Eldomo</h2></div></a><div class="pagetext"><p>Програми для створення радників для MT4 і 5.... Створити свого робота... Ви можете зробити це, натиснувши на іконку MetaEditor.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Як встановити та запустити торгового радника в...</h2></div></a><div class="pagetext"><p>Якщо Вам потрібно дізнатися як встановити, запустити та налаштувати торгового радника (робота) у MetaTrader 4 та VPS сервері, обов'язково читайте...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Як зробити свого Торгового Робота - Конструктор...</h2></div></a><div class="pagetext"><p>Готовий радник може бути збережений на будь-якому етапі створення у форматі mql4. Важливим є також те, що StrategyQuant дає широкий простір для...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Приклад створення радника MT4 MQL для тебе</h2></div></a><div class="pagetext"><p>Як я і обіцяв, сьогодні ми займемося написанням експерта Hedge Hog мовою MQL, але спочатку давайте об'єднаємо вже отримані раніше знання і напишемо...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Радники для MetaTrader 5. Яким торгувати прибутково та...</h2></div></a><div class="pagetext"><p>Радники для МТ5: що, як вибрати та встановити... Metatrader 5 відрізняється від свого попередника MT4 великою кількістю радників.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Forex робота на замовлення GoVPSFX</h2></div></a><div class="pagetext"><p>Як зробити замовлення Під яку платформу необхідно створити радник: MetaTrader 4 або MetaTrader 5. Які індикатори планується використовувати у forex-раднику.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Одночасний запуск кількох радників на одному...</h2></div></a><div class="pagetext"><p>Що потрібно робити, щоб налаштувати МТ4 на роботу з безліччюавтоматичних... Поради щодо запуску одного і того ж радника Forex на кількох графіках.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Що таке Експертний радник Форекс і як він працює</h2></div></a><div class="pagetext"><p>EA Forex слідують дуже строгому і послідовному плану, без будь-якого втручання людини. Торгівля на Форекс з Admiral Markets. Якщо...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Як створити (торгового робота) радника для МТ4?</h2></div></a><div class="pagetext"><p>Якщо ви не вмієте як Юлій Цезар робити кілька справ одночасно, виходом буде створити свого автоматичного робота для терміналу MT4.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" ><div class="title"><h2 class="txt">Як конвертувати радник для MT4 у формат MT5</h2></div></a><div class="pagetext"><p>Конвертація радника для MT4 на радник для MT5 на прикладі “Moving Average.mq4”... Після виконання цієї дії ви отримаєте шаблон для свого...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-svogo-radnika-v-mt4.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/hto-dodav-mij-nomer-u-viber.html">Хто додав мій номер у вібер</a></li>
+<li><a href="/articles/u-bika-stav-shlunok-shho-robiti.html">У бика став шлунок що робити</a></li>
+<li><a href="/articles/bilij-gruzd-shho-z-nim-robiti.html">Білий груздь що з ним робити</a></li>
+<li><a href="/articles/jak-viznachiti-velichinu-ph.html">Як визначити величину ph</a></li>
+<li><a href="/articles/avtopovorot-ekrana-ne-pracjue.html">Автоповорот екрана не працює</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/test-viznachiti-jaku-profesiju-obrati-ditini.html">Тест визначити яку професію обрати дитині</a></li>
+<li><a href="/articles/jak-vidaliti-excel.html">Як видалити excel</a></li>
+<li><a href="/articles/jak-vikoristovuvati-bonusi-maksim.html">Як використовувати бонуси максим</a></li>
+<li><a href="/articles/nfs-world-online-koli-pracjuvatime.html">Nfs world online коли працюватиме</a></li>
+<li><a href="/articles/katalog-statej-19.html">Каталог статей 19</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/tomati-shokoladnij-viroshhuvannja.html">Томати шоколадний вирощування</a></li>
+<li><a href="/articles/vstanovlennja-znizhki-onlajn.html">Встановлення знижки онлайн</a></li>
+<li><a href="/articles/chi-mozhna-pidnimati-tjazhkist-pri-aritmii.html">Чи можна піднімати тяжкість при аритмії</a></li>
+<li><a href="/articles/shhos-sogodni-vse-duzhe-dobre.html">Щось сьогодні все дуже добре</a></li>
+<li><a href="/articles/mozhna-zamoroziti-varenij-burjak-ta-morkvu.html">Можна заморозити варений буряк та моркву</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/robimo-stini-sami.html">Робимо стіни самі</a></li>
+<li><a href="/articles/jak-maljuvati-nogi-ljudini-anatomija.html">Як малювати ноги людини анатомія</a></li>
+<li><a href="/articles/vibrati-sipap-aparat.html">Вибрати сипап апарат</a></li>
+<li><a href="/articles/mene-ne-duzhe-shanujut.html">Мене не дуже шанують</a></li>
+<li><a href="/articles/rozrahovuemo-peni.html">Розраховуємо пені</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

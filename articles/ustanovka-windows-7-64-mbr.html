@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Установка windows 7 64 mbr | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Установка 64-розрядних Windows на MBR з EFI - TechNet ... Відповідаю сам собі, питання вирішилося, але загалом довелося загрохати два повні робочі дні...." />
+ <meta name="keywords" content="установка, Windows" />
+ <meta name="news_keywords" content="установка, Windows" />
+ 
+ 
+ <meta property="og:title" content="Установка windows 7 64 mbr" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Установка 64-розрядних Windows на MBR з EFI - TechNet ... Відповідаю сам собі, питання вирішилося, але загалом довелося загрохати два повні робочі дні...." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="18:49:37" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Установка windows 7 64 mbr" />
+ <meta name="twitter:description" content="Установка 64-розрядних Windows на MBR з EFI - TechNet ... Відповідаю сам собі, питання вирішилося, але загалом довелося загрохати два повні робочі дні...." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Установка windows 7 64 mbr</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Установка 64-розрядних Windows на MBR з EFI - TechNet...</h2></div></a><div class="pagetext"><p>Відповідаю сам собі, питання вирішилося, але загалом довелося загрохати два повні робочі дні. Щоб під EFI інсталятор ставив Windows x64 (і 7...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Як встановити Windows 7/8/10 на розділи GPT/MBR?</h2></div></a><div class="pagetext"><p>23 лют. 2019 — Встановлення Windows на цей диск неможливе. На вибраному диску міститься таблиця MBR-розділів. У системах EFI Windows можна встановити лише...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">На вибраному диску знаходиться таблиця MBR-розділів</h2></div></a><div class="pagetext"><p>У системах EFI Windows можна інсталювати лише на GPT-диск. Теоретично, таке може статися і при встановленні Windows 7 при EFI-завантаженні,...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Чиста установка Windows 7 Pro 64-bit на ноутбуці UEFI з...</h2></div></a><div class="pagetext"><p>Хоча GPT пов'язаний з EFI, це не те саме, і можна використовувати GPT на комп'ютері з BIOS або MBR на комп'ютері з EFI. Windows, однак, пов'язує їх разом для...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">GPT або MBR для Windows 7: що вибрати - Lumpics.ru</h2></div></a><div class="pagetext"><p>7 груд. 2018 р. – у мене UEFI чи BIOS? Відповісти. Віктор: 28 липня 2021 року о 09:02. При установці Вінди 7 64біт...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Встановлення Windows 7/8/10 через bios/uefi на GPT/MBR...</h2></div></a><div class="pagetext"><p>bios/uefi на GPT/MBR диски. Повідомлення ovgorskiy » 05 Сер 2015, 10:52. Встановлення Windows 7/8/10 через BIOS/UEFI на ноутбук або ПК з MBR/GPT дисками.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Не вдається встановити Windows на диск GPT або MBR.</h2></div></a><div class="pagetext"><p>Найчастіше не вдається встановити Windows 7</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Установка Win7: MBR, GPT, UEFI та компанія [1]</h2></div></a><div class="pagetext"><p>4 травня 2014 р. - 64-x бітна - може, але потрібно спеціально готувати флешку для UEFI-завантаження. З практичної точки зору встановлення Windows 7 на GPT,...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Як встановити Windows 7 на GPT-диск: універсальний...</h2></div></a><div class="pagetext"><p>19 травня 2018 р. — Обов'язкові умови для використання переваг GPT: BIOS UEFI накомп'ютери, тільки версії Win8.1 і Win10, і лише їх 64-бітові випуски.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Не встановлюється Windows 7 x64 на Asus X540SA. GPT...</h2></div></a><div class="pagetext"><p>З горем навпіл пішла установка виндовс 7, але тільки 32-розрядної. 32 розрядна встановилася при виборі MBR без UEFI запускається нормально, але...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Інсталяція Windows на цей диск неможлива</h2></div></a><div class="pagetext"><p>MBR&lt;&gt;GPT Покорпівши над таблицею розділів MBR на вінчестері,... з UEFI і при цьому ви самі не проти встановити 64-бітну систему Windows 7 / 8 на своєму ПК,...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Gpt або mbr під час інсталяції Windows 7 - Комп'ютери...</h2></div></a><div class="pagetext"><p>Обов'язкові умови для використання переваг GPT: BIOS UEFI на комп'ютері, лише версії Win8.1 та Win10, і лише їхні 64-бітові випуски. Перше та останнє...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Образ Windows 7 64 bit OVGorskiy 11.2018 з активацією</h2></div></a><div class="pagetext"><p>26 груд. 2018 р. — Свіжий образ Windows 7 x64 від відомого збирача OVGorskiy призначений для встановлення з диска або флешки, в установочному середовищі вбудовані...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Установча флешка Windows 7 64 bit.</h2></div></a><div class="pagetext"><p>3 черв. 2020 р. - Автор рекомендує встановлювати Віндовс на розділи MBR через BIOS Legacy,... Установка образу Windows 7 Максимальна 64 біт 2020 з флешки</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Конвертація GPT в MBR під час інсталяції Windows 7. Без...</h2></div></a><div class="pagetext"><p>Конвертація GPT в MBR під час встановлення Windows 7 трьома способами. Перетворюємо розділ без втрати даних за допомогою Aomei Partition Assistant та завантажувальної...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Встановлення 64-розрядної версії Windows 7 на Optiplex 790</h2></div></a><div class="pagetext"><p>Диски з розділами головного завантажувального запису (MBR) можна використовувати як диски з даними. Як визначено у специфікації UEFI 2.0, для платформи UEFI...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Установка Windows 7 x64 на SSD - Комп'ютерний форум</h2></div></a><div class="pagetext"><p>27 лют. 2019 р. — При виборі MBR як структура розділу,Rufus пропонується тільки NTFS, хоча, на скільки я знаю, при встановленні з-під UEFI потрібен FAT32. А...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Як встановити Windows 7 з диска або флешки.</h2></div></a><div class="pagetext"><p>1 черв. 2020 р. — З дисками, розміченими в MBR, зазвичай буває менше проблем, але це не є принциповим. Якщо ви інсталюєте Windows 7 на диск об'ємом 3 Тб і...</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" ><div class="title"><h2 class="txt">Як встановити windows 7 на gpt диск - htfi.ru</h2></div></a><div class="pagetext"><p>Іноді при установці нової операційної системи, зокрема, windows 7 виникає... Тепер, власне, вводимо команду для перетворення диска GPT на MBR.</p><a rel="nofollow" href="/go.html?/articles/ustanovka-windows-7-64-mbr.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/plache-mati-bilja-obeliska.html">Плаче мати біля обеліска</a></li>
+<li><a href="/articles/ja-znovu-nakurivsja-pisnja.html">Я знову накурився пісня</a></li>
+<li><a href="/articles/jak-variti-oladki.html">Як варити оладки</a></li>
+<li><a href="/articles/mozhna-vipiti-vina-u-veliku-subotu.html">Можна випити вина у велику суботу</a></li>
+<li><a href="/articles/jaka-zarplata-u-metodista.html">Яка зарплата у методиста</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/sajti-de-mozhna-znajti-kursovi.html">Сайти де можна знайти курсові</a></li>
+<li><a href="/articles/videoreestrator-zablokovanij.html">Відеореєстратор заблокований</a></li>
+<li><a href="/articles/jak-mozhna-nazvati-skver.html">Як можна назвати сквер</a></li>
+<li><a href="/articles/jak-pracjue-ukol-vid-alkogolizmu.html">Як працює укол від алкоголізму</a></li>
+<li><a href="/articles/okpd-stil-z-nerzhavijuchoi-stali.html">Окпд стіл з нержавіючої сталі</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/mene-mati-namagalasja-zadushiti.html">Мене мати намагалася задушити</a></li>
+<li><a href="/articles/pri-plavanni-mozhna-nakachati-popu.html">При плаванні можна накачати попу</a></li>
+<li><a href="/articles/jak-zrobiti-moba-bezsmertnim.html">Як зробити моба безсмертним</a></li>
+<li><a href="/articles/zi-skilki-rokiv-mozhna-v-godini.html">Зі скільки років можна в години</a></li>
+<li><a href="/articles/zapah-volossja-u-pidlitkiv.html">Запах волосся у підлітків</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/vstanoviti-2-odnakovi-programi.html">Встановити 2 однакові програми</a></li>
+<li><a href="/articles/vjazani-sukni-ta-ih-shemi-spicjami.html">В’язані сукні та їх схеми спицями</a></li>
+<li><a href="/articles/nazhal-cej-nomer-telefonu-zablokovano.html">Нажаль цей номер телефону заблоковано</a></li>
+<li><a href="/articles/jak-zrobiti-pereustanovku-operacijnoi-sistemi.html">Як зробити переустановку операційної системи</a></li>
+<li><a href="/articles/novinka-strizhki-volossja-2021-roku.html">Новинка стрижки волосся 2021 року</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

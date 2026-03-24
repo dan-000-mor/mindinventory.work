@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Twrp recovery 3 установка | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Установка TWRP Recovery - МіРум портал Установка TWRP Recovery · Підключаємо телефон до комп’ютера · У папці з інструментом для встановлення рекавері..." />
+ <meta name="keywords" content="twrp, recovery, установка" />
+ <meta name="news_keywords" content="twrp, recovery, установка" />
+ 
+ 
+ <meta property="og:title" content="Twrp recovery 3 установка" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Установка TWRP Recovery - МіРум портал Установка TWRP Recovery · Підключаємо телефон до комп’ютера · У папці з інструментом для встановлення рекавері..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="16:05:27" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Twrp recovery 3 установка" />
+ <meta name="twitter:description" content="Установка TWRP Recovery - МіРум портал Установка TWRP Recovery · Підключаємо телефон до комп’ютера · У папці з інструментом для встановлення рекавері..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Twrp recovery 3 установка</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка TWRP Recovery - МіРум портал</h2></div></a><div class="pagetext"><p>Установка TWRP Recovery · Підключаємо телефон до комп'ютера · У папці з інструментом для встановлення рекавері запускаємо файлик «Install.bat» подвійним натисканням кнопки...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка TWRP Recovery на смартфонах Xiaomi</h2></div></a><div class="pagetext"><p>Налаштування за допомогою fastboot. Цей спосіб складається з 3 етапів: підготовка; розблокування завантажувача; встановлення. Етап 1:...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка twrp recovery на Xiaomi - всі способи - Migeek</h2></div></a><div class="pagetext"><p>На цьому, власне, все, установка twrp на xiaomi redmi note 3 pro (у нашому випадку) завершена. Однак, поспішати не варто: потрібно запустити смартфон у TWRP...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Як встановити twrp recovery без комп'ютера - htfi.ru</h2></div></a><div class="pagetext"><p>Існує 3 стандартні способи, як встановити Recovery: ROM Manager або GooManager;; Fastboot;; Flash Image. Методи, пов'язані з ROM Manager та GooManager...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Як встановити TWRP Recovery на Xiaomi у 2021 році</h2></div></a><div class="pagetext"><p>18 черв. 2021 — Встановлення TWRP Recovery на телефон Xiaomi (Redmi) через ПК... фірмове — стокове Mi Recovery (на момент оновлення статті версія 3.0).</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Налаштування twrp. Як встановити TWRP Recovery різними...</h2></div></a><div class="pagetext"><p>Існує 3 стандартні способи, як встановити Recovery: ROM Manager або GooManager;; Fastboot;; Flash Image. Методи, пов'язані з ROM Manager та GooManager,...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Як встановити TWRP Recovery на Xiaomi Redmi 3 - MiGID.ru</h2></div></a><div class="pagetext"><p>Де можна скачати TWRP Patched у форматі zip. Як встановити TWRP Recovery для Xiaomi Redmi 3. Можливі проблеми при встановленні програми через Fastboot.</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Як встановити TWRP Recovery для Android - Viarum</h2></div></a><div class="pagetext"><p>Сторонні програми для встановлення TWRP Recovery</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Як встановити кастомне рекавері TWRP на Xiaomi</h2></div></a><div class="pagetext"><p>19 лют. 2021 р. - TWRP. Акронім означає Team Win Recovery Project таце програмне забезпечення з відкритим... 3) Установка TWRP на Xiaomi.</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Як встановити TWRP Recovery на андроїд [інструкція]</h2></div></a><div class="pagetext"><p>Спосіб 3: встановлення TWRP через офіційний додаток</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка TWRP Recovery - Upgrade-android.ru</h2></div></a><div class="pagetext"><p>6 квіт. 2018 р. — Загалом встановити Team Win Recovery Project набагато простіше саме через програму Rashr. Для цього достатньо мати права. Спосіб 3. TWRP...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка TWRP Recovery - MIUI допомога - Mi Community</h2></div></a><div class="pagetext"><p>Установка TWRP Recovery - MIUI допомога - Mi Community - Xiaomi.... 3. Завантажте рекавері для Вашого пристрою. Для цього я рекомендую написати в пошуковій системі...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Завантажити TWRP Recovery та встановити на свій смартфон.</h2></div></a><div class="pagetext"><p>2 Що таке TWRP і навіщо воно потрібне? 3 Меню TWRP. 3.1 Підготовка смартфона. 4 Встановлення TWRP, покрокова інструкція. 4.1 Prestigio...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка TWRP Recovery на Galaxy S3 I9300 Покрокова...</h2></div></a><div class="pagetext"><p>3. Скопіюйте завантажений файл у пам'ять Galaxy S3; 4. Завантажте телефон у режимі відновлення CWM. Для цього вимкніть смартфон і утримуйте кнопки «Volume...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Як встановити TWRP Recovery у різний спосіб. Team...</h2></div></a><div class="pagetext"><p>Скасувати виконання завдань можна, топнувши по кнопці "Назад". 3. Backup Розділ резервування даних чи системи. Це один із найважливіших пунктів у...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Як встановити twrp recovery на Андроїд? - EasyDoit.ru</h2></div></a><div class="pagetext"><p>Встановлення за допомогою швидкого завантаження.... 2) Завантажити файл TWRP 3.0.0 recovery.</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Завантажити TWRP або CWM Recovery та встановити • Android +1</h2></div></a><div class="pagetext"><p>2) Далі підключіть апарат у відповідному режимі до ПК. 3) У командному рядку перевірте правильність підключення командою fastboot devices. Як встановити...</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" ><div class="title"><h2 class="txt">Установка кастомного Recovery TWRP та отримання Root.</h2></div></a><div class="pagetext"><p>16 Грудня. 2015 р.Китайський виробник Xiaomi у листопаді 2015 представив новинку модельного сімейства Note – смартфон Xiaomi Redmi Note 3.</p><a rel="nofollow" href="/go.html?/articles/twrp-recovery-3-ustanovka.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/najkrashhi-partnerki-balnogo-tancju.html">Найкращі партнерки бального танцю</a></li>
+<li><a href="/articles/kogo-mozhna-brati-svidkom-na-vesillja.html">Кого можна брати свідком на весілля</a></li>
+<li><a href="/articles/jak-zrobiti-akademichnu-vidpustku-v-universiteti.html">Як зробити академічну відпустку в університеті</a></li>
+<li><a href="/articles/ja-gromadjanin-zemli.html">Я громадянин землі</a></li>
+<li><a href="/articles/zheka-ja-pju-vino.html">Жека я п’ю вино</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/ti-ce-ja-flak.html">Ти це я flak</a></li>
+<li><a href="/articles/chi-mozhna-vidpraviti-kontejner-na-ukrainu.html">Чи можна відправити контейнер на Україну</a></li>
+<li><a href="/articles/administracija-mochivskoi-silradi-telefon.html">Адміністрація мочівської сільради телефон</a></li>
+<li><a href="/articles/maska-dlja-volossja-rejting-2021.html">Маска для волосся рейтинг 2021</a></li>
+<li><a href="/articles/idit-usi-nahuj-ja-sin-prokurora.html">Ідіть усі нахуй я син прокурора</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jak-zrobiti-nezalezhnu-pidvisku-na-nivu.html">Як зробити незалежну підвіску на ниву</a></li>
+<li><a href="/articles/rozhevij-zajchik-vjazanij.html">Рожевий зайчик в’язаний</a></li>
+<li><a href="/articles/vord-17-riven.html">Ворд 17 рівень</a></li>
+<li><a href="/articles/susidi-jakis-susidi-zverhu-chi-znizu.html">Сусіди якісь сусіди зверху чи знизу</a></li>
+<li><a href="/articles/chomu-ne-potribno-koristuvatisja-dezodorantom.html">Чому не потрібно користуватися дезодорантом</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/sonjachnij-morfemnij-rozbir-slova-sonjachnij.html">Сонячний морфемний розбір слова сонячний</a></li>
+<li><a href="/articles/povernennja-posudu-protjagom-14-dniv.html">Повернення посуду протягом 14 днів</a></li>
+<li><a href="/articles/shho-take-onlajn-karta-revo.html">Що таке онлайн карта рево</a></li>
+<li><a href="/articles/na-pk-gta-ne-vijde.html">На пк гта не вийде</a></li>
+<li><a href="/articles/tekst-u-chechni.html">Текст у чечні</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

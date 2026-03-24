@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Майнкрафт який змінює версію | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Chiseled Me [1.12.2] [1.11.2] [1.10.2] - Minecraft Inside Цей мод дозволить змінювати розмір гравця і мобів, одним клацанням миші ви зможете стати як..." />
+ <meta name="keywords" content="майнкрафт, який, змінює, версію" />
+ <meta name="news_keywords" content="майнкрафт, який, змінює, версію" />
+ 
+ 
+ <meta property="og:title" content="Майнкрафт який змінює версію" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Chiseled Me [1.12.2] [1.11.2] [1.10.2] - Minecraft Inside Цей мод дозволить змінювати розмір гравця і мобів, одним клацанням миші ви зможете стати як..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="15:51:11" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Майнкрафт який змінює версію" />
+ <meta name="twitter:description" content="Chiseled Me [1.12.2] [1.11.2] [1.10.2] - Minecraft Inside Цей мод дозволить змінювати розмір гравця і мобів, одним клацанням миші ви зможете стати як..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Майнкрафт який змінює версію</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Chiseled Me [1.12.2] [1.11.2] [1.10.2] - Minecraft Inside</h2></div></a><div class="pagetext"><p>Цей мод дозволить змінювати розмір гравця і мобів, одним клацанням миші ви зможете стати як гігантом, так і зовсім маленьким ліліпутом. 3 лип. 2018 р. · Додано користувачем ANTONIcra</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Up And Down And All Around [1.12.2] [1.11.2] [1.10.2]</h2></div></a><div class="pagetext"><p>Це експериментальний мод, який дозволить вам за допомогою невеликого пристосування змінювати напрямок гравітації, достатньо взяти його в руки і натиснути ПКМ,...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Serene Seasons - мод на пори року [1.17.1] [1.16.5] [1.15...</h2></div></a><div class="pagetext"><p>18 серп. 2021 — Встанови всі додаткові моди, якщо вказано. Скачай мод та скопіюй у .minecraft/mods; У лаунчері запускай версію гри із форджем. Детальна...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">AmbientSounds - нові звуки [1.18.1] [1.17.1] [1.16.5] [1.15.2...</h2></div></a><div class="pagetext"><p>5 днів тому — minecraft\mods; У лаунчері запускай версію гри із форджем. Детальна інструкція щодо встановлення. Завантажити мод AmbientSounds для майнкрафта: Архів...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Майнкрафт ПЕ 1.17.20.22 [Тестова версія] - MCPEHUB</h2></div></a><div class="pagetext"><p>14 лип. 2021 - Розробники випустили тестову версію Minecraft 1.17.20.22 на Android.... Морський огірок змінює яскравість поза водою; Роздавачі видаляють Стовп...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Minecraft Pocket Edition - Alpha-AG</h2></div></a><div class="pagetext"><p>6 днів тому - І до того ж 1.0 визнана найдосконалішою версією Minecraft на Android! відповісти... Це найофігенніший сайт, який я коли-небудь бачив.</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">10 крутих модів Minecraft, які варто завантажити</h2></div></a><div class="pagetext"><p>18 травня 2018 р. — Ці моди Minecraft подарують вам чи вашій дитині ще більше задоволення від гри. Модифікації покращують графіку, додають нові предмети та...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Документація та підручники для авторів Minecraft</h2></div></a><div class="pagetext"><p>Дізнайся про весь контент, який ти можеш створювати як автор Minecraft... "Being part of the MinecraftMarketplace has been life changing for me.</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Завантажити Minecraft PE 1.16.0.51 - MinecraftAndroid</h2></div></a><div class="pagetext"><p>Скачайте безкоштовно повну версію Minecraft PE 1.16.0.51 на андроїд з робочим Xbox Live: нові біоми в Нижньому світі, хогліни, пігліни та багато іншого...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">«Як грати в Minecraft зі старими модами на новішій...</h2></div></a><div class="pagetext"><p>24 квіт. 2021 — Кожна версія майнкрафту змінює деякі дуже важливі частини. Також є поняття форджа - це неофіційний майнкрафт, який просто...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Конвертуйте Майнкрафт мод на серверний плагін</h2></div></a><div class="pagetext"><p>Я намагаюся зробити плагін minecraft, який є змінником ігрового режиму GUI, який коли я натискаю на блок, змінює мій ігровий режим. Мій плагін...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Команди консолі/time - Minecraft Wiki</h2></div></a><div class="pagetext"><p>Час в ігрових тактах, який потрібно встановити/додати. daymidnightnightnoon (BE: time: TimeSpec). Обумовлене числове значення часу.</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Завантажити аддони та моди для Minecraft PE 1.6.0</h2></div></a><div class="pagetext"><p>Завдяки різноманітності модів та аддонів для Minecraft PE 1.6.0, можна продовжувати... Мод на покращені налаштування змінює організацію сторінки з опціями гри,...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">РПГ моди на Майнкрафт 1.16.5 скачати - Minecraft20.Ru</h2></div></a><div class="pagetext"><p>First Aid - це мода для Майнкрафт 1.17.1/1.16.5, який змінює структуру здоров'я персонажа в Майнкрафт. Тепер же, ідентифікатори здоров'я ділитимуться...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Завантажити версія minecraft 1.0.0. Початок гри в Pocket Edition</h2></div></a><div class="pagetext"><p>Смуга життів змінює вигляд, щоб зрозуміти, що це режим Hardcore.... Можна сказати, що це мобільний додаток Майнкрафт. Яке практично не відрізняється...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Найкращі моди для Minecraft - Timeweb</h2></div></a><div class="pagetext"><p>15 груд. 2020 - Мод - це файл, який можна скачати і додати в гру.... Найкраща версія Minecraft для модів на мою думку – 1.12.2,її підтримує...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Завантажити текстури для Minecraft PE для Android безкоштовно</h2></div></a><div class="pagetext"><p>Майнкрафт ніколи не був грою з крутою графікою, але завдяки текстурам це стало можливим.... Є навіть версія для найслабших пристроїв. 15 Гру 2021.</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Minecraft - Вікіпедія</h2></div></a><div class="pagetext"><p>У травні Mojang AB зробила браузерну версію Minecraft, засновану на класичній грі 2009, на честь десятирічного ювілею. У цій версії немає істот і...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" ><div class="title"><h2 class="txt">Моди на Minecraft (Майнкрафт) - TLauncher</h2></div></a><div class="pagetext"><p>Їхню кількість тепер уже важко підрахувати, як і перепробувати все без винятку. Мабуть, немає жодного справжнього геймера, який би не знав, що таке...</p><a rel="nofollow" href="/go.html?/articles/majnkraft-jakij-zminjue-versiju.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/mozhna-prizupiniti-diju-dogovoru.html">Можна призупинити дію договору</a></li>
+<li><a href="/articles/pyqt-jak-vstanoviti-windows.html">Pyqt як встановити windows</a></li>
+<li><a href="/articles/1-ja-druzhina-genriha-8.html">1 Я дружина Генріха 8</a></li>
+<li><a href="/articles/ja-hochu-virosti.html">Я хочу вирости</a></li>
+<li><a href="/articles/meni-ne-vazhko.html">Мені не важко</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/meni-zdaetsja-shho-ja-divna.html">Мені здається що я дивна</a></li>
+<li><a href="/articles/jak-zrobiti-analiz-kontrolnogo-diktantu.html">Як зробити аналіз контрольного диктанту</a></li>
+<li><a href="/articles/najkrashhe-dlja-samsung-s5230.html">Найкраще для samsung s5230</a></li>
+<li><a href="/articles/ekran-na-noutbuci-silno-zbilshenij.html">Екран на ноутбуці сильно збільшений</a></li>
+<li><a href="/articles/pislja-proshivki-vse-vidaljaetsja-v-telefoni.html">Після прошивки все видаляється в телефоні</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jak-vivchati-tablicju-mnozhennja-ta-podilu.html">Як вивчати таблицю множення та поділу</a></li>
+<li><a href="/articles/elektrobezpeka-jak-chasto-prohoditi-navchannja.html">Електробезпека як часто проходити навчання</a></li>
+<li><a href="/articles/budivnictvo-olefinovogo-kompleksu.html">Будівництво олефінового комплексу нижньокамськнафтохім</a></li>
+<li><a href="/articles/vidaliti-dialogi-kontaktu.html">Видалити діалоги контакту</a></li>
+<li><a href="/articles/nakachati-oblichchja-jak-nazivaetsja.html">Накачати обличчя як називається</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/krishka-na-navaru-svoimi-rukami.html">Кришка на навару своїми руками</a></li>
+<li><a href="/articles/ruchnij-aerator-svoimi-rukami.html">Ручний аератор своїми руками</a></li>
+<li><a href="/articles/jak-zrobiti-falsh-stinu-z-dverima.html">Як зробити фальш стіну з дверима</a></li>
+<li><a href="/articles/virostiti-ditki-orhidei-falenopsis.html">виростити дітки орхідеї фаленопсис</a></li>
+<li><a href="/articles/svitlo-zgaslo-dlja-mene-nazavzhdi.html">Світло згасло для мене назавжди</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як налаштувати друк у openoffice | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Друк документа - OpenOffice Writer Друк: Часті питання - Apache OpenOffice Wiki 1.3 Відсутні російські літери під час друку в деяких шрифтах, OOo 2.3.1..." />
+ <meta name="keywords" content="налаштувати, друк, OpenOffice, друку" />
+ <meta name="news_keywords" content="налаштувати, друк, OpenOffice, друку" />
+ 
+ 
+ <meta property="og:title" content="Як налаштувати друк у openoffice" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Друк документа - OpenOffice Writer Друк: Часті питання - Apache OpenOffice Wiki 1.3 Відсутні російські літери під час друку в деяких шрифтах, OOo 2.3.1..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="11:14:14" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як налаштувати друк у openoffice" />
+ <meta name="twitter:description" content="Друк документа - OpenOffice Writer Друк: Часті питання - Apache OpenOffice Wiki 1.3 Відсутні російські літери під час друку в деяких шрифтах, OOo 2.3.1..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як налаштувати друк у openoffice</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Друк документа - OpenOffice Writer</h2></div></a><div class="pagetext"><p><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Друк: Часті питання - Apache OpenOffice Wiki</h2></div></a><div class="pagetext"><p>1.3 Відсутні російські літери під час друку в деяких шрифтах, OOo 2.3.1 Linux... Для інших компонентів використовуйте налаштування принтера...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Calc.Друк: Часті питання - Apache...</h2></div></a><div class="pagetext"><p>Як прибрати з аркуша Calc всі розриви рядка, не шукаючи кожного і без написання макросу? Перейти в режим Перегляд - Попередній...Подібні запитиЯк змінити формат друку в опен офіс?</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Друк документа OpenOffice.org Рецепти Linux</h2></div></a><div class="pagetext"><p>Найчастіше текстові та графічні документи потрібно роздрукувати; для цього в OpenOffice.org передбачена спеціальна команда та утиліти для налаштування...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">OpenOffice - двосторонній друк та налаштування якості.</h2></div></a><div class="pagetext"><p>Автор Тема: Питання: OpenOffice - двосторонній друк та налаштування якості друку принтера. (прочитано 23497 разів). 0 Користувачів та 1 Гість...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">OpenOffice Calc - Друк електронних таблиць - TEPKA.ru</h2></div></a><div class="pagetext"><p>Для виведення на друк або файл електронної таблиці виконайте команду Файл &gt; Друк. У діалоговому вікні Друк можна змінити налаштування принтера.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Як зробити двосторонній друк у Open Office.org Writert?</h2></div></a><div class="pagetext"><p>Користувач Stasy поставив питання в категорії Інші мови та технології та отримав на нього 4 відповіді.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Як настроїти принтер за замовчуванням у OpenOffice Writer?</h2></div></a><div class="pagetext"><p>Допомога в опануванні LibreOffice, Apache OpenOffice. Приєднуйтесь до російськомовної спільноти... Відкриваю файл, вибираю: Файл -&gt; Друк</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Друк документів - Довідкова інформація про...</h2></div></a><div class="pagetext"><p>Як роздрукувати документ, чергуючи книжкову та альбомну орієнтації сторінок? У MSExcel у параметрах сторінку можна було вказати "Розмістити не більше ніж на Х...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">5. Лекція: Налаштування OpenOffice.org</h2></div></a><div class="pagetext"><p>Лекція присвячена питанням налаштування OpenOffice.org, включаючи питання використання пам'яті, параметрів відображення та друку, налаштування кольорів, шрифтів.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">OpenOffice: Calc для початківців. Електронна таблиця...</h2></div></a><div class="pagetext"><p>OpenOffice: Calc для початківців. Електронна таблиця як база даних. Друк документа.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Роздрукувати 2 сторінки на аркуші - OpenOffice/LibreOffice</h2></div></a><div class="pagetext"><p>На 4 компах все працює нормально.заходжу в налаштування друку ставлю 2 стор на аркуші і ставлю кількість копій 2.все роздруковується...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Шаблони друку ODT (OpenOffice) - CRM система</h2></div></a><div class="pagetext"><p>Шаблони друку ODT (OpenOffice) у системі CRM.... в якому можна легко налаштувати необхідний вид документа, або просто взяти вже готовий документ,...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Frekently asked questions - Calc</h2></div></a><div class="pagetext"><p>Як контролювати масштабування під час друку, щоб обмежити кількість сторінок для друку. Припустимо, що ви хочете, щоб ваша таблиця...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Друк із OpenOffice.org Calc. Частина друга - MyOOo.ru</h2></div></a><div class="pagetext"><p>07.02.2007 р. У Частині 1 цієї статті я розповів про те, як використовувати стилі сторінок у Calc для контролю друку електронних таблиць. Однак, хоча стилі...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Глава 10 – Друк, експорт та поштове розсилання - Короткий...</h2></div></a><div class="pagetext"><p>Різні параметри друку доступні для різних компонентів LibreOffice. Можливість, Writer, Calc, Impress, Draw. Вибір сторінок/аркушів/слайдів для...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">OpenOffice.org Теорія та практика - ALT Linux</h2></div></a><div class="pagetext"><p>ентів OpenOffice.org. Це дані користувача, збереження, друк, шляхи до важливих файлів та папок та кольору за промовчанням. Введені установки зберігаються.</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">OpenOffice не друкує через мережу - SYSAdmins.ru</h2></div></a><div class="pagetext"><p>Під час друку зсамого комп'ютера все норм, але з сервера друк не йде. Як тільки відкриваєш БУДЬ-ЯКИЙ документ і тиснеш ДРУК, то офіс фарбується і...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" ><div class="title"><h2 class="txt">Інформатики. Методики. OpenOffice. Текстовий редактор...</h2></div></a><div class="pagetext"><p>інструментів Стандартна натиснути кнопку Друк. Для налаштування параметрів друку слід у меню Файл вибрати команду Друк, після чого...</p><a rel="nofollow" href="/go.html?/articles/jak-nalashtuvati-druk-u-openoffice.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/pisnja-obijmi-mene-sibir.html">Пісня обійми мене сибір</a></li>
+<li><a href="/articles/podushki-dekor-vishivka.html">Подушки декор вишивка</a></li>
+<li><a href="/articles/volga-horosha-mashina-chi-ni.html">Волга хороша машина чи ні</a></li>
+<li><a href="/articles/jaki-domeni-google.html">Які домени google</a></li>
+<li><a href="/articles/akt-zvirki-vzaemorozrahunkiv-jaki-rahunki.html">Акт звірки взаєморозрахунків які рахунки</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/jak-zberegti-nalashtuvannja-dir-300.html">Як зберегти налаштування dir 300</a></li>
+<li><a href="/articles/trambler-na-shkoda-felicija-jak-vstanoviti.html">Трамблер на шкода феліція як встановити</a></li>
+<li><a href="/articles/vikonavcha-vlada-anglii.html">Виконавча влада Англії</a></li>
+<li><a href="/articles/trikvel-znak.html">Триквел знак</a></li>
+<li><a href="/articles/trikutnik-znak-u-klaviaturi.html">Трикутник знак у клавіатурі</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/jak-zrobiti-svij-ciferblat-mi-band.html">Як зробити свій циферблат mi band</a></li>
+<li><a href="/articles/mozhna-isti-jabluka-pri-shudnenni.html">Можна їсти яблука при схудненні</a></li>
+<li><a href="/articles/dzerkalne-vidobrazhennja-foto-nalashtuvati.html">Дзеркальне відображення фото налаштувати</a></li>
+<li><a href="/articles/marshrut-24-joshkar-ola-shema-proizdu.html">Маршрут 24 йошкар ола схема проїзду</a></li>
+<li><a href="/articles/prevenar-chi-mozhna-kupatisja.html">Превенар чи можна купатися</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/k7-h6-jaka-posadka.html">K7 h6 яка посадка</a></li>
+<li><a href="/articles/oksamitovi-sezoni-adler-sportivnij-kvartal-telefon.html">Оксамитові сезони адлер спортивний квартал телефон</a></li>
+<li><a href="/articles/kofta-novonarodzhenomu-vjazannja-spicjami.html">Кофта новонародженому в’язання спицями</a></li>
+<li><a href="/articles/jak-vstanoviti-skin-na-papku.html">Як встановити скін на папку</a></li>
+<li><a href="/articles/chi-mozhna-oformiti-kredit-u-magazini.html">Чи можна оформити кредит у магазині</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

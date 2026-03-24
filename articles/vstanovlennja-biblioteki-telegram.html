@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Встановлення бібліотеки telegram | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Телеграм-бот на Python - Журнал «Код Встановлення бібліотеки. Існують два основних способи працювати з телеграмом в Python: через бібліотеку telebot і за..." />
+ <meta name="keywords" content="встановлення, бібліотеки, telegram, бота" />
+ <meta name="news_keywords" content="встановлення, бібліотеки, telegram, бота" />
+ 
+ 
+ <meta property="og:title" content="Встановлення бібліотеки telegram" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Телеграм-бот на Python - Журнал «Код Встановлення бібліотеки. Існують два основних способи працювати з телеграмом в Python: через бібліотеку telebot і за..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="19:00:39" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Встановлення бібліотеки telegram" />
+ <meta name="twitter:description" content="Телеграм-бот на Python - Журнал «Код Встановлення бібліотеки. Існують два основних способи працювати з телеграмом в Python: через бібліотеку telebot і за..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Встановлення бібліотеки telegram</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Телеграм-бот на Python - Журнал «Код</h2></div></a><div class="pagetext"><p>Встановлення бібліотеки. Існують два основних способи працювати з телеграмом в Python: через бібліотеку telebot і за допомогою Webhook. Ми будемо...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Пишемо ботів для Telegram мовою Python</h2></div></a><div class="pagetext"><p>Встановлення бібліотеки через термінал у PyCharm. Прекрасно, тепер починайте творити! Створіть перший файл із вихідним кодом, натиснувши правою кнопкою мишки на ім'я...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Бібліотека python-telegram-bot в Python.</h2></div></a><div class="pagetext"><p>Встановлення пакету python-telegram-bot у віртуальне оточення: # створюємо віртуальне оточення, якщо немає $ python3 -m venv .telegram --prompt TelegramBot...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Як підключити бібліотеку на php зі створення бота для...</h2></div></a><div class="pagetext"><p>Із документації цієї бібліотеки. Install Via Composer $ composer вимагає telegram-bot/api. Що це означає. Автор бібліотеки пропонує використовувати менеджер...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Telegram-бот на Python: покрокове керівництво - Highload...</h2></div></a><div class="pagetext"><p>Перше, що потрібно зробити, - встановити python-telegram-bot. Ось посилання на офіційну документацію бібліотеки. $ pip install python-telegram-bot...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Створюємо бота для Telegram - CodeX Team</h2></div></a><div class="pagetext"><p>Встановлення потрібних бібліотек. Нам знадобляться такі бібліотеки та програми: pip – менеджер пакетів для Python; python — інтерпретатор мови...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Телеграм бот на Python (1/4): встановлення та налаштування бота.</h2></div></a><div class="pagetext"><p>Локальна установка бібліотек для бот і Redis — Потім встановити бібліотеки у віртуальному оточенні.... pip install aiogram==2.11.2 redis==3.5.3...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Telegram-бот на Python за півгодини з aiogram - Tproger</h2></div></a><div class="pagetext"><p>Hello, bot! Давайте напишемо просту програму привітання. Для початку слід імпортувати бібліотеки та створити екземпляри Телеграм бота і...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Telegram bot (library pyTelegramBotAPI) / Бот Телеграма...</h2></div></a><div class="pagetext"><p>Все, що треба встановити за такої конфігурації, це сам python3, pip3 і, звичайно, бібліотеку. apt-get update apt-get install python3</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Робимо простого робота в Telegram - Codify Lab</h2></div></a><div class="pagetext"><p>А Pip – це штучка, яка вміє завантажувати бібліотеки та видаляти їх. Його ще називають Пакетним менеджером. Відкрийте командний рядок та напишіть: pip install...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Як зробити бота на Python для читання закріплених...</h2></div></a><div class="pagetext"><p>Установка бібліотеки python-telegram-bot pip install python-telegram-bot --upgrade; Створення стандартного бота: from telegram import Update,...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Не можу підключити бібліотеку Telegram.Bot - Форум...</h2></div></a><div class="pagetext"><p>А в Консолі диспетчера пакетів ви інсталювали пакет? Install-Package Telegram.Bot. 1...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Підключення бібліотеки Telebot до PyCharm - Python</h2></div></a><div class="pagetext"><p>Здрастуйте, встановив модуль telebot (природно через pip install pyTelegramBotAPI), але... Помилка установки бібліотеки в PyCharm. Усім...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Урок 1. Швидкий старт. Ехо-бот</h2></div></a><div class="pagetext"><p>Далі встановлюємо бібліотеку командою pip install-U aiogram.... Щоб отримувати повідомлення від серверів Telegram, скористаємося полінгом (polling. to poll...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Пишемо Телеграм-бота на JavaScript - Розробка на vc.ru</h2></div></a><div class="pagetext"><p>Тепер встановимо node-telegram-bot-api – це бібліотека для створення телеграм-ботів на Node.js. Введемо команду: npm install --save...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Бот - Гуль для твого телеграм облікового запису PythonRepo</h2></div></a><div class="pagetext"><p>error1001es/teleghoul, Я - Гуль (бот), працює в чатах Віддякувати авторові за виконану роботу можна тут Допомога з установкою...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Як створити Telegram бота за допомогою Python - Medium</h2></div></a><div class="pagetext"><p>Встановлюємо бібліотеку. Команда для встановлення бібліотеки: pip3 install python-telegram-bot. Якщо все пройшло гладко, можна рухатися далі.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">GyverLibs/FastBot: Дуже проста та швидка бібліотека...</h2></div></a><div class="pagetext"><p>Дуже проста та швидка бібліотека для телеграм бота для esp8266 - GitHub... Читай більш докладну інструкцію щодо встановлення бібліотек тут...</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" ><div class="title"><h2 class="txt">Створення Telegram бота мовою програмування Python</h2></div></a><div class="pagetext"><p>Чат бот. Опис вимог до створюваного чату боту. Встановлення бібліотеки. Створення оточення коду. Створення порожній робот в Telegram. Python код бота.</p><a rel="nofollow" href="/go.html?/articles/vstanovlennja-biblioteki-telegram.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/elektrozamok-na-2107-ustanovka.html">Електрозамок на 2107 установка</a></li>
+<li><a href="/articles/jaki-isnujut-vidi-analizu-informacii.html">Які існують види аналізу інформації</a></li>
+<li><a href="/articles/centralnij-vokzal-kurgan-telefon.html">Центральний вокзал курган телефон</a></li>
+<li><a href="/articles/jak-zrobiti-rolik-pro-shkolu.html">Як зробити ролик про школу</a></li>
+<li><a href="/articles/zobrazhennja-na-telefon-z-ciferblatom.html">Зображення на телефон з циферблатом</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/do-zrobiti-dlja-sushinnja-bilizni.html">До зробити для сушіння білизни</a></li>
+<li><a href="/articles/zaz-je-vox-rington-na-iphone.html">Zaz je vox рінгтон на iPhone</a></li>
+<li><a href="/articles/jak-priednati-fitnes-godinnik-do-telefonu.html">Як приєднати фітнес годинник до телефону</a></li>
+<li><a href="/articles/jak-virostiti-voloshka-sadova.html">Як виростити волошка садова</a></li>
+<li><a href="/articles/vse-dobre-zamoviti-stil.html">Все добре замовити стіл</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/vihidni-u-mene-zavtra-ta-pisljazavtra.html">Вихідні у мене завтра та післязавтра</a></li>
+<li><a href="/articles/dagestanskij-nekomercijnij-fond-kapitalnogo.html">Дагестанський некомерційний фонд капітального ремонту</a></li>
+<li><a href="/articles/shho-mozhna-saditi-bilja-kolodjazja.html">Що можна садити біля колодязя</a></li>
+<li><a href="/articles/jak-zrobiti-tak-shhob-tilec-ljubiv.html">Як зробити так щоб тілець любив</a></li>
+<li><a href="/articles/begonija-z-nasinnja-viroshhuvannja-pokrokovo.html">Бегонія з насіння вирощування покроково</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/fips-telefoni-dlja-konsultacij.html">Фіпс телефони для консультацій</a></li>
+<li><a href="/articles/vidnoviti-vatsap-na-honor-30.html">Відновити ватсап на хонор 30</a></li>
+<li><a href="/articles/peremnozhuvati-matrici-mozhna-lishe-jakshho.html">Перемножувати матриці можна лише якщо</a></li>
+<li><a href="/articles/z-jakogo-anime-acushi-ta-akutagava.html">З якого аніме ацуші та акутагава</a></li>
+<li><a href="/articles/de-krashhe-vidpochiti-u-venesueli.html">Де краще відпочити у венесуелі</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

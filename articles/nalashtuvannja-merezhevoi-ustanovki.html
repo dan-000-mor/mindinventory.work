@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Налаштування мережевої установки | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Крок 4. Встановлення та налаштування сервера політики мережі (NPS) 4 дні тому — службу сервера політики мережі не можна інсталювати на Windows Server..." />
+ <meta name="keywords" content="налаштування, мережевої, установки, Windows, мережі, Setup" />
+ <meta name="news_keywords" content="налаштування, мережевої, установки, Windows, мережі, Setup" />
+ 
+ 
+ <meta property="og:title" content="Налаштування мережевої установки" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Крок 4. Встановлення та налаштування сервера політики мережі (NPS) 4 дні тому — службу сервера політики мережі не можна інсталювати на Windows Server..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="16:34:11" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Налаштування мережевої установки" />
+ <meta name="twitter:description" content="Крок 4. Встановлення та налаштування сервера політики мережі (NPS) 4 дні тому — службу сервера політики мережі не можна інсталювати на Windows Server..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Налаштування мережевої установки</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Крок 4. Встановлення та налаштування сервера політики мережі (NPS)</h2></div></a><div class="pagetext"><p>4 дні тому — службу сервера політики мережі не можна інсталювати на Windows Server Core. На корпоративному сервері політики Організації чи організації сервер...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Встановлення (розгортання) Windows 10 через мережу c...</h2></div></a><div class="pagetext"><p>Налаштування PXE ролі на сервері SCCM для мережевої установки Windows</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Встановлення та налаштування мережевої карти... - Ланет HELP</h2></div></a><div class="pagetext"><p>справна мережна карта, модем або роутер. Настроювання мережного адаптера. Якщо необхідно встановити Ethernet-адаптер, можна окремо придбати мережевий...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Встановлюємо Windows 10 по мережі.</h2></div></a><div class="pagetext"><p>До встановлення через мережу він відношення взагалі ніякого не має. У Windows Server вбудований WDS (раніше був RIS), який містить все необхідне для зручного налаштування...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">WDS (Windows Deployment Services). Швидке...</h2></div></a><div class="pagetext"><p>27 лип. 2015 - Як видно зі скріншота boot.wim містить два образи - Windows PE (Індекс 1) і Windows Setup (Індекс 2). Драйвера для мережної карти треба...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Встановлення та налаштування WDS сервера у Windows Server 2019</h2></div></a><div class="pagetext"><p>25 груд. 2018 р. — Вкладка "Відгук PXE" допоможе вам змінити поведінку при відповіді клієнтам, які шукають сервер по мережі, я вам раджу залишати відповіді тільки...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Налаштування мережі вручну</h2></div></a><div class="pagetext"><p>Встановлення MTU та TTL</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Розділ 21. Підготовка до мережевого встановлення Red Hat...</h2></div></a><div class="pagetext"><p>Інформацію про налаштування у попередніх випусках Red Hat Enterprise Linux можна знайти у відповідних версіях посібника зі встановлення. 21.1. Налаштування PXE-...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Створення контролера домену Active Directory Domain...</h2></div></a><div class="pagetext"><p>28 лип. 2021 р. — Покроковий процес встановлення Active Directory, налаштування контролера домену та створення... Налаштування мережного адаптера контролера домену.</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Установка ОСзнань Selectel</h2></div></a><div class="pagetext"><p>Примітка: для серверів лінійки Chipcore Line встановити ОС можна лише використовуючи... важливі параметри (наприклад, налаштування мережі, налаштування RAID/LVM та ін.)...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Порядок встановлення та налаштування мережевої картки - Sega...</h2></div></a><div class="pagetext"><p>Все про Інтернет, мережі, комп'ютери, Windows, iOS та Android. Як налаштувати мережну картку? Налаштування мережної плати справа не складна, просто треба знати куди...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Настроювання мережного адаптера (для Windows 10)</h2></div></a><div class="pagetext"><p>Налаштування адаптера живлення (для Windows 10) · Підключіть комп'ютер до порту ETH/POE роутера, використовуючи мережний кабель (патч-корд). · Зайдіть в мережеві налаштування ПК:...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Встановлення мережних налаштувань принтера через... - Epson</h2></div></a><div class="pagetext"><p>Ви можете спростити ручну установку за допомогою Setup Wizard (Майстер установки). Виберіть Wireless LAN Setup (Налаштування бездротової мережі).</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Встановлення Ubuntu по мережі. Установка Ubuntu через мережу через...</h2></div></a><div class="pagetext"><p>23 груд. 2020 — Налаштування меню завантаження PXE. Для початку додамо пункт меню під назвою Linux Install, для цього нам потрібно відредагувати файл: nano /var/lib/...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">1. Встановлення сервера 3CX</h2></div></a><div class="pagetext"><p>Мережеве оточення – публічна мережа (WAN). FQDN та сертифікати безпеки. Мережеві порти АТС. Майстер початкового налаштування: Веб-...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Встановлення 3CX на Windows</h2></div></a><div class="pagetext"><p>Вимоги до мережі, маршрутизаторів та інших технологій</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Установка мережних налаштувань принтера через... - Epson.ru</h2></div></a><div class="pagetext"><p>Ви можете спростити ручну установку за допомогою Setup Wizard (Майстер установки). Виберіть Wireless LAN Setup (Налаштування бездротової мережі).</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">2.3 Альтернативні способи встановлення - РЕД ОС</h2></div></a><div class="pagetext"><p>Актуальну та детальну інформацію про встановлення РЕД ОС по мережі див. за посиланням.... а екрани, які вимагають обов'язкового налаштування до початку встановлення,...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Налаштування системи AIX після нової установки - IBM</h2></div></a><div class="pagetext"><p>Інструкції по роботі з помічником з налаштування після встановлення... root Налаштувати мережеві з'єднання Встановити програми Робота в SMIT (тільки перегляд...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" ><div class="title"><h2 class="txt">Встановлення та налаштування: ВТБ</h2></div></a><div class="pagetext"><p>Налаштування адаптера Ethernet. У ряді випадків для коректної роботи ІТС Quik може знадобитися додаткове налаштування мережної плати. Це налаштування...</p><a rel="nofollow" href="/go.html?/articles/nalashtuvannja-merezhevoi-ustanovki.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/shema-skladannja-izotta.html">Схема складання ізотта</a></li>
+<li><a href="/articles/teplohid-vid-jakogo-slova-utvoreno.html">Теплохід від якого слова утворено</a></li>
+<li><a href="/articles/u-mene-poletila-simka.html">У мене полетіла сімка</a></li>
+<li><a href="/articles/jak-zrobiti-sumif.html">Як зробити sumif</a></li>
+<li><a href="/articles/ditina-vjazannja-zhurnal-onlajn.html">Дитина в’язання журнал онлайн</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/zmova-shho-b-ja-nachalstvu-spodobalasja.html">Змова що б я начальству сподобалася</a></li>
+<li><a href="/articles/jaki-rosijski-banki-e-v-virmenii.html">Які російські банки є в вірменії</a></li>
+<li><a href="/articles/jaki-protizaplidni-pislja-abortu.html">Які протизаплідні після аборту</a></li>
+<li><a href="/articles/skilki-koshtue-oksamitovij-papir.html">Скільки коштує оксамитовий папір</a></li>
+<li><a href="/articles/zhah-onlajn-vhoroshij-jakosti.html">Жах онлайн вхорошій якості</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/groshi-zrobljat-iz-vas-rabiv.html">Гроші зроблять із вас рабів</a></li>
+<li><a href="/articles/znak-piratstva.html">Знак піратства</a></li>
+<li><a href="/articles/vivesti-linijku-u-fotoshopi.html">Вивести лінійку у фотошопі</a></li>
+<li><a href="/articles/dekilka-horoshih-ljudej-film.html">Декілька хороших людей фільм</a></li>
+<li><a href="/articles/robota-vdoma-vishivka-vakansii.html">Робота вдома вишивка вакансії</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/nomer-telefonu-poshta-bohan.html">Номер телефону пошта бохан</a></li>
+<li><a href="/articles/jakshho-miti-volossja-koloju-shho-bude.html">Якщо мити волосся колою що буде</a></li>
+<li><a href="/articles/hto-kompozitor-pisni-ja-shukala-tebe.html">Хто композитор пісні я шукала тебе</a></li>
+<li><a href="/articles/ringtoni-na-telefon-samsung-galaksi-a51.html">Рінгтони на телефон Samsung галакси а51</a></li>
+<li><a href="/articles/na-mostu-foto-dlja-fotoshopu.html">На мосту фото для фотошопу</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

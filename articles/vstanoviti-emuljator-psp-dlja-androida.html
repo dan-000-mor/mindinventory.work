@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Встановити емулятор psp для андроїда | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Встановлення та налаштування емулятора PPSSPP на Android PPSSPP – відмінний емулятор, призначений для запуску PSP ігор на пристроях під керуванням..." />
+ <meta name="keywords" content="встановити, емулятор, андроїда" />
+ <meta name="news_keywords" content="встановити, емулятор, андроїда" />
+ 
+ 
+ <meta property="og:title" content="Встановити емулятор psp для андроїда" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Встановлення та налаштування емулятора PPSSPP на Android PPSSPP – відмінний емулятор, призначений для запуску PSP ігор на пристроях під керуванням..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="18:15:53" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Встановити емулятор psp для андроїда" />
+ <meta name="twitter:description" content="Встановлення та налаштування емулятора PPSSPP на Android PPSSPP – відмінний емулятор, призначений для запуску PSP ігор на пристроях під керуванням..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Встановити емулятор psp для андроїда</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Встановлення та налаштування емулятора PPSSPP на Android</h2></div></a><div class="pagetext"><p>PPSSPP – відмінний емулятор, призначений для запуску PSP ігор на пристроях під керуванням Android. За допомогою цієї програми ви...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">PPSSPP Gold - PSP emulator скачати 1.11.3 Full APK для Android</h2></div></a><div class="pagetext"><p>PPSSPP Gold - PSP emulator - відмінний проект для андроїд пристроїв від... Завантажити PPSSPP Gold - PSP... Як встановити програми з кешем?</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Як грати в PSP ігри на Android за допомогою програми PPSSPP</h2></div></a><div class="pagetext"><p>PPSSPP – це емулятор PSP, який можна безкоштовно завантажити в... Натисніть «Встановити», щоб завантажити та встановити емулятор.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">PSP Емулятор на андроїд з підтримкою камери. Встановлення та...</h2></div></a><div class="pagetext"><p>Встановлення емулятора PSP на андроїд. 1. Завантажте безкоштовно PSP Emulator за прямим посиланням нижче в APK форматі. У вас має бути версія Android не нижче 2.3. 2.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Скачати ігри psp емулятора android. Встановлення та налаштування...</h2></div></a><div class="pagetext"><p>Чому варто скачати PPSSPP Gold - PSP emulator на андроїд? Ігророби вирішили піти назустріч таким гравцям, і розробили PPSSPP Gold – емулятор приставки...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Android emulator PSP: що це таке і навіщо потрібно - Все про Андроїд</h2></div></a><div class="pagetext"><p>Встановити емулятор PSP на смартфон. Інсталювати будь-який емулятор на телефон Android можна двома способами, точніше,...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Як запустити ігри PSP для Android - GuidesGame</h2></div></a><div class="pagetext"><p>встановити та пограти в ігри для PSP на телефоні або планшеті Android.... Протягом багатьох років існувало безліч емуляторів PSP, таких як...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Емулятор для Super PSP - 4APK</h2></div></a><div class="pagetext"><p>Емулятор PPSSPP; Емулятор Rocket PSP Emulator; Встановлення емулятора PSP; Налаштування емулятора на гаджеті під Android; Налаштування режиму рендерингу; Налаштування...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Завантажити PPSSPP Gold - PSP emulator 1.11.3 apk (UA...</h2></div></a><div class="pagetext"><p>Безкоштовнийемулятор PSP на Android. PPSSPP Gold - PSP emulator... Як встановити (оновити) PPSSPP Gold - PSP emulator. Завантажте файл APK.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Завантажити PPSSPP 1.11.3 для Android - Trashbox.ru</h2></div></a><div class="pagetext"><p>PPSSPP – чудовий проект емулятора PSP для андроїд пристроїв від розробника Henrik Rydgård, який створив повноцінний емулятор Play...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Найкращі емулятори PSP для Android Androidsis</h2></div></a><div class="pagetext"><p>Якщо вам подобаються старі консолі, не пропустіть емулятор NDS від Nintendo, яку можна встановити на свій мобільний телефон. Індекс. 1 AwePSP; 2 PPSSPP...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Завантажити емулятор псп на двоядерний android. Встановлення...</h2></div></a><div class="pagetext"><p>Встановлення та налаштування емулятора PPSSPP на Android. PPSSPP – емулятор, що дозволяє запускати ігри для PSP на різних платформах, зокрема Android.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">PPSSPP для Андроїд - Емулятор PSP ігор для Андроїд версія 1.0</h2></div></a><div class="pagetext"><p>apk, також можете викликати adb install -r karenbuildbot-net.angelxwind.ppsspp-testing-android-fat.apk. 1.е ось і все, тепер можете приступати до...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">PPSSPP 1.11.3 для Windows</h2></div></a><div class="pagetext"><p>PPSSPP – це емулятор першої портативної консолі від Sony PSP (PlayStation Portable), який сумісний з більшістю ігор на вашому ноутбуці або комп'ютері.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">PPSSPP – найкращий емулятор PSP. Встановлення, завантаження + ігри.</h2></div></a><div class="pagetext"><p>Програми для Андроїд мене теж дуже порадувало. Найбільше приємно здивувало те, що його можна встановити на Android TV,...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Програми Google Play – PPSSPP - PSP emulator</h2></div></a><div class="pagetext"><p>Грати PSP games на вашому Android пристрої, при високому визначенні з особливими ознаками! PPSSPP є оригінал і кращий PSP emulator для Android.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Емулятори ПСП на Андроїд - Lumpics.ru</h2></div></a><div class="pagetext"><p>Ігрова приставка PSP запам'яталася великою бібліотекою ігор. До неї можна долучитись, використовуючи додаток-емулятор на своємудевайсі під...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Завантажити емулятор PPSSPP - PSP emulator для Android</h2></div></a><div class="pagetext"><p>За бажання, покопавшись у налаштуваннях, можна детально налаштувати кожну кнопку. Відео. Скріншоти. Скріншот #2 із програми PPSSPP - PSP emulator...</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" ><div class="title"><h2 class="txt">Найкращі налаштування для PPSSPP на Android 10 - Посібники з...</h2></div></a><div class="pagetext"><p>PPSSPP – це емулятор PSP, доступний для Android та інших платформ. Це дозволяє вам грати у ваші улюблені ігри для PSP на своєму смартфоні.</p><a rel="nofollow" href="/go.html?/articles/vstanoviti-emuljator-psp-dlja-androida.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/vimogi-do-individualnih-balonnih-ustanovok.html">Вимоги до індивідуальних балонних установок</a></li>
+<li><a href="/articles/jak-zrobiti-filtri-do-kolonok.html">Як зробити фільтри до колонок</a></li>
+<li><a href="/articles/jak-variti-vermishel-na-skovoridci.html">Як варити вермішель на сковорідці</a></li>
+<li><a href="/articles/vokka-leninogorsk-nomer-telefonu.html">Вокка леніногорськ номер телефону</a></li>
+<li><a href="/articles/igri-de-mozhna-hoditi-stribati.html">Ігри де можна ходити стрибати</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/iskra-ja-sama.html">Іскра я сама</a></li>
+<li><a href="/articles/vjazani-sukni-z-mohera.html">В’язані сукні з мохера</a></li>
+<li><a href="/articles/jak-rozsmishiti-hlopcja-do-sliz.html">Як розсмішити хлопця до сліз</a></li>
+<li><a href="/articles/buti-odruzhenoju-i-pochuvatisja-samotnim.html">Бути одруженою і почуватися самотнім</a></li>
+<li><a href="/articles/remont-holodilnikiv-u-dvorichensku.html">Ремонт холодильників у дворіченську</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/farba-dlja-volossja-vid-kutrin.html">Фарба для волосся від кутрин</a></li>
+<li><a href="/articles/na-dovge-volossja-pogoleni-viski.html">На довге волосся поголені віскі</a></li>
+<li><a href="/articles/jakij-ptah-na-kazahskomu-prapori.html">Який птах на казахському прапорі</a></li>
+<li><a href="/articles/chim-krashhe-gotuvati-beton.html">Чим краще готувати бетон</a></li>
+<li><a href="/articles/ofis-aeroflotu-v-simferopoli-telefon.html">Офіс аерофлоту в Сімферополі телефон</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/skilki-dniv-prohodit-gematoma-na-vusi.html">Скільки днів проходить гематома на вусі</a></li>
+<li><a href="/articles/jak-obmezhiti-tekst-u-html.html">Як обмежити текст у html</a></li>
+<li><a href="/articles/pereklasti-dokument-u-format-dokumenta.html">Перекласти документ у формат документа</a></li>
+<li><a href="/articles/ne-zapuskaetsja-total-var.html">Не запускається тотал вар</a></li>
+<li><a href="/articles/majnkraft-684.html">Майнкрафт 684</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

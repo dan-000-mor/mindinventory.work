@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Як зробити впр з декількома значеннями | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Функція ВПР з кількома умовами критеріїв пошуку в ... Приклад використання функцію ВПР по кількох стовпцям для однієї і тієї ж таблиці з даними. Формула..." />
+ <meta name="keywords" content="зробити, декількома, значеннями, значення" />
+ <meta name="news_keywords" content="зробити, декількома, значеннями, значення" />
+ 
+ 
+ <meta property="og:title" content="Як зробити впр з декількома значеннями" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Функція ВПР з кількома умовами критеріїв пошуку в ... Приклад використання функцію ВПР по кількох стовпцям для однієї і тієї ж таблиці з даними. Формула..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="16:49:03" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Як зробити впр з декількома значеннями" />
+ <meta name="twitter:description" content="Функція ВПР з кількома умовами критеріїв пошуку в ... Приклад використання функцію ВПР по кількох стовпцям для однієї і тієї ж таблиці з даними. Формула..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Як зробити впр з декількома значеннями</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Функція ВПР з кількома умовами критеріїв пошуку в...</h2></div></a><div class="pagetext"><p>Приклад використання функцію ВПР по кількох стовпцям для однієї і тієї ж таблиці з даними. Формула комбінації функцій ВПР та ЯКЩО.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">ВПР із поверненням усіх значень - Excel-VBA.Ru</h2></div></a><div class="pagetext"><p>11 лип. 2016 р. — Але що робити, коли треба бачити всі значення?... обмовитися - за допомогою ВПР (VLookup) це зробити ну ніяк не вийде.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Чотири способи використання ВВР з кількома...</h2></div></a><div class="pagetext"><p>8 січ. 2017 — Ця функція не працюватиме, якщо в діапазоні D2:D13 є текстові значення. Щоб зрозуміти, як працює ця формула, рекомендую...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Багаторазовий ВПР (VLOOKUP)</h2></div></a><div class="pagetext"><p>26 жовт. 2012 р. - Підкажіть, пж, а як зробити так. щоб у масиві вибиралося за значеннями менше та більше. Наприклад, маємо три стовпці для підбору...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">ВПР із кількома умовами: 5 прикладів. Mister-Office</h2></div></a><div class="pagetext"><p>22 травня 2020 р. — Другий D7:D20 – це значення, одне з яких потрібно вибрати. Функція ВИБІР дозволяє з цих елементів створити масив. {1,2} якраз і...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Просунуті приклади з функцією ВПР: пошук...</h2></div></a><div class="pagetext"><p>30 березня. 2020 р. — Як і в попередньому прикладі, Вам знадобиться у таблиці пошуку (Lookup table) допоміжний стовпець із об'єднаними значеннями. Цей стовпець...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Функція впр в ексель з кількома умовами приклади</h2></div></a><div class="pagetext"><p>Як працює функція ВПР в Excel під час вибірки з таблиці значень? Використання функції ВПР (VLOOKUP) для встановлення значень. Просунуті приклади з функцією...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Функція ВПР з кількома умовами критеріїв пошуку в...</h2></div></a><div class="pagetext"><p>Робота функції ВПР за декількома критеріями · Як користуватися функцією ВПР в Excel · Швидке порівняння двох таблиць за допомогою ВПР · Функція ВПР в Excel з...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Функція ВПР -Microsoft Support</h2></div></a><div class="pagetext"><p>Не зберігайте значення чи значення дат як текст. Під час пошуку числових значень або значень дат переконайтеся, що дані в першому стовпці аргументу...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Функція ВПР з деякими базовими та розширеними...</h2></div></a><div class="pagetext"><p>У цьому розділі буде розказано про те, як повернути кілька значень, що збігаються, з одним або декількома умовами в книзі. Vlookup всі збігаються значення на...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Оптимізація ВПР із кількома критеріями (індекс +...</h2></div></a><div class="pagetext"><p>Однак тепер мені потрібно знайти значення у відповідності з трьома критеріями, і наведена вище функція – найкращий спосіб, яким мені вдалося це зробити.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Як зробити ВПР кількома осередками поспіль? - CodeRoad</h2></div></a><div class="pagetext"><p>18 квіт. 2014 р. — У мене є два столи pivot. Мені потрібно отримати значення доходу vlookup з таблиці 1 на основі значень, які я маю в таблиці 2.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Функція ВПР у Excel. Як використовувати? - ЕКСЕЛЬ ХАК</h2></div></a><div class="pagetext"><p>Приклад 8. Функція ВПР в Excel з кількома умовами</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Функція ВПР (VLOOKUP) ВКонтакте</h2></div></a><div class="pagetext"><p>1 серп. 2020 р. — Потрібно зробити так, щоби перший стовпець таблиці мав унікальні значення. Створимо його. Для цього скористаємось формулою:.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Як працює функція ВПР в прикладі Excel? - Як очистити...</h2></div></a><div class="pagetext"><p>Функція ВПР із кількома умовами. Функція ВПР в Excel – Таблиця вихідних даних... Це значення, які Excel має знайти у другій таблиці.</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">впр, індекс та пошукпоз - comuedu.ru</h2></div></a><div class="pagetext"><p>Чотири способи використання впр з кількома умовами.... ПОШУКПОЗ визначає відносну позицію шуканого значення в заданому діапазоні осередків,...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">Excel впр повторювані значення - IT Новини</h2></div></a><div class="pagetext"><p>Усі секрети Excel-функції ВПР (VLOOKUP) пошуку даних у таблиці і вилучення в іншу. Прочитавши статтю, ви не лише дізнаєтесь, якзнайти дані в таблиці...</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" ><div class="title"><h2 class="txt">ВПР в Excel, що це розшифровка - Phone Remedy</h2></div></a><div class="pagetext"><p>Приклад 8. Функція ВПР в Excel з кількома умовами</p><a rel="nofollow" href="/go.html?/articles/jak-zrobiti-vpr-z-dekilkoma-znachennjami.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/karti-dlja-tahografiv-u-volodimiri.html">Карти для тахографів у Володимирі</a></li>
+<li><a href="/articles/jak-bude-rozpjattja-anglijskoju.html">Як буде розп’яття англійською</a></li>
+<li><a href="/articles/legka-cifra.html">Легка цифра</a></li>
+<li><a href="/articles/ditjacha-shapochka-na-spicjah-majster-klas.html">Дитяча шапочка на спицях майстер клас</a></li>
+<li><a href="/articles/den-internacionalu-den-mizhnarodnoi-solidarnosti.html">День інтернаціоналу День міжнародної солідарності трудящих</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/do-dnja-narodzhennja-podrugi.html">До дня народження подруги</a></li>
+<li><a href="/articles/krem-zbiti-vershki-v-domashnih-umovah.html">Крем збиті вершки в домашніх умовах</a></li>
+<li><a href="/articles/bambuk-shvidko-roste-cherez.html">Бамбук швидко росте через</a></li>
+<li><a href="/articles/vidmak-3-budinok-na-karti.html">Відьмак 3 будинок на карті</a></li>
+<li><a href="/articles/maljuemo-bravleriv-iz-bravl.html">Малюємо бравлерів із бравл</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/kamera-na-ajfon-7-pljus-ta-8-pljus-porivnjannja.html">Камера на айфон 7 плюс та 8 плюс порівняння</a></li>
+<li><a href="/articles/jak-vstanoviti-signalizaciju-tomagavk-vaz-2110.html">Як встановити сигналізацію томагавк ваз 2110</a></li>
+<li><a href="/articles/najkrashhij-filtr-glechik.html">Найкращий фільтр глечик</a></li>
+<li><a href="/articles/mgu-biofak-jaki-ispiti.html">Мгу біофак які іспити</a></li>
+<li><a href="/articles/zirki-z-paperu-obemni-na-novij.html">Зірки з паперу об’ємні на новий</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/uzi-zrobiti-de-bilovo.html">Узи зробити де білово</a></li>
+<li><a href="/articles/jak-zrobiti-foto-dzerkalnim-u-telefoni.html">Як зробити фото дзеркальним у телефоні</a></li>
+<li><a href="/articles/vidnoviti-ajdi-cherez-kontrolni-pitannja.html">Відновити айді через контрольні питання</a></li>
+<li><a href="/articles/znak-ruhu-dvi-smugi.html">Знак руху дві смуги</a></li>
+<li><a href="/articles/jak-farbujut-volossja-v-japonii.html">Як фарбують волосся в японії</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>

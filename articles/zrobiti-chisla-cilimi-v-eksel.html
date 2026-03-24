@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="uk" class="no-js" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+
+ <title>Зробити числа цілими в ексель | mindinventory.work</title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Функція ЦІЛОЕ() EXCEL. Приклади та опис - Excel2.ru Функція целое() округлює число до найближчого меншого цілого. Ці функції розрізняються тільки при..." />
+ <meta name="keywords" content="зробити, числа, цілими, ексель" />
+ <meta name="news_keywords" content="зробити, числа, цілими, ексель" />
+ 
+ 
+ <meta property="og:title" content="Зробити числа цілими в ексель" />
+ <meta property="og:site_name" content="mindinventory.work" />
+ <meta property="og:description" content="Функція ЦІЛОЕ() EXCEL. Приклади та опис - Excel2.ru Функція целое() округлює число до найближчого меншого цілого. Ці функції розрізняються тільки при..." />
+ <meta property="og:locale" content="uk_UA" />
+ <meta property="og:type" content="article" />
+
+ <meta property="article:published_time" content="16:01:54" />
+
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:site" content="admin@mindinventory.work" />
+ <meta name="twitter:title" content="Зробити числа цілими в ексель" />
+ <meta name="twitter:description" content="Функція ЦІЛОЕ() EXCEL. Приклади та опис - Excel2.ru Функція целое() округлює число до найближчого меншого цілого. Ці функції розрізняються тільки при..." />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#c93037" />
+
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<style>
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{-webkit-font-smoothing:antialiased;max-width:1200px;margin:0;font-family:Sans-serif,Arial;font-size:16px;line-height:20px;color:#444;background-color:#e5e5e5;display:block;font-weight:400;}
+a{color:#151515;text-decoration:none}
+a:hover{outline:0;color:#c33;text-decoration:none;}
+a:focus{outline-color:#c93037;}
+img{max-width:100%;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+.clear{clear:both;}
+#sidebar-menu{margin-top:60px;}
+.mob-top{position:fixed;top:0;left:0;width:200px;background:#FFF;text-align:center;height:60px;overflow:hidden;}
+.mob-top img{height:60px;}
+.mob-top .mob-toggle{display:none;width:24px;height:24px;padding:7px 7px 2px 7px;background-color:#ddd;position:absolute;right:10px;top:15px;}
+.mob-top .mob-toggle .bar{height:3px;background-color:#888;display:block;border-radius:1px;margin-bottom:5px;}
+#menuTrigger{display:none;}
+
+.g-application{margin-left:200px;background-color:#fff;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;}
+
+.b-sidebar-menu .origin{position:fixed;top:0;left:0;height:100%;background:#326b8c;width:200px;z-index:20;}
+.b-sidebar-menu .origin .b-sidebar-menu__wrap{margin:5px 20px 30px 20px}
+.b-sidebar-menu .origin ul{list-style:none;margin:0;padding:0;overflow:hidden;}
+.b-sidebar-menu .origin ul .delimiter div{margin:4px 0 5px 0;height:1px;background-color:#353535}
+.b-sidebar-menu .b-sidebar-menu__wrap .special{color:#FFF;overflow:hidden;font-size:13px;}
+.b-sidebar-menu .b-menu-decorator{font-size:14px;line-height:20px}
+.b-sidebar-menu .b-menu-decorator ul .active a{color:#c33 !important}
+.b-sidebar-menu .b-menu-decorator a{color:#fff;overflow:hidden;margin-left:2px;}
+.b-sidebar-menu .b-menu-decorator a:hover{color:#ccc!important}
+
+.b-layout{padding-bottom:15px;margin-top:15px;min-height:500px;}
+.b-layout.notop{margin-top:0;}
+
+.reviews-page{position:relative;overflow:hidden;}
+.reviews-page .col-a{margin:0 350px 0 20px;}
+.reviews-page .col-b{width:300px;background-color:#f5f5f5;padding:20px 10px 0 20px;-moz-box-sizing:border-box;position:absolute;right:0;top:0;}
+.reviews-page .bordered-title{overflow:hidden;font-size:18px;font-weight:400;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;color:#c93037;}
+.article-page .col-a{background-color:#FFF;}
+
+.b-footer{color:#c1c1c1;line-height:18px;background:#326b8c;-webkit-box-shadow:0 0 15px #b1b1b1;-moz-box-shadow:0 0 15px #b1b1b1;box-shadow:0 0 15px #b1b1b1;padding:20px 30px;font-size:14px;}
+div.bordered-title{background-color:#FFF;padding:5px 10px 2px;text-transform:uppercase;letter-spacing: 0.1em;font-size:16px;font-weight:200;}
+.article-page .b-text{font-weight:200;font-size:16px;line-height:26px;letter-spacing:0.04em;}
+.article-page .b-topic__header{margin-bottom:10px;}
+.article-page .b-topic__title{color:#c93037;margin-bottom:10px;margin-top:5px;font-weight:400;font-size:26px;line-height:32px;display:inline;}
+.article-page .b-topic__info{font-weight:200;font-size:16px;overflow:hidden;color:#666;margin:10px 0;}
+.article-page p{margin: 0 0 20px 0;}
+
+.b-topic_news{padding:15px;}
+
+@media only screen and (max-width:1100px){
+ .reviews-page .col-b{width:250px;}
+ .reviews-page .col-a{margin-right:280px;margin-left:10px;}
+}
+@media only screen and (max-width:900px){
+ .b-topic_news{padding:10px;}
+ #sidebar-menu{margin-top:60px;}
+ .mob-top{width:140px;height:60px;}
+ .mob-top img{max-height:50px;max-width:initial;margin:5px 0 0 -10px;}
+ .g-application{margin-left:140px;}
+ .b-sidebar-menu .origin{width:140px;}
+ .b-sidebar-menu .origin .b-sidebar-menu__wrap{margin: 5px 0 0 5px;}
+}
+@media only screen and (max-width:800px){
+ .reviews-page .col-b{position:initial;width:100%;padding:10px 0 0 0;margin-top:-10px;background-color:#e5e5e5;}
+ .reviews-page .bordered-title{border-bottom:2px solid #afafaf;border-top:2px solid #afafaf;padding:10px;}
+ .reviews-page .col-a{margin:0;padding:0 10px;}
+ .bgfon{background:#e5e5e5;padding-bottom:5px;}
+ .b-layout{padding-bottom:0;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px 0;}
+
+ .g-application{margin:0;background:initial;}
+
+ .mob-top{display:block;width:100%;text-align:center;position:relative;}
+ .mob-top .mob-toggle{display:block;}
+
+ nav{display:none;}
+ #sidebar-menu{margin-top:0;}
+ #menuTrigger:checked + nav{display:block;}
+
+ .article-page .b-text{font-size:18px;line-height:1.5em;font-weight:400;}
+}
+@media only screen and (max-width:500px){
+ .b-topic_news{padding:10px;}
+
+ .reviews-page .list{background-color:#e5e5e5;}
+
+ .article-page .col-a{background:#FFF;padding:0;}
+}
+a#button7{display:inline-block;width:15em;font-size:80%;color:rgba(255,255,255,.9);text-shadow:#2e7ebd 0 1px 2px;text-decoration:none;text-align:center;line-height:1.1;white-space:pre-line;padding:.7em 0;border:1px solid;border-color:#60a3d8 #2970a9 #2970a9 #60a3d8;border-radius:6px;outline:none;background:#60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);box-shadow:inset rgba(255,255,255,.5) 1px 1px;}a#button7:first-line{font-size:170%;font-weight:700;}a#button7:hover{color:rgb(255,255,255);background-image:linear-gradient(#9dc7e7, #74afdd 50%, #378bce);}a#button7:active{color:rgb(255,255,255);border-color:#2970a9;background-image:linear-gradient(#5796c8, #6aa2ce);box-shadow:none;}
+</style>
+
+</head>
+
+<body class='bdm-food'>
+<div class="g-application" id="root">
+
+ <div class="mob-top">
+  <a href="/">
+   <picture>
+    <source srcset="/logo2.gif" type="image/gif">
+    <img src='/logo2.gif' alt='mindinventory.work' />
+   </picture>
+  </a>
+  <label for="menuTrigger" class="mob-toggle" aria-label="Меню"><span class="bar"></span><span class="bar"></span><span class="bar"></span></label>
+ </div>
+
+
+
+
+<section class="b-layout notop">
+ <div id="explore-cards">
+  <div class="reviews-page article-page">
+   <div class="col-a">
+    <div id="col-a">
+
+     <div class="b-topic b-topic_news dm-food">
+      <div class="b-topic__content">
+       <div class="b-topic__header">
+        <h1 class="b-topic__title">Зробити числа цілими в ексель</h1>
+
+       </div>
+       <div class="b-topic__info"></div>
+
+       <div class="b-text clearfix">
+        <div class="articleBody"><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Функція ЦІЛОЕ() EXCEL. Приклади та опис - Excel2.ru</h2></div></a><div class="pagetext"><p>Функція целое() округлює число до найближчого меншого цілого. Ці функції розрізняються тільки при використанні негативних чисел: ВІДБР(-4,3) повертає значення -4 ЦІЛЕ(-4,3) повертає -5, оскільки -5 — найближче ціле число.12 квіт. 2013 р.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Функція ЦІЛО - Microsoft Support</h2></div></a><div class="pagetext"><p>У цій статті описано синтаксис формули та використання функції целого в Microsoft Excel. Опис Округлює число до найближчого меншого цілого. Синтаксису.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Функція ЦІЛОЕ в Excel для заокруглення чисел до цілого...</h2></div></a><div class="pagetext"><p>Функція ЦІЛОЕ в Excel повертає найближче ціле значення від числа,... Тому можна зробити висновок про те, що використання функції ЦІЛОЕ в подібних...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Excel ціле число</h2></div></a><div class="pagetext"><p>Як округлити до цілих у більшу чи меншу сторону? Як у таблиці Excel виділити лише цілі числа? Як відфільтрувати цілі числа. Функція целое() в MS EXCEL.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Як фільтрувати тільки цілі числа (цілі... - ExtendOffice</h2></div></a><div class="pagetext"><p>Фільтрувати цілі числа (цілі числа) або десяткові числа за допомогою Kutools for Excel</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Відокремити ціле число від десяткового в Excel - ExtendOffice</h2></div></a><div class="pagetext"><p>Якщо ви не бажаєте запам'ятовувати формули, тут ми представляємо Витягти текст корисності Kutools for Excel. За допомогою цієї утиліти ви можете легко відокремити цілі...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Умовне форматування цілих чисел - ExcelPedia.ru</h2></div></a><div class="pagetext"><p>Як зробити умовне форматування цілих чисел у Excel дізнатися у докладній статті.... Щоб виділити числа, які є цілими, ви можете використовувати...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Як створити формулу в excel для перевірки діапазону...</h2></div></a><div class="pagetext"><p>Як створити формулу Excel для перевірки діапазону на цілі числа. Як уже було сказано, Я хочу створити формулу в excel, щоб перевірити діапазоносередків,...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Як відфільтрувати цілі числа - Планета Excel</h2></div></a><div class="pagetext"><p>31 травня 2012 р. — Здрастуйте! Підкажіть, така ситуація є стовпець у якому знаходяться цілі та дробові числа, необхідно відфільтрувати так щоб були...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Числа в Excel відображаються як соті десяткового дробу</h2></div></a><div class="pagetext"><p>11 жовт. 2017 р. — Що робити, якщо числа в Excel відображаються, як соті десяткового дробу, число автоматично ділиться на 100. Як позбавиться такого...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Як округлити число в Excel у більший і менший бік</h2></div></a><div class="pagetext"><p>17 берез. 2021 р. — Число в осередку округлилося. Але для того, щоб зробити те саме з цілим стовпцем або прямокутною областю, слід скопіювати формулу.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Правильне округлення даних Excel для отримання...</h2></div></a><div class="pagetext"><p>Дізнайтеся, як автоматично округляти дані Excel, щоб округлені підсумкові значення... Наприклад, другий параметр TCROUND має бути цілим числом.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Як зробити щоб excel вважав заокруглені числа?</h2></div></a><div class="pagetext"><p>24 вер. 2018 - Округлюють числа в Excel декількома способами.... Зробити те саме можна через інструмент «Число» на головній сторінці Книги. Або натиснути...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Числовий Формат 0,# Як прибрати зарятую, якщо це ціле...</h2></div></a><div class="pagetext"><p>Числовий Формат 0,# Як прибрати зарятую, якщо це ціле число MS Excel Рішення та відповідь на запитання 2671831.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Функції округлення в Excel - statanaliz.info</h2></div></a><div class="pagetext"><p>Щоб отримати формулу округлення в Excel до цілого числа,... потрібно розрахувати замовлення виробів у штуках, але так, щоб він дорівнював цілій кількості ящиків.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Як згенерувати випадкове число в Excel.</h2></div></a><div class="pagetext"><p>Функція РАЗМІЖ() - Випадкове число із заданого інтервалу в MS EXCEL.... Дробові числа більше одиниці; Як зробити генератор чисел у екселі.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Генератор випадкових чисел в Excel - НА ПРИКЛАДАХ</h2></div></a><div class="pagetext"><p>20 лист. 2017 — Щоб функція Excel СЛЧИС створювала випадкові цілі числа, візьміть одну з вищезгаданих формул і загорніть її в функцію ЦІЛОЕ. Щоб зробити...</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section><section><div class="resultitem" ><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" ><div class="title"><h2 class="txt">Як у Excel округлювати числа у більшу та меншу сторону</h2></div></a><div class="pagetext"><p>28 лип. 2020 - Як грамотно округлити число в Excel.... досить просто прибрати цифри в дрібній частині з формули, як число відразу стає цілим.</p><a rel="nofollow" href="/go.html?/articles/zrobiti-chisla-cilimi-v-eksel.html" id="button7">Далі</a></div></div></section></div>
+
+		
+
+       </div>
+       <div style="clear:both;"></div>
+
+
+       <div style="clear:both;"></div>
+
+      </div>
+     </div>
+
+
+     </div>
+    </div>
+    <div class="col-b" id="col-b">
+
+<div class="bordered-title">Популярні</div>
+
+<ul>
+<li><a href="/articles/pereklasti-zi-slovenskoi.html">Перекласти зі словенської</a></li>
+<li><a href="/articles/osobistij-dosvid-iz-domashnogo-biznesu.html">Особистий досвід із домашнього бізнесу</a></li>
+<li><a href="/articles/tekst-vstanovlennja-jeada.html">Текст встановлення Jeada</a></li>
+<li><a href="/articles/jak-maljuvati-z-mutfilim.html">Як малювати з мутфілім</a></li>
+<li><a href="/articles/jak-pishetsja-dvadcjat-tisjach-desjat.html">Як пишеться двадцять тисяч десять</a></li>
+</ul>
+
+<div class="bordered-title">Зараз читають</div>
+<ul>
+<li><a href="/articles/perevod-pisni-epiphany-bts.html">Перевод пісні epiphany bts</a></li>
+<li><a href="/articles/majster-klas-kosa-z-kvitkoju.html">Майстер клас коса з квіткою</a></li>
+<li><a href="/articles/perekazati-zarplatu-na-jandeks-gamanec.html">Переказати зарплату на яндекс гаманець</a></li>
+<li><a href="/articles/silnij-hlopec-6-bukv.html">Сильний хлопець 6 букв</a></li>
+<li><a href="/articles/jaka-krov-u-venah-legen.html">Яка кров у венах легень</a></li>
+</ul> 
+
+
+
+    </div>
+
+
+
+   </div>
+ </div>
+</section>
+
+<div class="clear bgfon"></div>
+<div id="fb-root"></div>
+
+
+
+<input id="menuTrigger" type="checkbox">
+<nav class="b-sidebar-menu">
+ <div class="origin b-menu-decorator" id="sidebar-menu">
+   <div class="b-sidebar-menu__wrap">
+    <ul>
+
+<li><a href="/articles/rosgvardija-diznatisja-pro-svoju-chergu-subsidiju.html">Росгвардія дізнатися про свою чергу субсидію</a></li>
+<li><a href="/articles/zvjazati-shijku-kofti-spicjami.html">Зв’язати шийку кофти спицями</a></li>
+<li><a href="/articles/de-znajti-gps-u-nalashtuvannjah.html">Де знайти gps у налаштуваннях</a></li>
+<li><a href="/articles/jak-znajti-traktat-epsilonu.html">Як знайти трактат епсілону</a></li>
+<li><a href="/articles/shho-robiti-z-pjanki-nimie-ruka.html">Що робити з п’янки німіє рука</a></li>
+
+
+<li class="delimiter"><div></div></li>
+<li class="delimiter"><div></div></li>
+<li><a href="/articles/jakshho-chasto-svarishsja-z-kohanoju-ljudinoju.html">Якщо часто сваришся з коханою людиною</a></li>
+<li><a href="/articles/download-obb-service-pabg-shho-robiti.html">Download obb service пабг що робити</a></li>
+<li><a href="/articles/zub-viris-u-shhelepi-shho-robiti.html">Зуб виріс у щелепі що робити</a></li>
+<li><a href="/articles/jak-zminiti-nizh-na-serveri.html">Як змінити ніж на сервері</a></li>
+<li><a href="/articles/jak-pochistiti-droti-na-navushnikah.html">Як почистити дроти на навушниках</a></li>
+</ul>
+</div>
+</div>
+</nav>
+ <div id="root_footer"></div>
+ <footer class="b-footer" id="footer">
+  <div class="g-layout">
+    &copy; mindinventory.work 2019 - 2026.<br/> 
+  </div>
+ </footer>
+</div>
+
+
+</body>
+</html>
