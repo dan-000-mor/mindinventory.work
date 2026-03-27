@@ -1,5 +1,4 @@
-﻿
-User-agent: SemrushBot
+﻿User-agent: SemrushBot
 Disallow: /
 
 User-agent: Rogerbot
@@ -21,5 +20,9 @@ User-agent: Screaming Frog SEO Spider
 Disallow: /
 
 User-agent: Googlebot
-Allow: /
-
+Disallow: 
+Sitemap: https://mindinventory.work/0.txt
+Sitemap: https://mindinventory.work/1.txt
+Sitemap: https://mindinventory.work/2.txt
+Sitemap: https://mindinventory.work/3.txt
+Sitemap: https://mindinventory.work/4.txt
